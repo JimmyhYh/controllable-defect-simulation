@@ -21,3 +21,7 @@
 ## 本地复现路径
 
 原KSDD2解压到 experiment/data/fewshot_synthetic/ksdd2_v1，leather解压到 experiment/data/mvtec_ad/leather。历史配置和源码保存了D/E盘绝对路径及源码身份守卫，迁移后不能直接声称可运行；应建立独立适配入口，不改旧hash或失败结论。本上传是归档交接，不是已验证的跨机器一键复现包。
+
+## 冻结数据角色
+
+原leather、AnoLCD、可控模拟和KSDD2的数据角色划分JSON按原字节收录于 `splits/`，没有重抽样或改变训练／校准／评价角色。这些是历史输入身份，不是新独立留出。

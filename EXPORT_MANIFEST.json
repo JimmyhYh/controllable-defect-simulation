@@ -5524,6 +5524,34 @@
       "sha256": "a7a9ba12a5fb6564b33e9b75ee911ff360e8acb0fe3a59c947a2ef60d8e60340",
       "kind": "source_configuration_or_provenance",
       "source": "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\SuperSimpleNet_98ab4d5\\transaction.json"
+    },
+    {
+      "path": "datasets/splits/split.json",
+      "bytes": 46396,
+      "sha256": "b920d209a6e3f6c9e8f39d78df60f42df6315087f2c724b1321432a3dadd4c5d",
+      "kind": "frozen_data_role_split",
+      "source": "D:\\华兴源创\\实验\\弱缺陷Demo\\data\\split.json"
+    },
+    {
+      "path": "datasets/splits/controlled_generation/split.json",
+      "bytes": 34965,
+      "sha256": "765aa3f0be86f36f2c5370b0729d18daaa2b63e16d7df8271c89073d27b2750b",
+      "kind": "frozen_data_role_split",
+      "source": "D:\\华兴源创\\实验\\弱缺陷Demo\\data\\controlled_generation\\split.json"
+    },
+    {
+      "path": "datasets/splits/weak_localization/split.json",
+      "bytes": 337863,
+      "sha256": "feb206cd18eeb9594c64b30afead64577f34473bda57bcaef5a58b3294124ddb",
+      "kind": "frozen_data_role_split",
+      "source": "D:\\华兴源创\\实验\\弱缺陷Demo\\data\\weak_localization\\split.json"
+    },
+    {
+      "path": "datasets/splits/fewshot_synthetic/ksdd2_v1/split.json",
+      "bytes": 997527,
+      "sha256": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+      "kind": "frozen_data_role_split",
+      "source": "D:\\华兴源创\\实验\\弱缺陷Demo\\data\\fewshot_synthetic\\ksdd2_v1\\split.json"
     }
   ]
 }
