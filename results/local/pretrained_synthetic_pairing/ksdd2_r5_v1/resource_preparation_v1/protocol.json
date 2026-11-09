@@ -1,0 +1,167 @@
+{
+  "schema": "pretrained-single-head-paired-composition-resource-v1",
+  "plan_contract": {
+    "path": "D:\\华兴源创\\计划\\预训练单头分割可控合成配对实验执行方案.md",
+    "scientific_sections_1_and_4_sha256": "34b46480ff3a408470abd7c304688bc38f835ef8c85488a77003b3ff5aa94ba7",
+    "large_output_root": "E:\\华兴源创公开实验\\pretrained_synthetic_pairing\\ksdd2_r5_v1",
+    "stage1_output": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\pretrained_synthetic_pairing\\ksdd2_r5_v1\\resource_preparation_v1",
+    "progress_sections_mutable": true
+  },
+  "initialization_seeds": [
+    2026102301,
+    2026102302,
+    2026102303
+  ],
+  "data_seed": 2026102300,
+  "fixed_old_material_seed": 2026101903,
+  "old_material_ordinals": [
+    0,
+    2499
+  ],
+  "material_items": 2500,
+  "material_type_counts": {
+    "bright_mura": 625,
+    "dark_mura": 625,
+    "bright_line": 625,
+    "dark_line": 625
+  },
+  "same_data_requests_all_three_pairs": true,
+  "training_requests_generated": 0,
+  "A_exposures": {
+    "real": 5000,
+    "synthetic": 0,
+    "normal": 5000,
+    "real_per_R5": 1000
+  },
+  "B_exposures": {
+    "real": 2500,
+    "synthetic": 2500,
+    "normal": 5000,
+    "real_per_R5": 500
+  },
+  "shared_slots": 7500,
+  "intervention_slots": 2500,
+  "updates": 10000,
+  "four_slot_cycle": [
+    "shared_R",
+    "shared_N",
+    "A_extra_R_or_B_fixed_synthetic",
+    "shared_N"
+  ],
+  "data_rng": "PCG64 SeedSequence([2026102300,namespace]);0 shared R,1 extra A R,2 N,3 flips; no generation at stage one",
+  "model": {
+    "SMP": "0.5.0",
+    "commit": "420ce84b0c2df0286fa9bb2bd1499eea625c9b33",
+    "architecture": "Unet",
+    "encoder": "ImageNet ResNet18",
+    "revision": "3f2325ff978283d47aa6a1d6878ca20565622683",
+    "head": "single two-class softmax segmentation head; no classification head",
+    "encoder_BN": "20 running-stat buffers fixed, affine and other encoder parameters trainable",
+    "decoder": "10 BN replaced by GN8",
+    "loss": "valid-domain unweighted CE + Dice smoothing1 including empty GT",
+    "initialization": "generic encoder plus new decoder/head; never probe/task/final weights"
+  },
+  "Adam": {
+    "lr": [
+      1e-05,
+      0.0001
+    ],
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0
+  },
+  "lr_intervals": [
+    [
+      1,
+      8000,
+      1e-05,
+      0.0001
+    ],
+    [
+      8001,
+      9000,
+      2e-06,
+      2e-05
+    ],
+    [
+      9001,
+      10000,
+      4e-07,
+      4e-06
+    ]
+  ],
+  "precision": "FP32",
+  "batch": 1,
+  "workers": 0,
+  "checkpoint_updates": [
+    1000,
+    2000,
+    3000,
+    4000,
+    5000,
+    6000,
+    7000,
+    8000,
+    9000,
+    10000
+  ],
+  "input_policy": {
+    "window": 256,
+    "stride": 128,
+    "tail": "sorted unique H-256",
+    "pad": "right reflect; excluded",
+    "real": "uint8/255 then ImageNet normalization",
+    "synthetic": "already flipped/padded float32[0,1]; no /255, quantization or second flip; original M_eff/valid",
+    "float_label_threshold": 0.003921568859368563,
+    "coverage_min": 0.9
+  },
+  "roles": {
+    "R_real5": 5,
+    "N_train1885": 1885,
+    "Q_normal200": 200,
+    "U_anomaly241": 241,
+    "E_official1004": 1004
+  },
+  "R5": [
+    "11670",
+    "11884",
+    "12070",
+    "12245",
+    "12303"
+  ],
+  "Q": "not training/synthesis/config selection; future normal calibration only",
+  "U": "unused",
+  "E": "historically seen; exploratory only; not model/seed/material/config selection",
+  "threshold": {
+    "old_tau_unchanged": 7.264203168233501e-06,
+    "future_new_model_thresholds": "each model's Q200 quantile independently, all frozen before E",
+    "q": 0.95,
+    "method": "linear",
+    "comparison": "strict >",
+    "score": "native float32 stitched anomaly softmax max; convert maxima to float64 for quantile"
+  },
+  "resources": {
+    "stage1_RAM_GiB": 2,
+    "stage1_D_disk_GiB": 2,
+    "future_model_RAM_GiB": 4.5,
+    "future_free_GPU_GiB": 6,
+    "future_model_disk_GiB": 20,
+    "future_AP_RAM_GiB": 3,
+    "future_AP_disk_GiB": 80,
+    "large_drive_minimum_GiB": 130
+  },
+  "paths": {
+    "code": "D:\\华兴源创\\实验\\弱缺陷Demo\\pretrained_synthetic_pairing",
+    "stage1": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\pretrained_synthetic_pairing\\ksdd2_r5_v1\\resource_preparation_v1",
+    "future_results": "E:\\华兴源创公开实验\\pretrained_synthetic_pairing\\ksdd2_r5_v1\\results",
+    "future_models": "E:\\华兴源创公开实验\\pretrained_synthetic_pairing\\ksdd2_r5_v1\\models",
+    "large_output_root": "E:\\华兴源创公开实验\\pretrained_synthetic_pairing\\ksdd2_r5_v1"
+  },
+  "user_E_drive_steering": "User stated E has ample space during stage one; only new future outputs planned on E; old D artifacts stay unchanged",
+  "interpretation": "composition strategy; reduced real-anomaly repetition and changed normal-derived backgrounds/pixel-label exposure remain mixed; no single-factor realism/pretraining/screen claim",
+  "stops": "unknown/partial/hash mismatch/failure/locks preserve; no replacement pool, automatic retry, generation, approximate metrics or lower resource gate",
+  "training": "always manually started by user; no stage-two or runtime authorization implied"
+}

@@ -1,0 +1,20 @@
+{
+  "available_ram_GiB": 1.741180419921875,
+  "current_process_resident_GiB": 0.46678924560546875,
+  "PatchCore_memory_estimate_GiB": {
+    "256": 3.0,
+    "160": 2.25,
+    "80": 1.625
+  },
+  "estimate_rule": "1GiB fixed peak reserve + two feature copies (author list/concatenation); subtract current resident to compare incremental demand with 80% available RAM; estimate not measured bank peak",
+  "N_cap": 80,
+  "counts": {
+    "N": 80,
+    "Vnew": 479,
+    "Tfinal": 1100
+  },
+  "split_sha256": "feb206cd18eeb9594c64b30afead64577f34473bda57bcaef5a58b3294124ddb",
+  "group_seed": 20261012,
+  "model_inference": false,
+  "bank_built": false
+}

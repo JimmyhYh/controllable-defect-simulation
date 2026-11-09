@@ -1,0 +1,57 @@
+{
+  "effective_synthetic": 7500,
+  "render_calls": 7500,
+  "retry_calls": 0,
+  "type_counts": {
+    "2026101903": {
+      "bright_mura": 625,
+      "dark_mura": 625,
+      "bright_line": 625,
+      "dark_line": 625
+    },
+    "2026101904": {
+      "bright_mura": 625,
+      "dark_mura": 625,
+      "bright_line": 625,
+      "dark_line": 625
+    },
+    "2026101905": {
+      "bright_mura": 625,
+      "dark_mura": 625,
+      "bright_line": 625,
+      "dark_line": 625
+    }
+  },
+  "probe_inputs": 12,
+  "LR_boundaries": {
+    "probe": {
+      "1": 0.0001,
+      "800": 0.0001,
+      "801": 2e-05,
+      "900": 2e-05,
+      "901": 4e-06,
+      "1000": 4e-06
+    },
+    "formal": {
+      "1": 0.0001,
+      "8000": 0.0001,
+      "8001": 2e-05,
+      "9000": 2e-05,
+      "9001": 4e-06,
+      "10000": 4e-06
+    }
+  },
+  "resources_at_start": {
+    "available_RAM_GiB": 2.5498199462890625,
+    "free_disk_GiB": 222.91366958618164
+  },
+  "resources_at_finish": {
+    "available_RAM_GiB": 2.442718505859375,
+    "free_disk_GiB": 216.43820571899414
+  },
+  "elapsed_seconds": 347.31200000000536,
+  "no_Torch_import": true,
+  "new_model_operations": 0,
+  "Q_E_U_image_or_label_reads": 0,
+  "training_started": false
+}

@@ -1,0 +1,64 @@
+{
+  "schema": "pretrained-segmentation-real-cpu-metrics-preparation-v1",
+  "implementation": {
+    "real_metrics_common.py": "047cd3991e47cf1e296907d4d59d002121075de551eaf0a4b8d62bfbf0f554bf",
+    "real_metrics.py": "880a9bd2bd07f7c5922b113ef52a556c0e0745becf5f722d6a61dd55c440c851",
+    "real_metrics_cli.py": "bf500ebff100f8430165b10f73c97c153164fe2e5284b1de183caaa9c4b91fff",
+    "README_real_metrics.md": "ac1fe252034bb3abd4989a54b497105da7bb55162c11ded91681543c15db9ec7"
+  },
+  "cpu_environment": {
+    "interpreter": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+    "interpreter_sha256": "137c474a645a9471ab3a369084e7cd573cd8b7ff8f81cb85363fffdf5904106c",
+    "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+    "packages": {
+      "numpy": "1.26.4",
+      "Pillow": "12.3.0",
+      "scipy": "1.16.2",
+      "scikit-learn": "1.7.2"
+    }
+  },
+  "threshold": 7.264203168233501e-06,
+  "native_pixels": 146411528,
+  "unique_images": 1004,
+  "final_step": 10000,
+  "final_weight_sha256": "f8f4f94029da49704c5d2b194c549dd24ef364a7f7d365ff6fcef9e3f373e454",
+  "rules": {
+    "GT": "fixed source hash before single decode; mode1/L; exact native shape; values subset of {0,1} OR {0,255}; nonzero->1; no resize/dilation",
+    "pixel_AP": "frozen fewshot_synthetic.metrics.exact_ap; all native pixels once; no sampling, padding or mean per-image AP",
+    "ties": "float32 exact bit-value grouping; -0 normalized to +0; frozen descending scan; native N and actual P plus independent table count/tie checks",
+    "image_AUROC": "sklearn roc_auc_score on all1004 original native maxima; only defined with both GT classes",
+    "classification": "score strictly greater than original Q threshold; TP/FN on actual anomaly, FP/TN on actual normal; equality is normal",
+    "empty": "NA/null with reason for zero denominator/no positives/single-class AUROC; never silently omit images",
+    "examples": "first ID in original ascending E order for each TP/FN/FP/TN; empty group NA; deduplicate and retain all reasons",
+    "reuse": "complete same identity read-only verification; partial/unknown/failure preserve and stop; no resume/reaccumulation/retry",
+    "resource": {
+      "start_RAM_GiB": 3,
+      "start_disk_GiB": 80,
+      "checks": "entry, each GT, each AP chunk, table-check chunks; frozen exact scan has entry gate only, not continuous monitoring"
+    }
+  },
+  "scalar_validation": {
+    "strict_greater_and_tied_group_arithmetic": true,
+    "two_table_bytes": 8522825736,
+    "table_count_uint32_capacity_sufficient": true,
+    "invented_unknown_file_and_empty_directory_rejected": true,
+    "actual_GT_decodes": 0,
+    "probability_payloads_parsed": 0,
+    "actual_AP_AUROC_counts": false
+  },
+  "probe_crosscheck": {
+    "evidence": "sealed same21 training-window AP/sklearn/actual ties; not recomputed",
+    "pixels": 1225984,
+    "positive_pixels": 24482,
+    "absolute_difference": 3.3306690738754696e-16,
+    "distinct_scores": 643077,
+    "tied_score_values": 265563
+  },
+  "resource_snapshot": {
+    "available_RAM_GiB": 5.438301086425781,
+    "free_disk_GiB": 128.0066795349121
+  },
+  "GT_class_and_positive_denominators": "unknown until explicit CPU compute decodes all GT",
+  "output": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\pretrained_segmentation\\ksdd2_r5_v1\\real_metrics_v1",
+  "scope": "E historically seen, single seed/fixed R5/split/class, unknown acquisition groups; exploratory only, no screen claim"
+}

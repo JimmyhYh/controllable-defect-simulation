@@ -1,0 +1,32 @@
+{
+  "CPU_response_statistics": false,
+  "denominators": {
+    "all_references": 7620,
+    "backgrounds": 60,
+    "baseline_references": 60,
+    "independent_background_count_not_references": 60,
+    "new_author_ones_probes": 1,
+    "new_model_input_forwards": 7303,
+    "nonzero_actual_change_requests": 7245,
+    "request_references": 7560,
+    "reused_minimal_outputs": 2,
+    "undefined_measurement_requests": 0,
+    "unique_float_RGB": 7305,
+    "zero_actual_change_requests": 315
+  },
+  "during_run_RAM_GiB": 2,
+  "free_D_GiB": 40,
+  "initial_free_GPU_GiB": 4,
+  "input": "original HWC float32 [0,1], no PNG/no extra division/no rendering",
+  "model": "PatchCore",
+  "partial_transaction": "preserve and stop, never resume/retry",
+  "resources_at_prepare": {
+    "available_RAM_GiB": 8.725845336914062,
+    "free_D_GiB": 113.50523376464844
+  },
+  "runtime": "original native.build_model/predict_rgb; eval/FP32/batch1/workers0; seed42",
+  "score_rule": "strictly greater",
+  "startup_RAM_GiB": 4.5,
+  "state_check": "full signature after every new input",
+  "tau": 1.852951288223265
+}

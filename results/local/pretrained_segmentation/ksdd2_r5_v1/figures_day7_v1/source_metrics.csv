@@ -1,0 +1,10 @@
+﻿metric,saved_value,numerator,denominator,meaning
+global_pixel_AP,0.4365305631911595,,146411528,global native pixel ranking; positive_pixels=486461
+image_AUROC,0.8571842586943258,,1004,image ranking from native maxima
+TP,81,81,110,abnormal detected
+FN,29,29,110,abnormal missed
+FP,52,52,894,normal false alarm
+TN,842,842,894,normal correct
+anomaly_recall,0.7363636363636363,81,110,fixed original threshold
+normal_false_positive_rate,0.058165548098434,52,894,fixed original threshold
+original_tau,7.264203168233501e-06,,200,original Q calibration; not recomputed

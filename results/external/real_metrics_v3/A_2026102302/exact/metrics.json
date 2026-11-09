@@ -1,0 +1,10 @@
+{
+  "AP": 0.3883696935042317,
+  "pixels": 146411528,
+  "positive_pixels": 486461,
+  "distinct_scores": 36569201,
+  "tied_score_values": 22391377,
+  "exact_float32_scores": true,
+  "histogram_bins": 1065353217,
+  "elapsed_seconds": 109.85999999998603
+}

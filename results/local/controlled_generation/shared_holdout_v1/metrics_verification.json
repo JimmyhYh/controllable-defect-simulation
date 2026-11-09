@@ -1,0 +1,233 @@
+{
+  "schema": "shared-holdout-stage4-verification-v1",
+  "metrics_complete": true,
+  "metrics_config_sha256": "b9f6716dfbbc99a546fd847e3d9aa24f44d2a66eb06db8cb7762e4a8dd12ab32",
+  "metrics_sha256": "7f13bc32d46d9cf2c286fe99aae404264e0ecff130c973451056010b00e13438",
+  "runtime_guards": {
+    "AP_calls": [
+      {
+        "pixels": 16384000,
+        "positive_pixels": 219208
+      },
+      {
+        "pixels": 8847360,
+        "positive_pixels": 157887
+      },
+      {
+        "pixels": 8847360,
+        "positive_pixels": 61321
+      },
+      {
+        "pixels": 16384000,
+        "positive_pixels": 219208
+      },
+      {
+        "pixels": 8847360,
+        "positive_pixels": 157887
+      },
+      {
+        "pixels": 8847360,
+        "positive_pixels": 61321
+      },
+      {
+        "pixels": 16384000,
+        "positive_pixels": 219208
+      },
+      {
+        "pixels": 8847360,
+        "positive_pixels": 157887
+      },
+      {
+        "pixels": 8847360,
+        "positive_pixels": 61321
+      },
+      {
+        "pixels": 16384000,
+        "positive_pixels": 219208
+      },
+      {
+        "pixels": 8847360,
+        "positive_pixels": 157887
+      },
+      {
+        "pixels": 8847360,
+        "positive_pixels": 61321
+      }
+    ],
+    "model_forwards": 0,
+    "Torch_import_attempts": 0,
+    "source_decodes": 0,
+    "renders": 0,
+    "forbidden_attempts": []
+  },
+  "Torch_loaded": false,
+  "cache_verification_passed": true,
+  "cache_verification_new_AP_calls": 0,
+  "cache_verification_seconds": 25.87184889999844,
+  "total_command_seconds": 97.13575270000001,
+  "process_peak_working_set_MiB": 765.7421875,
+  "process_peak_pagefile_usage_MiB": 2246.43359375,
+  "peak_memory_scope": "entire CPU command including preflight,sort and verification; not GPU",
+  "review": {
+    "fresh_source_review": true,
+    "important_fix": "Reject unknown metrics namespace artifacts and foreign owner before run/verify and inside own lock",
+    "deferred_minor": "Incomplete CPU transaction checks occur after expensive input audit; run entry cache reuse repeats audit. No numerical effect."
+  },
+  "rulings": [
+    "Same20 normal cache reused in all groups; no added independent normals",
+    "Reuse metrics only for identical ordered anomaly IDs within same model; paired current set equals main set",
+    "No automatic overwrite/restart of incomplete metric transaction"
+  ],
+  "independent_real_validation": "pending; not read",
+  "figure_sample_selection": [
+    {
+      "id": "s00_t00_bright_a04",
+      "reasons": [
+        "a04/mura_like/bright首有效",
+        "G0/a04首异常FN"
+      ],
+      "input_npz": "generation/anomalies/s00_t00_bright_a04.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0020.npy",
+        "G1": "scoring/G1/probabilities/0020.npy"
+      }
+    },
+    {
+      "id": "s00_t00_dark_a04",
+      "reasons": [
+        "a04/mura_like/dark首有效"
+      ],
+      "input_npz": "generation/anomalies/s00_t00_dark_a04.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0022.npy",
+        "G1": "scoring/G1/probabilities/0022.npy"
+      }
+    },
+    {
+      "id": "s00_t03_bright_a04",
+      "reasons": [
+        "a04/line_like/bright首有效"
+      ],
+      "input_npz": "generation/anomalies/s00_t03_bright_a04.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0032.npy",
+        "G1": "scoring/G1/probabilities/0032.npy"
+      }
+    },
+    {
+      "id": "s00_t03_dark_a04",
+      "reasons": [
+        "a04/line_like/dark首有效"
+      ],
+      "input_npz": "generation/anomalies/s00_t03_dark_a04.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0034.npy",
+        "G1": "scoring/G1/probabilities/0034.npy"
+      }
+    },
+    {
+      "id": "s00_t00_bright_a02",
+      "reasons": [
+        "a02/mura_like/bright首有效",
+        "G0/a02首异常FN"
+      ],
+      "input_npz": "generation/anomalies/s00_t00_bright_a02.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0021.npy",
+        "G1": "scoring/G1/probabilities/0021.npy"
+      }
+    },
+    {
+      "id": "s00_t00_dark_a02",
+      "reasons": [
+        "a02/mura_like/dark首有效"
+      ],
+      "input_npz": "generation/anomalies/s00_t00_dark_a02.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0023.npy",
+        "G1": "scoring/G1/probabilities/0023.npy"
+      }
+    },
+    {
+      "id": "s00_t03_bright_a02",
+      "reasons": [
+        "a02/line_like/bright首有效"
+      ],
+      "input_npz": "generation/anomalies/s00_t03_bright_a02.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0033.npy",
+        "G1": "scoring/G1/probabilities/0033.npy"
+      }
+    },
+    {
+      "id": "s00_t03_dark_a02",
+      "reasons": [
+        "a02/line_like/dark首有效"
+      ],
+      "input_npz": "generation/anomalies/s00_t03_dark_a02.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0035.npy",
+        "G1": "scoring/G1/probabilities/0035.npy"
+      }
+    },
+    {
+      "id": "s16_normal",
+      "reasons": [
+        "G0/a04首正常FP",
+        "G0/a02首正常FP"
+      ],
+      "input_npz": "generation/backgrounds/s16_normal.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0016.npy",
+        "G1": "scoring/G1/probabilities/0016.npy"
+      }
+    },
+    {
+      "id": "s17_normal",
+      "reasons": [
+        "G1/a04首正常FP",
+        "G1/a02首正常FP"
+      ],
+      "input_npz": "generation/backgrounds/s17_normal.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0017.npy",
+        "G1": "scoring/G1/probabilities/0017.npy"
+      }
+    },
+    {
+      "id": "s09_t00_dark_a04",
+      "reasons": [
+        "G1/a04首异常FN"
+      ],
+      "input_npz": "generation/anomalies/s09_t00_dark_a04.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0238.npy",
+        "G1": "scoring/G1/probabilities/0238.npy"
+      }
+    },
+    {
+      "id": "s07_t00_dark_a02",
+      "reasons": [
+        "G1/a02首异常FN"
+      ],
+      "input_npz": "generation/anomalies/s07_t00_dark_a02.npz",
+      "probability_files": {
+        "G0": "scoring/G0/probabilities/0191.npy",
+        "G1": "scoring/G1/probabilities/0191.npy"
+      }
+    }
+  ],
+  "figure_sample_selection_count": 12,
+  "independent_image_count_and_subgroup_sum_audit": true,
+  "exact_pair_metrics_equal_main_set_verified": true,
+  "final_report_sha256": "efba41798e779f7f6122d29b7ef6f45a2ef3ed4d40960eb4f92ce8f39e73f667",
+  "fresh_final_readonly_verification": {
+    "passed": true,
+    "Torch_loaded": false,
+    "new_AP_or_AUROC_calls": 0,
+    "new_model_forwards": 0,
+    "new_render": 0,
+    "frozen_identities_unchanged": true,
+    "forbidden_attempts": []
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "commit": "420ce84b0c2df0286fa9bb2bd1499eea625c9b33",
+  "tree": "2d28cabe067bfacbb40879e98a1f4459ddc3cb6d",
+  "files": {
+    "upstream/github_tag.json": {
+      "url": "https://api.github.com/repos/qubvel-org/segmentation_models.pytorch/git/ref/tags/v0.5.0",
+      "bytes": 385,
+      "sha256": "c0363700d51e93c1afe3ea74f0d2eb054d7089a2cd7e18b437c66ba48f487029"
+    },
+    "upstream/github_commit.json": {
+      "url": "https://api.github.com/repos/qubvel-org/segmentation_models.pytorch/git/commits/420ce84b0c2df0286fa9bb2bd1499eea625c9b33",
+      "bytes": 2267,
+      "sha256": "42ed8979f2c39f64c962d86b26ca5d00122816f92382c0c347071b0b60bbb9b2"
+    },
+    "upstream/github_tree.json": {
+      "url": "https://api.github.com/repos/qubvel-org/segmentation_models.pytorch/git/trees/2d28cabe067bfacbb40879e98a1f4459ddc3cb6d?recursive=1",
+      "bytes": 55456,
+      "sha256": "396d754122e897960bf23c7dd8c14eb063e20aadb50f33c3aa64795eb4582a07"
+    },
+    "upstream/hf_model.json": {
+      "url": "https://huggingface.co/api/models/smp-hub/resnet18.imagenet/revision/3f2325ff978283d47aa6a1d6878ca20565622683?blobs=true",
+      "bytes": 1390,
+      "sha256": "359e92aeeea25179ab3d9f4ced897e68f1daa7ba8dede06da22bd1935c903b32"
+    },
+    "upstream/resnet18-README.md": {
+      "url": "https://huggingface.co/smp-hub/resnet18.imagenet/raw/3f2325ff978283d47aa6a1d6878ca20565622683/README.md",
+      "bytes": 890,
+      "sha256": "60276be550d0a58230146fcda2c4832f21f5742e8cbd08bccb2acb875b4ea4de"
+    },
+    "upstream/resnet18-config.json": {
+      "url": "https://huggingface.co/smp-hub/resnet18.imagenet/raw/3f2325ff978283d47aa6a1d6878ca20565622683/config.json",
+      "bytes": 156,
+      "sha256": "01bf2cf24eb29b405c28c159f46ceda92c098ab85868be88fb100967db47166e"
+    },
+    "upstream/smp_pypi.json": {
+      "url": "https://pypi.org/pypi/segmentation-models-pytorch/0.5.0/json",
+      "bytes": 20246,
+      "sha256": "1519e8bdc09079b1d5bcd7c5ac2f114bca4f595020bb1b1bde05907092f48f3f"
+    },
+    "upstream/timm_pypi.json": {
+      "url": "https://pypi.org/pypi/timm/1.0.20/json",
+      "bytes": 64413,
+      "sha256": "b6e4c4038e6e0664b234252f9815a2e7d012802247e3071e73dade9c7edca4ce"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/LICENSE",
+      "bytes": 1079,
+      "sha256": "a9acb108113b9d7582a69a7cbeadef1ff6042bb93cd4890eae2c970727be538c"
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/README.md",
+      "bytes": 15200,
+      "sha256": "54759b593432a10cf6c9ab98a321c0768ed48c1a4785ff2c552a39dc84a1ac8d"
+    },
+    "pyproject.toml": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/pyproject.toml",
+      "bytes": 1641,
+      "sha256": "a9eb7fa1d5af21da1410d3190fcdcd8f2efa591e0dfd8742cb1aa25dccd3490d"
+    },
+    "segmentation_models_pytorch/__init__.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/__init__.py",
+      "bytes": 2117,
+      "sha256": "622b944ad2fab4f89e53fb84458eaa68327b41caa6140f906b19258a86f4da92"
+    },
+    "segmentation_models_pytorch/__version__.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/__version__.py",
+      "bytes": 22,
+      "sha256": "2c12b8ea17aeb6f9f72a6b02aca218bbc4508a46df9e365a8f6c45ad769e0b34"
+    },
+    "segmentation_models_pytorch/base/__init__.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/base/__init__.py",
+      "bytes": 263,
+      "sha256": "d389af39cc1e82258889c2eff1dec1237d9dfeeacbf68b98cb9075cf14775165"
+    },
+    "segmentation_models_pytorch/base/heads.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/base/heads.py",
+      "bytes": 1282,
+      "sha256": "f64fb739a97278118caf4f680171493977414108b4de8b3e99ca5331a8d54cf7"
+    },
+    "segmentation_models_pytorch/base/hub_mixin.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/base/hub_mixin.py",
+      "bytes": 4815,
+      "sha256": "dad10cb5e999e42334d1c3efb7e02c11044836b201c950a1121fee8711e188f2"
+    },
+    "segmentation_models_pytorch/base/initialization.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/base/initialization.py",
+      "bytes": 891,
+      "sha256": "02276b436676b13b57b69c0cea63b9f005bd904c32877855825f0082cc74e8e6"
+    },
+    "segmentation_models_pytorch/base/model.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/base/model.py",
+      "bytes": 5110,
+      "sha256": "0bb580275f87bd3691a6eb68eb29db7fd7bbf6e74c2e350b9164b1d387493c41"
+    },
+    "segmentation_models_pytorch/base/modules.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/base/modules.py",
+      "bytes": 6221,
+      "sha256": "2bb4ab52ba162bf96b6c07e50e0d86c9e3c7b0eea585cc444c77dd243cecea11"
+    },
+    "segmentation_models_pytorch/base/utils.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/base/utils.py",
+      "bytes": 298,
+      "sha256": "308d76faa16daecdecd80af2abdbfa1b4f954aa8303f0e74b58fde9e1b9c4028"
+    },
+    "segmentation_models_pytorch/decoders/unet/__init__.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/decoders/unet/__init__.py",
+      "bytes": 44,
+      "sha256": "878db8dd3203b05e6b16317a6c44faed071a129d0b0d1ee0828baff71321cd9f"
+    },
+    "segmentation_models_pytorch/decoders/unet/decoder.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/decoders/unet/decoder.py",
+      "bytes": 5699,
+      "sha256": "02d75d28d371e8cf471b37826808e36fe09c4c78f4174c6a987946b4a49663c7"
+    },
+    "segmentation_models_pytorch/decoders/unet/model.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/decoders/unet/model.py",
+      "bytes": 7413,
+      "sha256": "a9a8e5f24725f86da8f4a09902aee0cf67f3349aa32e1e32c49ecc8f3856ba33"
+    },
+    "segmentation_models_pytorch/encoders/__init__.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/encoders/__init__.py",
+      "bytes": 7002,
+      "sha256": "a45880f7e0f47a3b052e39aeb48d0a4f4e57f3146e89117ee9e57ab76c86ca52"
+    },
+    "segmentation_models_pytorch/encoders/_base.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/encoders/_base.py",
+      "bytes": 1981,
+      "sha256": "be035ccbeb2559b580de37aaa0ac4be99973142ecd59acf00c25cc9a557dbed0"
+    },
+    "segmentation_models_pytorch/encoders/_preprocessing.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/encoders/_preprocessing.py",
+      "bytes": 452,
+      "sha256": "6417d9fb742d8edb1f88021268d49676a827548363208e51bb974020c4af8feb"
+    },
+    "segmentation_models_pytorch/encoders/_utils.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/encoders/_utils.py",
+      "bytes": 1924,
+      "sha256": "e1b6d30321dfbe5ad2eb03667186fa30f0e6393b1b33cbe823caab9aaf94ee9b"
+    },
+    "segmentation_models_pytorch/encoders/resnet.py": {
+      "url": "https://raw.githubusercontent.com/qubvel-org/segmentation_models.pytorch/420ce84b0c2df0286fa9bb2bd1499eea625c9b33/segmentation_models_pytorch/encoders/resnet.py",
+      "bytes": 10361,
+      "sha256": "a70cfc5a8840656aef485b557adc2eb23905cbc16ebafe8e16d967fb6fcbadc0"
+    },
+    "upstream/torchvision-v0.23.0-LICENSE.txt": {
+      "source_local": "vendor/SuperSimpleNet_98ab4d5/provenance/torchvision-v0.23.0-LICENSE.txt",
+      "bytes": 1517,
+      "sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d"
+    },
+    "upstream/torchvision-v0.23.0-README.md": {
+      "source_local": "vendor/SuperSimpleNet_98ab4d5/provenance/torchvision-v0.23.0-README.md",
+      "bytes": 5579,
+      "sha256": "0a44075ed6a86d948c11cff399f071cd57acf9b6b82ceab1eb0102a4ed720629"
+    }
+  },
+  "network_payload_bytes": 219018,
+  "weights_packages_datasets_downloaded": 0
+}

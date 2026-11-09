@@ -1,0 +1,101 @@
+{
+  "source_training_result_sha256": "a58e5e60443f64f36da4a22df5a1274a5011cf057285f334e61e4ae6cda09568",
+  "train_log_blocks": [
+    {
+      "step_first": 761,
+      "step_last": 800,
+      "mean_training_loss": 0.1298428618349135,
+      "max_training_loss": 0.441507488489151,
+      "max_abs_gradient": 0.7283753156661987
+    },
+    {
+      "step_first": 801,
+      "step_last": 840,
+      "mean_training_loss": 0.11624421298038215,
+      "max_training_loss": 0.4104516804218292,
+      "max_abs_gradient": 5.037763595581055
+    },
+    {
+      "step_first": 841,
+      "step_last": 880,
+      "mean_training_loss": 0.11166072881314903,
+      "max_training_loss": 0.37556302547454834,
+      "max_abs_gradient": 1.0236186981201172
+    },
+    {
+      "step_first": 881,
+      "step_last": 920,
+      "mean_training_loss": 0.11907302446197718,
+      "max_training_loss": 0.4135315716266632,
+      "max_abs_gradient": 4.748160362243652
+    },
+    {
+      "step_first": 921,
+      "step_last": 960,
+      "mean_training_loss": 0.11981304835062474,
+      "max_training_loss": 0.577621340751648,
+      "max_abs_gradient": 1.674342155456543
+    },
+    {
+      "step_first": 961,
+      "step_last": 1000,
+      "mean_training_loss": 0.3312643194105476,
+      "max_training_loss": 1.00814688205719,
+      "max_abs_gradient": 2.5568430423736572
+    }
+  ],
+  "largest_gradient_steps": [
+    {
+      "step": 472,
+      "max_abs_gradient": 5.822972297668457,
+      "loss": 0.23365318775177002
+    },
+    {
+      "step": 823,
+      "max_abs_gradient": 5.037763595581055,
+      "loss": 0.3861924707889557
+    },
+    {
+      "step": 67,
+      "max_abs_gradient": 4.946347713470459,
+      "loss": 0.22069424390792847
+    },
+    {
+      "step": 888,
+      "max_abs_gradient": 4.748160362243652,
+      "loss": 0.31438323855400085
+    },
+    {
+      "step": 887,
+      "max_abs_gradient": 3.8700265884399414,
+      "loss": 0.4135315716266632
+    },
+    {
+      "step": 424,
+      "max_abs_gradient": 3.724529504776001,
+      "loss": 0.2817694842815399
+    },
+    {
+      "step": 155,
+      "max_abs_gradient": 3.4147932529449463,
+      "loss": 0.1288239061832428
+    },
+    {
+      "step": 759,
+      "max_abs_gradient": 3.3170905113220215,
+      "loss": 0.43446606397628784
+    },
+    {
+      "step": 109,
+      "max_abs_gradient": 3.000561237335205,
+      "loss": 0.11912377178668976
+    },
+    {
+      "step": 995,
+      "max_abs_gradient": 2.5568430423736572,
+      "loss": 0.31172844767570496
+    }
+  ],
+  "blocks_do_not_identify_exact_collapse_step": true,
+  "not_gradient_attribution_or_optimizer_step_size": true
+}

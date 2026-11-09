@@ -1,0 +1,26 @@
+{
+  "schema": "ssn-cls-bn-sensitivity-summary-v1",
+  "run_identity_sha256": "7c222a1d11a95c00aa92c22687b6665def32058ea92f35cb6ab53b448a360f65",
+  "run_seal_sha256": "f95ee953cb0b7bacd674ef26a907c709c417bf4d39d018315ac3a7dd34263d2b",
+  "row_label": "A",
+  "row_rule": "flips>0→A; flips=0且max|Δlogit|>1e-6→B; 否则C",
+  "decision_flips": 4,
+  "num_images": 21,
+  "num_exact_zero_delta": 0,
+  "max_abs_delta_logit": 0.3453122675418854,
+  "margin_old": 1.0981842875480652,
+  "margin_new": 1.5253045856952667,
+  "margin_delta": 0.42712029814720154,
+  "fp_old": 10,
+  "fp_new": 8,
+  "boundary_ids": [
+    "12245",
+    "12025"
+  ],
+  "boundary_deltas": {
+    "12245": 0.26506638526916504,
+    "12025": -0.3453122675418854
+  },
+  "gate_unchanged": false,
+  "note": "训练同池描述量；不含AP／AUROC／阈值搜索；Δ含两臂核算术差异；不证明BN错误或泛化"
+}

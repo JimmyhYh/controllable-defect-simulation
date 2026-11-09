@@ -1,0 +1,272 @@
+{
+  "binding": {
+    "score_complete_sha256": "17a35cf7e738cb2c8867efa84b098edd1ec00ea4bcd98f9fcb975c9e3ea17dbe",
+    "pilot_complete_sha256": "7f9143903cfed48ad1e6148928c69f70f83ddda35a6274a0fdf3d55de5dd6e62",
+    "exact_AP_source_sha256": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+    "implementation": {
+      "common.py": "5ad6354054764d0ac6508a1db7483f9e0f628df83eca255f41d4851ada2d48f5",
+      "data.py": "9a005ce88c3dcee6b8b3195b45caf699f2804803b35aa831bd6272f68024bed7",
+      "preparation.py": "398828aa27ea5bb66418dd703b34bc04b5e04f9dde5fb403daf9165d9db3b52d",
+      "model.py": "818e1b9f85f3b7926f82a58efb26616b4a17611de49c5a73a633a37cfbdb2da5",
+      "training.py": "78f8fcec4ae7e6d6d13d4c77f82d8d0d0ed0f836fd21fbf47540760530bc8ccc",
+      "scoring.py": "145b0c4ad04c6ad3d447a63b953866f11fdf19934a109a1a3acca656c8678465",
+      "metrics.py": "8ee695cb4c2aee73d4119f0e73982e8a61e3528113c2d645c744f17ff806d07e",
+      "cli.py": "cc19f2bd3bf9504fe7ae4ecf94d78abfeb6234251a363ac94f36088efc0bc535",
+      "README_pilot.md": "4e6f539f6308a023de2069ef3a7e51c957c493b3eb663b450f1802264c1904ca"
+    }
+  },
+  "step": 2000,
+  "global_AP": 0.9999696542452947,
+  "sklearn_global_AP": 0.999969654245295,
+  "absolute_difference": 3.3306690738754696e-16,
+  "valid_pixels": 1225984,
+  "positive_pixels": 24482,
+  "unique_images_and_windows": 21,
+  "R_windows": 5,
+  "normal_windows": 16,
+  "all_items": [
+    {
+      "id": "11670",
+      "kind": "real",
+      "valid_pixels": 58112,
+      "positive_pixels": 5416,
+      "AP": 0.9999529778976478,
+      "mean_probability": 0.09306877106428146,
+      "max_probability": 1.0,
+      "fraction_pixels_strict_gt_0_5": 0.09335421255506608,
+      "nonconstant": true
+    },
+    {
+      "id": "11884",
+      "kind": "real",
+      "valid_pixels": 59136,
+      "positive_pixels": 1480,
+      "AP": 0.9998816588402815,
+      "mean_probability": 0.025042742490768433,
+      "max_probability": 1.0,
+      "fraction_pixels_strict_gt_0_5": 0.025060876623376624,
+      "nonconstant": true
+    },
+    {
+      "id": "12070",
+      "kind": "real",
+      "valid_pixels": 58880,
+      "positive_pixels": 964,
+      "AP": 0.9999232468110705,
+      "mean_probability": 0.016349799931049347,
+      "max_probability": 1.0,
+      "fraction_pixels_strict_gt_0_5": 0.01632133152173913,
+      "nonconstant": true
+    },
+    {
+      "id": "12245",
+      "kind": "real",
+      "valid_pixels": 58880,
+      "positive_pixels": 3570,
+      "AP": 0.9999701588599728,
+      "mean_probability": 0.06060640513896942,
+      "max_probability": 1.0,
+      "fraction_pixels_strict_gt_0_5": 0.060648777173913045,
+      "nonconstant": true
+    },
+    {
+      "id": "12303",
+      "kind": "real",
+      "valid_pixels": 59392,
+      "positive_pixels": 13052,
+      "AP": 0.9999868410873244,
+      "mean_probability": 0.2189866453409195,
+      "max_probability": 0.9999916553497314,
+      "fraction_pixels_strict_gt_0_5": 0.21979391163793102,
+      "nonconstant": true
+    },
+    {
+      "id": "10056",
+      "kind": "normal",
+      "valid_pixels": 58880,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 6.023455625836505e-06,
+      "max_probability": 0.000610576884355396,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "10149",
+      "kind": "normal",
+      "valid_pixels": 58368,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 5.6475009841960855e-06,
+      "max_probability": 0.0006656351615674794,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "10326",
+      "kind": "normal",
+      "valid_pixels": 58880,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 6.026314167684177e-06,
+      "max_probability": 0.0007670788909308612,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "10425",
+      "kind": "normal",
+      "valid_pixels": 58112,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 5.635640263790265e-06,
+      "max_probability": 0.0005710619734600186,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "10468",
+      "kind": "normal",
+      "valid_pixels": 59648,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 6.784498054912547e-06,
+      "max_probability": 0.0006297292420640588,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "10481",
+      "kind": "normal",
+      "valid_pixels": 59392,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 6.497140475403285e-06,
+      "max_probability": 0.0006419463315978646,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "10538",
+      "kind": "normal",
+      "valid_pixels": 59904,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 7.204918347269995e-06,
+      "max_probability": 0.0006399024277925491,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "10548",
+      "kind": "normal",
+      "valid_pixels": 58880,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 6.045305781299248e-06,
+      "max_probability": 0.0006273892940953374,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "10842",
+      "kind": "normal",
+      "valid_pixels": 57088,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 5.330610747478204e-06,
+      "max_probability": 0.0008855432970449328,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "10880",
+      "kind": "normal",
+      "valid_pixels": 57600,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 5.5069544941943604e-06,
+      "max_probability": 0.0006681513041257858,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "11145",
+      "kind": "normal",
+      "valid_pixels": 58112,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 5.715976840292569e-06,
+      "max_probability": 0.0007354210829362273,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "11311",
+      "kind": "normal",
+      "valid_pixels": 59648,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 6.755333743058145e-06,
+      "max_probability": 0.0005532724899239838,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "12024",
+      "kind": "normal",
+      "valid_pixels": 57600,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 5.570305802393705e-06,
+      "max_probability": 0.0006754313944838941,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "12025",
+      "kind": "normal",
+      "valid_pixels": 52480,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 5.450728167488705e-06,
+      "max_probability": 0.000665379804559052,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "12126",
+      "kind": "normal",
+      "valid_pixels": 58880,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 5.981078629702097e-06,
+      "max_probability": 0.0006136429728940129,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    },
+    {
+      "id": "12206",
+      "kind": "normal",
+      "valid_pixels": 58112,
+      "positive_pixels": 0,
+      "AP": null,
+      "mean_probability": 5.618634077109164e-06,
+      "max_probability": 0.0006555204163305461,
+      "fraction_pixels_strict_gt_0_5": 0.0,
+      "nonconstant": true
+    }
+  ],
+  "normal_AP": null,
+  "normal_AP_reason": "no positive GT; NA",
+  "classification_threshold_gate": false,
+  "gate_checks": {
+    "global_AP_at_least_0_95": true,
+    "each_R_window_AP_at_least_0_85": true,
+    "each_R_probability_nonconstant": true,
+    "finite_training": true,
+    "scoring_state_buffers_unchanged": true
+  },
+  "gate_passed": true,
+  "meaning": "same21 training windows fitting only; no Q/E/U, independent validation or screen effect"
+}

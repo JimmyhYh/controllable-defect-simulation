@@ -1,0 +1,21 @@
+{
+  "H_alarm": "native score strictly greater than original tau",
+  "H_joint": "H_alarm and first C-flat global heatmap peak in fixed M_geo",
+  "all_groups": "original 9 geometry x bright/dark x 7 amplitudes; all background and residual groups",
+  "all_references": 7620,
+  "baseline_views": 540,
+  "baselines": 60,
+  "fixed_masks": 9,
+  "no_fit_or_model_or_recalibration": true,
+  "nonzero_requests": 7245,
+  "pairing": "score(I)-score(B); max(heat(I)[M_geo])-max(heat(B)[M_geo])",
+  "read_only_heatmaps": 7305,
+  "requests": 7560,
+  "resources_at_prepare": {
+    "D_free_GiB": 111.64657974243164,
+    "available_RAM_GiB": 7.076606750488281
+  },
+  "tau": 1.852951288223265,
+  "weak_nonzero": 2070,
+  "zero_requests": 315
+}

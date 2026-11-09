@@ -1,0 +1,228 @@
+{
+  "schema": "ssn-cls-bn-sensitivity-protocol-v1",
+  "status": "FROZEN_FOR_STAGE3_ONLY; stage3 requires separate stage1b authorization",
+  "single_variable": {
+    "target_module": "model.discriminator.dec_head[1]",
+    "module_type": "nn.BatchNorm2d",
+    "channels": 128,
+    "affine": true,
+    "eps": 1e-05,
+    "baseline_behavior": "eval 使用 running_mean/running_var",
+    "intervention": "作用域内以 F.batch_norm(x, None, None, weight, bias, training=True, momentum=0.0, eps) 替换 forward",
+    "variance_convention": "biased (1/N), N=9280 = 1*160*58",
+    "forbidden": [
+      "置 track_running_stats=False（eval下静默无操作）",
+      "把 running_mean/running_var 置 None（写缓冲）",
+      "改动 seg BN 或骨干 BN",
+      "改损失/LR/步数/标签/阈值"
+    ]
+  },
+  "inputs": {
+    "order": [
+      [
+        "R5",
+        "11670"
+      ],
+      [
+        "R5",
+        "11884"
+      ],
+      [
+        "R5",
+        "12070"
+      ],
+      [
+        "R5",
+        "12245"
+      ],
+      [
+        "R5",
+        "12303"
+      ],
+      [
+        "N16",
+        "10056"
+      ],
+      [
+        "N16",
+        "10149"
+      ],
+      [
+        "N16",
+        "10326"
+      ],
+      [
+        "N16",
+        "10425"
+      ],
+      [
+        "N16",
+        "10468"
+      ],
+      [
+        "N16",
+        "10481"
+      ],
+      [
+        "N16",
+        "10538"
+      ],
+      [
+        "N16",
+        "10548"
+      ],
+      [
+        "N16",
+        "10842"
+      ],
+      [
+        "N16",
+        "10880"
+      ],
+      [
+        "N16",
+        "11145"
+      ],
+      [
+        "N16",
+        "11311"
+      ],
+      [
+        "N16",
+        "12024"
+      ],
+      [
+        "N16",
+        "12025"
+      ],
+      [
+        "N16",
+        "12126"
+      ],
+      [
+        "N16",
+        "12206"
+      ]
+    ],
+    "count": 21,
+    "per_image_once": true,
+    "reader": "pilot_dtype_compat.cached_inputs(training=False) 仅 image 键",
+    "gt_read": false,
+    "qe_u_read": false
+  },
+  "baseline_cache": {
+    "scores_json": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\ssn_baseline\\ksdd2_r5_v1\\pilot_dtype_compat_v1\\initial\\scores\\scores.json",
+    "npz_dir": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\ssn_baseline\\ksdd2_r5_v1\\pilot_dtype_compat_v1\\initial\\scores",
+    "npz_keys": [
+      "feature_probability",
+      "native_probability"
+    ],
+    "identity": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\ssn_baseline\\ksdd2_r5_v1\\pilot_dtype_compat_v1\\initial\\scores\\identity.json"
+  },
+  "controls": {
+    "seg_unchanged": {
+      "field": "feature_probability",
+      "atol": 1e-06,
+      "rtol": 1e-05,
+      "rule": "21/21 全通过；任一失败即停止，不得只报通过图"
+    },
+    "state_identity": {
+      "expected_state_sha256": "1513a3df1435c7d02543c716b85ef4db0c2228b52e04e1d5dc93e852184c3337",
+      "expected_weight_sha256": "b8db0216a40206a18c23e5b572badc0b27f23ec24e1be7f09de6150b5a3f06e3",
+      "rule": "评分前后一致且原forward已恢复"
+    },
+    "patch_effect": {
+      "patch_invocations": 21,
+      "patch_restorations": 21,
+      "stat_delta_min": 1e-06,
+      "rule": "先判有限再判阈值；计数与统计差异不可互替"
+    }
+  },
+  "judgement": {
+    "row_selection": [
+      "控制失败→停止",
+      "3.4断言失败→作废",
+      "按决策翻转张数选行"
+    ],
+    "numeric_floor": 1e-06,
+    "floor_caveat": "两臂分别走BN训练核与eval核，Δ含不可分离核算术差异；地板仅为描述约定",
+    "rows": {
+      "A": "翻转≥1 → 决策层面条件敏感性",
+      "B": "翻转=0 且 Δ>1e-6 → 数值有差、决策不变",
+      "C": "翻转=0 且 Δ≤1e-6 → 统计与决策均无实质变化"
+    },
+    "boundary_margin_baseline": 1.098185,
+    "boundary_ids": [
+      "12245",
+      "12025"
+    ],
+    "gate_unchanged": false
+  },
+  "resources": {
+    "start_RAM_GiB": 6,
+    "start_free_VRAM_GiB": 6,
+    "start_disk_GiB": 80,
+    "running_RAM_GiB": 3,
+    "precision": "FP32",
+    "batch": 1,
+    "workers": 0
+  },
+  "hashes": {
+    "protocol": "edf27348fe1ad487fb456e0b73f58a7e524f54a29d440dcec9265e90a62f7ddc",
+    "final_weights": "b8db0216a40206a18c23e5b572badc0b27f23ec24e1be7f09de6150b5a3f06e3",
+    "state": "1513a3df1435c7d02543c716b85ef4db0c2228b52e04e1d5dc93e852184c3337",
+    "backbone": "95faca4d11227dddf8633dbb5ff6c8a9003c1aa5b8945c73834b8007b10950b8"
+  },
+  "frozen_utc": "2026-10-21T09:08:18.920480+00:00",
+  "source_bindings": {
+    "source_protocol_sha256": "edf27348fe1ad487fb456e0b73f58a7e524f54a29d440dcec9265e90a62f7ddc",
+    "final_weights_sha256": "b8db0216a40206a18c23e5b572badc0b27f23ec24e1be7f09de6150b5a3f06e3",
+    "backbone_sha256": "95faca4d11227dddf8633dbb5ff6c8a9003c1aa5b8945c73834b8007b10950b8",
+    "backbone_bytes": 138223492,
+    "recorded_state_sha256": "1513a3df1435c7d02543c716b85ef4db0c2228b52e04e1d5dc93e852184c3337",
+    "implementation_sha256": {
+      "ssn_baseline/core_v1_dtype_compat/__init__.py": "d45e142d3bbcfc04aec7ad495aa38612c1ef528344b15f46175f10ae5ca892e2",
+      "ssn_baseline/core_v1_dtype_compat/feature_extractor.py": "4affa4b13df7b22e04298e764dd2ca5347f85c222b2a7926bfbb3ff8bb43fb7b",
+      "ssn_baseline/core_v1_dtype_compat/loss.py": "97b649b1fd3d5f68b32ba7f23ab514b4b5a7963df31ea7ab43a36eaf0ad6c586",
+      "ssn_baseline/core_v1_dtype_compat/perlin_noise.py": "529e1fde5a6d5d46e81eab59d3648d50473f7ebbe03bdbaf9e35470c72d3e7d2",
+      "ssn_baseline/core_v1_dtype_compat/supersimplenet.py": "1b7910eb5236aef9b2f2e28367f7bb700cd5de7d1bc08200a44f6d85072eb565",
+      "ssn_baseline/model_dtype_compat.py": "008220662eab5b16e4d894e221333dd93ba08a8e83f5107e17b87d4931e32c46",
+      "ssn_baseline/pilot_dtype_compat.py": "60b20462df6d8ea3fa488729b29d99d93757c50eefa6a77807b1de76440e06ad",
+      "ssn_baseline/pilot_dtype_metrics.py": "f363cc5e21d818d50c53348b4146e599b4840d7e8dd3b39df602b8340f29c911",
+      "ssn_baseline/pilot_dtype_preparation.py": "46f8276f09bb52b01bef750e5cd021fd973841690f064da2abc5b45c55bc9c27",
+      "ssn_baseline/cls_bn_sensitivity.py": "83759fee386e6d860d5cadaea2dfa37d5311594e466fa62544682c634e95e6fa"
+    },
+    "baseline_scores_json_sha256": "e631cf4fe5b6a68729f62507e7c5b0f0d4e79ebeaa7ca0588d7ec32386642e89",
+    "baseline_identity_sha256": "ed3475f3bec6dd67896b3d05d759794f5097ba1bb3b41fc680a21906ad467c41",
+    "stage1_source_review_sha256": "a78b3d15e32481f78d1f0db234dcefdd2d63f267627cc6e2f7becd80c7f230c9"
+  },
+  "paths": {
+    "run": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\ssn_baseline\\ksdd2_r5_v1\\pilot_cls_bn_sensitivity_v1",
+    "baseline_run": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\ssn_baseline\\ksdd2_r5_v1\\pilot_dtype_compat_v1\\initial",
+    "weights": "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\ssn_baseline\\ksdd2_r5_v1\\pilot_dtype_compat_v1\\initial\\final_weights.pt",
+    "backbone": "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\checkpoints\\wide_resnet50_2-95faca4d.pth",
+    "input_cache": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\ssn_baseline\\ksdd2_r5_v1\\input_preparation_v1",
+    "frozen": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\ssn_baseline\\ksdd2_r5_v1\\pilot_cls_bn_sensitivity_preparation_v1\\frozen_v2"
+  },
+  "numeric_contract": {
+    "control_atol": 1e-06,
+    "control_rtol": 1e-05,
+    "stat_delta_min": 1e-06,
+    "numeric_floor": 1e-06,
+    "bn_channels": 128,
+    "bn_input_shape": [
+      1,
+      128,
+      160,
+      58
+    ],
+    "statistic_positions": 9280,
+    "variance": "biased 1/(N*H*W); N*H*W=9280",
+    "expected_forwards": 21
+  },
+  "static_review": {
+    "all_pass": true,
+    "checks": 7,
+    "self_sha256": "83759fee386e6d860d5cadaea2dfa37d5311594e466fa62544682c634e95e6fa"
+  }
+}

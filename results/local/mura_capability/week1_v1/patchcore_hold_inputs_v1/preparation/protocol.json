@@ -1,0 +1,42 @@
+{
+  "CPU_RAM_GiB": 2,
+  "D": "max(abs(I-B),axis=RGB) float32",
+  "D_free_GiB": 40,
+  "M_eff": "D>float32(1/255), diagnostic only",
+  "backgrounds": 60,
+  "baseline_plus_request_references": 7620,
+  "cache": "closed full hash/semantic verify; partial/unknown/failure stop; no resume/retry",
+  "comparison_pool": {
+    "D_fit": 60,
+    "Q_F": 300,
+    "old_training": 160
+  },
+  "coverage_definition": "at least one of nine fixed geometries has Lb>1e-6",
+  "fit_complete_sha256": "983524aab83fd1b99c641f103bf50adf6d93efe2c543a2883ab3c04bf534c649",
+  "float_input": "RGB float32 PIL bilinear256 / float32(255); no later rescale or PNG roundtrip",
+  "frozen_model_ids": [
+    "C-only",
+    "C+area",
+    "SEMU-only_k0.4",
+    "C+area+context",
+    "SEMU-only_k0.2",
+    "SEMU-only_k0.8"
+  ],
+  "frozen_p0": 0.4109788359788335,
+  "generation_gate_never_uses_fit_predictions": true,
+  "geometry_conditions_before_render": 540,
+  "legacy_RGB_group": "opaque role/exclusion ID; not equated to new content digests",
+  "minimum_defined_backgrounds": 40,
+  "no_model_scoring_calibration_or_fitting": true,
+  "output": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\mura_capability\\week1_v1\\patchcore_hold_inputs_v1\\run",
+  "pre_generation_gate": "all60 decoded/hash checked, all540 Lb, no working collision, >=40 defined backgrounds",
+  "preprocessing": "PIL RGB bilinear256 then float32/255; unchanged contrast",
+  "raw_identity": "SHA256(RGB1024x1024x3 uint8 HWC C bytes; no header)",
+  "render": "I=clip(B+float32(sign*amplitude)*alpha,0,1), exactly once per fixed request",
+  "request_count": 7560,
+  "retention": "all7560 including zero/weak/undefined; never replace or rescue",
+  "role": "D_hold60",
+  "schema": "patchcore-hold-inputs-v1",
+  "tau": 1.852951288223265,
+  "work_identity": "SHA256(dtype.str|comma-shape|C newline + HWC float32 C bytes)"
+}

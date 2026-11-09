@@ -1,0 +1,120 @@
+{
+  "CPU_inputs_ready": true,
+  "native_source_images_verified": 1890,
+  "synthetic_materials_verified": 2500,
+  "fixed_request_rows": 10000,
+  "three_pairs_reference_same_requests": true,
+  "exposures": {
+    "A": {
+      "real": 5000,
+      "normal": 5000
+    },
+    "B": {
+      "real": 2500,
+      "normal": 5000,
+      "synthetic": 2500
+    },
+    "R5_by_group": {
+      "A": {
+        "12245": 1000,
+        "12303": 1000,
+        "11670": 1000,
+        "11884": 1000,
+        "12070": 1000
+      },
+      "B": {
+        "12245": 500,
+        "11670": 500,
+        "12303": 500,
+        "11884": 500,
+        "12070": 500
+      }
+    },
+    "shared_slots": 7500,
+    "all_shared_input_array_hashes_equal": true,
+    "intervention_slots": 2500,
+    "common_N_distinct_images": 1746,
+    "synthetic_background_distinct_images": 1418,
+    "normal_and_synthetic_background_overlap": 1310,
+    "pixel_exposure_by_group_role": {
+      "A": {
+        "real": {
+          "updates": 5000,
+          "valid_pixels": 294400000,
+          "positive_pixels": 20427597
+        },
+        "normal": {
+          "updates": 5000,
+          "valid_pixels": 292934912,
+          "positive_pixels": 0
+        },
+        "synthetic": {
+          "updates": 0,
+          "valid_pixels": 0,
+          "positive_pixels": 0
+        }
+      },
+      "B": {
+        "real": {
+          "updates": 2500,
+          "valid_pixels": 147200000,
+          "positive_pixels": 10254014
+        },
+        "normal": {
+          "updates": 5000,
+          "valid_pixels": 292934912,
+          "positive_pixels": 0
+        },
+        "synthetic": {
+          "updates": 2500,
+          "valid_pixels": 146605568,
+          "positive_pixels": 1313812
+        }
+      }
+    },
+    "horizontal_flips": 5082,
+    "vertical_flips": 5005
+  },
+  "compatibility_inputs": 25,
+  "compatibility_valid_pixels": 1460224,
+  "compatibility_positive_pixels": 26759,
+  "decode_operations": {
+    "native_npz_decode_operations": 9202,
+    "synthetic_npz_decode_operations": 2500
+  },
+  "original_RGB_GT_probability_reads": 0,
+  "model_tensor_forward_training_calibration_metrics_or_render": 0,
+  "resources_before": {
+    "total_RAM_GiB": 15.62198257446289,
+    "available_RAM_GiB": 6.999828338623047,
+    "D_free_GiB": 119.8678207397461,
+    "E_free_GiB": 787.0987777709961,
+    "planned_E_target_exists": false,
+    "planned_E_path_and_ancestors_have_no_redirect": true,
+    "GPU": {
+      "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "total_MiB": 8151,
+      "free_MiB": 7899,
+      "driver": "595.97"
+    },
+    "method": "GlobalMemoryStatusEx; disk_usage; nvidia-smi metadata only; no CIM or model imports"
+  },
+  "resources_after": {
+    "total_RAM_GiB": 15.62198257446289,
+    "available_RAM_GiB": 6.810798645019531,
+    "D_free_GiB": 119.86779403686523,
+    "E_free_GiB": 787.0840492248535,
+    "planned_E_target_exists": true,
+    "planned_E_path_and_ancestors_have_no_redirect": true,
+    "GPU": {
+      "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "total_MiB": 8151,
+      "free_MiB": 7899,
+      "driver": "595.97"
+    },
+    "method": "GlobalMemoryStatusEx; disk_usage; nvidia-smi metadata only; no CIM or model imports"
+  },
+  "E_exclusive_create_fsync_readback_verified": true,
+  "elapsed_seconds": 190.25,
+  "cache_reuse": false
+}

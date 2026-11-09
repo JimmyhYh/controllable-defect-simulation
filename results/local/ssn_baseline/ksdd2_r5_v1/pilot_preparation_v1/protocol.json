@@ -1,0 +1,342 @@
+{
+  "schema": "ssn-21-input-technical-pilot-v1",
+  "bindings": {
+    "input_complete": "e1223ea1116de90e594d65e0f0374ae043e92ab35e63a3edd9d7bf162aceabab",
+    "input_protocol": "905e20434d7791c1449a6a14cb307ce74f6c0969ff7a9a4fbc6dfbe23acf13dc",
+    "stage2_complete": "9a68007b788fa98284e41ec33cf12d32c33c35a3c707b0ee5ef74c29eaa24ec1",
+    "sources": {
+      "ssn_baseline/pilot_preparation.py": "401911ac7db04d3e7d54b25cb0a1f2b46b2953d3aa86971c7257eceb552fc17e",
+      "ssn_baseline/pilot_config.py": "52af666c6f5fbecf36118dbdc1bbbf478785f0c178a2063c894148c97fbf6295",
+      "ssn_baseline/pilot.py": "082f2d75435af0152f314b539c1e241069711c49bc98969141167f02a2364edd",
+      "ssn_baseline/pilot_metrics.py": "c956e987316d467dba9a6f8ebf347d608191aa2f202d7f246c4e04ae3e6d1609",
+      "ssn_baseline/README_stage3.md": "483a272a001723ee7d8f1436d09ead027ca1b8353b696d236473003964c5b718"
+    }
+  },
+  "model_config": {
+    "backbone": "wide_resnet50_2",
+    "layers": [
+      "layer2",
+      "layer3"
+    ],
+    "patch_size": 3,
+    "adapt_cls_feat": true,
+    "dt": null,
+    "dilate": null,
+    "noise": true,
+    "perlin": true,
+    "no_anomaly": "empty",
+    "bad": true,
+    "overlap": false,
+    "noise_std": 0.015,
+    "perlin_thr": 0.6,
+    "stop_grad": false,
+    "adapt_lr": 0.0001,
+    "seg_lr": 0.0002,
+    "dec_lr": 0.0002,
+    "gamma": 0.4,
+    "epochs": 50
+  },
+  "input_output": {
+    "input_hw": [
+      640,
+      232
+    ],
+    "RGB": "native uint8 RGB; no contrast stretch",
+    "RGB_resize": "OpenCV INTER_LINEAR on uint8, H=640 W=232, then /255 and channel normalization",
+    "RGB_normalization": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "GT": "native binary mask must be checked before use; preserve native GT unchanged",
+    "GT_to_input": "OpenCV INTER_NEAREST to 640x232, binary float32 in {0,1}; no dilation or distance mask",
+    "GT_to_feature": "torch bilinear to (160,58), align_corners=True; values <0.5 become 0, >=0.5 become 1",
+    "feature_shape_static": [
+      1536,
+      160,
+      58
+    ],
+    "feature_copy": "author generator duplicates B to 2B; not two independent real images",
+    "empty_feature_GT": "stop if any R5 becomes empty; do not replace sample, dilate or borrow U",
+    "native_score_order": [
+      "model.eval: feature logit -> bilinear to 640x232 (align_corners=False)",
+      "author GaussianBlur kernel25 sigma4 reflect on logits",
+      "bilinear smoothed input logits to native H,W, align_corners=False",
+      "one-channel sigmoid to native float32 probability, each native pixel once"
+    ],
+    "classification": "sigmoid of independent raw classification-head logit; no spatial pooling substitution",
+    "localization_max": "max of native sigmoid map; supplemental, not the classification score",
+    "calibration": "not performed or numerically frozen at this stage; future Q only, no old threshold reuse",
+    "evaluation": "no test-pool minmax, smoothing after sigmoid, resized evaluation GT, softmax or best-checkpoint selection",
+    "BN": "author BatchNorm retained; not old GN or stateless BN",
+    "budget": "pilot steps/epochs, sample sequence, gate and formal budget remain unfrozen",
+    "data_codec_status": "core environment has no OpenCV wheel; decode/resize implementation and runtime dependency are a stage-3 prerequisite, not claimed ready"
+  },
+  "optimizer": {
+    "algorithm": "author get_optimizers: AdamW, three groups, no backbone params",
+    "groups": [
+      {
+        "parameters": "feature_adaptor",
+        "lr": 0.0001,
+        "weight_decay": "inherited AdamW default 0.01"
+      },
+      {
+        "parameters": "discriminator.seg",
+        "lr": 0.0002,
+        "weight_decay": 1e-05
+      },
+      {
+        "parameters": "dec_head + fc_score",
+        "lr": 0.0002,
+        "weight_decay": 1e-05
+      }
+    ],
+    "scheduler": "author epoch-unit MultiStepLR at 0.8*epochs,0.9*epochs, gamma0.4; not old 8000/9000 step schedule",
+    "epochs": null,
+    "optimizer_constructed": false,
+    "loss": "seg normal truncated-L1 mean + seg anomaly truncated-L1 mean + all-pixel focal mean + cls focal mean",
+    "truncated_L1_margin": 0.5,
+    "focal_gamma": 4,
+    "focal_alpha": -1,
+    "empty_normal_or_anomaly_subset": "zero contribution, as author train.py; no zero-division",
+    "segmentation_available": "all strict-R5/normal samples fully segmented; no weak labels or loss-mask weighting",
+    "gradient_clipping_future": "author supervised entry: clip global gradient norm to1 if enabled; not executed"
+  },
+  "init_seed": 2026102101,
+  "order_seed": 2026102102,
+  "schedule": {
+    "updates": 1600,
+    "epochs": 50,
+    "updates_per_epoch": 32,
+    "real_input_exposures": 800,
+    "normal_input_exposures": 800,
+    "per_id_exposures": {
+      "11670": 160,
+      "12126": 50,
+      "11884": 160,
+      "10842": 50,
+      "12070": 160,
+      "10481": 50,
+      "12245": 160,
+      "10326": 50,
+      "12303": 160,
+      "11311": 50,
+      "10880": 50,
+      "10468": 50,
+      "10548": 50,
+      "12025": 50,
+      "12024": 50,
+      "10425": 50,
+      "12206": 50,
+      "10149": 50,
+      "10056": 50,
+      "10538": 50,
+      "11145": 50
+    },
+    "author_internal_feature_views": 3200,
+    "independent_images": 21,
+    "scheduler_unit": "epoch; call scheduler.step once AFTER all32 updates of epoch",
+    "milestone_epochs": [
+      40,
+      45
+    ],
+    "gamma": 0.4,
+    "LR_boundary_updates": {
+      "1": [
+        0.0001,
+        0.0002,
+        0.0002
+      ],
+      "1280": [
+        0.0001,
+        0.0002,
+        0.0002
+      ],
+      "1281": [
+        4e-05,
+        8e-05,
+        8e-05
+      ],
+      "1440": [
+        4e-05,
+        8e-05,
+        8e-05
+      ],
+      "1441": [
+        1.6000000000000003e-05,
+        3.2000000000000005e-05,
+        3.2000000000000005e-05
+      ],
+      "1600": [
+        1.6000000000000003e-05,
+        3.2000000000000005e-05,
+        3.2000000000000005e-05
+      ]
+    },
+    "checkpoint_epochs": [
+      10,
+      20,
+      30,
+      40,
+      50
+    ],
+    "checkpoint_updates": [
+      320,
+      640,
+      960,
+      1280,
+      1600
+    ],
+    "no_flips_or_extra_RGB_augmentation": true,
+    "sampling_purpose": "balanced finite-pool fitting pilot, not author datamodule or a formal training budget",
+    "resume": "manual only: own complete checkpoint -> NEW run name/output, restore model+BN+optimizer+scheduler+Python/NumPy/Torch CPU/CUDA RNG and same sequence cursor; original partial run preserved",
+    "GPU_bitwise_replay_and_full_recovery": "not yet empirically verified; seeded run is not a bitwise guarantee"
+  },
+  "gate": {
+    "scope": "same 21 training-side images only; technical fitting, not validation or performance improvement",
+    "feature_global_pixel_AP_min": 0.95,
+    "each_R5_feature_pixel_AP_min": 0.85,
+    "classification_reference_score": 0.5,
+    "classification_comparison": "strictly greater than",
+    "R5_TP_required": 5,
+    "N16_FP_max": 1,
+    "all_scores_finite_and_each_feature_map_nonconstant": true,
+    "final_step_required": 1600,
+    "intermediate_weights_allowed_for_gate": false,
+    "native_pixel_AP": "descriptive only; no gate to confound fitting with blur/native inverse mapping",
+    "rationale": "high pooled feature-scale fitting plus a per-real-image floor prevents the largest mask dominating; classify all5 and at least15/16 normals correctly at a fixed reference, not a Q-calibrated threshold",
+    "status": "pre-run engineering acceptance policy, not a paper performance claim or guaranteed achievable value"
+  },
+  "resources": {
+    "start_RAM_GiB": 6,
+    "start_free_VRAM_GiB": 6,
+    "start_disk_GiB": 80,
+    "running_RAM_GiB": 3,
+    "precision": "FP32",
+    "batch": 1,
+    "workers": 0,
+    "time": "unknown before manual pilot; no old-model timing substituted"
+  },
+  "label_counts": {
+    "feature_pixels": 194880,
+    "feature_positive": 1564,
+    "native_pixels": 3047566,
+    "native_positive": 25072
+  },
+  "input_ids": [
+    {
+      "role": "R5",
+      "id": "11670"
+    },
+    {
+      "role": "R5",
+      "id": "11884"
+    },
+    {
+      "role": "R5",
+      "id": "12070"
+    },
+    {
+      "role": "R5",
+      "id": "12245"
+    },
+    {
+      "role": "R5",
+      "id": "12303"
+    },
+    {
+      "role": "N16",
+      "id": "10056"
+    },
+    {
+      "role": "N16",
+      "id": "10149"
+    },
+    {
+      "role": "N16",
+      "id": "10326"
+    },
+    {
+      "role": "N16",
+      "id": "10425"
+    },
+    {
+      "role": "N16",
+      "id": "10468"
+    },
+    {
+      "role": "N16",
+      "id": "10481"
+    },
+    {
+      "role": "N16",
+      "id": "10538"
+    },
+    {
+      "role": "N16",
+      "id": "10548"
+    },
+    {
+      "role": "N16",
+      "id": "10842"
+    },
+    {
+      "role": "N16",
+      "id": "10880"
+    },
+    {
+      "role": "N16",
+      "id": "11145"
+    },
+    {
+      "role": "N16",
+      "id": "11311"
+    },
+    {
+      "role": "N16",
+      "id": "12024"
+    },
+    {
+      "role": "N16",
+      "id": "12025"
+    },
+    {
+      "role": "N16",
+      "id": "12126"
+    },
+    {
+      "role": "N16",
+      "id": "12206"
+    }
+  ],
+  "checkpoint_path": "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\checkpoints\\wide_resnet50_2-95faca4d.pth",
+  "runs_root": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\ssn_baseline\\ksdd2_r5_v1\\pilot_v1",
+  "models_root": "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\ssn_baseline\\ksdd2_r5_v1\\pilot_v1",
+  "restore_validation": "complete identity+file hashes, full checkpoint from this same pilot only; fresh run label, no overwrite",
+  "inference": "not automatic after train; separately invoked score caches each of21 once using final1600 step, segmentation hook + same eval call; no BN/parameter updates",
+  "manual_runtime_preflight": "old CPU interpreter verifies immutable preparation; new model env checks actual Torch interpolation against cache for all21 BEFORE model initialization",
+  "runtime_status": "Torch import, parameter match, model fit, resource peaks and full recovery untested",
+  "resources_snapshot": {
+    "utc": "2026-10-21T03:56:57.713037+00:00",
+    "total_RAM_GiB": 15.62198257446289,
+    "free_RAM_GiB": 8.197845458984375,
+    "free_disk_GiB": 148.04363250732422,
+    "GPUs": [
+      {
+        "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "total_MiB": 8151.0,
+        "free_MiB": 7899.0,
+        "driver": "595.97"
+      }
+    ],
+    "interpretation": "single metadata snapshot; not model peak, compatibility or runtime admission"
+  },
+  "no_heldout_Q_E_U_read": true
+}

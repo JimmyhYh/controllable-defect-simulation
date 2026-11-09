@@ -1,0 +1,29 @@
+{
+  "version": "pod_audit_20261028_v1",
+  "bootstrap_n": 2000,
+  "bootstrap_seed": 20261028,
+  "fit_basis": "saved hits and original measured SEMU; biased proxy retained for sensitivity only",
+  "confidence_bound": "exploratory clustered percentile P95 of a90, not standard-certified a90/95",
+  "sample_unit": "background; acquisition groups unknown",
+  "inputs_read": "saved NPZ and score arrays only; no original RGB/GT",
+  "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+  "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.16.2"
+  },
+  "resources": {
+    "available_RAM_GiB": 4.693397521972656,
+    "free_disk_GiB": 119.51769638061523
+  },
+  "source_url": "https://ntrs.nasa.gov/api/citations/20140005337/downloads/20140005337.pdf",
+  "source_location": "printed p56: lower one-sided 95% POD curve crossing 0.90; upper bound on required size",
+  "stages": [
+    "prepare",
+    "inputs",
+    "statistics",
+    "verify"
+  ],
+  "training": false,
+  "model_forward": false
+}

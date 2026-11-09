@@ -1,0 +1,24 @@
+{
+  "schema": "ssn-vendor-subset-v1",
+  "files": {
+    "LICENSE": "9c0e54742782fb1e0fdb2785338d754c4cce3e9ec3ce879e418ea301a6d5bae2",
+    "README.md": "dd2af3677aeb524c90e5234b94738a150e6d87d74fb4deb6c9ddf2093a29e0d6",
+    "SOURCE_MANIFEST.json": "abf3589c9e5197c6f8ee536d1af2733486b33970edc5a7f9c53f39dea3877eac",
+    "THIRD_PARTY_NOTICES.md": "629190e832ffd349b93616b9b6179f24f8b07330af4b443a85fac503371cbdd2",
+    "common/loss.py": "97b649b1fd3d5f68b32ba7f23ab514b4b5a7963df31ea7ab43a36eaf0ad6c586",
+    "common/perlin_noise.py": "529e1fde5a6d5d46e81eab59d3648d50473f7ebbe03bdbaf9e35470c72d3e7d2",
+    "datamodules/base/__init__.py": "9a0508e334f171a6164978c5ca8c07c722790fad1438f2eb7084b41f37b9f15d",
+    "datamodules/base/datamodule.py": "412dca22cc177c1c6c7779ae7d6454528a3084e3472a9f2695cdb8e0a3963ad8",
+    "datamodules/base/dataset.py": "4ce7ea55ac6597530e5b4d3e28ec556f3308415c5d89a5dc7376f244cd05eec3",
+    "datamodules/ksdd2.py": "45573adb43c9b52b7ec86aad668603303e86d050016516e1287ca93a7a028549",
+    "model/feature_extractor.py": "f727dfd1152f8158d25d144633339c2a66eee2c33435835835652b53be84186b",
+    "model/supersimplenet.py": "22550a4bbc08547c034aa9e12c2399dbdf62f3ccab32ddde39721f510adbf056",
+    "provenance/DSR-LICENSE.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "provenance/apple-ml-destseg-LICENSE.txt": "24841991b02ec7921fe781d0eb4ddc99842991681a67a46cf85951bafda062c8",
+    "provenance/torchvision-v0.23.0-LICENSE.txt": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
+    "provenance/torchvision-v0.23.0-README.md": "0a44075ed6a86d948c11cff399f071cd57acf9b6b82ceab1eb0102a4ed720629",
+    "requirements.txt": "af5648e1e97c89a32f9aa057847522fb03431b98e0a8d12f319b553323fe20cc",
+    "train.py": "8cc9aeb1b90f0149890d931d014db1a2b86e408ef4dae17b83ea172ddc85ef01",
+    "transaction.json": "a7a9ba12a5fb6564b33e9b75ee911ff360e8acb0fe3a59c947a2ef60d8e60340"
+  }
+}

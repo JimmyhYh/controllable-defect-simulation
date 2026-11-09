@@ -1,0 +1,70 @@
+{
+  "D_definition": "max(abs(I-B),axis=RGB), float32, HxW",
+  "M_eff_definition": "D>float32(1/255); diagnostic only; no weak filtering",
+  "backgrounds": 60,
+  "cache_verification": "closed full file hashes, shape/dtype/content/measurements; no original opens or render",
+  "frozen_preparation": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\mura_response\\semu_applicability_v1\\preparation_v1",
+  "generation_binding": {
+    "CPU_min_RAM_GiB": 2,
+    "D": "max(abs(I-B),axis=RGB), float32, HxW",
+    "M_eff": "D>float32(1/255); diagnostic only; no weak filtering",
+    "fit_role": "D_fit60",
+    "full_round_min_free_disk_GiB": 40,
+    "generation": "float32 I=clip(B+float32(sign*amplitude)*alpha,0,1)",
+    "implementation": {
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\__init__.py": "bc7b2c4122c0224e23dee1865a07c2f544d72c8c60a32100ec49bafc653952da",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\generation.py": "1cd617d45c0d84e015ab517ba05a49ff91920b230dc74ae4dec814538134c576",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\inputs.py": "e49eb9eb413025dee5a2ab6dbd5103dfc2f45afac12ee5b54e800d8ba37cc9f1",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\resources.py": "2a28202d7b0b870d8873a9c6b9f9503292e2f7025a2fe59c5670393003e31166"
+    },
+    "minimum_defined_backgrounds": 40,
+    "model_input_dedup": "canonical HWC float32 C array content hash; baseline references included",
+    "no_models_forwards_training_calibration_or_fitting": true,
+    "nominal_requests": 7560,
+    "preparation": {
+      "complete.json": "0fd936ea58f8c8a7d16c209c96d116daa0f34c6044d1b809781bd4b01f7c7ba5",
+      "geometry.json": "83c824484c740511ba528a680d21f8f996dedf8bd6e9fbc0f6f72e4b2f56adc4",
+      "numerical_verification.json": "a8dda6ba8b22a5ea7879db350aee272079c2f30d71f8fa1f80bfcd68ee7fd0dd",
+      "protocol.json": "655c760291c366b924c8113e2441271b8970494a9bc104299b745f1f3310fe50",
+      "requests.json": "03bb0eca675044526c1f285c75ae8e9caf5a04ca279c718785a04cad26ed1a6c",
+      "roles.json": "3eb532e5e08f46541cfa4223269c0b7309c325aea0944a1a2ce642103f499cb7",
+      "sources.json": "adc60f2dfd5f25e835eac5f27301fac0eb272b09a10eaf93677247c7860f8fec",
+      "started.json": "c517f13473cf891e0091012879b886ce235a8b00e8a2972472d27abbc45c0bae",
+      "verification.json": "68e72217c2a584f1bf01a8a8c5246b9ca82724211d9460ed85b2b780f8f628f3"
+    },
+    "runtime": {
+      "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+      "executable_sha256": "137c474a645a9471ab3a369084e7cd573cd8b7ff8f81cb85363fffdf5904106c",
+      "packages": {
+        "Pillow": "12.3.0",
+        "numpy": "1.26.4",
+        "scipy": "1.16.2"
+      },
+      "python": "3.12.7"
+    },
+    "schema": "mura-fit-generation-binding-v1",
+    "signed_residual_recoverable": "I-B from saved float32 I and B",
+    "source_snapshot_basis": "original file bytes and decoded RGB verified once on acquisition",
+    "stage": 3,
+    "undefined_and_zero_change": "retain all requests; never replace or relabel as FN"
+  },
+  "no_rejection_on_M_eff": true,
+  "old_training_hash_only": true,
+  "original_RGB_hash": "sha256 of decoded original RGB uint8 C bytes",
+  "original_decode_once": true,
+  "preprocessing": "PIL RGB bilinear256 then float32/255; unchanged contrast",
+  "protected_roles": [
+    "Q200",
+    "F100",
+    "D_hold60",
+    "S_bg",
+    "Q_cal",
+    "old_test",
+    "GT"
+  ],
+  "render_once_per_request": true,
+  "requests": 7560,
+  "role": "D_fit60",
+  "statistics_domain": "encoded RGB; k assumed; no calibrated physical luminance",
+  "working_RGB_hash": "inputs.array_identity: dtype/shape/C header plus float32 RGB bytes"
+}

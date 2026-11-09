@@ -1,0 +1,1089 @@
+{
+  "schema": "pretrained-segmentation-e1004-scoring-preparation-v1",
+  "implementation": {
+    "real_scoring_common.py": "8a771c174e767de3f8a643fed3b6b0a115ab82186dcddc5b092836a0f6ee33f9",
+    "real_scoring.py": "12bb7ffc4d90fe5aff04b200edfaf5bd9f007d7b74511ef631b82053e728b609",
+    "real_cache.py": "5b89ae70fed3435f23f428d478103c74019168328ed9587b8eaa2c7bb58b7373",
+    "real_scoring_cli.py": "f6d9826eca825cf82a28e7123dd91936081357d5b305c00fadf7861c56c6e63d",
+    "README_real_scoring.md": "5ad58abf15c7d4c927453fc030eb7cfda42de46c3228fc60758664d96b9621c2"
+  },
+  "formal_implementation": {
+    "formal_common.py": "0377df6efcad1ac4a963907c10c82ef889e85c80eb0afed82c72ce509974c019",
+    "formal_preparation.py": "3b0246d403f55eb0fa653d1d3545c2358fa725b79869b0b7d8fc531b549021d2",
+    "formal_training.py": "6edb9536c3cb0489e14d3500050dc2a0cbd4215dc9951fc3cac27af4306f23df",
+    "formal_cli.py": "2f9f84c277588b28205065015170f6b04a783a1fcb672dd64f09f0a2617725c8",
+    "README_formal.md": "8b88b78d2726f57dbbfa6494d017e6cba3a4e0674362e517c5ebb06108e23879"
+  },
+  "upstream": {
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/dependency_candidate.json": "f711f6e81b0ebbacf36d2976f34f0765fad65f92c31c56b8f4491ffd1d946522",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/protocol.json": "15a682b1d50339c8efbd4fe847328d8176ab0c1c512d8e73a61fb9a904e31c08",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/requirements-candidate.txt": "be515c1694a881f019f7f192ce7999749e57c65b2685b7a5bb65746315388bba",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/transaction.json": "5b3b1bf04ea3daea403b8210bd7e4659bd1842b8ce1fcd7be7bbcbdfde9c400e",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/verification.json": "90c2f4ba6bf636c5d675521ff20251b8ca19782c201224301c6f4faf622ff809",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/第1阶段静态来源与资源准备.md": "9c6c1edc4ed9bd640cb735506aeffe95bc6987159f4cf27f97001a37ac38f8ee",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/complete.json": "7019c67a2155a6fc000c946b7b4ef88c9377c2626f187a6f4354cce0709e00ae",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_preparation_v1/binding.json": "119e081bb202ee20e9ea53ea331dafded08059898fe23fb0931095c20b68ff32",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_preparation_v1/requirements.lock": "ca8b664e0e797ed952350cabea3c96342fe59f3c6132133e4fc54c92d80a1184",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_preparation_v1/complete.json": "954adba522de25fac9b9ef006f8dc3cd8d0342423636b109ad0ae40ab45088c4",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/environment.json": "6eebf9595586fc5ecdf26f0714de78b1a7bf59c5975267c742541830cc43144f",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/offline_install.txt": "6fcbdd893de89cf260239feac059dd09b2cf2509d39419fa93438ef4cf29f3a5",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/transaction.json": "04b4ffe2d325d7cacefa1148803514af5e51ebf19492979bbf238b660c4a736c",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/verification.json": "a40186659d8b7098cf952fea926b17ddf098ad961c4c545eb70b91fef41f1a15",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/第2阶段独立环境与资源静态核验.md": "7400ffd98094fe01630b919748cc68138a00d98b004a527f3b62760523a09290",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/complete.json": "a34e351d6ee17f5006a714ba8568239998dc3c475ba2e9b7e47bf466900ade30",
+    "pretrained_segmentation/__init__.py": "7a521d581f519a0ca409d8ab1afa10a1c4c581ba5f34d00222027c0b7687cd78",
+    "pretrained_segmentation/resources.py": "8ea03cfc5c94fe76ec3bc3befc4b875e995468f7cd1710a26814f3d30521fe98",
+    "pretrained_segmentation/README.md": "a1a2f0274d4eed399b7ca96f8a9014aff5c8a59adaac13ce8c4586cafa962c71",
+    "data/fewshot_synthetic/ksdd2_v1/split.json": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+    "results/fewshot_synthetic/ksdd2_v1/input/completion.json": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+    "results/fewshot_synthetic/ksdd2_v1/input/input_protocol.json": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+    "results/fewshot_synthetic/ksdd2_v1/preparation/common_config.json": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+    "results/fewshot_synthetic/ksdd2_v1/preparation/complete.json": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+    "results/fewshot_synthetic/ksdd2_v1/real_metrics_v1/complete.json": "b20bd02d02965919c22ab059e324fc7bdd47e4bb1438cd45ce3b409bbaddb538",
+    "results/fewshot_synthetic/ksdd2_v1/figures_day7_v1/complete.json": "fe44132413d476fcf1c11ac133670efc785afea385a54be42ea4d504bd7c1ea3",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_dtype_acceptance_verification_v1/complete.json": "7a2ea31332b2df196f8285039d57ebc0d74fe8c3a2d4120b60c39d0dccef60c4",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_dtype_acceptance_verification_v1/verification.json": "054e7dff8a585d7a7b6bc41d7204e80338241912bc34cffc0a0a0e05747860dd",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_dtype_acceptance_verification_v1/第4阶段训练侧评分与CPU验收结果.md": "58a65d5ded703ee046f4c2fc96525291fc447d71a356f468aa5a032d65fd7717",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_cls_bn_sensitivity_summary_v1/complete.json": "f69c4ddd81ab0bd2157a59d0da20dbf5e34af2a69f1192d411fcedbc2b45f6e0",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_cls_bn_sensitivity_summary_v1/summary.json": "6e979e206b55a70e57d204be91ad6c2d8950083335ed8aa30d6caadc4e295659",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_cls_bn_sensitivity_report_v1/分类BN统计来源敏感性诊断结果.md": "4ed62a9fad02861db493db00500548683f6fedf13f846739e8f7da899d6496ad",
+    "fewshot_synthetic/cli.py": "29b1fa05d1726e0d6204a59dcf3f63dd07fa32d8ff53f092fb2427add76e3bf6",
+    "fewshot_synthetic/common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+    "fewshot_synthetic/data.py": "13c00594134cb2b43d365e4e0f5abe6abd2f04afd2008297cee3d9b2131082be",
+    "fewshot_synthetic/formal_admission.py": "ea94a5386d224e81f8745c116a8cf353984d89673bdd3860ea7a57860e26a620",
+    "fewshot_synthetic/inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f",
+    "fewshot_synthetic/metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+    "fewshot_synthetic/model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+    "fewshot_synthetic/normal_calibration.py": "d0dccf5a6e869c5fc490a55f91cda5d663de70c853f55852ceb56877788e3a12",
+    "fewshot_synthetic/normal_calibration_assembly.py": "ecca6a2797058d120064ed212ab444b6fc4d282d3db0c846dcdd6dbe94578d6f",
+    "fewshot_synthetic/normal_calibration_continuation.py": "8339a100df56ea4b6898f847fe98b761d4f3f241cc12058bac188dcc3499cc7e",
+    "fewshot_synthetic/probe_retry.py": "471426a55e819b49eaa6317c012a612e64a4d3fd0ba227becc38c14111394cb6",
+    "fewshot_synthetic/probe_retry_metrics.py": "44704316ae83d6573fc821a6a4c7bb3cac4e39560637cd2c861acfc5ea330515",
+    "fewshot_synthetic/real_evaluation.py": "23f7298488f862789b4d62f6a8c0a25f8b907983587b00a4bdfb374d12a34eb2",
+    "fewshot_synthetic/real_evaluation_cache.py": "bb34322dea656c82a760b26b71a0faf12217977715975cb986cb83eed8e2e61d",
+    "fewshot_synthetic/real_figures.py": "88cebd075fc4456ebbacb36a4440c29d0d922c38e47f36ec3a5d94b9b6a597bb",
+    "fewshot_synthetic/real_metrics.py": "ac39b4f56eea00d3d9009cd6f2f34022ca778ad1072ab8f74dedede0fdef0878",
+    "fewshot_synthetic/sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+    "fewshot_synthetic/training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+    "fewshot_synthetic/verification.py": "3cd176e4109fcc989b5b63d2f129c2084f3286f66b3d1a6fbabf9ae7269a690f",
+    "fewshot_synthetic/__init__.py": "854c1509045354f3ab4c1a923374c25610a6d6fada3bd258b345afd9884408eb",
+    "ssn_baseline/cls_bn_sensitivity.py": "83759fee386e6d860d5cadaea2dfa37d5311594e466fa62544682c634e95e6fa",
+    "ssn_baseline/cls_bn_sensitivity_cli.py": "780bd3eca8cf84e9f70addf73bf377388123267f33c8387cedead92866b1ed5e",
+    "ssn_baseline/contracts.py": "9d61d053ff2dac4f5b54c94e640b3decc98fe8337b0eeb37820ba9c1ee35884d",
+    "ssn_baseline/data.py": "90e9cbded0e499418de70e82db4c8927b3d864838bdbda482f6324414f8aeb9e",
+    "ssn_baseline/environment.py": "edeccdbdae3a6716dfd762d40d8188f6fbdef65e701077d294b409e67f8d3692",
+    "ssn_baseline/environment_continuation.py": "b1e9a80c268aaf26c5927301bb99ec4309edd8b3cb66354d4179afdb5de2bcc1",
+    "ssn_baseline/environment_module_bootstrap.py": "c3c925e1603a6646b844a452426cfa432436a623821804315b065dbe859d4350",
+    "ssn_baseline/model.py": "5e74d75a930a66bf24e9e89494a275707655b26f924cf92b9b32149501361d32",
+    "ssn_baseline/model_dtype_compat.py": "008220662eab5b16e4d894e221333dd93ba08a8e83f5107e17b87d4931e32c46",
+    "ssn_baseline/objective.py": "0475b20b05270ad941e8719ffde70050cb1647309aea79d871c916cd49616175",
+    "ssn_baseline/pilot.py": "082f2d75435af0152f314b539c1e241069711c49bc98969141167f02a2364edd",
+    "ssn_baseline/pilot_config.py": "52af666c6f5fbecf36118dbdc1bbbf478785f0c178a2063c894148c97fbf6295",
+    "ssn_baseline/pilot_dtype_compat.py": "60b20462df6d8ea3fa488729b29d99d93757c50eefa6a77807b1de76440e06ad",
+    "ssn_baseline/pilot_dtype_metrics.py": "f363cc5e21d818d50c53348b4146e599b4840d7e8dd3b39df602b8340f29c911",
+    "ssn_baseline/pilot_dtype_preparation.py": "46f8276f09bb52b01bef750e5cd021fd973841690f064da2abc5b45c55bc9c27",
+    "ssn_baseline/pilot_metrics.py": "c956e987316d467dba9a6f8ebf347d608191aa2f202d7f246c4e04ae3e6d1609",
+    "ssn_baseline/pilot_preparation.py": "401911ac7db04d3e7d54b25cb0a1f2b46b2953d3aa86971c7257eceb552fc17e",
+    "ssn_baseline/resources.py": "ea12cede1f61953f6066b5996f2acf6a4a06ada28968dbba6bb5ab5dfe19216d",
+    "ssn_baseline/static_preparation.py": "bce06c119e9d5863ed6ce90da0e088a29a1a0d6e24794f4d01b9e471cb4c034b",
+    "ssn_baseline/__init__.py": "6d444c5cccd575fe86617c749af64de203fbe349b36c307ca0b0e8f235eae140",
+    "ssn_baseline/core_v1/feature_extractor.py": "ce2f69b87fe29c774228afe88288309c6e5d2abe0b3761ae5bfee71986ce9111",
+    "ssn_baseline/core_v1/loss.py": "97b649b1fd3d5f68b32ba7f23ab514b4b5a7963df31ea7ab43a36eaf0ad6c586",
+    "ssn_baseline/core_v1/perlin_noise.py": "529e1fde5a6d5d46e81eab59d3648d50473f7ebbe03bdbaf9e35470c72d3e7d2",
+    "ssn_baseline/core_v1/supersimplenet.py": "1b7910eb5236aef9b2f2e28367f7bb700cd5de7d1bc08200a44f6d85072eb565",
+    "ssn_baseline/core_v1/__init__.py": "d45e142d3bbcfc04aec7ad495aa38612c1ef528344b15f46175f10ae5ca892e2",
+    "ssn_baseline/core_v1_dtype_compat/feature_extractor.py": "4affa4b13df7b22e04298e764dd2ca5347f85c222b2a7926bfbb3ff8bb43fb7b",
+    "ssn_baseline/core_v1_dtype_compat/loss.py": "97b649b1fd3d5f68b32ba7f23ab514b4b5a7963df31ea7ab43a36eaf0ad6c586",
+    "ssn_baseline/core_v1_dtype_compat/perlin_noise.py": "529e1fde5a6d5d46e81eab59d3648d50473f7ebbe03bdbaf9e35470c72d3e7d2",
+    "ssn_baseline/core_v1_dtype_compat/supersimplenet.py": "1b7910eb5236aef9b2f2e28367f7bb700cd5de7d1bc08200a44f6d85072eb565",
+    "ssn_baseline/core_v1_dtype_compat/__init__.py": "d45e142d3bbcfc04aec7ad495aa38612c1ef528344b15f46175f10ae5ca892e2",
+    "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+    "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+    "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+    "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/__init__.py": "622b944ad2fab4f89e53fb84458eaa68327b41caa6140f906b19258a86f4da92",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/__version__.py": "2c12b8ea17aeb6f9f72a6b02aca218bbc4508a46df9e365a8f6c45ad769e0b34",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/__init__.py": "d389af39cc1e82258889c2eff1dec1237d9dfeeacbf68b98cb9075cf14775165",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/heads.py": "f64fb739a97278118caf4f680171493977414108b4de8b3e99ca5331a8d54cf7",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/hub_mixin.py": "dad10cb5e999e42334d1c3efb7e02c11044836b201c950a1121fee8711e188f2",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/initialization.py": "02276b436676b13b57b69c0cea63b9f005bd904c32877855825f0082cc74e8e6",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/model.py": "0bb580275f87bd3691a6eb68eb29db7fd7bbf6e74c2e350b9164b1d387493c41",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/modules.py": "2bb4ab52ba162bf96b6c07e50e0d86c9e3c7b0eea585cc444c77dd243cecea11",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/utils.py": "308d76faa16daecdecd80af2abdbfa1b4f954aa8303f0e74b58fde9e1b9c4028",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/decoders/unet/__init__.py": "878db8dd3203b05e6b16317a6c44faed071a129d0b0d1ee0828baff71321cd9f",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/decoders/unet/decoder.py": "02d75d28d371e8cf471b37826808e36fe09c4c78f4174c6a987946b4a49663c7",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/decoders/unet/model.py": "a9a8e5f24725f86da8f4a09902aee0cf67f3349aa32e1e32c49ecc8f3856ba33",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/encoders/__init__.py": "a45880f7e0f47a3b052e39aeb48d0a4f4e57f3146e89117ee9e57ab76c86ca52",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/encoders/_base.py": "be035ccbeb2559b580de37aaa0ac4be99973142ecd59acf00c25cc9a557dbed0",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/encoders/_preprocessing.py": "6417d9fb742d8edb1f88021268d49676a827548363208e51bb974020c4af8feb",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/encoders/_utils.py": "e1b6d30321dfbe5ad2eb03667186fa30f0e6393b1b33cbe823caab9aaf94ee9b",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/encoders/resnet.py": "a70cfc5a8840656aef485b557adc2eb23905cbc16ebafe8e16d967fb6fcbadc0",
+    "models/pretrained_segmentation/resources_v1/complete.json": "6f7bd6a3be615cb23cdef9cae2302dd610900cff3f6b72e792cc9cdf22913218",
+    "models/pretrained_segmentation/resources_v1/safetensors_header.json": "ee1ac104d9b86f2e7cb5b00e43f603adde42a20aa7dcbdf97303566ab4ffe10a",
+    "models/pretrained_segmentation/resources_v1/encoder/config.json": "01bf2cf24eb29b405c28c159f46ceda92c098ab85868be88fb100967db47166e",
+    "results/fewshot_synthetic/ksdd2_v1/input/export_inventory.json": "da1dc019307841e24a07f565627808ecdb4ea4d0512e4ae9e5ad9ad4f1221ac8",
+    ".venv-pretrained-seg/pyvenv.cfg": "6c39ce7902a0338bb6a5d5de2720087f80f637883ad5a66cd59364c4f12f957c",
+    ".venv-pretrained-seg/Scripts/python.exe": "137c474a645a9471ab3a369084e7cd573cd8b7ff8f81cb85363fffdf5904106c",
+    ".venv-pretrained-seg/Lib/site-packages/torch/nn/modules/batchnorm.py": "890bea2b4a462de409aefe9e4199bdc8ff945d1457795a2cf13a4e49973bd8bb",
+    "pretrained_segmentation/common.py": "5ad6354054764d0ac6508a1db7483f9e0f628df83eca255f41d4851ada2d48f5",
+    "pretrained_segmentation/data.py": "9a005ce88c3dcee6b8b3195b45caf699f2804803b35aa831bd6272f68024bed7",
+    "pretrained_segmentation/preparation.py": "398828aa27ea5bb66418dd703b34bc04b5e04f9dde5fb403daf9165d9db3b52d",
+    "pretrained_segmentation/model.py": "818e1b9f85f3b7926f82a58efb26616b4a17611de49c5a73a633a37cfbdb2da5",
+    "pretrained_segmentation/training.py": "78f8fcec4ae7e6d6d13d4c77f82d8d0d0ed0f836fd21fbf47540760530bc8ccc",
+    "pretrained_segmentation/scoring.py": "145b0c4ad04c6ad3d447a63b953866f11fdf19934a109a1a3acca656c8678465",
+    "pretrained_segmentation/metrics.py": "8ee695cb4c2aee73d4119f0e73982e8a61e3528113c2d645c744f17ff806d07e",
+    "pretrained_segmentation/cli.py": "cc19f2bd3bf9504fe7ae4ecf94d78abfeb6234251a363ac94f36088efc0bc535",
+    "pretrained_segmentation/README_pilot.md": "4e6f539f6308a023de2069ef3a7e51c957c493b3eb663b450f1802264c1904ca",
+    "results/pretrained_segmentation/ksdd2_r5_v1/input_preparation/complete.json": "d33ddbde7b0b4cf585ea8aa407903c28dc885d4730607b94188c8de346b9d396",
+    "results/pretrained_segmentation/ksdd2_r5_v1/input_preparation/protocol.json": "e91c8e4d46762ec5c40a28b0af1d953834958506e36985edce94cf42520c3770",
+    "results/pretrained_segmentation/ksdd2_r5_v1/pilot_preparation_v1/complete.json": "7f9143903cfed48ad1e6148928c69f70f83ddda35a6274a0fdf3d55de5dd6e62",
+    "results/pretrained_segmentation/ksdd2_r5_v1/pilot_preparation_v1/protocol.json": "8028a3a3e8cd6f90610a9a154fafaf6d0434872d3e197ef34e4756f6060ca925",
+    "models/pretrained_segmentation/ksdd2_r5_v1/probe_2026102201/complete.json": "6ba6905818200db960f074d4002db8b25033d39d2ddb18b6c678ea1c4a876d8c",
+    "results/pretrained_segmentation/ksdd2_r5_v1/probe_v1/complete.json": "a6be6655721d56999c140082834057fb2a7926a6bae45f05a33421c8841eec15",
+    "results/pretrained_segmentation/ksdd2_r5_v1/probe_v1/result.json": "b4f989e9862a799b626ecc761654ea02daa0f3d45888f60e749a1d50f7f6431f",
+    "results/pretrained_segmentation/ksdd2_r5_v1/probe_scores_v1/complete.json": "17a35cf7e738cb2c8867efa84b098edd1ec00ea4bcd98f9fcb975c9e3ea17dbe",
+    "results/pretrained_segmentation/ksdd2_r5_v1/probe_metrics_v1/complete.json": "146fe891c308b70293e513f778481f3150ad863aff65fc93f8eff8351d134f93",
+    "results/pretrained_segmentation/ksdd2_r5_v1/probe_metrics_v1/metrics.json": "37d70b343eade5492cbfbac72e65d4922ef5b436dcc08bfb808a4c77c3e07a75",
+    "results/pretrained_segmentation/ksdd2_r5_v1/probe_acceptance_verification_v1/complete.json": "e0bf8f25d27250744049d32792608ae5d8c94f7fbe57d04a73982dde52957fbc",
+    "results/pretrained_segmentation/ksdd2_r5_v1/probe_acceptance_verification_v1/verification.json": "fe4e1b5334ca8575453ebd75e3973f397754e9cbc6fea8330781a1e1b1066b07",
+    "pretrained_segmentation/formal_common.py": "0377df6efcad1ac4a963907c10c82ef889e85c80eb0afed82c72ce509974c019",
+    "pretrained_segmentation/formal_preparation.py": "3b0246d403f55eb0fa653d1d3545c2358fa725b79869b0b7d8fc531b549021d2",
+    "pretrained_segmentation/formal_training.py": "6edb9536c3cb0489e14d3500050dc2a0cbd4215dc9951fc3cac27af4306f23df",
+    "pretrained_segmentation/formal_cli.py": "2f9f84c277588b28205065015170f6b04a783a1fcb672dd64f09f0a2617725c8",
+    "pretrained_segmentation/README_formal.md": "8b88b78d2726f57dbbfa6494d017e6cba3a4e0674362e517c5ebb06108e23879",
+    "results/pretrained_segmentation/ksdd2_r5_v1/formal_preparation_v1/complete.json": "ff6a797fee6622e1c90b7f4ee23e8497ec2c8e1f758de5faf850c5673439a6e1",
+    "results/pretrained_segmentation/ksdd2_r5_v1/formal_preparation_v1/protocol.json": "a3df0096bf58285c2be1fb9001c5fdcd26935396e0c3a12998ce1822fac74825",
+    "results/pretrained_segmentation/ksdd2_r5_v1/baseline_v1/complete.json": "afb320765b998d13c4b262b5f52aa386bb7b9d61d8d1ca794deea0473fc1fcf9",
+    "results/pretrained_segmentation/ksdd2_r5_v1/baseline_v1/result.json": "81f2167fe50736f7806bcc43989dd2a31ef535b4669a0ef2d91cccf4c6e76841",
+    "models/pretrained_segmentation/ksdd2_r5_v1/baseline_2026102202/complete.json": "ea39f6bd69ffdeb870831a37c166c84143ab887683c46948d7e3ed177a87bdea",
+    "models/pretrained_segmentation/ksdd2_r5_v1/baseline_2026102202/initialization.json": "ab6303f99b76c883ace85f1fc5387f9a35bdc10eaf4cfc311605c5772891b311",
+    "models/pretrained_segmentation/ksdd2_r5_v1/baseline_2026102202/final_weights.safetensors": "f8f4f94029da49704c5d2b194c549dd24ef364a7f7d365ff6fcef9e3f373e454",
+    "results/pretrained_segmentation/ksdd2_r5_v1/baseline_training_verification_v1/complete.json": "64aa47c6c8d2f8ee0a3388e0d3cdeae2f8cae1856f5774efc3179ca99f5cad33",
+    "results/pretrained_segmentation/ksdd2_r5_v1/baseline_training_verification_v1/verification.json": "fab793b33715d50bbcf62122820b71330c6b7ef37f3818f62ebda289a5d95f94",
+    "pretrained_segmentation/calibration_common.py": "991fa9961977e3cd1ecb5a39762e432c983447fcb8eec0069cc808cc2fa2d141",
+    "pretrained_segmentation/native_inference.py": "393a4597df5892fdc2f57561069e6111145d85341eee30979cf3c58e09a5c21b",
+    "pretrained_segmentation/normal_calibration.py": "5beed83e0f4776485f825a74697c281711abac1d282a74880e99b1eee6f2bc68",
+    "pretrained_segmentation/calibration_cli.py": "c18425c79597b61d18c9da02d26c6c69e31a483ef135963d6c09f9a2f4e2efea",
+    "pretrained_segmentation/README_calibration.md": "354770826ba1ab7f14e2ddf9af5758edc639567a04d10da91b74b5ef1cf48d7d",
+    "results/pretrained_segmentation/ksdd2_r5_v1/normal_calibration_preparation_v1/complete.json": "a1a497889cc59f7766fd654ff306d2ac8f63e218c12e20d3b983812271649aee",
+    "results/pretrained_segmentation/ksdd2_r5_v1/normal_calibration_preparation_v1/protocol.json": "b6bfbbca94a1beaec11bb58e2434f877ff33b55479c4d79f25945aa1c16eaa5c",
+    "results/pretrained_segmentation/ksdd2_r5_v1/normal_calibration_preparation_v1/requests.json": "03f48cde4434ca2b88864185b549c824cfbb3f2ffde617dd57b4d7078650565d",
+    "results/pretrained_segmentation/ksdd2_r5_v1/normal_calibration_v1/complete.json": "07440d4222c9843f544cf7b0118da60dd1cd92e2a70ae9efe5dd2d8dc740a171",
+    "results/pretrained_segmentation/ksdd2_r5_v1/normal_calibration_v1/scores.json": "27ffcfca3ed7c219f07c96de2f01568e7fe0141bad389e20036725b217c20a96",
+    "results/pretrained_segmentation/ksdd2_r5_v1/normal_calibration_v1/threshold.json": "0690251a736bbe08253b04a25427b11985d5aa3601226fb544e9d58fc879ca67",
+    "results/pretrained_segmentation/ksdd2_r5_v1/normal_calibration_verification_v1/complete.json": "d57d16d952321e97d3056414c763deeb0648132ad2e642b69de67dd4d6461974",
+    "results/pretrained_segmentation/ksdd2_r5_v1/normal_calibration_verification_v1/verification.json": "c5c598a0a7856085353a584de1c8e59b1facf205997f841c3b44b75610942277"
+  },
+  "compatibility": {
+    "original_descriptors": {
+      "bn1.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "bn1.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "bn1.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "bn1.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "conv1.weight": {
+        "shape": [
+          64,
+          3,
+          7,
+          7
+        ],
+        "dtype": "F32"
+      },
+      "fc.bias": {
+        "shape": [
+          1000
+        ],
+        "dtype": "F32"
+      },
+      "fc.weight": {
+        "shape": [
+          1000,
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.conv1.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.conv2.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.conv1.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.conv2.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.conv1.weight": {
+        "shape": [
+          128,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.conv2.weight": {
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.0.weight": {
+        "shape": [
+          128,
+          64,
+          1,
+          1
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.conv1.weight": {
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.conv2.weight": {
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.conv1.weight": {
+        "shape": [
+          256,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.conv2.weight": {
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.0.weight": {
+        "shape": [
+          256,
+          128,
+          1,
+          1
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.conv1.weight": {
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.conv2.weight": {
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.conv1.weight": {
+        "shape": [
+          512,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.conv2.weight": {
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.0.weight": {
+        "shape": [
+          512,
+          256,
+          1,
+          1
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.conv1.weight": {
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.conv2.weight": {
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      }
+    },
+    "remove_exact_keys": [
+      "fc.bias",
+      "fc.weight"
+    ],
+    "add_exact_zero_int64_scalar_keys": [
+      "bn1.num_batches_tracked",
+      "layer1.0.bn1.num_batches_tracked",
+      "layer1.0.bn2.num_batches_tracked",
+      "layer1.1.bn1.num_batches_tracked",
+      "layer1.1.bn2.num_batches_tracked",
+      "layer2.0.bn1.num_batches_tracked",
+      "layer2.0.bn2.num_batches_tracked",
+      "layer2.0.downsample.1.num_batches_tracked",
+      "layer2.1.bn1.num_batches_tracked",
+      "layer2.1.bn2.num_batches_tracked",
+      "layer3.0.bn1.num_batches_tracked",
+      "layer3.0.bn2.num_batches_tracked",
+      "layer3.0.downsample.1.num_batches_tracked",
+      "layer3.1.bn1.num_batches_tracked",
+      "layer3.1.bn2.num_batches_tracked",
+      "layer4.0.bn1.num_batches_tracked",
+      "layer4.0.bn2.num_batches_tracked",
+      "layer4.0.downsample.1.num_batches_tracked",
+      "layer4.1.bn1.num_batches_tracked",
+      "layer4.1.bn2.num_batches_tracked"
+    ],
+    "BN_prefixes": [
+      "bn1.",
+      "layer1.0.bn1.",
+      "layer1.0.bn2.",
+      "layer1.1.bn1.",
+      "layer1.1.bn2.",
+      "layer2.0.bn1.",
+      "layer2.0.bn2.",
+      "layer2.0.downsample.1.",
+      "layer2.1.bn1.",
+      "layer2.1.bn2.",
+      "layer3.0.bn1.",
+      "layer3.0.bn2.",
+      "layer3.0.downsample.1.",
+      "layer3.1.bn1.",
+      "layer3.1.bn2.",
+      "layer4.0.bn1.",
+      "layer4.0.bn2.",
+      "layer4.0.downsample.1.",
+      "layer4.1.bn1.",
+      "layer4.1.bn2."
+    ],
+    "encoder_expected_keys": [
+      "bn1.bias",
+      "bn1.num_batches_tracked",
+      "bn1.running_mean",
+      "bn1.running_var",
+      "bn1.weight",
+      "conv1.weight",
+      "layer1.0.bn1.bias",
+      "layer1.0.bn1.num_batches_tracked",
+      "layer1.0.bn1.running_mean",
+      "layer1.0.bn1.running_var",
+      "layer1.0.bn1.weight",
+      "layer1.0.bn2.bias",
+      "layer1.0.bn2.num_batches_tracked",
+      "layer1.0.bn2.running_mean",
+      "layer1.0.bn2.running_var",
+      "layer1.0.bn2.weight",
+      "layer1.0.conv1.weight",
+      "layer1.0.conv2.weight",
+      "layer1.1.bn1.bias",
+      "layer1.1.bn1.num_batches_tracked",
+      "layer1.1.bn1.running_mean",
+      "layer1.1.bn1.running_var",
+      "layer1.1.bn1.weight",
+      "layer1.1.bn2.bias",
+      "layer1.1.bn2.num_batches_tracked",
+      "layer1.1.bn2.running_mean",
+      "layer1.1.bn2.running_var",
+      "layer1.1.bn2.weight",
+      "layer1.1.conv1.weight",
+      "layer1.1.conv2.weight",
+      "layer2.0.bn1.bias",
+      "layer2.0.bn1.num_batches_tracked",
+      "layer2.0.bn1.running_mean",
+      "layer2.0.bn1.running_var",
+      "layer2.0.bn1.weight",
+      "layer2.0.bn2.bias",
+      "layer2.0.bn2.num_batches_tracked",
+      "layer2.0.bn2.running_mean",
+      "layer2.0.bn2.running_var",
+      "layer2.0.bn2.weight",
+      "layer2.0.conv1.weight",
+      "layer2.0.conv2.weight",
+      "layer2.0.downsample.0.weight",
+      "layer2.0.downsample.1.bias",
+      "layer2.0.downsample.1.num_batches_tracked",
+      "layer2.0.downsample.1.running_mean",
+      "layer2.0.downsample.1.running_var",
+      "layer2.0.downsample.1.weight",
+      "layer2.1.bn1.bias",
+      "layer2.1.bn1.num_batches_tracked",
+      "layer2.1.bn1.running_mean",
+      "layer2.1.bn1.running_var",
+      "layer2.1.bn1.weight",
+      "layer2.1.bn2.bias",
+      "layer2.1.bn2.num_batches_tracked",
+      "layer2.1.bn2.running_mean",
+      "layer2.1.bn2.running_var",
+      "layer2.1.bn2.weight",
+      "layer2.1.conv1.weight",
+      "layer2.1.conv2.weight",
+      "layer3.0.bn1.bias",
+      "layer3.0.bn1.num_batches_tracked",
+      "layer3.0.bn1.running_mean",
+      "layer3.0.bn1.running_var",
+      "layer3.0.bn1.weight",
+      "layer3.0.bn2.bias",
+      "layer3.0.bn2.num_batches_tracked",
+      "layer3.0.bn2.running_mean",
+      "layer3.0.bn2.running_var",
+      "layer3.0.bn2.weight",
+      "layer3.0.conv1.weight",
+      "layer3.0.conv2.weight",
+      "layer3.0.downsample.0.weight",
+      "layer3.0.downsample.1.bias",
+      "layer3.0.downsample.1.num_batches_tracked",
+      "layer3.0.downsample.1.running_mean",
+      "layer3.0.downsample.1.running_var",
+      "layer3.0.downsample.1.weight",
+      "layer3.1.bn1.bias",
+      "layer3.1.bn1.num_batches_tracked",
+      "layer3.1.bn1.running_mean",
+      "layer3.1.bn1.running_var",
+      "layer3.1.bn1.weight",
+      "layer3.1.bn2.bias",
+      "layer3.1.bn2.num_batches_tracked",
+      "layer3.1.bn2.running_mean",
+      "layer3.1.bn2.running_var",
+      "layer3.1.bn2.weight",
+      "layer3.1.conv1.weight",
+      "layer3.1.conv2.weight",
+      "layer4.0.bn1.bias",
+      "layer4.0.bn1.num_batches_tracked",
+      "layer4.0.bn1.running_mean",
+      "layer4.0.bn1.running_var",
+      "layer4.0.bn1.weight",
+      "layer4.0.bn2.bias",
+      "layer4.0.bn2.num_batches_tracked",
+      "layer4.0.bn2.running_mean",
+      "layer4.0.bn2.running_var",
+      "layer4.0.bn2.weight",
+      "layer4.0.conv1.weight",
+      "layer4.0.conv2.weight",
+      "layer4.0.downsample.0.weight",
+      "layer4.0.downsample.1.bias",
+      "layer4.0.downsample.1.num_batches_tracked",
+      "layer4.0.downsample.1.running_mean",
+      "layer4.0.downsample.1.running_var",
+      "layer4.0.downsample.1.weight",
+      "layer4.1.bn1.bias",
+      "layer4.1.bn1.num_batches_tracked",
+      "layer4.1.bn1.running_mean",
+      "layer4.1.bn1.running_var",
+      "layer4.1.bn1.weight",
+      "layer4.1.bn2.bias",
+      "layer4.1.bn2.num_batches_tracked",
+      "layer4.1.bn2.running_mean",
+      "layer4.1.bn2.running_var",
+      "layer4.1.bn2.weight",
+      "layer4.1.conv1.weight",
+      "layer4.1.conv2.weight"
+    ],
+    "torch_BN_source_path": ".venv-pretrained-seg/Lib/site-packages/torch/nn/modules/batchnorm.py",
+    "torch_BN_source_sha256": "890bea2b4a462de409aefe9e4199bdc8ff945d1457795a2cf13a4e49973bd8bb",
+    "policy": "runtime explicit fc removal plus20 zero-int64 counters; strict remaining keys/shapes/dtypes; no generic strict=False",
+    "tensor_created_or_loaded": false,
+    "runtime_compatibility_verified": false
+  },
+  "seed": 2026102202,
+  "final_step": 10000,
+  "final_weight_sha256": "f8f4f94029da49704c5d2b194c549dd24ef364a7f7d365ff6fcef9e3f373e454",
+  "expected_state_hash": "07d820fdc2cb2f0da2835161ee9cf4e1e7dfdc6592d643fba94a0f570a6810ce",
+  "expected_buffers_hash": "edcbf7473f43a9074d2a3381b819454fc73a62d6ff8027469eebaadb0e3cd0a7",
+  "score_rule": {
+    "window": 256,
+    "stride": 128,
+    "tail": "include H-256; sorted unique",
+    "pad": "right reflect; discard before stitching",
+    "normalization": "RGB/255 then ImageNet mean/std; no resize or contrast stretch",
+    "window_probability": "raw float32 anomaly softmax, no augmentation or smoothing",
+    "stitching": "float32 sum in ascending y order, uint16 coverage, float32 equal-weight division; each native pixel once in final map",
+    "image_score": "maximum of saved native float32 probability map",
+    "precision": "FP32",
+    "batch": 1,
+    "workers": 0
+  },
+  "threshold_rule": {
+    "q": 0.95,
+    "method": "linear",
+    "comparison": "strictly greater",
+    "score_dtype_for_quantile": "float64 conversion of native float32 maxima",
+    "normal_images": 200
+  },
+  "threshold": 7.264203168233501e-06,
+  "threshold_source": "normal_calibration_v1/threshold.json",
+  "images": 1004,
+  "planned_window_forwards": 4270,
+  "planned_native_pixels": 146411528,
+  "scalar_verification": {
+    "strict_greater": [
+      false,
+      false,
+      true
+    ],
+    "FP32_average": 0.5,
+    "unknown_runtime_rejected": true,
+    "real_scores_or_quantiles_used": false
+  },
+  "resource_snapshot": {
+    "utc": "2026-10-22T09:00:46.947359+00:00",
+    "total_RAM_GiB": 15.62198257446289,
+    "free_RAM_GiB": 7.136810302734375,
+    "free_disk_GiB": 128.5273895263672,
+    "GPUs": [
+      {
+        "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "total_MiB": 8151.0,
+        "free_MiB": 7899.0,
+        "driver": "595.97"
+      }
+    ],
+    "interpretation": "snapshot only; not runtime admission or measured training peak"
+  },
+  "Q_evidence_scope": "original complete/JSON/code hashes and prior full independent audit; Q probability payloads not re-read",
+  "GT_scope": "paths/source hashes/native shape metadata only; no GT bytes or class/positive counts verified now",
+  "cache_policy": "complete identical set read-only verify; partial/unknown/runtime residue preserve and stop; no automatic resume/repeat",
+  "actual_E_scoring_or_metrics": false,
+  "meaning": "E historically seen; exploratory only, not new unseen validation or screen benefit"
+}

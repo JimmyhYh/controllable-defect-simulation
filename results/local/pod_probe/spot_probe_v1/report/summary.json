@@ -1,0 +1,85 @@
+{
+ "condition": "PatchCore",
+ "tau": 1.8928574562072753,
+ "shape": [
+  "spot_xs"
+ ],
+ "n_stimulus": 324,
+ "baseline_false_positive": 6,
+ "baseline_n": 60,
+ "cells": {
+  "1": {
+   "n": 17,
+   "hits": 3,
+   "rate": 0.17647058823529413,
+   "SEMU_median": 1.0015489626419607
+  },
+  "1.6": {
+   "n": 25,
+   "hits": 5,
+   "rate": 0.2,
+   "SEMU_median": 1.5947660306619005
+  },
+  "2.5": {
+   "n": 47,
+   "hits": 5,
+   "rate": 0.10638297872340426,
+   "SEMU_median": 2.5055922895304574
+  },
+  "4": {
+   "n": 47,
+   "hits": 11,
+   "rate": 0.23404255319148937,
+   "SEMU_median": 3.9964932861035507
+  },
+  "6.3": {
+   "n": 47,
+   "hits": 17,
+   "rate": 0.3617021276595745,
+   "SEMU_median": 6.263205554562995
+  },
+  "10": {
+   "n": 47,
+   "hits": 20,
+   "rate": 0.425531914893617,
+   "SEMU_median": 10.048296806899435
+  },
+  "16": {
+   "n": 47,
+   "hits": 20,
+   "rate": 0.425531914893617,
+   "SEMU_median": 15.770630135038267
+  },
+  "25": {
+   "n": 47,
+   "hits": 20,
+   "rate": 0.425531914893617,
+   "SEMU_median": 24.442773415027357
+  }
+ },
+ "lowest_cell_rate": 0.10638297872340426,
+ "highest_cell_rate": 0.425531914893617,
+ "beta_probit": [
+  -0.8290169113539171,
+  0.18593881333921164
+ ],
+ "a50_fitted_insample": 86.36192143742221,
+ "a90_fitted_insample": 85039.94271131416,
+ "a50": null,
+ "a90": null,
+ "a50_ci95": [
+  12.238311874610204,
+  85742091066.99747
+ ],
+ "a90_95": 426.1130126809096,
+ "a50_identifiable": false,
+ "stim_S_mm2_median": 0.8000000000000002,
+ "stim_equiv_diameter_px": 2.5231325220201604,
+ "feature_occupancy": 0.31539156525252005,
+ "real_spot_SEMU_median": 11.64430491528035,
+ "real_spot_S_mm2_median": 0.9600000000000002,
+ "branch": "A2",
+ "branch_basis": "a50 not identifiable; highest-cell rate below 50% implies a50 above data range",
+ "a50_lower_bound": 26.223559309227674,
+ "detail": "a50 高于真实缺陷 SEMU 中位，且该形态在特征图上占 0.32 个位置（< 1）→ 面积过小导致特征不可表达，不是对比度不足；补样本无效，应改检测器结构"
+}

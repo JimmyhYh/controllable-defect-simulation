@@ -1,0 +1,342 @@
+{
+  "alpha": "min(d/2,1)*(0.5+0.5*d/max(d)); d=float32 Euclidean distance inside fixed mask",
+  "amplitudes": [
+    0.001,
+    0.002,
+    0.004,
+    0.008,
+    0.016,
+    0.032,
+    0.064
+  ],
+  "approved_date": "2026-10-28",
+  "coordinates": {
+    "grid": "pixel centres, indices0..255",
+    "order": "x,y",
+    "original_to_work": "(p+0.5)/4-0.5",
+    "work_to_original": "(p+0.5)*4-0.5"
+  },
+  "coverage": {
+    "background_defined": "at least1/9 geometries has defined Lb",
+    "check_before_formal_generation_and_forward": true,
+    "minimum_defined_backgrounds": 40,
+    "no_weak_level_selection_or_replacement": true,
+    "report_complete_partial_none_and_per_geometry": true
+  },
+  "design_path": "D:\\华兴源创\\计划\\Mura检测器响应与SEMU代理刻度研究设计.md",
+  "design_sha256": "6be345e403ead05c809a736badd3e57135e96e740273c957864badf2a7c332fc",
+  "figure_selection": {
+    "fit": "first fit background, all predetermined geometry definitions",
+    "hold": "first in frozen request order for bright/dark circle/horizontal/diagonal ellipse; add first baseline alarm; deduplicate and merge reasons; absent NA",
+    "no_response_based_best_example_selection": true
+  },
+  "fit_requests": 7560,
+  "future_calibration": {
+    "F100_interval": "Wilson two-sided95%",
+    "alarm": "score>new_tau",
+    "method": "linear",
+    "old_tau_unchanged": true,
+    "q": 0.95,
+    "z": 1.959963984540054
+  },
+  "future_models": [
+    "PatchCore_frozen_N80",
+    "G1_final10000"
+  ],
+  "future_module_binding": "new generation/inference/analysis/figures modules bind their own source identities and this complete manifest; never modify preparation sources",
+  "future_response": {
+    "name": "spatial joint alarm, not causal detection or segmentation accuracy",
+    "paired_baseline_9_geometry_readouts": true,
+    "primary": "alarm and first-flat-argmax heatmap in M_geo"
+  },
+  "future_statistics": {
+    "bootstrap_replicates": 2000,
+    "bootstrap_seed": 2026102802,
+    "bootstrap_unit": "hold background; no refit; conditional on frozen fit",
+    "candidates": [
+      "C-only",
+      "C+area",
+      "SEMU-only",
+      "C+area+context"
+    ],
+    "constant_reference": "p0 mean across backgrounds of within-background mean H_joint",
+    "delta": "SEMU-only error minus reference error; negative is better",
+    "detector_training": false,
+    "fit_manual_user_start": true,
+    "ftol": 1e-12,
+    "gtol": 1e-08,
+    "log_loss_clip": 1e-07,
+    "maxiter": 2000,
+    "optimizer": "L-BFGS-B analytic gradient, init0",
+    "primary_metric": "within-background then across-background mean Brier",
+    "reliability_bins": "10 equal-width; last includes1; empty NA",
+    "ridge_lambda": 0.01,
+    "standardization": "D_fit only, constant continuous columns ->0"
+  },
+  "generation": "float32 I=clip(B+float32(sign*amplitude)*alpha,0,1)",
+  "geometry_order": [
+    "r04_circle",
+    "r04_ellipse_h",
+    "r04_ellipse_d",
+    "r08_circle",
+    "r08_ellipse_h",
+    "r08_ellipse_d",
+    "r12_circle",
+    "r12_ellipse_h",
+    "r12_ellipse_d"
+  ],
+  "geometry_specs": [
+    {
+      "angle_deg": 0.0,
+      "axes_xy": [
+        4.0,
+        4.0
+      ],
+      "center_xy": [
+        128.0,
+        128.0
+      ],
+      "family": "circle",
+      "frame_hw": [
+        256,
+        256
+      ],
+      "id": "r04_circle",
+      "radius_scale": 4,
+      "units": "px256"
+    },
+    {
+      "angle_deg": 0.0,
+      "axes_xy": [
+        6.928203230275509,
+        2.3094010767585034
+      ],
+      "center_xy": [
+        128.0,
+        128.0
+      ],
+      "family": "ellipse_h",
+      "frame_hw": [
+        256,
+        256
+      ],
+      "id": "r04_ellipse_h",
+      "radius_scale": 4,
+      "units": "px256"
+    },
+    {
+      "angle_deg": 45.0,
+      "axes_xy": [
+        6.928203230275509,
+        2.3094010767585034
+      ],
+      "center_xy": [
+        128.0,
+        128.0
+      ],
+      "family": "ellipse_d",
+      "frame_hw": [
+        256,
+        256
+      ],
+      "id": "r04_ellipse_d",
+      "radius_scale": 4,
+      "units": "px256"
+    },
+    {
+      "angle_deg": 0.0,
+      "axes_xy": [
+        8.0,
+        8.0
+      ],
+      "center_xy": [
+        128.0,
+        128.0
+      ],
+      "family": "circle",
+      "frame_hw": [
+        256,
+        256
+      ],
+      "id": "r08_circle",
+      "radius_scale": 8,
+      "units": "px256"
+    },
+    {
+      "angle_deg": 0.0,
+      "axes_xy": [
+        13.856406460551018,
+        4.618802153517007
+      ],
+      "center_xy": [
+        128.0,
+        128.0
+      ],
+      "family": "ellipse_h",
+      "frame_hw": [
+        256,
+        256
+      ],
+      "id": "r08_ellipse_h",
+      "radius_scale": 8,
+      "units": "px256"
+    },
+    {
+      "angle_deg": 45.0,
+      "axes_xy": [
+        13.856406460551018,
+        4.618802153517007
+      ],
+      "center_xy": [
+        128.0,
+        128.0
+      ],
+      "family": "ellipse_d",
+      "frame_hw": [
+        256,
+        256
+      ],
+      "id": "r08_ellipse_d",
+      "radius_scale": 8,
+      "units": "px256"
+    },
+    {
+      "angle_deg": 0.0,
+      "axes_xy": [
+        12.0,
+        12.0
+      ],
+      "center_xy": [
+        128.0,
+        128.0
+      ],
+      "family": "circle",
+      "frame_hw": [
+        256,
+        256
+      ],
+      "id": "r12_circle",
+      "radius_scale": 12,
+      "units": "px256"
+    },
+    {
+      "angle_deg": 0.0,
+      "axes_xy": [
+        20.784609690826528,
+        6.92820323027551
+      ],
+      "center_xy": [
+        128.0,
+        128.0
+      ],
+      "family": "ellipse_h",
+      "frame_hw": [
+        256,
+        256
+      ],
+      "id": "r12_ellipse_h",
+      "radius_scale": 12,
+      "units": "px256"
+    },
+    {
+      "angle_deg": 45.0,
+      "axes_xy": [
+        20.784609690826528,
+        6.92820323027551
+      ],
+      "center_xy": [
+        128.0,
+        128.0
+      ],
+      "family": "ellipse_d",
+      "frame_hw": [
+        256,
+        256
+      ],
+      "id": "r12_ellipse_d",
+      "radius_scale": 12,
+      "units": "px256"
+    }
+  ],
+  "hold_requests": 7560,
+  "implementation": {
+    "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\__init__.py": "bc7b2c4122c0224e23dee1865a07c2f544d72c8c60a32100ec49bafc653952da",
+    "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\inputs.py": "e49eb9eb413025dee5a2ab6dbd5103dfc2f45afac12ee5b54e800d8ba37cc9f1",
+    "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\resources.py": "2a28202d7b0b870d8873a9c6b9f9503292e2f7025a2fe59c5670393003e31166"
+  },
+  "input_shape_hwc": [
+    256,
+    256,
+    3
+  ],
+  "maximum_model_input_references_two_detectors": 31080,
+  "measurement": {
+    "C_pair_pct": "100*abs(DeltaY)/Lb if Lb>1e-6 else undefined",
+    "DeltaY": "mean((Y(I)-Y(B))[M_geo])",
+    "Lb": "mean(Y(B)[M_geo])",
+    "Lb_min_exclusive": 1e-06,
+    "M_eff": "D>float32(1/255), diagnostic only",
+    "Y": "float64 accumulation of encoded RGB weighted0.2126/0.7152/0.0722",
+    "k_is_assumed_not_calibrated": true,
+    "k_primary": 0.4,
+    "k_sensitivity": [
+      0.2,
+      0.8
+    ],
+    "proxy": "C_pair_pct/(1.97/(A_geo*k*k)^0.33+0.72)",
+    "support": "fixed M_geo; never M_eff for area or admission",
+    "weak_float_retained": true,
+    "zero_achieved": "retain; reuse background input by content; never call successful defect detection"
+  },
+  "no_formal_generation": true,
+  "no_forward_training_or_calibration": true,
+  "no_models_or_tensor_loads": true,
+  "no_original_images_or_probabilities_read": true,
+  "original_shape_hw": [
+    1024,
+    1024
+  ],
+  "polarity_order": [
+    "bright",
+    "dark"
+  ],
+  "preparation_source_names": [
+    "__init__.py",
+    "resources.py",
+    "inputs.py"
+  ],
+  "preprocessing_future": "PIL RGB bilinear256 then float32/255; unchanged contrast",
+  "process_contract": {
+    "future_generation_entry": "separate generation.py; never add IO/CLI to frozen inputs.py",
+    "future_real_IO_process": "must not import mura_response.resources; execute its verify CLI in a separate metadata interpreter, then read verified JSON and use inputs pure-array API",
+    "metadata_process_only": "resources import installs permanent import/file guards"
+  },
+  "request_order": "D_fit then D_hold; role background ordinal; geometry; polarity; amplitude",
+  "requests_per_background": 126,
+  "roles": {
+    "D_fit60": 60,
+    "D_hold60": 60,
+    "F100": 100,
+    "Q200": 200
+  },
+  "runtime": {
+    "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+    "executable_sha256": "137c474a645a9471ab3a369084e7cd573cd8b7ff8f81cb85363fffdf5904106c",
+    "packages_metadata_only": {
+      "Pillow": "12.3.0",
+      "numpy": "1.26.4",
+      "opencv-python": "4.11.0.86",
+      "scikit-learn": "1.7.2",
+      "scipy": "1.16.2",
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128"
+    },
+    "platform": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.7"
+  },
+  "schema": "mura-semu-applicability-preparation-v1",
+  "scope": "metadata and artificial CPU arrays only",
+  "seed": 2026102801,
+  "stage": 2,
+  "total_nominal_requests": 15120
+}

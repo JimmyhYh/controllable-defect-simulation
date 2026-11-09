@@ -1,0 +1,269 @@
+{
+  "schema": "shared-holdout-metadata-v1",
+  "root_seed": 20261031,
+  "split_sha256": "765aa3f0be86f36f2c5370b0729d18daaa2b63e16d7df8271c89073d27b2750b",
+  "S_bg": [
+    "display/train/good/0329.png",
+    "display/train/good/2089.png",
+    "display/train/good/0625.png",
+    "display/train/good/2347.png",
+    "display/train/good/1128.png",
+    "display/train/good/0686.png",
+    "display/train/good/1279.png",
+    "display/train/good/0645.png",
+    "display/train/good/0474.png",
+    "display/train/good/0293.png",
+    "display/train/good/0604.png",
+    "display/train/good/0837.png",
+    "display/train/good/1392.png",
+    "display/train/good/1651.png",
+    "display/train/good/1198.png",
+    "display/train/good/0395.png",
+    "display/train/good/0280.png",
+    "display/train/good/1315.png",
+    "display/train/good/0087.png",
+    "display/train/good/2122.png"
+  ],
+  "dataset_root": "D:\\华兴源创\\实验\\弱缺陷Demo\\data\\weak_localization\\AnoLCD",
+  "expected_background_file_sha256": {
+    "display/train/good/0329.png": "d902d9923d5086acf5f64b35b99e3f81f7702ee2ea72e29d5da49c23b3fc5f88",
+    "display/train/good/2089.png": "e676724f330bdbbcc3d2ecf2e3d1084425b502d397ed03ad8fd2fcb8c9105a6d",
+    "display/train/good/0625.png": "b26452ad6ac3dc64b940f72a3409ce269f4d43d08d05870da7021dfbc5eaca2c",
+    "display/train/good/2347.png": "3028bf7c75a383c499d707517693f428a7025c771309b07bacd82f51d6302721",
+    "display/train/good/1128.png": "55f0ae371986f5e4e7ce3a24ad976c04c7a25b02ed63963ec66d2e45109a0fd0",
+    "display/train/good/0686.png": "376c864eea786b0f9a703d5a178b47e7a0f3d73d769819c567d28adf8cf45b94",
+    "display/train/good/1279.png": "e1214e08d4f80ad16aea46297ceb0c14c3a305102a3644b481e2be3510b222d9",
+    "display/train/good/0645.png": "a9b43ff02198a2559345d13b79c2bb2f8d7cecc6fd7eeb87ac8c48f0e956b02e",
+    "display/train/good/0474.png": "fe4bb2f353fdcf196f4bc80d0fbd44201df6c85f692ab6f3c3ac71f25468b346",
+    "display/train/good/0293.png": "26a235d9d360359b448b31a970857b179555c8b9d64c5b59cb4d0d5140a1459a",
+    "display/train/good/0604.png": "083a0665f3fd0344ee1f776aa4e2fa807914819ef540b529df0f49dff7b91e3c",
+    "display/train/good/0837.png": "99796fbc7d26f12521879ae4bb85298ece9db412d76d579cc60a9ee379015a23",
+    "display/train/good/1392.png": "2b88712ddcf346cf1c8daf0c6a6d00c9d47cafe94d6cba6d728f20303cd6b52d",
+    "display/train/good/1651.png": "f2de78167bc2621156a368de3f10da08471f2825843b65b628b872849d8e2acd",
+    "display/train/good/1198.png": "152b79e4ed9e4d38ba5688e8d0ecdc34705848b4b481948f7ea1e52371dc0e36",
+    "display/train/good/0395.png": "02f10101618e93980be91594ac9263e79dd315afd68be40a23ed286eaa7b35e7",
+    "display/train/good/0280.png": "cae208e1044b633e3251917b4f61f0c56a5099e60bfb77e37851e49c44ffb04c",
+    "display/train/good/1315.png": "5ea911e461e67abac5cbef057e29a290cb08b765ea8a8e348d734f55f4f15107",
+    "display/train/good/0087.png": "1527a2d049b96b27f9aed6eb701842ddda4dc642bb9e1aa14571e4c6ff3766b8",
+    "display/train/good/2122.png": "0854f9a976b541b574cde28380642f22165ad7b7e67bcb9ab2bd90679698d756"
+  },
+  "background_bytes_verified": false,
+  "preparation_implementation": {
+    "controlled_generation\\holdout_preparation.py": "de95c891b49371be0e95b1c5379252b8eed1cbb9f7387fa1bc95371ed2f31531",
+    "controlled_generation\\data.py": "f7b24ffde909edb07fda0b306e2088304af3f5cd249496251b72ac948fbe0cc2",
+    "controlled_generation\\render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+    "controlled_generation\\geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+    "controlled_generation\\calibration.py": "6489eddcd9ebbecdd3e8792282e532d745c5047ef2fb5edf55c8cbe8a80b319d"
+  },
+  "calibration_config_sha256": "4c9043ba8880ae69a2a972d02d4a8dcff5da32fd9c9daf33750a99e71179bb66",
+  "calibration_verification_sha256": "5d1e4bd432b0b1baae41114157b82beaa8b81fe7acaaff39740fbbe8f157fb72",
+  "final_models": {
+    "G0": {
+      "source_files_sha256": {
+        "results\\controlled_generation\\formal_training\\G0_20261030\\training_result.json": "ba83d44201cda79e439d6ac0f7ec9e4d67cebcc21c75bea37f6de521ed389124",
+        "models\\controlled_generation\\formal_draem\\G0_20261030\\reconstruction.pth": "e8c0d66e62171e16b23508906c278b0e26ed3edaac231c29b865726017b358d1",
+        "models\\controlled_generation\\formal_draem\\G0_20261030\\segmentation.pth": "c02892035b1a4612cb319cc87056e276124ab41e666839dffc971a49332479f8"
+      },
+      "verification_sha256": "5f08da7b037934a1611924edf91be691f15eec27b213ea89cb9d9a5df93c03ab",
+      "final_parameters_sha256": {
+        "reconstruction": "f6a7c342b95623b5f2d35ff73aa4db2eb30f9da98921fcdcd47c72905834b909",
+        "segmentation": "6b23d2fbe7a295a95053e3baf0cfbdaaa0f6b719aab56bd67e7cfd1c12f787c8"
+      },
+      "initial_parameters_sha256": {
+        "reconstruction": "2e25689993c775c3f1b753fef749e9da2f35955e1321410a86de9fdd7da75492",
+        "segmentation": "7236dc055613ea1ca384a208380cc6297c53d5d68eb997f0782f4d22f1f35589"
+      }
+    },
+    "G1": {
+      "source_files_sha256": {
+        "results\\controlled_generation\\formal_training\\G1_20261030\\training_result.json": "4c3f988edc3d283c2d783cd0a3ee038886ab28e7cbc95db4ce49415bdfd76531",
+        "models\\controlled_generation\\formal_draem\\G1_20261030\\reconstruction.pth": "eb5fd05c44317f36f367ab89d734a380361d9a53df4b69a8c14579613f4edb0a",
+        "models\\controlled_generation\\formal_draem\\G1_20261030\\segmentation.pth": "6e1b991203df330f1687b88dfd565077650372f0f1e8bc3fa50c9725d7b64fba"
+      },
+      "verification_sha256": "366a06c750b4c39fc4c616888146c69a76012f8dfe8c87aac8eab9739cc7739c",
+      "final_parameters_sha256": {
+        "reconstruction": "fd72e5431eb1447250cee7dc198e114ded73c84230f82c83f037a0548f2273ba",
+        "segmentation": "c2f2f0d851d913f6d1a473883dbbad9056882153bc20bd34d4bbafd8b3a519d8"
+      },
+      "initial_parameters_sha256": {
+        "reconstruction": "2e25689993c775c3f1b753fef749e9da2f35955e1321410a86de9fdd7da75492",
+        "segmentation": "7236dc055613ea1ca384a208380cc6297c53d5d68eb997f0782f4d22f1f35589"
+      }
+    }
+  },
+  "threshold_results": {
+    "G0": {
+      "path": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\controlled_generation\\calibration\\G0\\result.json",
+      "sha256": "d651c22bade94199d2769f63d9cf4cb63f2826aec2895fec84fba5a0f45eeec9",
+      "threshold": 0.6124536782503127
+    },
+    "G1": {
+      "path": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\controlled_generation\\calibration\\G1\\result.json",
+      "sha256": "5a2ea398f321287f76277d8ca717e8275ab1392ad9f32e995a3db23ed88e5b8f",
+      "threshold": 0.7155899673700332
+    }
+  },
+  "runtime_identity": {
+    "python": "3.12.7",
+    "python_implementation": "CPython",
+    "system": "Windows",
+    "machine": "AMD64",
+    "packages": {
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "numpy": "1.26.4",
+      "Pillow": "12.3.0",
+      "opencv-python": "4.11.0.86",
+      "scipy": "1.16.2",
+      "imgaug": "0.4.0"
+    }
+  },
+  "metric_package": {
+    "scikit-learn": "1.7.2"
+  },
+  "upstream_mask_identity": {
+    "repository": "https://github.com/yulimso/AnoStyler",
+    "commit": "19a41c9965a9ce3f2057890850e50efe0bcb58d6",
+    "files": {
+      "meta_shape_priors.py": {
+        "source_url": "https://raw.githubusercontent.com/yulimso/AnoStyler/19a41c9965a9ce3f2057890850e50efe0bcb58d6/src/meta_shape_priors.py",
+        "sha256": "bb5966d4a5389a42b35c482ea55cf9760f3e95e391485e980d3e4313abcef0ff",
+        "bytes": 4366
+      },
+      "LICENSE": {
+        "source_url": "https://raw.githubusercontent.com/yulimso/AnoStyler/19a41c9965a9ce3f2057890850e50efe0bcb58d6/LICENSE",
+        "sha256": "b0f4973c293bb450abc5962d3c06cf44fbd77d9b8527437292e4376a6c3f84ca",
+        "bytes": 1064
+      }
+    },
+    "scope": "Only CPU mask module and MIT license; no training code or weights downloaded"
+  },
+  "requests_canonical_sha256": "4d221f8d5213972ba9b11c23c19e1ac99bff6a7c157f952e71ca3952d5dfde31",
+  "planned_denominators": {
+    "planned_normal": 20,
+    "planned_anomaly": 480,
+    "per_strength": 240,
+    "per_strength_type": 120,
+    "per_strength_type_polarity": 60,
+    "geometry_groups": 120,
+    "strength_pairs": 240,
+    "static_geometry": {
+      "M_circle": {
+        "continuous_or_requested_box_xyxy": [
+          46.0,
+          46.0,
+          82.0,
+          82.0
+        ],
+        "rasterization_checked": false,
+        "image_validity_checked": false
+      },
+      "M_ellipse": {
+        "continuous_or_requested_box_xyxy": [
+          148.22706830316508,
+          125.44641347893992,
+          203.77293169683492,
+          170.55358652106008
+        ],
+        "rasterization_checked": false,
+        "image_validity_checked": false
+      },
+      "M_blob": {
+        "continuous_or_requested_box_xyxy": [
+          100.0,
+          108.0,
+          155.0,
+          147.0
+        ],
+        "rasterization_checked": false,
+        "image_validity_checked": false
+      },
+      "L_edge": {
+        "continuous_or_requested_box_xyxy": [
+          66.5,
+          22.5,
+          189.5,
+          25.5
+        ],
+        "rasterization_checked": false,
+        "image_validity_checked": false
+      },
+      "L_diagonal": {
+        "continuous_or_requested_box_xyxy": [
+          104.5,
+          94.19872981077808,
+          159.5,
+          185.80127018922192
+        ],
+        "rasterization_checked": false,
+        "image_validity_checked": false
+      },
+      "L_polyline": {
+        "continuous_or_requested_box_xyxy": [
+          45.5,
+          149.5,
+          178.5,
+          186.5
+        ],
+        "rasterization_checked": false,
+        "image_validity_checked": false
+      }
+    },
+    "actual_valid_anomaly_count": null,
+    "actual_positive_pixel_count": null
+  },
+  "preprocessing": "PIL RGB whole-image bilinear256; float32/255; no other normalization/augmentation",
+  "normalization": {
+    "module": "author BatchNorm2d, same eps/affine/placement",
+    "track_running_stats": false,
+    "running_buffers": null,
+    "train_and_eval": "current single-input batch/spatial statistics, batch_size1",
+    "scope": "both reconstructive and discriminative networks; no calibration or held-out mixing"
+  },
+  "score": "maximum of raw anomaly-channel softmax over256x256; no pooling/smoothing/resizing/normalization",
+  "alarm_rule": "score strictly greater than per-model frozen threshold",
+  "generation_rules": {
+    "attempts_per_request": 1,
+    "retry": false,
+    "replace_background": false,
+    "change_location": false,
+    "brightness_capacity_rescue": false,
+    "invalid_as_normal": false,
+    "residual_definition": "D=max_RGB(abs(I-B)); actual float32 arrays after clipping",
+    "effective_mask_definition": "M_eff=(D>float32(1/255)); strictly greater",
+    "finite_RGB_range": "B and I must be finite float32 RGB in [0,1]",
+    "nonempty_masks": [
+      "M_roi",
+      "M_eff"
+    ],
+    "model_input": "anomaly I and normal B float32 arrays; no PNG/JPEG round trip",
+    "normal_GT": "all zero; one normal input per fixed background",
+    "float32_label_threshold": 0.003921568859368563,
+    "minimum_effective_coverage": 0.9,
+    "coverage_definition": "count(M_eff & M_roi)/count(M_roi)",
+    "outside_ROI_change": 0,
+    "outside_ROI_positive_pixels": 0,
+    "invalid_for_detection_metrics": "exclude and report generation denominator separately",
+    "missing_source_or_unexpected_geometry_error": "stop; do not drop a background as ordinary invalid"
+  },
+  "metric_rules": {
+    "normal_denominator": 20,
+    "primary": "a04 all valid plus all20 normals",
+    "secondary": "a02 all valid plus same20 normals",
+    "pixel_AP": "exact global; all pixels; no sampling or per-image averaging",
+    "pixel_denominator": "(20+valid_anomaly_count)*65536; positive count from actual M_eff",
+    "image_AUROC": "valid anomalies vs20 normals; NA without both classes",
+    "recall_denominator": "valid_anomaly_count",
+    "normal_FP_denominator": 20,
+    "type_groups": "each type valid anomalies plus same20 normals; do not add normal counts across tables",
+    "paired_strength": "both strengths valid only; max240 pairs; record unmatched failures",
+    "model_comparison": "same shared valid set; no model-specific omission",
+    "empty_positive_or_anomaly_group": "NA, not0 or1",
+    "independent_repetitions": false
+  },
+  "bias": "G1-renderer-domain evaluation; sharing inputs does not remove renderer preference",
+  "independent_real_validation": "pending",
+  "state": "metadata only; no generation or scoring",
+  "future_generation_implementation": "separate holdout_data.py and generation identity; do not edit this frozen module",
+  "requests_file_sha256": "62e22e18645bd826b3e2ac1ad65c229c31a70762a5f1d5bd20c60f3f528a3cfa"
+}

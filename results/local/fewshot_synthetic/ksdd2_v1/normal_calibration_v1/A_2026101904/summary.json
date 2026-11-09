@@ -1,0 +1,67 @@
+{
+  "model": {
+    "label": "A_2026101904",
+    "condition": "A",
+    "seed": 2026101904,
+    "checkpoint": "models/fewshot_synthetic/ksdd2_v1/formal_gate_v1/A_2026101904/checkpoint_10000.pt",
+    "checkpoint_sha256": "8e0b8aba786d38895d8fac609b3aafab2d52b44d7618c561962c0f6cf1a07ca0",
+    "run_identity": {
+      "input_identity": {
+        "completion": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+        "split": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+        "protocol": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+        "old_sources": {
+          "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+          "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+          "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+          "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee"
+        }
+      },
+      "preparation": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+      "config": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+      "implementation": {
+        "common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+        "sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+        "model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+        "training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+        "metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+        "inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f"
+      },
+      "environment": {
+        "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+        "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+        "packages": {
+          "numpy": "1.26.4",
+          "Pillow": "12.3.0",
+          "scipy": "1.16.2",
+          "opencv-python": "4.11.0.86",
+          "torch": "2.8.0+cu128",
+          "scikit-learn": "1.7.2"
+        }
+      },
+      "condition": "A",
+      "seed": 2026101904,
+      "initial_hash": "90f0b67c050976f1c8da275bd0ee178a8e57ace17dd414a28a102ed6ec800860"
+    },
+    "final_parameter_hash_recorded": "462dd55dc2ead0633bcddd997ef80821a5c68f43096e98349b1a44353a1888d6",
+    "source_complete_sha256": "9b184874647c8ef1fc4080375de4180c58dccfdfdaed9ca31bc2c293afc339de"
+  },
+  "calibration": {
+    "threshold": 0.03272976540028967,
+    "q": 0.95,
+    "method": "linear",
+    "comparison": "strict >",
+    "FP": 10,
+    "TN": 190,
+    "normal_denominator": 200,
+    "same_pool_not_independent_validation": true
+  },
+  "parameter_hash_before": "462dd55dc2ead0633bcddd997ef80821a5c68f43096e98349b1a44353a1888d6",
+  "parameter_hash_after": "462dd55dc2ead0633bcddd997ef80821a5c68f43096e98349b1a44353a1888d6",
+  "buffer_count": 0,
+  "elapsed_scoring_seconds": 16.15599999999904,
+  "minimum_image_boundary_RAM_GiB": 4.477306365966797,
+  "peak_allocated_MiB": 53.96923828125,
+  "peak_reserved_MiB": 68.0,
+  "window_forwards": 844
+}

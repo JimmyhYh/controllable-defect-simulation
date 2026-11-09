@@ -1,0 +1,121 @@
+{
+  "additional_scope_guards": "reject payload/network/process launch/mutations outside owned root and operational CUDA/model calls",
+  "author_path_added_before_patchcore_import": "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\patchcore-inspection\\src",
+  "binding": {
+    "day1_complete_sha256": "be272e26ff988e192d2d834bdb40b9ed2a9b6b2bd4c1e99e9f114c7730e2da1e",
+    "day1_independent_proof": {
+      "CPU_acquisition_is_future_explicit_step": true,
+      "actual_dependency_caller_confirmed": false,
+      "array_probability_bytes_read": 0,
+      "asset_access": "opaque hash only",
+      "asset_hash_file_opens_this_verification": 5,
+      "complete_sha256": "be272e26ff988e192d2d834bdb40b9ed2a9b6b2bd4c1e99e9f114c7730e2da1e",
+      "model_import_or_forward_or_calibration_or_fitting": 0,
+      "new_code_created": false,
+      "prior_full_payload_proofs_reused_not_rerun": true,
+      "protected_directory_stat_signatures_unchanged": 9,
+      "protected_files_sha256_unchanged": 695,
+      "real_candidate_pairs_stat_verified": 50,
+      "scoring_ready": false,
+      "source_RGB_GT_bytes_read": 0,
+      "status": "DAY1_ADMISSION_CACHE_VERIFIED",
+      "strict_output_files": 5
+    },
+    "day1_independent_report_sha256": "4c41dcb209e605aff1e935c2160606d0ad5d72dee67dfa636ac05240e67f7119",
+    "day1_metadata_sha256": {
+      "guard_diagnosis.json": "5895f59e7754cd0ad55c09078b86e41c3416cd1b2c970da2d54a32cdd43c8567",
+      "real_candidates.json": "73f0dd9d020c7fd215205f4c66971a73232879c57c70159b64799f8e90b9c216",
+      "sources.json": "331f0c1a369a89187bfdfa7925a4ae3b26f145d90734017c1df15ef4684f2543",
+      "verification.json": "764b7854c7da864459a830fe40d3371d93a07b27d6444887057a2dba14a49727"
+    },
+    "implementation": {
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_capability\\__init__.py": "1adba9096b6adb0df8c1064ab74baf70825478009cefe3183c5d50ea3752a2fa",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_capability\\import_diagnosis.py": "32e6a3972fba7c5b16a0495277d337873797783601b8fb05946269d15cbe59ed"
+    },
+    "interpreter": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+    "interpreter_sha256": "137c474a645a9471ab3a369084e7cd573cd8b7ff8f81cb85363fffdf5904106c",
+    "normal_workpoints": {
+      "G1": {
+        "complete_sha256": "75dd6b85f50bd6ebc98591aa90496e6c74dd61e039905fccfecec299b0c7bcec",
+        "threshold": 0.6587551027536391
+      },
+      "PatchCore": {
+        "complete_sha256": "2764ecf4c9fd942fda4db783c491848f49c7b9a67842d91a9ca27df3732a72ec",
+        "threshold": 1.852951288223265
+      }
+    },
+    "old_failed_metadata_sha256": {
+      "failure.json": "407b6d448346a6b502f5c417569d41443e477d6c04b8b72400903301f3bbac92",
+      "inflight.json": "4ad0743ae6c0a6ffca89964410bdaaa650f74d56929878cf286b24ea32ad0ddc",
+      "sources.json": "198a7b7af261b33fe1d73b7e99a834d7c9e1f75371a3690b4496b15bf867502e",
+      "started.json": "17a9c5b24941b78dde392385d0c96516536ac2c7fefe8225d7ccfc6c8e8d2c0e"
+    },
+    "package_metadata": {
+      "Pillow": "12.3.0",
+      "faiss-cpu": "1.12.0",
+      "hf-xet": "1.7.0",
+      "httpx": null,
+      "httpx2": "2.13.1",
+      "huggingface-hub": "2.2.0",
+      "numpy": "1.26.4",
+      "safetensors": "0.8.0",
+      "scipy": "1.16.2",
+      "timm": "1.0.20",
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "tqdm": "4.67.1"
+    },
+    "protected_directories": 9,
+    "protected_files": 695,
+    "source_chain_identity": {
+      "D:\\Python\\Lib\\tempfile.py": "325262b226e4d8ec1ef92b825f603e54b767b5add31792acfc3ab6f2b8be73ce",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Lib\\site-packages\\timm\\models\\_builder.py": "424afd527cb1780d73c50f2302cd0945f3b1589a860427c45221d4f136e29708",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Lib\\site-packages\\timm\\models\\_hub.py": "b500f37f2af9c9581ccf8bb18e2a8634f572989a0a8d0d80eb6dac73276d667b",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\fit_inference.py": "af72a578201e7359e309ccfaf1e5c107ae94ab05f294ca5e1af26748fa90dd99",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\inference_runtime.py": "59343c5b8c0d5a819b962cc89fcc4afd2939f99a24bca17470c932eaadf2c240",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\patchcore-inspection\\src\\patchcore\\backbones.py": "d02b4317f8a9e4cca17d6c0c4f4760d00bf9020cbd25d33f88f27198384d4472",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\patchcore-inspection\\src\\patchcore\\patchcore.py": "70cb638cd78692159e4a210424b37763558e8af8969109ef3d83765c351f3027"
+    }
+  },
+  "child_timeout_seconds": 120,
+  "completed_transcript": "read-only verification; no new child imports",
+  "diagnostic_import_sequence": [
+    "numpy",
+    "torch",
+    "faiss",
+    "torchvision.models",
+    "patchcore.common",
+    "patchcore.patchcore",
+    "patchcore.sampler"
+  ],
+  "environment": "inherit launching process TEMP/TMP/TMPDIR exactly; record, never modify or prewarm",
+  "first_outside_write": "capture Python stack before syscall, reject, stop sequence; never allow/retry",
+  "lookup_only_not_call": "torchvision.models.wide_resnet50_2",
+  "no_target_event": "not reproduced in this environment; not cleared for model construction",
+  "omitted_original_calls": [
+    "torch.cuda.is_available/mem_get_info/reset_peak_memory_stats",
+    "random.seed/np.random.seed/torch.manual_seed/torch.cuda.manual_seed_all",
+    "torch.set_num_threads",
+    "TF32/cudnn property setters",
+    "all backbone/detector/optimizer construction, parameter loading and forwards"
+  ],
+  "one_child_maximum": 1,
+  "partial_transaction": "started without complete is not resumable; preserve and stop",
+  "schema": "mura-capability-import-diagnosis-v1",
+  "static_contract": {
+    "actual_file_mutation_or_payload_read_in_scalar_checks": false,
+    "actual_import_compatibility_verified": false,
+    "diagnostic_children_launched": 0,
+    "model_imports": 0,
+    "syntax_compiled_only": true,
+    "virtual_events": {
+      "CUDA_call": "FORBIDDEN_CUDA_CALL",
+      "array_read": "FORBIDDEN_PAYLOAD_OPEN",
+      "flags_only_external_write": "OUTSIDE_WRITE",
+      "model_call": "FORBIDDEN_MODULE_CONSTRUCTION_OR_FORWARD",
+      "own_JSON_write": null,
+      "real_image_read": "FORBIDDEN_PAYLOAD_OPEN",
+      "weight_read": "FORBIDDEN_PAYLOAD_OPEN"
+    }
+  }
+}

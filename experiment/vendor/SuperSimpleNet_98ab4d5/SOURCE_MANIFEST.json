@@ -1,0 +1,100 @@
+{
+  "commit": "98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d",
+  "tree": "00c9e9c277d364ac2ed4d87f71c8be38abda11a5",
+  "api_commit_sha256": "9325492daa9566a0f0cea70e99e5a68534819fbefa14e8c86e16a57ca4b20d6d",
+  "api_tree_sha256": "e483f9706d9ce9a8f1fd7ca9836d0614e8c4849632f1cb33fb634f212d1a17c2",
+  "files": {
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/LICENSE",
+      "bytes": 1068,
+      "sha256": "9c0e54742782fb1e0fdb2785338d754c4cce3e9ec3ce879e418ea301a6d5bae2",
+      "git_blob_sha1": "03af0909aba512b9082fce915ae07b84a617cd0e"
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/README.md",
+      "bytes": 6211,
+      "sha256": "dd2af3677aeb524c90e5234b94738a150e6d87d74fb4deb6c9ddf2093a29e0d6",
+      "git_blob_sha1": "e1b3d54d47a6bc0057c23f203d776a9bdd8cba31"
+    },
+    "requirements.txt": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/requirements.txt",
+      "bytes": 154,
+      "sha256": "af5648e1e97c89a32f9aa057847522fb03431b98e0a8d12f319b553323fe20cc",
+      "git_blob_sha1": "78ac94bab19ed5145c62375586c2ec0955513263"
+    },
+    "model/feature_extractor.py": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/model/feature_extractor.py",
+      "bytes": 2306,
+      "sha256": "f727dfd1152f8158d25d144633339c2a66eee2c33435835835652b53be84186b",
+      "git_blob_sha1": "4ee752e4f875c3be52ce7d2c5c0aac556e18f703"
+    },
+    "model/supersimplenet.py": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/model/supersimplenet.py",
+      "bytes": 14604,
+      "sha256": "22550a4bbc08547c034aa9e12c2399dbdf62f3ccab32ddde39721f510adbf056",
+      "git_blob_sha1": "40b71a8e894a48d3dac130131e217dcedd440c65"
+    },
+    "common/loss.py": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/common/loss.py",
+      "bytes": 677,
+      "sha256": "97b649b1fd3d5f68b32ba7f23ab514b4b5a7963df31ea7ab43a36eaf0ad6c586",
+      "git_blob_sha1": "6cafd7799870434dbc217bb17c8438ca17506547"
+    },
+    "common/perlin_noise.py": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/common/perlin_noise.py",
+      "bytes": 1554,
+      "sha256": "529e1fde5a6d5d46e81eab59d3648d50473f7ebbe03bdbaf9e35470c72d3e7d2",
+      "git_blob_sha1": "832febcd5823b96cdcd30cfd9e98383d7c277db8"
+    },
+    "train.py": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/train.py",
+      "bytes": 22937,
+      "sha256": "8cc9aeb1b90f0149890d931d014db1a2b86e408ef4dae17b83ea172ddc85ef01",
+      "git_blob_sha1": "a9c26b4a5d7071f3050a7fdab81622490a5a06d3"
+    },
+    "datamodules/ksdd2.py": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/datamodules/ksdd2.py",
+      "bytes": 7601,
+      "sha256": "45573adb43c9b52b7ec86aad668603303e86d050016516e1287ca93a7a028549",
+      "git_blob_sha1": "410f46cb5b66b5931a711ab3ddc24c8b60dc0291"
+    },
+    "datamodules/base/datamodule.py": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/datamodules/base/datamodule.py",
+      "bytes": 5524,
+      "sha256": "412dca22cc177c1c6c7779ae7d6454528a3084e3472a9f2695cdb8e0a3963ad8",
+      "git_blob_sha1": "56453a7b05f02979fad6448d5f05b6c9bb913fb2"
+    },
+    "datamodules/base/dataset.py": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/datamodules/base/dataset.py",
+      "bytes": 13664,
+      "sha256": "4ce7ea55ac6597530e5b4d3e28ec556f3308415c5d89a5dc7376f244cd05eec3",
+      "git_blob_sha1": "d5e80fd45f54b13a942d15dc814750fa74a60b55"
+    },
+    "datamodules/base/__init__.py": {
+      "url": "https://raw.githubusercontent.com/blaz-r/SuperSimpleNet/98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d/datamodules/base/__init__.py",
+      "bytes": 876,
+      "sha256": "9a0508e334f171a6164978c5ca8c07c722790fad1438f2eb7084b41f37b9f15d",
+      "git_blob_sha1": "d0b65285e65cc88a8cca52b9a086816553707bb2"
+    },
+    "provenance/apple-ml-destseg-LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/apple/ml-destseg/25b7eefb21088e01946d477b75531ccd761da8cf/LICENSE",
+      "bytes": 2316,
+      "sha256": "24841991b02ec7921fe781d0eb4ddc99842991681a67a46cf85951bafda062c8"
+    },
+    "provenance/DSR-LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/VitjanZ/DSR_anomaly_detection/9932cd29dfd9833d265d859a891f8b1602c7255e/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "provenance/torchvision-v0.23.0-LICENSE.txt": {
+      "url": "https://raw.githubusercontent.com/pytorch/vision/v0.23.0/LICENSE",
+      "bytes": 1517,
+      "sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d"
+    },
+    "provenance/torchvision-v0.23.0-README.md": {
+      "url": "https://raw.githubusercontent.com/pytorch/vision/v0.23.0/README.md",
+      "bytes": 5579,
+      "sha256": "0a44075ed6a86d948c11cff399f071cd57acf9b6b82ceab1eb0102a4ed720629"
+    }
+  }
+}

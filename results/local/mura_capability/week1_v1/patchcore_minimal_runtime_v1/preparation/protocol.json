@@ -1,0 +1,31 @@
+{
+  "author_ones_probe": 1,
+  "input_forwards": 2,
+  "inputs": [
+    {
+      "file": "images/c8320151fcd29f49b0b4740018274d4a97ed50305df52f84f921e923035ebf6b.npy",
+      "file_sha256": "4ea0a89388d887e7f45ded7421d620fdfd295b0ea4290ef7ef09abd268fcf403",
+      "id": "fit_b000",
+      "kind": "baseline",
+      "working_RGB_sha256": "c8320151fcd29f49b0b4740018274d4a97ed50305df52f84f921e923035ebf6b"
+    },
+    {
+      "file": "images/e7bdd46541f306c27238dc09d8b6efba9a653afc803b65ad5390d4faf6296c12.npy",
+      "file_sha256": "88b27bf5b77a717f3e70ae5d2f7cc8ba707646ca15cfbacbce5d9ad1719808be",
+      "id": "fit_b000_r04_circle_bright_a0",
+      "kind": "perturbation",
+      "working_RGB_sha256": "e7bdd46541f306c27238dc09d8b6efba9a653afc803b65ad5390d4faf6296c12"
+    }
+  ],
+  "model": "PatchCore",
+  "partial_transaction": "preserve and stop; never retry",
+  "rescale_cached_float": false,
+  "resources_at_prepare": {
+    "available_RAM_GiB": 3.7167587280273438,
+    "free_D_GiB": 113.25024795532227
+  },
+  "runtime": "original explicit WRN; eval/FP32/batch1/workers0; no C01 rewrite",
+  "score_rule": "strictly greater",
+  "tau": 1.852951288223265,
+  "training_calibration_generation_fitting": false
+}

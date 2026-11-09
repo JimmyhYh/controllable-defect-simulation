@@ -1,0 +1,5 @@
+﻿index,id,outcome,height,width,positive_pixels,saved_native_max,original_tau,selection_reasons
+0,20000,TN,636,231,0,2.02042951968906e-06,7.264203168233501e-06,first TN in frozen original ascending E order
+4,20004,FP,632,230,0,1.271350629394874e-05,7.264203168233501e-06,first FP in frozen original ascending E order
+42,20042,TP,624,227,5529,1.0,7.264203168233501e-06,first TP in frozen original ascending E order
+68,20068,FN,637,230,2321,3.857805040752282e-06,7.264203168233501e-06,first FN in frozen original ascending E order

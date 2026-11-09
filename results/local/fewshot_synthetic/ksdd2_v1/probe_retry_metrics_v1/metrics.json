@@ -1,0 +1,105 @@
+{
+  "identity": {
+    "files": {
+      "results/fewshot_synthetic/ksdd2_v1/preparation/complete.json": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/common_config.json": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe.json": "f8c319f1d0ea06f90ede9f7e7d6a144f18d8bd70ebea35b2699118cef041e429",
+      "results/fewshot_synthetic/ksdd2_v1/probe_retry_preparation_v1/complete.json": "f49db94f4d799686416959616b276d631bc6704828b7b765fdc7d9a8cd3b0eda",
+      "results/fewshot_synthetic/ksdd2_v1/probe_retry_preparation_v1/protocol.json": "7d409d352588263333261ec497f99057c1a568baea7f30899481d3476c5b67d8",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/binding.json": "d1ea381b4fa412e45690299b1e0d39a40fdbaaf847320e2b1143bfe88a00ea3f",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/complete.json": "543cbcf3cd5f5e4317792d2204c0ef468079fbc89834d7a8936f111080feacde",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/result.json": "3207532712938df685562b88e7308e62047b36c29a84314eb9eca4e078580b98",
+      "models/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/run.json": "c5829e31ef6279faac0610f8d7c2f5e29d460d7fabf889010226134d02953b03",
+      "models/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/checkpoint_00200.json": "3ac385e479bf3698534bb311458a2c5fdbd385415a5b1d71c8acebbb26b65de9",
+      "models/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/checkpoint_00200.pt": "3275b9e5c8470dc0da9cce6295df10a1049ae9104c2fd66351f0a074e39a39ad",
+      "models/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/checkpoint_00400.json": "38e50eea8549e1d832e96c3ee7fc3d185cc642af59372a998b719ec72c41d79b",
+      "models/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/checkpoint_00400.pt": "34333c7427d33c1d7749fb45fca735f19d627c677daf07b5f3b3059667bbe9cb",
+      "models/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/checkpoint_00600.json": "616654e4c6dc650ed4d48a021c35b17ff4b069cb06c15985adbd4a1bd39a0cb1",
+      "models/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/checkpoint_00600.pt": "cbd48ed8508950c6f036948416b0d6e647f269a1a04b3c00604fb3bc30d18c4a",
+      "models/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/checkpoint_00800.json": "0b691b665110d65dd51a2cfd6f49ed7b0df9440bf09020497d32596b4ba1aaa1",
+      "models/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/checkpoint_00800.pt": "a6e930f463c1a50110786bcbea9451c0b5c02bbc175e81a435256e10024354c2",
+      "models/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/checkpoint_01000.json": "5c9fe3761fd2b4ad4c4a9cc1f75613557f96abb1f730fc4dab66f172280ae36d",
+      "models/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/checkpoint_01000.pt": "2aa5a6d37f064e4b9897fb10fd37d496d92d4fcd04241eed8856add25c1493c1",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/00.npz": "b7692a671d2422266cf05325bd61a5f98430e683d9135438d7210fd0db721ae3",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/00.npy": "e885b2d9f06a887efb27eb6577a1fbb21a1e7891b794e7ad82961c7f4759dd79",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/01.npz": "165c29acb01b4b8729db2180b6760ce0394d6c0d4461aa22b1f9b50d2c723697",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/01.npy": "511d6631fd8626192a4f533892fe4592568485e7458195f317531c34bffa070e",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/02.npz": "6132b543c8855a22c8595968539f9c135591a82207cf7a1889b8de8cda776ed8",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/02.npy": "e03b0d83872df96a15bbf40dbf16c52297de6ff15e399320b140efa2fd2a54a4",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/03.npz": "4d21fd645a8765c68f0f45148c0c97aa125ea63b9206aeacff644e35b28bd3f8",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/03.npy": "8f4aeadc4626136b911485b7bb77b4ea3483018a2abaae5aeeae1f185ebe6edc",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/04.npz": "25dcf05594c1f7f83eeee177001585b481dc3ffa65e50e0bfbf10ad9a6f74208",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/04.npy": "0eb845430869eb6fcc4c9677429214eee57ad783d0ea3e1dbdf362beb336f36d",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/05.npz": "34e562be4c6820e1b1a338483c509a635c61f94ff5aec09e07abff8ff0a7738f",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/05.npy": "215c8e4bd3b018a68dae6de5a126b7b836b7c6eb684f50fe53c6ead14f436df2",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/06.npz": "b435440c63ee6e7f97ea771f9a42291a91d6cb3207f87aa08e46a51a95a8d935",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/06.npy": "404d3b7e5dd8389bcfaf749a2512b48019d082fefa4f7327100fd33d4ce19ae5",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/07.npz": "732a3a66230761f8770be4b20aff28ec504454dcc65b90d422088ae3afe8144f",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/07.npy": "f237a5ddd6c82591fdf4353d53b3a97bfc07a0e47f57ee9dce79cd7eb0d9a503",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/08.npz": "aba6134423e154882ea11351e2bf4e2b9a43a20196cbaad0e4b3d974f3a8222a",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/08.npy": "2fd5105e3b95c1e1b3187f5af85ae28677ef3c043b39716c513495e4503f20cb",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/09.npz": "37238fb9fb726b283626095a8683cd8b9381acc613755cd62393041e5a74675d",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/09.npy": "98181928d7e46d93c4679c24eddb51061e0c0dda4d21d78c929b7075c9c9bb33",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/10.npz": "5a7e8bf83054d8fa37b880e4e2d30c56531b9ad651c30951d3b40db4328fb071",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/10.npy": "57c3e9ad0e942c6a185c55ae259247347ccfc78821d09badb9d684d08983399e",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/probe_inputs/11.npz": "926cceff05a04b16d53f653bbc36023e206b900f214e5226f4a76bcd1fc4ab50",
+      "results/fewshot_synthetic/ksdd2_v1/retry_ram_v1/probe_2026101906/probabilities/11.npy": "be3666b0d48a0fb01221d83a0ad39862155a4f86bf35b4191a69c66b5e7c23c5"
+    },
+    "frozen_core": {
+      "common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+      "sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+      "model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+      "training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+      "metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+      "inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f"
+    },
+    "retry_adapter_sha256": "471426a55e819b49eaa6317c012a612e64a4d3fd0ba227becc38c14111394cb6",
+    "metric_adapter_sha256": "44704316ae83d6573fc821a6a4c7bb3cac4e39560637cd2c861acfc5ea330515",
+    "environment": {
+      "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+      "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+      "packages": {
+        "numpy": "1.26.4",
+        "Pillow": "12.3.0",
+        "scipy": "1.16.2",
+        "opencv-python": "4.11.0.86",
+        "torch": "2.8.0+cu128",
+        "scikit-learn": "1.7.2"
+      }
+    },
+    "initial_parameter_hash_recorded": "db4c864201741d700ef52ee63be918a4ae61e19639eb49bc753736bcd29d8f55",
+    "final_parameter_hash_recorded": "e5bfff36e67119b413a1a1d04287b5c6006bf0c8d14f7e5d8004b39c3a0141ef",
+    "final_checkpoint_sha256": "2aa5a6d37f064e4b9897fb10fd37d496d92d4fcd04241eed8856add25c1493c1"
+  },
+  "step": 1000,
+  "images": 12,
+  "AP": 0.9976363088979147,
+  "sklearn_AP": 0.9976363088979142,
+  "absolute_difference": 4.440892098500626e-16,
+  "pixels": 704256,
+  "positive_pixels": 26414,
+  "groups": {
+    "real": {
+      "images": 5,
+      "pixels": 294400,
+      "positive_pixels": 24482,
+      "AP": 0.9981950262428786
+    },
+    "synthetic": {
+      "images": 3,
+      "pixels": 175616,
+      "positive_pixels": 1932,
+      "AP": 0.9949387775541814
+    },
+    "normal": {
+      "images": 4,
+      "pixels": 234240,
+      "positive_pixels": 0,
+      "AP": null
+    }
+  },
+  "independent_distinct_scores": 601331,
+  "independent_tied_score_values": 87342,
+  "gate_passed": true,
+  "meaning": "training-side fitting only; real/synthetic subsets are trained inputs, not real held-out evidence"
+}

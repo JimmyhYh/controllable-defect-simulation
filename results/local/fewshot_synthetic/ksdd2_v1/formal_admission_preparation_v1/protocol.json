@@ -1,0 +1,118 @@
+{
+  "schema": "fewshot-formal-admission-v1",
+  "gate_evidence": {
+    "metric_complete_sha256": "eb082002d5a286de1815455326d068d9ad5e52bfe0a381c9c792d350b505c37b",
+    "metric_preparation_sha256": "ee6d30236f91ad3e0fde85407a0119a5816bcc09c19d02f18d0c08be9ebcbbc7",
+    "metric_json_sha256": "49afaeb4557684a2e5e1c2872ca7ce7f3a42924b82d9cc3182441b06a1a934df",
+    "probe_complete_sha256": "543cbcf3cd5f5e4317792d2204c0ef468079fbc89834d7a8936f111080feacde",
+    "retry_protocol_sha256": "7d409d352588263333261ec497f99057c1a568baea7f30899481d3476c5b67d8",
+    "retry_binding_sha256": "d1ea381b4fa412e45690299b1e0d39a40fdbaaf847320e2b1143bfe88a00ea3f",
+    "retry_source_sha256": "471426a55e819b49eaa6317c012a612e64a4d3fd0ba227becc38c14111394cb6",
+    "metric_source_sha256": "44704316ae83d6573fc821a6a4c7bb3cac4e39560637cd2c861acfc5ea330515",
+    "input_identity": {
+      "completion": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+      "split": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+      "protocol": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+      "old_sources": {
+        "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+        "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+        "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+        "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee"
+      }
+    },
+    "environment": {
+      "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+      "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+      "packages": {
+        "numpy": "1.26.4",
+        "Pillow": "12.3.0",
+        "scipy": "1.16.2",
+        "opencv-python": "4.11.0.86",
+        "torch": "2.8.0+cu128",
+        "scikit-learn": "1.7.2"
+      }
+    },
+    "core_implementation": {
+      "common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+      "sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+      "model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+      "training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+      "metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+      "inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f"
+    },
+    "AP": 0.9976363088979147,
+    "gate_passed": true
+  },
+  "adapter_sha256": "ea94a5386d224e81f8745c116a8cf353984d89673bdd3860ea7a57860e26a620",
+  "common_config_sha256": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+  "preparation_complete_sha256": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+  "sequence_sha256": {
+    "2026101903": "eba56a504b65d93c0c853b93962cd44ad14325f0f97962af00408f4075176471",
+    "2026101904": "e96e5d9a5e7cdd546b6e4faa4c89a2ee6a3777f04643e0d4e3f40a3a24125e80",
+    "2026101905": "61cbb38d9f977547911df29614513a94ecf6729db0a252c01b3ff462bac1cca0"
+  },
+  "synthetic_manifest_sha256": "6159a6106a39de372439e88e284030505c9a8fa7768cfa0bfdf8eb8df6ed5966",
+  "order": [
+    [
+      "A",
+      2026101903
+    ],
+    [
+      "B",
+      2026101903
+    ],
+    [
+      "A",
+      2026101904
+    ],
+    [
+      "B",
+      2026101904
+    ],
+    [
+      "A",
+      2026101905
+    ],
+    [
+      "B",
+      2026101905
+    ]
+  ],
+  "steps": 10000,
+  "synthetic_inputs": 7500,
+  "model": "same frozen author discriminative3/2 base16 with GN8; random seed initialization",
+  "loss": "unchanged valid CE+Dice",
+  "probe_weights_used": false,
+  "FP32": true,
+  "batch": 1,
+  "workers": 0,
+  "start_RAM_GiB": 4.5,
+  "runtime_RAM_stop_GiB": 3,
+  "free_VRAM_GiB": 6,
+  "free_disk_GiB": 80,
+  "LR_boundaries": {
+    "1": 0.0001,
+    "8000": 0.0001,
+    "8001": 2e-05,
+    "9000": 2e-05,
+    "9001": 4e-06,
+    "10000": 4e-06
+  },
+  "checkpoint_steps": [
+    1000,
+    2000,
+    3000,
+    4000,
+    5000,
+    6000,
+    7000,
+    8000,
+    9000,
+    10000
+  ],
+  "models": "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\fewshot_synthetic\\ksdd2_v1\\formal_gate_v1",
+  "results": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\fewshot_synthetic\\ksdd2_v1\\formal_gate_v1",
+  "automatic_training": false,
+  "restore": "only own complete saved points with RNG/optimizer/cursor/LR; GPU restore not exercised",
+  "formal_conditions": "A real5000+normal5000; B real5000+normal2500+synthetic2500; per pair same initialization and sequence"
+}

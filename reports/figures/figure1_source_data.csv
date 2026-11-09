@@ -1,0 +1,7 @@
+﻿metric,value,numerator,denominator,unit
+image_auroc,1.0,,124,AUROC
+anomaly_recall,1.0,92,92,fraction
+anomaly_missed,0,0,92,fraction
+normal_false_positive_rate,0.65625,21,32,fraction
+pixel_average_precision,0.46700206202623773,,6221824,AP
+fixed_V_threshold,1.5751205444335934,,49,raw_score

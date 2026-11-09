@@ -1,0 +1,359 @@
+{
+ "baseline_count": 20,
+ "baseline_false_positive": 1,
+ "baseline_false_positive_rate": 0.05,
+ "baseline_unstable": false,
+ "cells": [
+  {
+   "SEMU_actual_median": 1.0596444256063355,
+   "delta_score_median": -9.5367431640625e-07,
+   "detection_rate": 0.0,
+   "hits": 0,
+   "n": 8,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.0,
+   "shape": "mura_small",
+   "target_SEMU": 1.0
+  },
+  {
+   "SEMU_actual_median": 1.5974151206327534,
+   "delta_score_median": 0.0,
+   "detection_rate": 0.0,
+   "hits": 0,
+   "n": 16,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.0,
+   "shape": "mura_small",
+   "target_SEMU": 1.6
+  },
+  {
+   "SEMU_actual_median": 2.5106450236973146,
+   "delta_score_median": -2.384185791015625e-07,
+   "detection_rate": 0.05,
+   "hits": 1,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.05,
+   "shape": "mura_small",
+   "target_SEMU": 2.5
+  },
+  {
+   "SEMU_actual_median": 3.915624640513198,
+   "delta_score_median": 4.291534423828125e-06,
+   "detection_rate": 0.05,
+   "hits": 1,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.25,
+   "shape": "mura_small",
+   "target_SEMU": 4.0
+  },
+  {
+   "SEMU_actual_median": 6.336548054166862,
+   "delta_score_median": 0.1119389533996582,
+   "detection_rate": 0.25,
+   "hits": 5,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.7,
+   "shape": "mura_small",
+   "target_SEMU": 6.3
+  },
+  {
+   "SEMU_actual_median": 9.924665897279443,
+   "delta_score_median": 0.5874819755554199,
+   "detection_rate": 1.0,
+   "hits": 20,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.95,
+   "shape": "mura_small",
+   "target_SEMU": 10.0
+  },
+  {
+   "SEMU_actual_median": 16.05444615283118,
+   "delta_score_median": 1.6354947090148926,
+   "detection_rate": 1.0,
+   "hits": 20,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 1.0,
+   "shape": "mura_small",
+   "target_SEMU": 16.0
+  },
+  {
+   "SEMU_actual_median": null,
+   "delta_score_median": null,
+   "detection_rate": null,
+   "hits": 0,
+   "n": 0,
+   "n_expected": 20,
+   "peak_in_mask_rate": null,
+   "shape": "mura_mid",
+   "target_SEMU": 1.0
+  },
+  {
+   "SEMU_actual_median": 1.5719036508019086,
+   "delta_score_median": -9.5367431640625e-07,
+   "detection_rate": 0.0625,
+   "hits": 1,
+   "n": 16,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.125,
+   "shape": "mura_mid",
+   "target_SEMU": 1.6
+  },
+  {
+   "SEMU_actual_median": 2.433945995584099,
+   "delta_score_median": 4.76837158203125e-06,
+   "detection_rate": 0.10526315789473684,
+   "hits": 2,
+   "n": 19,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.3684210526315789,
+   "shape": "mura_mid",
+   "target_SEMU": 2.5
+  },
+  {
+   "SEMU_actual_median": 3.9854052171255434,
+   "delta_score_median": 0.1149892807006836,
+   "detection_rate": 0.45,
+   "hits": 9,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.65,
+   "shape": "mura_mid",
+   "target_SEMU": 4.0
+  },
+  {
+   "SEMU_actual_median": 6.246822064523181,
+   "delta_score_median": 0.6264066696166992,
+   "detection_rate": 0.9,
+   "hits": 18,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.95,
+   "shape": "mura_mid",
+   "target_SEMU": 6.3
+  },
+  {
+   "SEMU_actual_median": 9.930448386593616,
+   "delta_score_median": 1.4791250228881836,
+   "detection_rate": 1.0,
+   "hits": 20,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 1.0,
+   "shape": "mura_mid",
+   "target_SEMU": 10.0
+  },
+  {
+   "SEMU_actual_median": 16.107307060097185,
+   "delta_score_median": 2.5502891540527344,
+   "detection_rate": 1.0,
+   "hits": 20,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 1.0,
+   "shape": "mura_mid",
+   "target_SEMU": 16.0
+  },
+  {
+   "SEMU_actual_median": 0.9391676501098821,
+   "delta_score_median": 9.5367431640625e-07,
+   "detection_rate": 0.0,
+   "hits": 0,
+   "n": 11,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.0,
+   "shape": "line_short",
+   "target_SEMU": 1.0
+  },
+  {
+   "SEMU_actual_median": 1.615494832038305,
+   "delta_score_median": 1.430511474609375e-06,
+   "detection_rate": 0.07142857142857142,
+   "hits": 1,
+   "n": 14,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.0,
+   "shape": "line_short",
+   "target_SEMU": 1.6
+  },
+  {
+   "SEMU_actual_median": 2.4339831926487703,
+   "delta_score_median": -9.5367431640625e-07,
+   "detection_rate": 0.05555555555555555,
+   "hits": 1,
+   "n": 18,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.0,
+   "shape": "line_short",
+   "target_SEMU": 2.5
+  },
+  {
+   "SEMU_actual_median": 3.797309451493006,
+   "delta_score_median": -4.76837158203125e-07,
+   "detection_rate": 0.05,
+   "hits": 1,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.0,
+   "shape": "line_short",
+   "target_SEMU": 4.0
+  },
+  {
+   "SEMU_actual_median": 6.3974476328827174,
+   "delta_score_median": -1.430511474609375e-06,
+   "detection_rate": 0.05,
+   "hits": 1,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.0,
+   "shape": "line_short",
+   "target_SEMU": 6.3
+  },
+  {
+   "SEMU_actual_median": 10.025665858517325,
+   "delta_score_median": 0.0001277923583984375,
+   "detection_rate": 0.05,
+   "hits": 1,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.2,
+   "shape": "line_short",
+   "target_SEMU": 10.0
+  },
+  {
+   "SEMU_actual_median": 16.1521826203755,
+   "delta_score_median": 0.33973169326782227,
+   "detection_rate": 0.7,
+   "hits": 14,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.45,
+   "shape": "line_short",
+   "target_SEMU": 16.0
+  },
+  {
+   "SEMU_actual_median": 0.9714295660951742,
+   "delta_score_median": 1.9073486328125e-06,
+   "detection_rate": 0.0,
+   "hits": 0,
+   "n": 4,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.0,
+   "shape": "line_mid",
+   "target_SEMU": 1.0
+  },
+  {
+   "SEMU_actual_median": 1.5972876499287159,
+   "delta_score_median": 1.9073486328125e-06,
+   "detection_rate": 0.058823529411764705,
+   "hits": 1,
+   "n": 17,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.0,
+   "shape": "line_mid",
+   "target_SEMU": 1.6
+  },
+  {
+   "SEMU_actual_median": 2.424110182214741,
+   "delta_score_median": 2.86102294921875e-06,
+   "detection_rate": 0.05555555555555555,
+   "hits": 1,
+   "n": 18,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.05555555555555555,
+   "shape": "line_mid",
+   "target_SEMU": 2.5
+  },
+  {
+   "SEMU_actual_median": 4.183374020093391,
+   "delta_score_median": 3.814697265625e-06,
+   "detection_rate": 0.05,
+   "hits": 1,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.1,
+   "shape": "line_mid",
+   "target_SEMU": 4.0
+  },
+  {
+   "SEMU_actual_median": 6.334155139925848,
+   "delta_score_median": 7.152557373046875e-06,
+   "detection_rate": 0.1,
+   "hits": 2,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.15,
+   "shape": "line_mid",
+   "target_SEMU": 6.3
+  },
+  {
+   "SEMU_actual_median": 10.14969398193316,
+   "delta_score_median": 0.15419673919677734,
+   "detection_rate": 0.55,
+   "hits": 11,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.7,
+   "shape": "line_mid",
+   "target_SEMU": 10.0
+  },
+  {
+   "SEMU_actual_median": 15.9985604789488,
+   "delta_score_median": 0.7959580421447754,
+   "detection_rate": 1.0,
+   "hits": 20,
+   "n": 20,
+   "n_expected": 20,
+   "peak_in_mask_rate": 0.85,
+   "shape": "line_mid",
+   "target_SEMU": 16.0
+  }
+ ],
+ "count_not_representable": 37,
+ "criterion_passed": true,
+ "crosses_20_to_80": {
+  "line_mid": true,
+  "line_short": false,
+  "mura_mid": true,
+  "mura_small": true
+ },
+ "flat_zero": {
+  "line_mid": false,
+  "line_short": false,
+  "mura_mid": false,
+  "mura_small": false
+ },
+ "insufficient": {
+  "line_mid": false,
+  "line_short": false,
+  "mura_mid": false,
+  "mura_small": false
+ },
+ "min_n_per_cell": 10,
+ "monotonic": {
+  "line_mid": true,
+  "line_short": true,
+  "mura_mid": true,
+  "mura_small": true
+ },
+ "monotonic_tolerance": 0.05,
+ "note": "leather domain, single polarity, up to 20 backgrounds, new 256 instance, no training; SEMU below the 8-bit representable floor is not rendered. saturated = all cells >= 0.80 (detector threshold below representable floor); flat_zero = all cells <= 0.20 (no response or threshold above measurable range)",
+ "saturated": {
+  "line_mid": false,
+  "line_short": false,
+  "mura_mid": false,
+  "mura_small": false
+ },
+ "tau": 1.5997703552246094,
+ "usable": {
+  "line_mid": true,
+  "line_short": false,
+  "mura_mid": true,
+  "mura_small": true
+ },
+ "version": "pod_probe_stage1_v1"
+}

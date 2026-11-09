@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/yulimso/AnoStyler",
+  "commit": "19a41c9965a9ce3f2057890850e50efe0bcb58d6",
+  "files": {
+    "meta_shape_priors.py": {
+      "source_url": "https://raw.githubusercontent.com/yulimso/AnoStyler/19a41c9965a9ce3f2057890850e50efe0bcb58d6/src/meta_shape_priors.py",
+      "sha256": "bb5966d4a5389a42b35c482ea55cf9760f3e95e391485e980d3e4313abcef0ff",
+      "bytes": 4366
+    },
+    "LICENSE": {
+      "source_url": "https://raw.githubusercontent.com/yulimso/AnoStyler/19a41c9965a9ce3f2057890850e50efe0bcb58d6/LICENSE",
+      "sha256": "b0f4973c293bb450abc5962d3c06cf44fbd77d9b8527437292e4376a6c3f84ca",
+      "bytes": 1064
+    }
+  },
+  "scope": "Only CPU mask module and MIT license; no training code or weights downloaded"
+}

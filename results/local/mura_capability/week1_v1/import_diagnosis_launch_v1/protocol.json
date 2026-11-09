@@ -1,0 +1,114 @@
+{
+  "GO_permission_deadline_seconds": 20.0,
+  "HELLO_deadline_seconds": 15.0,
+  "budget_consumed_by_started_record": true,
+  "complete_only_after_known_owned_exits_and_all_records": true,
+  "current_environment": {
+    "TEMP": "C:\\Users\\Huang Yuhang\\AppData\\Local\\Packages\\sandbox.{c5f62d83-2b2a-407f-88f4-936265b762a4}\\AC\\Temp",
+    "TMP": "C:\\Users\\Huang Yuhang\\AppData\\Local\\Packages\\sandbox.{c5f62d83-2b2a-407f-88f4-936265b762a4}\\AC\\Temp",
+    "TMPDIR": null
+  },
+  "dependency_order": [
+    "numpy",
+    "torch",
+    "faiss",
+    "torchvision.models",
+    "patchcore.common",
+    "patchcore.patchcore",
+    "patchcore.sampler"
+  ],
+  "dynamic_compatibility_verified": false,
+  "environment_inherited_no_TEMP_TMP_change": true,
+  "expected_preparation_files": [
+    "preparation_complete.json",
+    "protocol.json",
+    "sources.json"
+  ],
+  "expected_runtime_files": [
+    "child_boot.json",
+    "child_identity.json",
+    "child_result.json",
+    "decision.json",
+    "import_permission.json",
+    "parent_identity.json",
+    "popen_observation.json",
+    "preparation_complete.json",
+    "protocol.json",
+    "result.json",
+    "sources.json",
+    "started.json",
+    "stderr.txt",
+    "stdout.txt",
+    "verification.json"
+  ],
+  "identity_rule": "common AND (DIRECT OR LAUNCHER_ONE_HOP)",
+  "implementation": {
+    "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_capability\\__init__.py": "1adba9096b6adb0df8c1064ab74baf70825478009cefe3183c5d50ea3752a2fa",
+    "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_capability\\import_diagnosis_launch.py": "af4566d5100c698b59ccaff885b8454b76b80f7b35ac17a5ebff37bbace4a905"
+  },
+  "legacy_budget_consumed": 1,
+  "legacy_environment": {
+    "TEMP": "C:\\Users\\Huang Yuhang\\AppData\\Local\\Packages\\sandbox.{c1289177-c268-4864-84e5-22ba54721426}\\AC\\Temp",
+    "TMP": "C:\\Users\\Huang Yuhang\\AppData\\Local\\Packages\\sandbox.{c1289177-c268-4864-84e5-22ba54721426}\\AC\\Temp",
+    "TMPDIR": null
+  },
+  "legacy_process_chain": "UNKNOWN",
+  "max_line_bytes": 65536,
+  "max_stream_bytes": 4194304,
+  "message_schema": "mura-launch-handshake-v1",
+  "no_model_or_CUDA_or_data_permission": true,
+  "optional_runtime_file": "first_event.json",
+  "preparation_static_rules": {
+    "AST_Popen_call_sites": [
+      783
+    ],
+    "actual_process_API_calls": 0,
+    "additional_cases": {
+      "closed_virtual_transcript": true,
+      "existing_launch_refused": true,
+      "reject_excess_total_budget": true,
+      "reject_first_event": true,
+      "reject_import_entry_monotonic_ns": true,
+      "reject_permission_contradiction": true,
+      "source_file_match": true,
+      "temporary_environment_match": true,
+      "unknown_field_refused": true
+    },
+    "artificial_case_count": 30,
+    "cases": {
+      "ABORT_is_not_GO": false,
+      "CUDA_call": "FORBIDDEN_CUDA_CALL",
+      "DIRECT": "DIRECT",
+      "LAUNCHER_ONE_HOP": "LAUNCHER_ONE_HOP",
+      "array_read": "FORBIDDEN_PAYLOAD_OPEN",
+      "external_flags_write": "OUTSIDE_WRITE",
+      "image_read": "FORBIDDEN_PAYLOAD_OPEN",
+      "late_HELLO": false,
+      "legacy_PID_predicate_would_reject_launcher": true,
+      "malformed_HELLO": false,
+      "missing_GO": false,
+      "model_call": "FORBIDDEN_MODULE_CONSTRUCTION_OR_FORWARD",
+      "permission_GO_valid": true,
+      "permission_rejects_duplicate_HELLO": false,
+      "permission_requires_saved_log": false,
+      "unknown_ancestor": "REJECT",
+      "unknown_handle_identity": "REJECT",
+      "weight_read": "FORBIDDEN_PAYLOAD_OPEN",
+      "wrong_interpreter": "REJECT",
+      "wrong_session": false,
+      "wrong_token": "REJECT"
+    },
+    "dynamic_handshake_and_import_compatibility_verified": false,
+    "heavy_imports": 0,
+    "new_diagnostic_children": 0,
+    "real_file_operations_in_artificial_cases": 0,
+    "syntax_compiled": true
+  },
+  "resources": {
+    "available_RAM_GiB": 7.907672882080078,
+    "free_D_GiB": 113.19876480102539
+  },
+  "schema": "mura-launch-handshake-v1",
+  "single_new_child_budget": 1,
+  "total_seconds_from_Popen_submission": 120.0
+}

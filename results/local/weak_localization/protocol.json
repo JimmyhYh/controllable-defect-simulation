@@ -1,0 +1,595 @@
+{
+  "schema": "weak-localization-resource-preparation-v1",
+  "phase": "day5_first_round_complete",
+  "state": "Full Tfinal evaluation, label-free demos, figures5/6 and Chinese report complete; no training launched by assistant",
+  "day1_fully_complete": true,
+  "day2_ready": true,
+  "user_scope": {
+    "dataset_downloads_permitted": false,
+    "user_will_download_manually": true,
+    "network_scope": "4 pinned author Python source files only",
+    "fallback_timer": "paused during user-requested download deferral",
+    "only_day1": false,
+    "company_materials": "excluded",
+    "software_tests_or_process_tables": false,
+    "authorized_current_task": "week4 day2 only"
+  },
+  "actual_network": {
+    "dataset_bytes": 0,
+    "weights_bytes": 0,
+    "dependency_installation_bytes": 0,
+    "author_source_bytes": 27142
+  },
+  "environment": {
+    "cpu": "Intel(R) Core(TM) i7-14650HX",
+    "python": "3.12.7",
+    "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+    "ram_total_GiB": 15.62198257446289,
+    "ram_available_GiB": 2.6411399841308594,
+    "disk_free_GiB": 260.22385025024414,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU, 8151, 6751, 595.97",
+    "versions": {
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "numpy": "1.26.4",
+      "faiss-cpu": "1.12.0",
+      "opencv-python": "4.11.0.86",
+      "imgaug": "0.4.0",
+      "scipy": "1.16.2",
+      "scikit-learn": "1.7.2",
+      "tensorboardX": null,
+      "tensorboard": null,
+      "matplotlib": "3.11.2",
+      "timm": "1.0.20"
+    },
+    "cuda_available": true,
+    "torch_cuda": "12.8",
+    "gpu_capability": [
+      12,
+      0
+    ],
+    "files": {
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\DRAEM\\data_loader.py": {
+        "bytes": 6976,
+        "sha256": "92e6309293c8e36277471393d29f3cf13d007ccfb1fbacb3a5acfc4406c14ecd"
+      },
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\DRAEM\\perlin.py": {
+        "bytes": 4449,
+        "sha256": "b6ab97c1fd81d0da2513f99bda6fdc65d96536d7abe4dab49f55bf73a7d64fc1"
+      },
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\DRAEM\\LICENSE": {
+        "bytes": 1064,
+        "sha256": "b8072bab9e17693331b0a1930027b0280bc7c642607871c4f928064807f8fd42"
+      },
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\DRAEM\\README.md": {
+        "bytes": 2736,
+        "sha256": "55df872534e3b69e93c0ad27ccc2ef6157c93af9b4723a5d410d965a223bac4f"
+      },
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\DRAEM\\requirements.txt": {
+        "bytes": 2562,
+        "sha256": "3ba5792ea38eeb7c9dc6562954dd5628a90d829631e2df3aa99a37fedc45143d"
+      },
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\checkpoints\\wide_resnet50_2-95faca4d.pth": {
+        "bytes": 138223492,
+        "sha256": "95faca4d11227dddf8633dbb5ff6c8a9003c1aa5b8945c73834b8007b10950b8"
+      },
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\formal_patchcore\\configuration.json": {
+        "bytes": 7136,
+        "sha256": "30fde76a4638c24f85785a8ba166c9bfeb21b9f2ee70dcde2a318fe7d6219c67"
+      },
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\formal_patchcore\\nnscorer_search_index.faiss": {
+        "bytes": 2568237,
+        "sha256": "f3fa3e362cef02fcdba34fbcfb07803983edd83cd13cc95532199be8a3b95f45"
+      },
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\formal_patchcore\\patchcore_params.pkl": {
+        "bytes": 230,
+        "sha256": "7c2728899e9e4aeca619d5c6f24ad47456c1603cc16e4c846a80f002c6ddc8b4"
+      }
+    },
+    "dtd": {
+      "train1_count": 1880,
+      "already_present": 20,
+      "missing": 1860,
+      "list_sha256": "0a720c85ea6b52b7135a1b1dce63b58b2812a26be225e655b4903692c9380c81",
+      "label_file_sha256": "0a720c85ea6b52b7135a1b1dce63b58b2812a26be225e655b4903692c9380c81",
+      "split_intersections": {
+        "train1_val1": 0,
+        "train1_test1": 0,
+        "val1_test1": 0
+      },
+      "inventory_phase": "before local train1 extraction; current pool state is in top-level dtd"
+    }
+  },
+  "source": {
+    "draem": {
+      "dataset_bytes_downloaded": 0,
+      "author_source_bytes_downloaded": 27142,
+      "commit": "2dbf67397ab5c10a1494e5ae70ab59a25d7c35ef",
+      "files": [
+        {
+          "name": "model_unet.py",
+          "url": "https://raw.githubusercontent.com/VitjanZ/DRAEM/2dbf67397ab5c10a1494e5ae70ab59a25d7c35ef/model_unet.py",
+          "bytes": 13970,
+          "sha256": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+          "imports": [
+            "torch",
+            "torch.nn"
+          ]
+        },
+        {
+          "name": "loss.py",
+          "url": "https://raw.githubusercontent.com/VitjanZ/DRAEM/2dbf67397ab5c10a1494e5ae70ab59a25d7c35ef/loss.py",
+          "bytes": 6183,
+          "sha256": "556a7718294b79d504e36673da537abfe5c3bacd49a0fe27ff1d87d3645981f9",
+          "imports": [
+            "math",
+            "numpy",
+            "torch",
+            "torch.nn",
+            "torch.nn.functional"
+          ]
+        },
+        {
+          "name": "train_DRAEM.py",
+          "url": "https://raw.githubusercontent.com/VitjanZ/DRAEM/2dbf67397ab5c10a1494e5ae70ab59a25d7c35ef/train_DRAEM.py",
+          "bytes": 6283,
+          "sha256": "b97daef7c7c5d8c6230635097f112e22dec4aa45effd4b1ed0b26fc72fe67113",
+          "imports": [
+            "argparse",
+            "data_loader",
+            "loss",
+            "model_unet",
+            "os",
+            "tensorboard_visualizer",
+            "torch",
+            "torch.utils.data"
+          ]
+        },
+        {
+          "name": "tensorboard_visualizer.py",
+          "url": "https://raw.githubusercontent.com/VitjanZ/DRAEM/2dbf67397ab5c10a1494e5ae70ab59a25d7c35ef/tensorboard_visualizer.py",
+          "bytes": 706,
+          "sha256": "7a43af1699db9cd3c9b7bde95c6f7f4bbf61cefc38f799551924ac403cb6fc9e",
+          "imports": [
+            "os",
+            "torch",
+            "torch.utils.tensorboard",
+            "torchvision"
+          ]
+        }
+      ]
+    },
+    "core_import_check": true,
+    "training_entry_tensorboard_dependency": "not installed; direct author training entry not ready; address planned training wrapper at day2",
+    "patchcore_commit": "fcaa92f124fb1ad74a7acf56726decd4b27cbcad",
+    "patchcore_files": {
+      "src/patchcore/patchcore.py": {
+        "sha256": "70cb638cd78692159e4a210424b37763558e8af8969109ef3d83765c351f3027",
+        "bytes": 11936
+      },
+      "src/patchcore/common.py": {
+        "sha256": "e18e05d976f029ecad1fe786c270fdb8d6f2f1bf69d466f22f90704154e7fe7d",
+        "bytes": 13406
+      },
+      "src/patchcore/sampler.py": {
+        "sha256": "39612cd2b486865ece304348f740f4bc700a1c2e8684fbab3c2ed016c7801f2d",
+        "bytes": 6961
+      },
+      "src/patchcore/backbones.py": {
+        "sha256": "d02b4317f8a9e4cca17d6c0c4f4760d00bf9020cbd25d33f88f27198384d4472",
+        "bytes": 3271
+      },
+      "LICENSE": {
+        "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+        "bytes": 10142
+      }
+    },
+    "source_download_obstacle": {
+      "initial": "sandbox socket PermissionError WinError 10013 before HTTPS request",
+      "resolution": "approved scoped retry for 4 source files; successful",
+      "no_source_edits": true
+    }
+  },
+  "dtd": {
+    "operation": "local extraction only",
+    "dataset_download_bytes": 0,
+    "train1_count": 1880,
+    "preexisting_images_unchanged": 20,
+    "newly_extracted_images": 1860,
+    "newly_extracted_bytes": 228949439,
+    "all_images_verified": 1880,
+    "pool_content_sha256": "b427953d045e2e0baca00fe30b6c5d71dda110b7ecceb88a26edba4eea04b98a",
+    "train1_file_sha256": "0a720c85ea6b52b7135a1b1dce63b58b2812a26be225e655b4903692c9380c81",
+    "non_train_images_present": 0,
+    "archive_bytes": 625239812,
+    "root": "D:/华兴源创/实验/弱缺陷Demo/data/dtd",
+    "pool_rule": "all official train1 paths sorted lexicographically",
+    "validation_or_test_images_extracted": false,
+    "source": "https://www.robots.ox.ac.uk/~vgg/data/dtd/"
+  },
+  "new_real_dataset": {
+    "preferred": "AnoLCD",
+    "official_repository": "https://github.com/SijieLuo/DLAS-Net",
+    "official_download": "https://pan.baidu.com/s/1y4ul30uijZ_oC5brcqEEfw?pwd=2468",
+    "extraction_code": "2468",
+    "download_initiated_by_agent": false,
+    "local_partial_metadata": {
+      "path": "D:\\华兴源创\\实验\\AnoLCD.zip.baiduyun.p.downloading",
+      "bytes": 2605595804,
+      "state": "partial_download_filename_only; contents not opened",
+      "full_dataset_verified": false,
+      "inventory_phase": "historical 2026-10-12 pre-download snapshot; superseded by full archive audit"
+    },
+    "contents_opened": true,
+    "license_verified": false,
+    "annotations_verified": true,
+    "real_origin_verified": "authors declare real-world LCD dataset; no per-image capture provenance in archive",
+    "source_groups_verified": "exact decoded RGB identities only; physical capture groups unavailable",
+    "category_selected": "display single supplied pool",
+    "complete_archive_path": "D:/华兴源创/实验/AnoLCD.zip",
+    "fallback": "tile not selected or downloaded; no automatic switch in this continuation",
+    "extracted_root": "D:\\华兴源创\\实验\\弱缺陷Demo\\data\\weak_localization\\AnoLCD",
+    "manifest_path": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\weak_localization\\dataset_manifest.json",
+    "manifest_sha256": "9d0bf06efd17660e2a0ab5e3e3d45337021b7305490f89f1c32512a4f479a270",
+    "archive_sha256": "2c6c8dae48af9973722c6964336db09ed1c7d1715be21d97ae2b71af3488f03c",
+    "integrity": {
+      "archive_sha256": "2c6c8dae48af9973722c6964336db09ed1c7d1715be21d97ae2b71af3488f03c",
+      "archive_bytes": 2605595804,
+      "CRC_verified_members": 4250,
+      "fully_decoded_members": 4250,
+      "counts": {
+        "display/ground_truth/cylinder": 200,
+        "display/ground_truth/line": 150,
+        "display/ground_truth/mura": 50,
+        "display/ground_truth/scrathes": 100,
+        "display/ground_truth/spot": 250,
+        "display/test/cylinder": 200,
+        "display/test/good": 350,
+        "display/test/line": 150,
+        "display/test/mura": 50,
+        "display/test/scrathes": 100,
+        "display/test/spot": 250,
+        "display/train/good": 2400
+      },
+      "image_sizes": {
+        "(1024, 1024)": 4250
+      },
+      "modes": {
+        "L": 750,
+        "RGBA": 3318,
+        "RGB": 182
+      },
+      "missing_masks": [],
+      "mask_size_mismatch": [],
+      "empty_masks": [],
+      "mask_values": [
+        0,
+        255
+      ],
+      "cross_split_duplicate_groups": 1,
+      "cross_split_duplicate_files": 3,
+      "within_train_duplicate_groups": 8,
+      "within_test_duplicate_groups": 5,
+      "cross_duplicate_examples": [
+        [
+          "display/test/good/168.png",
+          "display/test/good/284.png",
+          "display/train/good/1114.png"
+        ]
+      ],
+      "documentation_files": [],
+      "extract_root": "D:\\华兴源创\\实验\\弱缺陷Demo\\data\\weak_localization\\AnoLCD"
+    },
+    "resource_decision": {
+      "task": "display",
+      "selection_basis": "only supplied image task directory; no nine-way screen category metadata",
+      "exclude_training_test_RGB_overlap": [
+        "display/train/good/1114.png"
+      ],
+      "normal_training_groups": "group by RGB content SHA256 for known identical copies; physical capture groups unknown",
+      "complete_test_preserved": true,
+      "file_level_data_ready": true,
+      "physical_capture_independence_verified": false,
+      "package_documentation_present": false,
+      "explicit_dataset_license_present": false,
+      "authors_real_world_claim_source": "https://www.sciencedirect.com/science/article/abs/pii/S0141938225002860",
+      "source_count_discrepancy": "local 2400 normal train and 1024x1024 vs README 2100 and 1000x1000; cause unconfirmed; use audited package, no claim exact author replication",
+      "summary": {
+        "eligible_normal_train_files": 2399,
+        "eligible_unique_RGB_groups": 2391,
+        "normal_train_exclusion_paths": [
+          "display/train/good/1114.png"
+        ],
+        "test_files": 1100,
+        "unique_test_RGB_images": 1095,
+        "within_train_duplicate_groups": [
+          [
+            "display/train/good/0006.png",
+            "display/train/good/1655.png"
+          ],
+          [
+            "display/train/good/0080.png",
+            "display/train/good/1598.png"
+          ],
+          [
+            "display/train/good/0337.png",
+            "display/train/good/1518.png"
+          ],
+          [
+            "display/train/good/0796.png",
+            "display/train/good/1545.png"
+          ],
+          [
+            "display/train/good/1146.png",
+            "display/train/good/1769.png"
+          ],
+          [
+            "display/train/good/1638.png",
+            "display/train/good/1827.png"
+          ],
+          [
+            "display/train/good/1748.png",
+            "display/train/good/2152.png"
+          ],
+          [
+            "display/train/good/2043.png",
+            "display/train/good/2227.png"
+          ]
+        ],
+        "within_test_duplicate_groups": [
+          [
+            "display/test/cylinder/064.png",
+            "display/test/cylinder/065.png"
+          ],
+          [
+            "display/test/cylinder/131.png",
+            "display/test/cylinder/132.png"
+          ],
+          [
+            "display/test/cylinder/197.png",
+            "display/test/cylinder/198.png"
+          ],
+          [
+            "display/test/good/168.png",
+            "display/test/good/284.png"
+          ],
+          [
+            "display/test/good/226.png",
+            "display/test/good/227.png"
+          ]
+        ],
+        "positive_pixels_per_type": {
+          "cylinder": 127275820,
+          "line": 1842389,
+          "mura": 284937,
+          "scrathes": 753000,
+          "spot": 35923
+        }
+      },
+      "identical_test_image_mask_comparison": [
+        {
+          "images": [
+            "display/test/cylinder/064.png",
+            "display/test/cylinder/065.png"
+          ],
+          "masks": [
+            "display/ground_truth/cylinder/064_mask.png",
+            "display/ground_truth/cylinder/065_mask.png"
+          ],
+          "decoded_masks_identical": false,
+          "different_pixels": 25157,
+          "IoU": 0.9597911318963396
+        },
+        {
+          "images": [
+            "display/test/cylinder/131.png",
+            "display/test/cylinder/132.png"
+          ],
+          "masks": [
+            "display/ground_truth/cylinder/131_mask.png",
+            "display/ground_truth/cylinder/132_mask.png"
+          ],
+          "decoded_masks_identical": false,
+          "different_pixels": 13312,
+          "IoU": 0.9779661016949153
+        },
+        {
+          "images": [
+            "display/test/cylinder/197.png",
+            "display/test/cylinder/198.png"
+          ],
+          "masks": [
+            "display/ground_truth/cylinder/197_mask.png",
+            "display/ground_truth/cylinder/198_mask.png"
+          ],
+          "decoded_masks_identical": false,
+          "different_pixels": 10240,
+          "IoU": 0.9827586206896551
+        }
+      ]
+    },
+    "research_use_intent_source": "https://github.com/SijieLuo/DLAS-Net#introduction",
+    "usage_status": "user supplied official author repository; README Introduction explicitly releases self-built data to enable reproducible experiments; current private noncommercial research aligns this intended scope (inference), no broader license asserted",
+    "usage_scope_supported": true,
+    "release_discrepancy_status": "documented audited package version; no arbitrary trimming or original-paper replication claim; not a blocker for new protocol"
+  },
+  "scientific_state": {
+    "split_frozen": true,
+    "N": 80,
+    "Vnew": 479,
+    "Tfinal": 1100,
+    "model_instantiated": true,
+    "model_training": "formal A/B completed by user manual launch",
+    "new_memory_bank": true,
+    "Vnew_or_Tfinal_scoring": "both completed in protocol order, no held-out tuning",
+    "old_leather_image_label_or_derived_material_read": false,
+    "old_weights_and_threshold_unchanged": true,
+    "lambda_weak_frozen": true,
+    "training_budget_frozen": true,
+    "resource_probe_optimizer_steps": 80,
+    "formal_training": true,
+    "Vnew_scored": true,
+    "Tfinal_scored": true,
+    "thresholds_frozen": true,
+    "first_round_real_evaluation_complete": true,
+    "post_test_tuning": false
+  },
+  "remaining": [],
+  "prepared_at_utc": "2026-10-12T07:39:41.502657+00:00",
+  "data_audited_on_client_date": "2026-10-13",
+  "day2_complete": true,
+  "day3_ready": true,
+  "training_config": {
+    "input_size": 256,
+    "batch_size": 1,
+    "num_workers": 0,
+    "precision": "fp32",
+    "learning_rate": 0.0001,
+    "weight_decay": 0,
+    "steps": 10000,
+    "milestones": [
+      8000,
+      9000
+    ],
+    "gamma": 0.2,
+    "paired_seeds": [
+      20261020,
+      20261021,
+      20261022
+    ],
+    "data_seed_offset": 100000,
+    "lambda_weak": 0.1,
+    "replacement_fraction": 0.5,
+    "N_cap": 80,
+    "split_sha256": "feb206cd18eeb9594c64b30afead64577f34473bda57bcaef5a58b3294124ddb",
+    "slower_median_step_seconds": 0.527070099953562,
+    "estimated_pair_hours": 3.660209027455292,
+    "estimated_all_pair_hours": 10.980627082365876,
+    "models": "author ReconstructiveSubNetwork base128 + DiscriminativeSubNetwork base64",
+    "loss": "MSE + SSIM + Focal, author definitions",
+    "checkpoint_rule": "final fixed step; probe weights discarded",
+    "image_score_DRAEM": "max anomaly softmax probability",
+    "image_threshold": "Vnew q0.95 linear; score>threshold",
+    "pixel_evaluation": "all final test pixels at256; GT nearest; maps bilinear; global noninterpolated AP",
+    "training_background_rotation": 0.3,
+    "evaluation_background_augmentation": false,
+    "DTD_pool_rule": "all sorted official train1, 1880 images",
+    "no_real_anomaly_development_set": true,
+    "probe_source_sha256": {
+      "localization_data.py": "be121650749681b50445375dac63dbafe9beeee6fc663440e96bb3655a6c927d",
+      "localization_synthesis.py": "a891c9dbb3588319f2706d537dbe232e22893415cbf32b145f69e7fa8ef45ccb",
+      "localization_train.py": "5c9f89734b49cb1a3297a46b3067e1ea505431a2dafbb911397881f52f7125ef"
+    },
+    "probe_results_sha256": "37a907a5d903f274e0cc45a2747dd598925b7ac88a605ce27f8446ff9f25afac",
+    "synthesis_check_sha256": "e4df196e68decb767303b18caaa297d223886dfd96f689db78274e1163b76da8",
+    "DTD_train1_sha256": "0a720c85ea6b52b7135a1b1dce63b58b2812a26be225e655b4903692c9380c81",
+    "diagnostic_pairs_visually_reviewed": 32,
+    "resource_warning": "CPU free RAM fell below0.5GiB during probe; keep other apps closed. Bank peak is estimated, not measured.",
+    "timing_scope": "CPU generation, host transfer, forward, loss, finite-gradient check, backward and Adam update; CUDA synchronized"
+  },
+  "training_config_sha256": "8013b96781c785c9ca6d2b05ed0710c6e4620863bfa8a9b24a0330568ce6ce17",
+  "split_sha256": "feb206cd18eeb9594c64b30afead64577f34473bda57bcaef5a58b3294124ddb",
+  "day2_client_date": "2026-10-13",
+  "day2_verification": {
+    "paired_stream_steps": 40,
+    "component_mismatches": 0,
+    "components": "same background, texture, Perlin mask, A strength, active/replace order, using separate CPU/model RNG",
+    "visual_diagnostic_pairs_reviewed": 32,
+    "model_weights_retained": false,
+    "N_selection": "fixed80 after process ended and RAM estimate passed; no autoexpansion after user freed memory",
+    "memory_estimate_ruling": "initial 3-copy total estimate double-counted resident overhead; inspected pinned author concat/list path, adopted 2-copy incremental bound; bank is still unmeasured",
+    "DTD_pool_content_sha256": "b427953d045e2e0baca00fe30b6c5d71dda110b7ecceb88a26edba4eea04b98a",
+    "probe_only_training": true
+  },
+  "protocol_frozen_at_utc": "2026-10-13T05:12:06.806987+00:00",
+  "active_execution_config": {
+    "path": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\weak_localization\\first_round_config.json",
+    "sha256": "553884e03ab0fa28f5f0cc15bcee19e9489458616f13e4a3792aac9a17dd39ef",
+    "scope": "first pair, seed20261020 only",
+    "supersedes": "only repeat scope and total estimate of day2 training_config; method/data settings unchanged"
+  },
+  "scope_revision": {
+    "client_date": "2026-10-13",
+    "requested_by_user": true,
+    "before_formal_training_and_test_scoring": true,
+    "previous_seeds": [
+      20261020,
+      20261021,
+      20261022
+    ],
+    "current_seeds": [
+      20261020
+    ],
+    "deferred_seeds": [
+      20261021,
+      20261022
+    ],
+    "reason": "first visible real-data exploratory result before spending on repetitions"
+  },
+  "day3_complete": true,
+  "day3_status": {
+    "patchcore_bank_complete": true,
+    "patchcore_vectors": 819,
+    "formal_A_complete": true,
+    "formal_B_started": true,
+    "training_process_running": false,
+    "last_printed_A_step": 10000,
+    "retained_A_checkpoint_step": 10000,
+    "manual_launch_requested": true,
+    "held_out_scoring": "Vnew only after both final models complete"
+  },
+  "day4_complete": true,
+  "day5_ready": false,
+  "day4_status": {
+    "formal_B_complete": true,
+    "manual_training": true,
+    "seed": 20261020,
+    "steps_each": 10000,
+    "paired_trace_match": true,
+    "active_anomalies_each": 4791,
+    "B_weak_replacements": 2395,
+    "models": [
+      "PatchCore",
+      "A20261020",
+      "B20261020"
+    ],
+    "Vnew_count": 479,
+    "thresholds": {
+      "PatchCore": 1.8928574562072753,
+      "A20261020": 0.999303674697876,
+      "B20261020": 0.9995600938796997
+    },
+    "frozen_config_sha256": "93c29798fdb301363e97059ac02a5e3a389698794a21cd3b991fb1fdccb35ff9",
+    "Tfinal_scored": false
+  },
+  "day5_complete": true,
+  "day5_status": {
+    "Tfinal_images": 1100,
+    "normal_images": 350,
+    "anomaly_images": 750,
+    "positive_pixels": 8135158,
+    "negative_pixels": 63954442,
+    "pixel_grid": [
+      256,
+      256
+    ],
+    "single_paired_seed": 20261020,
+    "metrics_sha256": "7e487160697b5a097c8c607152fc5d6d3950e85da944d4c3db3e21b28cc1bba8",
+    "B_minus_A": {
+      "pixel_AP_percentage_points": 1.6613889144840384,
+      "recall_percentage_points": 1.6000000000000003,
+      "normal_FPR_percentage_points": 1.142857142857143,
+      "image_AUROC_percentage_points": 0.42323809523808764
+    },
+    "Demo_GT_used": false,
+    "figure_backend": "Python",
+    "report_section": "20.8",
+    "trained_during_day5": false,
+    "no_model_selection": true,
+    "fresh_final_review": "no Critical/Important findings; actual saved numeric/hash checks passed",
+    "remaining_limitations": [
+      "Metric process peak RAM not separately recorded",
+      "Resume after last PatchCore test image before N display-scale write needs explicit N-only repair"
+    ]
+  }
+}

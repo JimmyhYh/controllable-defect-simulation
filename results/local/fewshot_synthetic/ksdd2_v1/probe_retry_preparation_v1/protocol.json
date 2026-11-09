@@ -1,0 +1,68 @@
+{
+  "schema": "fewshot-probe-ram-retry-v1",
+  "seed": 2026101906,
+  "steps": 1000,
+  "start_RAM_GiB": 4.5,
+  "runtime_RAM_stop_GiB": 3,
+  "free_VRAM_GiB": 6,
+  "input_identity": {
+    "completion": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+    "split": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+    "protocol": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+    "old_sources": {
+      "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+      "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+      "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+      "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee"
+    }
+  },
+  "preparation_sha256": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+  "common_config_sha256": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+  "frozen_implementation": {
+    "common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+    "sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+    "model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+    "training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+    "metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+    "inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f"
+  },
+  "retry_module_sha256": "471426a55e819b49eaa6317c012a612e64a4d3fd0ba227becc38c14111394cb6",
+  "environment": {
+    "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+    "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+    "packages": {
+      "numpy": "1.26.4",
+      "Pillow": "12.3.0",
+      "scipy": "1.16.2",
+      "opencv-python": "4.11.0.86",
+      "torch": "2.8.0+cu128",
+      "scikit-learn": "1.7.2"
+    }
+  },
+  "original_failure_files": {
+    "run.json": "fdfedebdf3cf5115b8f45c7463f0594e9c78e4982f64a9e9b63cc886937f2f1d",
+    "active.json": "958cf8719e10b1a43d228b5633f53501d5bd9e4882d5c09567dba2588fc6c39d",
+    "failure.json": "5b3da957780dfd1fdae23b95d688fac395a1901e2d9116132dd660b4a28b250d"
+  },
+  "expected_initial_parameter_sha256": "db4c864201741d700ef52ee63be918a4ae61e19639eb49bc753736bcd29d8f55",
+  "models": "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\fewshot_synthetic\\ksdd2_v1\\retry_ram_v1\\probe_2026101906",
+  "results": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\fewshot_synthetic\\ksdd2_v1\\retry_ram_v1\\probe_2026101906",
+  "intervention": "Only independent output routing and higher startup RAM headroom; original runtime stop unchanged",
+  "checkpoint_steps": [
+    200,
+    400,
+    600,
+    800,
+    1000
+  ],
+  "LR_boundaries": {
+    "1": 0.0001,
+    "800": 0.0001,
+    "801": 2e-05,
+    "900": 2e-05,
+    "901": 4e-06,
+    "1000": 4e-06
+  },
+  "automatic_training": false,
+  "original_weights_loaded": false
+}

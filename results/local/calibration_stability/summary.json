@@ -1,0 +1,165 @@
+{
+  "mode": "main_C48_H48",
+  "stage": "C_calibration_frozen_before_H",
+  "frozen_at": "2026-10-12T09:53:25.606830+08:00",
+  "protocol_sha256": "cb96f342ab3d2ff7fd5086587de1248f6f1ae5fbb7419f3f11c95a0b531cf7b9",
+  "scores_sha256": "4d89d357c5e97c42f37c6276a06c396226de2fb53cf243697037f3d2823dfe91",
+  "calibration_source_sha256": "4436bef72534da57a50ed315b0066d53158321f5a38c3324b05d0049faa98dd9",
+  "C_count": 48,
+  "H_evaluated": false,
+  "C_score_min": 1.2476587295532227,
+  "C_score_median": 1.3823513984680176,
+  "C_score_max": 2.0971803665161133,
+  "canonical_C48_threshold": 1.5711944103240967,
+  "original_V_threshold": 1.5751205444335934,
+  "threshold_statistics": [
+    {
+      "m": 8,
+      "repetitions": 500,
+      "q05": 1.432462079524994,
+      "median": 1.5277376174926758,
+      "q95": 1.9148440837860106,
+      "q95_minus_q05": 0.4823820042610165,
+      "median_absolute_deviation_from_C48": 0.05948281288146973
+    },
+    {
+      "m": 16,
+      "repetitions": 500,
+      "q05": 1.4862444281578064,
+      "median": 1.5598418712615967,
+      "q95": 1.7438719272613525,
+      "q95_minus_q05": 0.2576274991035461,
+      "median_absolute_deviation_from_C48": 0.04836320877075195
+    },
+    {
+      "m": 32,
+      "repetitions": 500,
+      "q05": 1.5294235229492188,
+      "median": 1.5683228969573975,
+      "q95": 1.5986668586730957,
+      "q95_minus_q05": 0.06924333572387686,
+      "median_absolute_deviation_from_C48": 0.022591257095336825
+    },
+    {
+      "m": 48,
+      "repetitions": 500,
+      "q05": 1.5711944103240967,
+      "median": 1.5711944103240967,
+      "q95": 1.5711944103240967,
+      "q95_minus_q05": 0.0,
+      "median_absolute_deviation_from_C48": 0.0
+    }
+  ],
+  "primary_comparison": [
+    16,
+    48
+  ],
+  "statistics_method": "linear empirical quantiles, middle90% finite-pool range; not population CI",
+  "all48_caveat": "Zero variation by finite-pool construction, not population certainty",
+  "future_H_statistics": {
+    "denominator": 48,
+    "fields": [
+      "FP",
+      "FPR_median",
+      "FPR_q05",
+      "FPR_q95"
+    ],
+    "quantile_method": "linear",
+    "status": "not evaluated"
+  },
+  "timings": {
+    "model_load_seconds": 1.3835594998672605,
+    "C_read_inference_seconds": 4.070415199268609,
+    "C_per_image_seconds": [
+      0.1251118998043239,
+      0.07150220032781363,
+      0.08315500011667609,
+      0.08630219986662269,
+      0.08495170017704368,
+      0.08932889997959137,
+      0.09234709991142154,
+      0.097051199991256,
+      0.08001340040937066,
+      0.07967389980331063,
+      0.08353349985554814,
+      0.08727080002427101,
+      0.09758249996230006,
+      0.08135150000452995,
+      0.09281149972230196,
+      0.08515900000929832,
+      0.08847719989717007,
+      0.08468169998377562,
+      0.09370079962536693,
+      0.08665840001776814,
+      0.08633749978616834,
+      0.08119190018624067,
+      0.0786635996773839,
+      0.08416489977389574,
+      0.08092710003256798,
+      0.08027540007606149,
+      0.08233199967071414,
+      0.08679730026051402,
+      0.0775903002358973,
+      0.08684400003403425,
+      0.08155629970133305,
+      0.07893020007759333,
+      0.0799859999679029,
+      0.08212419971823692,
+      0.07487120013684034,
+      0.08408709987998009,
+      0.08332640025764704,
+      0.08160499995574355,
+      0.08403820032253861,
+      0.09437409974634647,
+      0.08156050043180585,
+      0.0816176999360323,
+      0.08456410001963377,
+      0.08154290029779077,
+      0.09348369995132089,
+      0.07680589985102415,
+      0.0787084000185132,
+      0.07144489977508783
+    ],
+    "sampling_seconds": 0.006683999672532082
+  },
+  "timing_scope": "Load excludes startup/imports; C includes read/resize/normalization and synchronized author inference; sampling CPU only; file saves excluded",
+  "resources_before_model_load": {
+    "python": "3.12.7",
+    "cpu": "Intel(R) Core(TM) i7-14650HX",
+    "logical_threads": 24,
+    "windows": "sys.getwindowsversion(major=10, minor=0, build=26200, platform=2, service_pack='')",
+    "ram_total_gib": 15.62198257446289,
+    "ram_available_gib": 1.5812911987304688,
+    "disk_free_gib": 263.4986038208008,
+    "nvidia_smi_columns": [
+      "name",
+      "driver_version",
+      "memory_total_mib",
+      "memory_free_mib"
+    ],
+    "nvidia_smi": "NVIDIA GeForce RTX 5060 Laptop GPU, 595.97, 8151, 6799",
+    "cuda_available": true,
+    "cuda_capability": [
+      12,
+      0
+    ],
+    "versions": {
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "numpy": "1.26.4",
+      "faiss-cpu": "1.12.0",
+      "timm": "1.0.20",
+      "scipy": "1.16.2",
+      "scikit-learn": "1.7.2"
+    },
+    "scope": "Read-only metadata; free resources are a snapshot, not a runtime guarantee",
+    "cim_limitation": "Session Get-CimInstance failed to access CIM; RAM via GlobalMemoryStatusEx, CPU via registry"
+  },
+  "resources_after_C": {
+    "process_working_set_mib": 1318.91796875,
+    "process_peak_working_set_mib": 1326.85546875
+  },
+  "peak_gpu_allocated_mib": 343.92724609375,
+  "peak_gpu_reserved_mib": 374.0,
+  "scope": "C only; no H/E/P images, no fit, no abnormal training, no old threshold or results writes"
+}

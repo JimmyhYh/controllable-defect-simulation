@@ -1,0 +1,149 @@
+{
+  "schema": "paired-pretrained-E1004-exact-CPU-metrics-v3",
+  "implementation": {
+    "real_metrics_v3.py": "f1f449382cd923f9a062db676390d041fdfd679421a3828d158f888118f88967",
+    "README_real_metrics_v3.md": "9a9dfc46cf1c72b8a171d0320abb4d1175466e2442bbe6861fa673b143008f6d",
+    "exact_ap_resource_compat.py": "0bacf857f65c46376dbfc28a82d60c2acebb51694ed76c5c9eee721078c668be"
+  },
+  "runtime_identity": {
+    "python_version": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+    "python_executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+    "python_executable_sha256": "137c474a645a9471ab3a369084e7cd573cd8b7ff8f81cb85363fffdf5904106c",
+    "numpy_distribution_version": "1.26.4",
+    "scikit_learn_distribution_version": "1.7.2",
+    "scipy_distribution_version": "1.16.2"
+  },
+  "scientific_plan": {
+    "path": "D:\\华兴源创\\计划\\预训练单头分割可控合成配对实验执行方案.md",
+    "scientific_sections_1_and_4_sha256": "34b46480ff3a408470abd7c304688bc38f835ef8c85488a77003b3ff5aa94ba7",
+    "large_output_root": "E:\\华兴源创公开实验\\pretrained_synthetic_pairing\\ksdd2_r5_v1",
+    "stage1_output": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\pretrained_synthetic_pairing\\ksdd2_r5_v1\\resource_preparation_v1",
+    "progress_sections_mutable": true
+  },
+  "model_order": [
+    "A_2026102301",
+    "B_2026102301",
+    "A_2026102302",
+    "B_2026102302",
+    "A_2026102303",
+    "B_2026102303"
+  ],
+  "images_per_model": 1004,
+  "unique_E_images": 1004,
+  "native_pixels_per_model": 146411528,
+  "model_image_scores": 6024,
+  "GT": {
+    "source": "frozen normalized uint8 labels from prior independently verified real_metrics_v1",
+    "requests_digest": "c77871199a4c30c023e15c0a0998905c5b7e081094c41f9385dbf2866dc9d89c",
+    "native_shape": "exact saved HxW; no resize, dilation or soft labels",
+    "run_validation": "hash before np.load; uint8; values subset {0,1}; exact native shape",
+    "original_mask_path_and_existing_hash_bound": true,
+    "raw_original_GT_read": false,
+    "actual_counts": "unknown until explicit run opens all1004 normalized arrays",
+    "historical_values_are_only_run_checks": {
+      "anomaly_images": 110,
+      "normal_images": 894,
+      "positive_pixels": 486461
+    }
+  },
+  "pixel_AP": {
+    "function": "fewshot_synthetic.metrics.exact_ap: unchanged code object with isolated resource dependency",
+    "resource_adapter_sha256": "0bacf857f65c46376dbfc28a82d60c2acebb51694ed76c5c9eee721078c668be",
+    "frozen_modules_or_globals_modified": false,
+    "source_sha256": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+    "scope": "global native pixels; every original pixel once; no subsampling or per-image AP averaging",
+    "chunk_max": 1048576,
+    "histogram_bins": 1065353217,
+    "two_uint32_tables_bytes_per_model": 8522825736,
+    "six_models_table_bytes": 51136954416,
+    "ties": "identical float32 values grouped exactly; negative zero normalized by frozen routine",
+    "crosscheck": {
+      "source_path": "D:\\华兴源创\\实验\\弱缺陷Demo\\fewshot_synthetic\\metrics.py",
+      "source_sha256": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+      "function": "fewshot_synthetic.metrics.exact_ap",
+      "signature": [
+        "block_factory",
+        "destination",
+        "identity",
+        "expected_n",
+        "expected_p"
+      ],
+      "BINS": 1065353217,
+      "CHUNK": 1048576,
+      "probe_metric_complete_sha256": "eb082002d5a286de1815455326d068d9ad5e52bfe0a381c9c792d350b505c37b",
+      "probe_verification_complete_sha256": "70851d792ff4c6e9b4f82979e75ac4f26cfcc2c1947d8efb77d3b2b359f4ae09",
+      "probe_AP_sklearn_absolute_difference": 4.440892098500626e-16,
+      "probe_distinct_scores": 601331,
+      "probe_tied_score_values": 87342,
+      "probe_arrays_reopened_now": 0
+    },
+    "probability_payload_io": "one read_bytes per model/image; hash then in-memory decode/validation/yield; no pre-pass"
+  },
+  "image_metrics": {
+    "AUROC": "all1004 native maxima; single actual class -> NA",
+    "threshold": "each model original Q200 tau; score strictly greater; no recalibration",
+    "counts": "TP/FN on actual anomalies; FP/TN on actual normals; empty denominator -> NA rate"
+  },
+  "paired_summary": {
+    "pairs": [
+      [
+        "A_2026102301",
+        "B_2026102301"
+      ],
+      [
+        "A_2026102302",
+        "B_2026102302"
+      ],
+      [
+        "A_2026102303",
+        "B_2026102303"
+      ]
+    ],
+    "primary_delta": "100*(pixel_AP_B-pixel_AP_A) percentage points",
+    "primary_mean": "arithmetic mean of three paired AP deltas",
+    "primary_sample_SD": "statistics.stdev, ddof=1",
+    "supplementary_deltas": "AUROC/recall/normal false-positive-rate percentage points and TP/FN/FP/TN counts",
+    "no_population_significance": true
+  },
+  "selected_examples": {
+    "reference_pair": [
+      "A_2026102301",
+      "B_2026102301"
+    ],
+    "rules": [
+      "first A01 TN",
+      "first A01 FP",
+      "first A01 TP",
+      "first A01 FN",
+      "first anomaly A_FN_to_B_TP",
+      "first anomaly A_TP_to_B_FN",
+      "first normal A_FP_to_B_TN",
+      "first normal A_TN_to_B_FP"
+    ],
+    "deduplicate_and_keep_all_reasons": true,
+    "empty_group": "NA; no replacement",
+    "RGB_opened_during_selection": false
+  },
+  "transaction": {
+    "partial_or_failure": "preserve and stop; no resume/reaccumulate/substitute",
+    "complete_same_identity": "read-only verification; no metric recomputation",
+    "successful_intersection": false,
+    "complete_cache_AUROC": "sealed value and range only; not recalculated",
+    "complete_cache_counts_and_examples": "semantic consistency from saved score metadata and normalized-label cache"
+  },
+  "resources": {
+    "minimum_available_RAM_GiB": 3,
+    "minimum_D_free_GiB": 80,
+    "minimum_E_free_GiB": 80,
+    "reason": "frozen exact_ap retains two uint32 tables per model; old helper also enforces D80GiB"
+  },
+  "preparation": {
+    "GT_array_reads": 0,
+    "probability_array_reads": 0,
+    "actual_metrics": false,
+    "Torch_or_model_operations": 0
+  },
+  "meaning": "E historically seen; exploratory paired composition evidence only; no unseen or screen claim",
+  "request_count": 1004,
+  "reference_count": 6
+}

@@ -1,0 +1,47 @@
+{
+  "training_pool_only": true,
+  "independent_images": 21,
+  "real_images": 5,
+  "normal_images": 16,
+  "feature_pixels": 194880,
+  "feature_positive": 1564,
+  "feature_global_pixel_AP": 0.9991562191018052,
+  "each_R5_feature_AP": {
+    "11670": 0.9999100918256119,
+    "11884": 0.9994584675975653,
+    "12070": 0.996480543938171,
+    "12245": 0.9995439414303089,
+    "12303": 0.9999893044204736
+  },
+  "native_pixels": 3047566,
+  "native_positive": 25072,
+  "native_global_pixel_AP_descriptive_only": 0.9947593731873374,
+  "classification_fixed_reference": {
+    "score": 0.5,
+    "strict_greater": true,
+    "TP": 5,
+    "FN": 0,
+    "FP": 10,
+    "TN": 6,
+    "anomaly_denominator": 5,
+    "normal_denominator": 16
+  },
+  "each_feature_map_nonconstant": true,
+  "gate": {
+    "scope": "same 21 training-side images only; technical fitting, not validation or performance improvement",
+    "feature_global_pixel_AP_min": 0.95,
+    "each_R5_feature_pixel_AP_min": 0.85,
+    "classification_reference_score": 0.5,
+    "classification_comparison": "strictly greater than",
+    "R5_TP_required": 5,
+    "N16_FP_max": 1,
+    "all_scores_finite_and_each_feature_map_nonconstant": true,
+    "final_step_required": 1600,
+    "intermediate_weights_allowed_for_gate": false,
+    "native_pixel_AP": "descriptive only; no gate to confound fitting with blur/native inverse mapping",
+    "rationale": "high pooled feature-scale fitting plus a per-real-image floor prevents the largest mask dominating; classify all5 and at least15/16 normals correctly at a fixed reference, not a Q-calibrated threshold",
+    "status": "pre-run engineering acceptance policy, not a paper performance claim or guaranteed achievable value"
+  },
+  "gate_passed": false,
+  "limitation": "same training pool, one initialization; not heldout validation, generalization, real improvement or screen results"
+}

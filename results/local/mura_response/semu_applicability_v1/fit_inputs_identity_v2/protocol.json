@@ -1,0 +1,217 @@
+{
+  "D_definition": "max(abs(I-B),axis=RGB), float32, HxW",
+  "M_eff_definition": "D>float32(1/255); diagnostic only; no weak filtering",
+  "backgrounds": 60,
+  "cache_verification": "closed full file hashes, shape/dtype/content/measurements; no original opens or render",
+  "cache_verify_does_not_revalidate_original_pixels": true,
+  "decoded_RGB_u8_sha256": {
+    "channel_order": "RGB",
+    "dtype": "uint8",
+    "layout": "HWC",
+    "operation": "PIL Image.convert('RGB'); unchanged contrast",
+    "serialization": "C contiguous bytes; no header",
+    "shape": [
+      1024,
+      1024,
+      3
+    ]
+  },
+  "file_sha256": "SHA256 of complete original PNG bytes; strict frozen source equality",
+  "frozen_preparation": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\mura_response\\semu_applicability_v1\\preparation_v1",
+  "generation_binding": {
+    "CPU_min_RAM_GiB": 2,
+    "D": "max(abs(I-B),axis=RGB), float32, HxW",
+    "M_eff": "D>float32(1/255); diagnostic only; no weak filtering",
+    "decoded_RGB_identity": {
+      "channel_order": "RGB",
+      "dtype": "uint8",
+      "layout": "HWC",
+      "operation": "PIL Image.convert('RGB'); unchanged contrast",
+      "serialization": "C contiguous bytes; no header",
+      "shape": [
+        1024,
+        1024,
+        3
+      ]
+    },
+    "fit_role": "D_fit60",
+    "full_round_min_free_disk_GiB": 40,
+    "generation": "float32 I=clip(B+float32(sign*amplitude)*alpha,0,1)",
+    "implementation": {
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\__init__.py": "bc7b2c4122c0224e23dee1865a07c2f544d72c8c60a32100ec49bafc653952da",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\generation_v2.py": "17ac328a351aebe6053bdce02a9525147f4346426e875a7a6f35e423bb3e3d2a",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\inputs.py": "e49eb9eb413025dee5a2ab6dbd5103dfc2f45afac12ee5b54e800d8ba37cc9f1",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\resources.py": "2a28202d7b0b870d8873a9c6b9f9503292e2f7025a2fe59c5670393003e31166"
+    },
+    "legacy_and_supplement": {
+      "failed_inventory_stat_only": {
+        "failure.json": {
+          "bytes": 853,
+          "directory": false,
+          "mtime_ns": 1793181565421915200
+        },
+        "geometry": {
+          "bytes": 4096,
+          "directory": true,
+          "mtime_ns": 1793181565342038900
+        },
+        "geometry/r04_circle.npz": {
+          "bytes": 921,
+          "directory": false,
+          "mtime_ns": 1793181565279504200
+        },
+        "geometry/r04_ellipse_d.npz": {
+          "bytes": 918,
+          "directory": false,
+          "mtime_ns": 1793181565298015900
+        },
+        "geometry/r04_ellipse_h.npz": {
+          "bytes": 879,
+          "directory": false,
+          "mtime_ns": 1793181565289007400
+        },
+        "geometry/r08_circle.npz": {
+          "bytes": 1110,
+          "directory": false,
+          "mtime_ns": 1793181565305015600
+        },
+        "geometry/r08_ellipse_d.npz": {
+          "bytes": 1068,
+          "directory": false,
+          "mtime_ns": 1793181565319521800
+        },
+        "geometry/r08_ellipse_h.npz": {
+          "bytes": 975,
+          "directory": false,
+          "mtime_ns": 1793181565312518100
+        },
+        "geometry/r12_circle.npz": {
+          "bytes": 1375,
+          "directory": false,
+          "mtime_ns": 1793181565326527300
+        },
+        "geometry/r12_ellipse_d.npz": {
+          "bytes": 1264,
+          "directory": false,
+          "mtime_ns": 1793181565344038800
+        },
+        "geometry/r12_ellipse_h.npz": {
+          "bytes": 1088,
+          "directory": false,
+          "mtime_ns": 1793181565334527700
+        },
+        "images": {
+          "bytes": 0,
+          "directory": true,
+          "mtime_ns": 1793181565266944300
+        },
+        "protocol.json": {
+          "bytes": 3703,
+          "directory": false,
+          "mtime_ns": 1793181565270944100
+        },
+        "residuals": {
+          "bytes": 0,
+          "directory": true,
+          "mtime_ns": 1793181565267944700
+        },
+        "sources.json": {
+          "bytes": 2570,
+          "directory": false,
+          "mtime_ns": 1793181565269944200
+        },
+        "started.json": {
+          "bytes": 2757,
+          "directory": false,
+          "mtime_ns": 1793181565268944500
+        }
+      },
+      "files": {
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\generation.py": "1cd617d45c0d84e015ab517ba05a49ff91920b230dc74ae4dec814538134c576",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\mura_response\\semu_applicability_v1\\fit_inputs_v1\\failure.json": "be403ebf7770c207375dad5bb26c5f0abcd73bd1f6961bcde14ba5c65e63919c",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\mura_response\\semu_applicability_v1\\fit_inputs_v1\\protocol.json": "b16662ada070c088a29abfcaa4ab45dcbd288461f7dbe740253853b2acafddde",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\mura_response\\semu_applicability_v1\\fit_inputs_v1\\sources.json": "0fc4ad18310e349db5f55a562986910f556d0db20b4b7146e813c9b75da505d0",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\mura_response\\semu_applicability_v1\\fit_inputs_v1\\started.json": "e2f0dba7cea9884c48a2c6225c1dad0359da671e4e236e229a2986a754c9e7b2",
+        "D:\\华兴源创\\报告\\Mura响应研究第3阶段CPU生成与停止诊断.md": "0c3a342a6708bb8ef720d3ce72fca678731320b93ecc62f76638003d7c31cf5e",
+        "D:\\华兴源创\\计划\\Mura检测器响应与SEMU代理刻度研究设计.md": "6be345e403ead05c809a736badd3e57135e96e740273c957864badf2a7c332fc",
+        "D:\\华兴源创\\计划\\Mura第3阶段独立身份适配与重新取得补充方案.md": "8cc91e5df1f9224610dfe9528a5e6ba6ba1fea46ad97f7c10531b724f96818e4"
+      },
+      "history": {
+        "fit_decodes": 0,
+        "old_training_decodes": 1,
+        "original_decodes": 1,
+        "render_calls": 0,
+        "source_paths": {
+          "display/train/good/0002.png": 1
+        }
+      },
+      "old_npz_payloads_read": false,
+      "old_transaction_is_not_resumed": true
+    },
+    "legacy_group_identity": "opaque frozen grouping/role/exclusion only; no serialization guess",
+    "metadata_sources": {
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\data\\controlled_generation\\split.json": "765aa3f0be86f36f2c5370b0729d18daaa2b63e16d7df8271c89073d27b2750b",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\data\\weak_localization\\split.json": "feb206cd18eeb9594c64b30afead64577f34473bda57bcaef5a58b3294124ddb",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\weak_localization\\dataset_manifest.json": "9d0bf06efd17660e2a0ab5e3e3d45337021b7305490f89f1c32512a4f479a270"
+    },
+    "minimum_defined_backgrounds": 40,
+    "model_input_dedup": "canonical HWC float32 C array content hash; baseline references included",
+    "no_models_forwards_training_calibration_or_fitting": true,
+    "nominal_requests": 7560,
+    "preparation": {
+      "complete.json": "0fd936ea58f8c8a7d16c209c96d116daa0f34c6044d1b809781bd4b01f7c7ba5",
+      "geometry.json": "83c824484c740511ba528a680d21f8f996dedf8bd6e9fbc0f6f72e4b2f56adc4",
+      "numerical_verification.json": "a8dda6ba8b22a5ea7879db350aee272079c2f30d71f8fa1f80bfcd68ee7fd0dd",
+      "protocol.json": "655c760291c366b924c8113e2441271b8970494a9bc104299b745f1f3310fe50",
+      "requests.json": "03bb0eca675044526c1f285c75ae8e9caf5a04ca279c718785a04cad26ed1a6c",
+      "roles.json": "3eb532e5e08f46541cfa4223269c0b7309c325aea0944a1a2ce642103f499cb7",
+      "sources.json": "adc60f2dfd5f25e835eac5f27301fac0eb272b09a10eaf93677247c7860f8fec",
+      "started.json": "c517f13473cf891e0091012879b886ce235a8b00e8a2972472d27abbc45c0bae",
+      "verification.json": "68e72217c2a584f1bf01a8a8c5246b9ca82724211d9460ed85b2b780f8f628f3"
+    },
+    "runtime": {
+      "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+      "executable_sha256": "137c474a645a9471ab3a369084e7cd573cd8b7ff8f81cb85363fffdf5904106c",
+      "packages": {
+        "Pillow": "12.3.0",
+        "numpy": "1.26.4",
+        "scipy": "1.16.2"
+      },
+      "python": "3.12.7"
+    },
+    "schema": "mura-fit-identity-generation-binding-v2",
+    "signed_residual_recoverable": "I-B from saved float32 I and B",
+    "source_snapshot_basis": "exact original file bytes; opaque legacy groups; separately defined new digests",
+    "stage": 3,
+    "undefined_and_zero_change": "retain all requests; never replace or relabel as FN"
+  },
+  "history": {
+    "fit_decodes": 0,
+    "old_training_decodes": 1,
+    "original_decodes": 1,
+    "render_calls": 0,
+    "source_paths": {
+      "display/train/good/0002.png": 1
+    }
+  },
+  "legacy_rgb_group_id": "opaque inherited group/role/exclusion; serialization unknown",
+  "no_rejection_on_M_eff": true,
+  "old_training_hash_only": true,
+  "original_decode_once": true,
+  "preprocessing": "PIL RGB bilinear256 then float32/255; unchanged contrast",
+  "protected_roles": [
+    "Q200",
+    "F100",
+    "D_hold60",
+    "S_bg",
+    "Q_cal",
+    "old_test",
+    "GT"
+  ],
+  "raw_RGB_not_saved_as_array": true,
+  "render_once_per_request": true,
+  "requests": 7560,
+  "role": "D_fit60",
+  "statistics_domain": "encoded RGB; k assumed; no calibrated physical luminance",
+  "working_RGB_hash": "inputs.array_identity: dtype/shape/C header plus float32 RGB bytes"
+}

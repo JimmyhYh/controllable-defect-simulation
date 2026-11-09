@@ -1,0 +1,41 @@
+{
+  "schema": "ssn-empty-bootstrap-continuation-v1",
+  "original_failure": {
+    "failure.json": "6382af3c4a16b5ae7b9bd1c1d701b0b4a39ad89a2dfe8ad545d3730313b1d129",
+    "transaction.json": "df6fca2d5a45ed6da7704b961609d93405e73dd3678269a24eeb3965c309ff19"
+  },
+  "implementation_sha256": "b1e9a80c268aaf26c5927301bb99ec4309edd8b3cb66354d4179afdb5de2bcc1",
+  "inventory_sha256": "aefeefed227d454ea0a18c472255387f7905640775cf6c0aaa6602bfa7b579d1",
+  "empty_environment_metadata": {
+    "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv-ssn\\Scripts\\python.exe",
+    "prefix": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv-ssn",
+    "base_prefix": "D:\\Python",
+    "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+    "distributions": [],
+    "forbidden_imports": []
+  },
+  "python_sha256": "137c474a645a9471ab3a369084e7cd573cd8b7ff8f81cb85363fffdf5904106c",
+  "pyvenv_cfg_sha256": "a5f4c06e9f923d8f7054a61a92cab1f6b165dfe64633982d047cb8cb4b37a0be",
+  "bootstrap_wheel_path": "D:\\Python\\Lib\\ensurepip\\_bundled\\pip-24.2-py3-none-any.whl",
+  "bootstrap_wheel_sha256": "2cd581cf58ab7fcfca4ce8efa6dcacd0de5bf8d0a3eb9ec927e07405f4d9e2a2",
+  "workspace_temp": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\ssn_baseline\\ksdd2_r5_v1\\environment_bootstrap_continuation_v1\\runtime_temp",
+  "resources": {
+    "utc": "2026-10-21T03:17:20.886529+00:00",
+    "total_RAM_GiB": 15.62198257446289,
+    "free_RAM_GiB": 7.01739501953125,
+    "free_disk_GiB": 155.1061553955078,
+    "GPUs": [
+      {
+        "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "total_MiB": 8151.0,
+        "free_MiB": 7899.0,
+        "driver": "595.97"
+      }
+    ],
+    "interpretation": "single metadata snapshot; not model peak, compatibility or runtime admission"
+  },
+  "cause": "dependency-only ensurepip dry-run failed before invoking pip: PermissionError writing bundled wheel in sandbox TEMP; site-packages remained empty",
+  "ruling": "this stage authorizes offline dependency installation; continue in a new explicitly bound transaction after proving empty state, not rerunning or repairing original failed transaction",
+  "unchanged": "same interpreter, env path, 14 dependency pins and wheel hashes; no old environment or frozen source changes",
+  "stop": "partial/unknown continuation preserves and stops; no retry or alternate pin"
+}

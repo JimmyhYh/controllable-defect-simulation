@@ -1,0 +1,379 @@
+{
+  "schema": "ssn-r5-static-resources-v1",
+  "candidate": {
+    "name": "ICPR2024-style SSN strict-R5 adaptation; not paper-exact reproduction",
+    "adapt_cls_feat": true,
+    "dt": null,
+    "dilate": null,
+    "backbone": "wide_resnet50_2 / IMAGENET1K_V1 / layer2,layer3 / frozen",
+    "input_hw": [
+      640,
+      232
+    ],
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "precision": "FP32",
+    "batch": 1,
+    "workers": 0,
+    "preserve": [
+      "author feature adaptor",
+      "Perlin/Gaussian feature synthesis",
+      "segmentation and classification heads",
+      "author focal/truncated-L1 losses and optimizer groups"
+    ],
+    "forbidden": [
+      "Q training or selection",
+      "U weak supervision",
+      "E selection or periodic test",
+      "author pickle",
+      "test-pool normalization",
+      "external RGB synthesis",
+      "old model initialization",
+      "automatic weight download"
+    ],
+    "train_roles": [
+      "R_real5",
+      "N_train1885"
+    ],
+    "future_model_start_min": {
+      "free_RAM_GiB": 6,
+      "free_VRAM_GiB": 6,
+      "free_disk_GiB": 80
+    },
+    "future_sampled_free_RAM_min_GiB": 3,
+    "thresholds_are": "engineering candidates, not author requirements or sufficiency proof",
+    "training_budget_and_gate": "not yet fixed; requires authorized CPU input preparation and manual pilot",
+    "E_status": "previously observed benchmark; future reuse exploratory, not unseen confirmation",
+    "use": "private device, personal noncommercial public research; company materials isolated"
+  },
+  "vendor": {
+    "commit": "98ab4d5fbdcdef528fafbc42e4b5ee15f08f5a7d",
+    "tree": "00c9e9c277d364ac2ed4d87f71c8be38abda11a5",
+    "seal_sha256": "138b1708f2e253383aa84de6429aa1f17987b534f778c9d3fe100b63c9c0690e",
+    "manifest_sha256": "abf3589c9e5197c6f8ee536d1af2733486b33970edc5a7f9c53f39dea3877eac",
+    "author_files": 12,
+    "supplemental_texts": 4
+  },
+  "identities": {
+    "old_metadata_sha256": {
+      "data/fewshot_synthetic/ksdd2_v1/split.json": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+      "results/fewshot_synthetic/ksdd2_v1/input/completion.json": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+      "results/fewshot_synthetic/ksdd2_v1/input/input_protocol.json": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/common_config.json": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+      "results/fewshot_synthetic/ksdd2_v1/preparation/complete.json": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+      "results/fewshot_synthetic/ksdd2_v1/real_metrics_v1/complete.json": "b20bd02d02965919c22ab059e324fc7bdd47e4bb1438cd45ce3b409bbaddb538",
+      "results/fewshot_synthetic/ksdd2_v1/figures_day7_v1/complete.json": "fe44132413d476fcf1c11ac133670efc785afea385a54be42ea4d504bd7c1ea3"
+    },
+    "old_source_sha256": {
+      "fewshot_synthetic/common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+      "fewshot_synthetic/sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+      "fewshot_synthetic/model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+      "fewshot_synthetic/training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+      "fewshot_synthetic/metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+      "fewshot_synthetic/inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f",
+      "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+      "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+      "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+      "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee",
+      "fewshot_synthetic/__init__.py": "854c1509045354f3ab4c1a923374c25610a6d6fada3bd258b345afd9884408eb",
+      "fewshot_synthetic/data.py": "13c00594134cb2b43d365e4e0f5abe6abd2f04afd2008297cee3d9b2131082be"
+    },
+    "roles": {
+      "R_real5": 5,
+      "Q_normal200": 200,
+      "N_train1885": 1885,
+      "U_anomaly241": 241,
+      "E_official1004": 1004
+    },
+    "R5": [
+      "11670",
+      "11884",
+      "12070",
+      "12245",
+      "12303"
+    ],
+    "N16": [
+      "10056",
+      "10149",
+      "10326",
+      "10425",
+      "10468",
+      "10481",
+      "10538",
+      "10548",
+      "10842",
+      "10880",
+      "11145",
+      "11311",
+      "12024",
+      "12025",
+      "12126",
+      "12206"
+    ],
+    "split_paths_not_opened": true,
+    "spec_sha256": "5afeaf5e8b2f08c1af023ccf4fe73fe914b84d61a4271f1deb5447296a1cbc6c",
+    "backbone": {
+      "path": "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\checkpoints\\wide_resnet50_2-95faca4d.pth",
+      "bytes": 138223492,
+      "sha256": "95faca4d11227dddf8633dbb5ff6c8a9003c1aa5b8945c73834b8007b10950b8",
+      "official_url_reference_only": "https://download.pytorch.org/models/wide_resnet50_2-95faca4d.pth",
+      "local_resnet_source_sha256": "7c329198f414e411dd64d67784c1f7efbb1e85bdb8e160b8c5d5c5619f9ab119",
+      "parameter_loading_verified": false
+    },
+    "implementation": {
+      "ssn_baseline/resources.py": "ea12cede1f61953f6066b5996f2acf6a4a06ada28968dbba6bb5ab5dfe19216d",
+      "ssn_baseline/__init__.py": "6d444c5cccd575fe86617c749af64de203fbe349b36c307ca0b0e8f235eae140",
+      "ssn_baseline/README.md": "701fc12a47bc931d51a26180af911c86cdc2a015acc4ca468ae33051b0ff4dce"
+    }
+  },
+  "environment": {
+    "identity": {
+      "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+      "executable_sha256": "137c474a645a9471ab3a369084e7cd573cd8b7ff8f81cb85363fffdf5904106c",
+      "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "packages_metadata_only": [
+        {
+          "name": "anyio",
+          "version": "4.15.1"
+        },
+        {
+          "name": "click",
+          "version": "8.5.0"
+        },
+        {
+          "name": "cloudpickle",
+          "version": "3.1.2"
+        },
+        {
+          "name": "colorama",
+          "version": "0.4.6"
+        },
+        {
+          "name": "contourpy",
+          "version": "1.3.3"
+        },
+        {
+          "name": "cycler",
+          "version": "0.12.1"
+        },
+        {
+          "name": "faiss-cpu",
+          "version": "1.12.0"
+        },
+        {
+          "name": "filelock",
+          "version": "3.32.3"
+        },
+        {
+          "name": "fonttools",
+          "version": "4.66.1"
+        },
+        {
+          "name": "fsspec",
+          "version": "2026.7.0"
+        },
+        {
+          "name": "h11",
+          "version": "0.16.0"
+        },
+        {
+          "name": "hf-xet",
+          "version": "1.7.0"
+        },
+        {
+          "name": "httpcore2",
+          "version": "2.13.1"
+        },
+        {
+          "name": "httpx2",
+          "version": "2.13.1"
+        },
+        {
+          "name": "huggingface_hub",
+          "version": "2.2.0"
+        },
+        {
+          "name": "idna",
+          "version": "3.20"
+        },
+        {
+          "name": "ImageIO",
+          "version": "2.38.1"
+        },
+        {
+          "name": "imgaug",
+          "version": "0.4.0"
+        },
+        {
+          "name": "Jinja2",
+          "version": "3.1.6"
+        },
+        {
+          "name": "joblib",
+          "version": "1.6.0"
+        },
+        {
+          "name": "kiwisolver",
+          "version": "1.5.1"
+        },
+        {
+          "name": "lazy-loader",
+          "version": "0.6"
+        },
+        {
+          "name": "MarkupSafe",
+          "version": "3.0.3"
+        },
+        {
+          "name": "matplotlib",
+          "version": "3.11.2"
+        },
+        {
+          "name": "mpmath",
+          "version": "1.3.0"
+        },
+        {
+          "name": "networkx",
+          "version": "3.6.1"
+        },
+        {
+          "name": "numpy",
+          "version": "1.26.4"
+        },
+        {
+          "name": "opencv-python",
+          "version": "4.11.0.86"
+        },
+        {
+          "name": "packaging",
+          "version": "26.3"
+        },
+        {
+          "name": "pillow",
+          "version": "12.3.0"
+        },
+        {
+          "name": "pip",
+          "version": "24.2"
+        },
+        {
+          "name": "pyparsing",
+          "version": "3.3.3"
+        },
+        {
+          "name": "python-dateutil",
+          "version": "2.9.0.post0"
+        },
+        {
+          "name": "PyYAML",
+          "version": "6.0.3"
+        },
+        {
+          "name": "safetensors",
+          "version": "0.8.0"
+        },
+        {
+          "name": "scikit-image",
+          "version": "0.26.0"
+        },
+        {
+          "name": "scikit-learn",
+          "version": "1.7.2"
+        },
+        {
+          "name": "scipy",
+          "version": "1.16.2"
+        },
+        {
+          "name": "setuptools",
+          "version": "78.1.0"
+        },
+        {
+          "name": "shapely",
+          "version": "2.2.0"
+        },
+        {
+          "name": "six",
+          "version": "1.17.0"
+        },
+        {
+          "name": "sympy",
+          "version": "1.14.0"
+        },
+        {
+          "name": "threadpoolctl",
+          "version": "3.7.0"
+        },
+        {
+          "name": "tifffile",
+          "version": "2026.3.3"
+        },
+        {
+          "name": "timm",
+          "version": "1.0.20"
+        },
+        {
+          "name": "torch",
+          "version": "2.8.0+cu128"
+        },
+        {
+          "name": "torchvision",
+          "version": "0.23.0+cu128"
+        },
+        {
+          "name": "tqdm",
+          "version": "4.67.1"
+        },
+        {
+          "name": "truststore",
+          "version": "0.10.4"
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.16.0"
+        }
+      ]
+    },
+    "new_ssn_environment_exists": false,
+    "compatible_runtime_verified": false
+  },
+  "resources_snapshot": {
+    "utc": "2026-10-21T02:04:19.158401+00:00",
+    "total_RAM_GiB": 15.62198257446289,
+    "free_RAM_GiB": 9.147224426269531,
+    "free_disk_GiB": 155.10855102539062,
+    "GPUs": [
+      {
+        "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "total_MiB": 8151.0,
+        "free_MiB": 7899.0,
+        "driver": "595.97"
+      }
+    ],
+    "interpretation": "single metadata snapshot; not model peak, compatibility or runtime admission"
+  },
+  "CPU_preparation_gate": {
+    "free_RAM_GiB": 2,
+    "free_disk_GiB": 1,
+    "status": "passed; metadata only"
+  },
+  "mutable_plan_excluded_from_hash": "progress synchronization changes plan; immutable feasibility report and explicit candidate are bound instead",
+  "license_status": "author MIT plus preserved upstream notices; no separate complete V1 rights grant established; noncommercial personal use only",
+  "remaining": [
+    "isolated environment",
+    "core wrapper",
+    "CPU R5/N16 label geometry",
+    "manual model pilot",
+    "training budget",
+    "unseen real validation"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "backgrounds": 60,
+  "defined_all9_backgrounds": 60,
+  "defined_backgrounds_at_least1": 60,
+  "defined_none_backgrounds": 0,
+  "defined_partial_backgrounds": 0,
+  "formal_render_calls_before_gate": 0,
+  "geometry_conditions": 540,
+  "minimum_defined_backgrounds": 40,
+  "per_geometry_defined_backgrounds": {
+    "r04_circle": 60,
+    "r04_ellipse_d": 60,
+    "r04_ellipse_h": 60,
+    "r08_circle": 60,
+    "r08_ellipse_d": 60,
+    "r08_ellipse_h": 60,
+    "r12_circle": 60,
+    "r12_ellipse_d": 60,
+    "r12_ellipse_h": 60
+  },
+  "physical_capture_groups_known": false,
+  "prior_comparison_paths": 520,
+  "unique_hold_backgrounds": 60,
+  "working_collisions": []
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "shared-holdout-metrics-v1",
+  "device": "CPU",
+  "scoring_config_sha256": "78fc0f4e2e471bc0a59412098574dbe1752192cb17116e145d5197b80cc37cbb",
+  "manifest_sha256": "47e7d815b6bd401252a324261d168ba077c4709b51c9578b42be309e9368356c",
+  "scoring_verification_sha256": "906209b6b72b51ba2bae0990c5ddb99e4e5401fa4fdc4de76412efec0447e9e0",
+  "scores_sha256": {
+    "G0": "6b61e75a9ab0d17d2232b04539cf0673cd1c0ab8fef10c18341cf6749c05c65d",
+    "G1": "6e4f304c08668318b3a78397e5148993120f08f332199fbd10ffced1cea80a6f"
+  },
+  "implementation_sha256": {
+    "controlled_generation\\holdout_metrics.py": "ec8830a70f24d8caf3725c1b681617e1f0394b9f0ec40f476220d610688da2a6",
+    "controlled_generation\\holdout_inference.py": "38e5b85a208b58338a77dce006f4612c8a4ed9e6a9f096013d03723c2cab9ae5",
+    "controlled_generation\\holdout_data.py": "10ad85441f808612b0386dbed019977666e08b7191412e93c87a225364d41e4c"
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.16.2",
+    "scikit-learn": "1.7.2"
+  },
+  "thresholds": {
+    "G0": 0.6124536782503127,
+    "G1": 0.7155899673700332
+  },
+  "alarm": "score strictly greater than per-model frozen threshold",
+  "strength_order": [
+    "a04",
+    "a02"
+  ],
+  "type_order": [
+    "mura_like",
+    "line_like"
+  ],
+  "polarity_order": [
+    "bright",
+    "dark"
+  ],
+  "template_order": [
+    "M_circle",
+    "M_ellipse",
+    "M_blob",
+    "L_edge",
+    "L_diagonal",
+    "L_polyline"
+  ],
+  "pixel_AP": "sklearn average_precision_score; all pixels of selected anomalies plus same20 normals; no sampling or image averaging",
+  "image_AUROC": "sklearn roc_auc_score of original raw maximum scores",
+  "labels": "saved float M_eff, normal_GT all zero; no PNG labels or pixel threshold on predictions",
+  "empty_groups": "null/NA with reason; never substitute0 or1",
+  "normal_reuse": "same20 normal maps and scores in every group; no extra independent normals",
+  "exact_set_reuse": "same model and identical ordered anomaly IDs reuse exact metric, including paired set if identical",
+  "minimum_available_RAM_GiB": 3.0,
+  "sort_estimate_bytes_per_pixel": 112,
+  "extra_available_RAM_reserve_GiB": 1.0,
+  "minimum_free_disk_GiB": 8.0,
+  "independence": "single training seed and at most20 backgrounds; descriptive, no CI or significance tests",
+  "bias": "G1 renderer domain; shared appearance/labels/geometries favor G1; not real-screen evidence"
+}

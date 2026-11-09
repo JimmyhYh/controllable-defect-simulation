@@ -1,0 +1,8174 @@
+{
+  "binding": {
+    "metric_preparation_complete_sha256": "33825ca95a66e556cc887b2911d71198f77d54518817d8a498d13b306b875d34",
+    "protocol_sha256": "a87363c5da731a0feb4a5d23a628b83415d8b874ddbc5f7fe64f377f72a484f8",
+    "source_manifest_sha256": "e20d7a4f50440dc783dba5bca4dbc5d84461134cfd65f075d87d72bdfbfce61c",
+    "GT_requests_sha256": "ac15bd09ff144df65532fb1562a2b249fb0ab532073e9587955ce17e7472eede",
+    "scoring_complete_sha256": "4a3b41ae1f43db649d68295e38c7a390b0d5a9aa7a54d94a311fd9257d39e917",
+    "implementation": {
+      "real_metrics_common.py": "047cd3991e47cf1e296907d4d59d002121075de551eaf0a4b8d62bfbf0f554bf",
+      "real_metrics.py": "880a9bd2bd07f7c5922b113ef52a556c0e0745becf5f722d6a61dd55c440c851",
+      "real_metrics_cli.py": "bf500ebff100f8430165b10f73c97c153164fe2e5284b1de183caaa9c4b91fff",
+      "README_real_metrics.md": "ac1fe252034bb3abd4989a54b497105da7bb55162c11ded91681543c15db9ec7"
+    },
+    "final_weight_sha256": "f8f4f94029da49704c5d2b194c549dd24ef364a7f7d365ff6fcef9e3f373e454",
+    "original_threshold_sha256": "0690251a736bbe08253b04a25427b11985d5aa3601226fb544e9d58fc879ca67",
+    "threshold": 7.264203168233501e-06
+  },
+  "unique_E_images": 1004,
+  "native_pixels": 146411528,
+  "positive_pixels": 486461,
+  "anomaly_images": 110,
+  "normal_images": 894,
+  "global_pixel_AP": 0.4365305631911595,
+  "pixel_AP_NA_reason": null,
+  "exact": {
+    "AP": 0.4365305631911595,
+    "pixels": 146411528,
+    "positive_pixels": 486461,
+    "distinct_scores": 30212801,
+    "tied_score_values": 17912751,
+    "exact_float32_scores": true,
+    "histogram_bins": 1065353217,
+    "elapsed_seconds": 50.98400000000038
+  },
+  "exact_count_tie_verification": {
+    "pixels": 146411528,
+    "positive_pixels": 486461,
+    "distinct_scores": 30212801,
+    "tied_score_values": 17912751,
+    "positive_not_above_total": true,
+    "AP_recomputed": false
+  },
+  "image_metrics": {
+    "AUROC": 0.8571842586943258,
+    "AUROC_NA_reason": null,
+    "threshold": 7.264203168233501e-06,
+    "TP": 81,
+    "FN": 29,
+    "FP": 52,
+    "TN": 842,
+    "anomaly_denominator": 110,
+    "normal_denominator": 894,
+    "anomaly_recall": 0.7363636363636363,
+    "normal_false_positive_rate": 0.058165548098434,
+    "zero_denominator_policy": "NA/null",
+    "all_items": [
+      {
+        "index": 0,
+        "id": "20000",
+        "anomaly": false,
+        "score": 2.02042951968906e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 1,
+        "id": "20001",
+        "anomaly": false,
+        "score": 3.2121181448019342e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 2,
+        "id": "20002",
+        "anomaly": false,
+        "score": 1.598442395334132e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 3,
+        "id": "20003",
+        "anomaly": false,
+        "score": 7.068268132570665e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 4,
+        "id": "20004",
+        "anomaly": false,
+        "score": 1.271350629394874e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 5,
+        "id": "20005",
+        "anomaly": false,
+        "score": 1.8423693290969823e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 6,
+        "id": "20006",
+        "anomaly": false,
+        "score": 2.6231366518914e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 7,
+        "id": "20007",
+        "anomaly": false,
+        "score": 3.5760288028541254e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 8,
+        "id": "20008",
+        "anomaly": false,
+        "score": 3.7235377021715976e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 9,
+        "id": "20009",
+        "anomaly": false,
+        "score": 3.3176295346493134e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 10,
+        "id": "20010",
+        "anomaly": false,
+        "score": 3.592682787711965e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 11,
+        "id": "20011",
+        "anomaly": false,
+        "score": 3.560277718861471e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 12,
+        "id": "20012",
+        "anomaly": false,
+        "score": 2.6136387987207854e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 13,
+        "id": "20013",
+        "anomaly": false,
+        "score": 2.77295794148813e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 14,
+        "id": "20014",
+        "anomaly": false,
+        "score": 7.647157872270327e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 15,
+        "id": "20015",
+        "anomaly": false,
+        "score": 2.4496562218701e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 16,
+        "id": "20016",
+        "anomaly": false,
+        "score": 6.2013641581870615e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 17,
+        "id": "20017",
+        "anomaly": false,
+        "score": 3.120717565252562e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 18,
+        "id": "20018",
+        "anomaly": false,
+        "score": 0.16971175372600555,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 19,
+        "id": "20019",
+        "anomaly": false,
+        "score": 3.6691990317194723e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 20,
+        "id": "20020",
+        "anomaly": false,
+        "score": 3.7526381220231997e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 21,
+        "id": "20021",
+        "anomaly": false,
+        "score": 3.752226803044323e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 22,
+        "id": "20022",
+        "anomaly": false,
+        "score": 2.9676152735191863e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 23,
+        "id": "20023",
+        "anomaly": false,
+        "score": 4.484350483835442e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 24,
+        "id": "20024",
+        "anomaly": false,
+        "score": 2.3147472347773146e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 25,
+        "id": "20025",
+        "anomaly": false,
+        "score": 2.842923095158767e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 26,
+        "id": "20026",
+        "anomaly": false,
+        "score": 7.5506959547055885e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 27,
+        "id": "20027",
+        "anomaly": false,
+        "score": 4.2212109292449895e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 28,
+        "id": "20028",
+        "anomaly": false,
+        "score": 2.889102916014963e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 29,
+        "id": "20029",
+        "anomaly": false,
+        "score": 2.3545198928331956e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 30,
+        "id": "20030",
+        "anomaly": false,
+        "score": 3.173581717419438e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 31,
+        "id": "20031",
+        "anomaly": false,
+        "score": 3.2808297873998526e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 32,
+        "id": "20032",
+        "anomaly": false,
+        "score": 3.241209697080194e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 33,
+        "id": "20033",
+        "anomaly": false,
+        "score": 2.5861061203613644e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 34,
+        "id": "20034",
+        "anomaly": false,
+        "score": 3.426358034630539e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 35,
+        "id": "20035",
+        "anomaly": false,
+        "score": 2.0482707441260573e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 36,
+        "id": "20036",
+        "anomaly": false,
+        "score": 5.754091489507118e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 37,
+        "id": "20037",
+        "anomaly": false,
+        "score": 4.041386546305148e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 38,
+        "id": "20038",
+        "anomaly": false,
+        "score": 4.231803359289188e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 39,
+        "id": "20039",
+        "anomaly": false,
+        "score": 1.6688793039065786e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 40,
+        "id": "20040",
+        "anomaly": false,
+        "score": 7.929117600724567e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 41,
+        "id": "20041",
+        "anomaly": false,
+        "score": 5.211380994296633e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 42,
+        "id": "20042",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 43,
+        "id": "20043",
+        "anomaly": false,
+        "score": 3.24567326970282e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 44,
+        "id": "20044",
+        "anomaly": false,
+        "score": 2.7718633646145463e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 45,
+        "id": "20045",
+        "anomaly": false,
+        "score": 2.959896164611564e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 46,
+        "id": "20046",
+        "anomaly": false,
+        "score": 5.996021627652226e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 47,
+        "id": "20047",
+        "anomaly": false,
+        "score": 2.617224481582525e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 48,
+        "id": "20048",
+        "anomaly": false,
+        "score": 3.254745934100356e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 49,
+        "id": "20049",
+        "anomaly": false,
+        "score": 6.133338501967955e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 50,
+        "id": "20050",
+        "anomaly": false,
+        "score": 2.4347643829969456e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 51,
+        "id": "20051",
+        "anomaly": false,
+        "score": 3.641881676230696e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 52,
+        "id": "20052",
+        "anomaly": false,
+        "score": 5.0282778829569e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 53,
+        "id": "20053",
+        "anomaly": false,
+        "score": 3.215489414287731e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 54,
+        "id": "20054",
+        "anomaly": false,
+        "score": 0.497040331363678,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 55,
+        "id": "20055",
+        "anomaly": false,
+        "score": 2.6495301881368505e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 56,
+        "id": "20056",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 57,
+        "id": "20057",
+        "anomaly": false,
+        "score": 3.5125124213664094e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 58,
+        "id": "20058",
+        "anomaly": false,
+        "score": 2.8051949811924715e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 59,
+        "id": "20059",
+        "anomaly": false,
+        "score": 3.1883980682323454e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 60,
+        "id": "20060",
+        "anomaly": false,
+        "score": 4.500676368479617e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 61,
+        "id": "20061",
+        "anomaly": false,
+        "score": 3.4759500522341114e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 62,
+        "id": "20062",
+        "anomaly": false,
+        "score": 4.584072485158686e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 63,
+        "id": "20063",
+        "anomaly": false,
+        "score": 2.9346115297812503e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 64,
+        "id": "20064",
+        "anomaly": false,
+        "score": 2.159484211006202e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 65,
+        "id": "20065",
+        "anomaly": false,
+        "score": 2.7688433874573093e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 66,
+        "id": "20066",
+        "anomaly": false,
+        "score": 7.23370476407581e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 67,
+        "id": "20067",
+        "anomaly": false,
+        "score": 2.6931388674711343e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 68,
+        "id": "20068",
+        "anomaly": true,
+        "score": 3.857805040752282e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 69,
+        "id": "20069",
+        "anomaly": false,
+        "score": 2.0197794583509676e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 70,
+        "id": "20070",
+        "anomaly": false,
+        "score": 3.1323104394687107e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 71,
+        "id": "20071",
+        "anomaly": false,
+        "score": 5.398443136073183e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 72,
+        "id": "20072",
+        "anomaly": false,
+        "score": 5.606467311736196e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 73,
+        "id": "20073",
+        "anomaly": false,
+        "score": 2.683279035409214e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 74,
+        "id": "20074",
+        "anomaly": false,
+        "score": 5.706220690626651e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 75,
+        "id": "20075",
+        "anomaly": false,
+        "score": 3.6602382351702545e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 76,
+        "id": "20076",
+        "anomaly": false,
+        "score": 6.367992227751529e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 77,
+        "id": "20077",
+        "anomaly": false,
+        "score": 4.110529516765382e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 78,
+        "id": "20078",
+        "anomaly": false,
+        "score": 2.453694833093323e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 79,
+        "id": "20079",
+        "anomaly": false,
+        "score": 2.9127741072443314e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 80,
+        "id": "20080",
+        "anomaly": false,
+        "score": 3.0171322578098625e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 81,
+        "id": "20081",
+        "anomaly": false,
+        "score": 2.8399429083947325e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 82,
+        "id": "20082",
+        "anomaly": false,
+        "score": 5.218998921918683e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 83,
+        "id": "20083",
+        "anomaly": false,
+        "score": 3.2786506380944047e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 84,
+        "id": "20084",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 85,
+        "id": "20085",
+        "anomaly": false,
+        "score": 4.557960892270785e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 86,
+        "id": "20086",
+        "anomaly": false,
+        "score": 3.7752379284938797e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 87,
+        "id": "20087",
+        "anomaly": false,
+        "score": 2.725778813328361e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 88,
+        "id": "20088",
+        "anomaly": false,
+        "score": 3.654887450466049e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 89,
+        "id": "20089",
+        "anomaly": false,
+        "score": 2.740210220508743e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 90,
+        "id": "20090",
+        "anomaly": false,
+        "score": 2.8226920676388545e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 91,
+        "id": "20091",
+        "anomaly": false,
+        "score": 3.4697602586675202e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 92,
+        "id": "20092",
+        "anomaly": false,
+        "score": 2.394195234955987e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 93,
+        "id": "20093",
+        "anomaly": false,
+        "score": 2.7866633445228217e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 94,
+        "id": "20094",
+        "anomaly": false,
+        "score": 2.8270530947338557e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 95,
+        "id": "20095",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 96,
+        "id": "20096",
+        "anomaly": false,
+        "score": 2.8109188860980794e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 97,
+        "id": "20097",
+        "anomaly": false,
+        "score": 4.43809813077678e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 98,
+        "id": "20098",
+        "anomaly": false,
+        "score": 3.0758183129364625e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 99,
+        "id": "20099",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 100,
+        "id": "20100",
+        "anomaly": false,
+        "score": 3.289922233307152e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 101,
+        "id": "20101",
+        "anomaly": false,
+        "score": 5.19619015904027e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 102,
+        "id": "20102",
+        "anomaly": false,
+        "score": 3.320573341625277e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 103,
+        "id": "20103",
+        "anomaly": false,
+        "score": 3.6162155083729886e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 104,
+        "id": "20104",
+        "anomaly": false,
+        "score": 4.596245616994565e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 105,
+        "id": "20105",
+        "anomaly": false,
+        "score": 2.0445979771466227e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 106,
+        "id": "20106",
+        "anomaly": false,
+        "score": 2.705345423237304e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 107,
+        "id": "20107",
+        "anomaly": false,
+        "score": 3.1935412607708713e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 108,
+        "id": "20108",
+        "anomaly": false,
+        "score": 2.8967376692889957e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 109,
+        "id": "20109",
+        "anomaly": false,
+        "score": 1.7289128209085902e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 110,
+        "id": "20110",
+        "anomaly": false,
+        "score": 2.3740051346976543e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 111,
+        "id": "20111",
+        "anomaly": false,
+        "score": 2.244598135803244e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 112,
+        "id": "20112",
+        "anomaly": false,
+        "score": 1.788139684322232e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 113,
+        "id": "20113",
+        "anomaly": false,
+        "score": 3.487472213237197e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 114,
+        "id": "20114",
+        "anomaly": false,
+        "score": 2.524043793528108e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 115,
+        "id": "20115",
+        "anomaly": false,
+        "score": 2.8488946099969326e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 116,
+        "id": "20116",
+        "anomaly": false,
+        "score": 2.5962924610212212e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 117,
+        "id": "20117",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 118,
+        "id": "20118",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 119,
+        "id": "20119",
+        "anomaly": false,
+        "score": 7.629798346897587e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 120,
+        "id": "20120",
+        "anomaly": false,
+        "score": 5.015222996007651e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 121,
+        "id": "20121",
+        "anomaly": true,
+        "score": 0.7564104199409485,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 122,
+        "id": "20122",
+        "anomaly": false,
+        "score": 3.087227014475502e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 123,
+        "id": "20123",
+        "anomaly": false,
+        "score": 1.984672735488857e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 124,
+        "id": "20124",
+        "anomaly": false,
+        "score": 2.6855445867113303e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 125,
+        "id": "20125",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 126,
+        "id": "20126",
+        "anomaly": false,
+        "score": 2.5372335130668944e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 127,
+        "id": "20127",
+        "anomaly": false,
+        "score": 3.5396219573158305e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 128,
+        "id": "20128",
+        "anomaly": false,
+        "score": 2.048790292974445e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 129,
+        "id": "20129",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 130,
+        "id": "20130",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 131,
+        "id": "20131",
+        "anomaly": false,
+        "score": 4.994765276933322e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 132,
+        "id": "20132",
+        "anomaly": false,
+        "score": 2.718878022278659e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 133,
+        "id": "20133",
+        "anomaly": false,
+        "score": 3.1384163321490632e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 134,
+        "id": "20134",
+        "anomaly": false,
+        "score": 3.076498842347064e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 135,
+        "id": "20135",
+        "anomaly": false,
+        "score": 2.1801222374051576e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 136,
+        "id": "20136",
+        "anomaly": false,
+        "score": 3.775482809942332e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 137,
+        "id": "20137",
+        "anomaly": false,
+        "score": 6.06862204222125e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 138,
+        "id": "20138",
+        "anomaly": false,
+        "score": 3.6184060263622086e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 139,
+        "id": "20139",
+        "anomaly": true,
+        "score": 4.9367254177923314e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 140,
+        "id": "20140",
+        "anomaly": false,
+        "score": 3.3433759654144524e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 141,
+        "id": "20141",
+        "anomaly": true,
+        "score": 3.535324367476278e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 142,
+        "id": "20142",
+        "anomaly": true,
+        "score": 4.301634817238664e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 143,
+        "id": "20143",
+        "anomaly": false,
+        "score": 2.2704741695633857e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 144,
+        "id": "20144",
+        "anomaly": false,
+        "score": 4.025838279630989e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 145,
+        "id": "20145",
+        "anomaly": false,
+        "score": 3.2833213481353596e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 146,
+        "id": "20146",
+        "anomaly": false,
+        "score": 2.5246556560887257e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 147,
+        "id": "20147",
+        "anomaly": false,
+        "score": 4.595869086188031e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 148,
+        "id": "20148",
+        "anomaly": false,
+        "score": 4.2979690988431685e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 149,
+        "id": "20149",
+        "anomaly": false,
+        "score": 5.6164476518461015e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 150,
+        "id": "20150",
+        "anomaly": false,
+        "score": 2.8518941235233797e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 151,
+        "id": "20151",
+        "anomaly": false,
+        "score": 2.2514946067531127e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 152,
+        "id": "20152",
+        "anomaly": false,
+        "score": 3.447887365837232e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 153,
+        "id": "20153",
+        "anomaly": false,
+        "score": 3.227976094422047e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 154,
+        "id": "20154",
+        "anomaly": false,
+        "score": 3.367519639141392e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 155,
+        "id": "20155",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 156,
+        "id": "20156",
+        "anomaly": false,
+        "score": 3.5160048810212174e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 157,
+        "id": "20157",
+        "anomaly": false,
+        "score": 2.0893542114208685e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 158,
+        "id": "20158",
+        "anomaly": true,
+        "score": 2.285823484271532e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 159,
+        "id": "20159",
+        "anomaly": true,
+        "score": 8.27118583401898e-06,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 160,
+        "id": "20160",
+        "anomaly": false,
+        "score": 2.200375774918939e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 161,
+        "id": "20161",
+        "anomaly": false,
+        "score": 1.86316992767388e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 162,
+        "id": "20162",
+        "anomaly": false,
+        "score": 2.1381840724643553e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 163,
+        "id": "20163",
+        "anomaly": false,
+        "score": 2.115451252393541e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 164,
+        "id": "20164",
+        "anomaly": false,
+        "score": 2.997784122271696e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 165,
+        "id": "20165",
+        "anomaly": false,
+        "score": 4.292868652555626e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 166,
+        "id": "20166",
+        "anomaly": false,
+        "score": 4.790820639755111e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 167,
+        "id": "20167",
+        "anomaly": false,
+        "score": 3.6497742712526815e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 168,
+        "id": "20168",
+        "anomaly": false,
+        "score": 2.0923332613165257e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 169,
+        "id": "20169",
+        "anomaly": false,
+        "score": 3.512874400257715e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 170,
+        "id": "20170",
+        "anomaly": false,
+        "score": 2.745608298937441e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 171,
+        "id": "20171",
+        "anomaly": false,
+        "score": 1.9775573036895366e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 172,
+        "id": "20172",
+        "anomaly": true,
+        "score": 0.9941558837890625,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 173,
+        "id": "20173",
+        "anomaly": false,
+        "score": 2.437350076434086e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 174,
+        "id": "20174",
+        "anomaly": false,
+        "score": 5.279105607769452e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 175,
+        "id": "20175",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 176,
+        "id": "20176",
+        "anomaly": false,
+        "score": 2.0530719666567165e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 177,
+        "id": "20177",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 178,
+        "id": "20178",
+        "anomaly": false,
+        "score": 7.8319744716282e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 179,
+        "id": "20179",
+        "anomaly": false,
+        "score": 4.265937604941428e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 180,
+        "id": "20180",
+        "anomaly": false,
+        "score": 1.0826568541233428e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 181,
+        "id": "20181",
+        "anomaly": false,
+        "score": 4.157317107456038e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 182,
+        "id": "20182",
+        "anomaly": false,
+        "score": 2.4334481167898048e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 183,
+        "id": "20183",
+        "anomaly": false,
+        "score": 2.8415520318958443e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 184,
+        "id": "20184",
+        "anomaly": false,
+        "score": 2.3846066596888704e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 185,
+        "id": "20185",
+        "anomaly": false,
+        "score": 3.084513309659087e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 186,
+        "id": "20186",
+        "anomaly": false,
+        "score": 3.142004061373882e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 187,
+        "id": "20187",
+        "anomaly": false,
+        "score": 8.136448741424829e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 188,
+        "id": "20188",
+        "anomaly": false,
+        "score": 3.3801343306549825e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 189,
+        "id": "20189",
+        "anomaly": false,
+        "score": 4.858714873989811e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 190,
+        "id": "20190",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 191,
+        "id": "20191",
+        "anomaly": false,
+        "score": 3.865690359816654e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 192,
+        "id": "20192",
+        "anomaly": false,
+        "score": 9.190698619931936e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 193,
+        "id": "20193",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 194,
+        "id": "20194",
+        "anomaly": false,
+        "score": 3.2227408155449666e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 195,
+        "id": "20195",
+        "anomaly": false,
+        "score": 8.631631317257416e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 196,
+        "id": "20196",
+        "anomaly": false,
+        "score": 2.977611302412697e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 197,
+        "id": "20197",
+        "anomaly": false,
+        "score": 2.689145503609325e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 198,
+        "id": "20198",
+        "anomaly": false,
+        "score": 2.2560493562195916e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 199,
+        "id": "20199",
+        "anomaly": false,
+        "score": 3.879646101268008e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 200,
+        "id": "20200",
+        "anomaly": false,
+        "score": 5.92196829529712e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 201,
+        "id": "20201",
+        "anomaly": false,
+        "score": 3.0694886845594738e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 202,
+        "id": "20202",
+        "anomaly": false,
+        "score": 4.2543297240627e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 203,
+        "id": "20203",
+        "anomaly": false,
+        "score": 1.4792238289373927e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 204,
+        "id": "20204",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 205,
+        "id": "20205",
+        "anomaly": false,
+        "score": 2.6076327230839524e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 206,
+        "id": "20206",
+        "anomaly": false,
+        "score": 3.922901214536978e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 207,
+        "id": "20207",
+        "anomaly": false,
+        "score": 2.92379763777717e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 208,
+        "id": "20208",
+        "anomaly": false,
+        "score": 5.41015288035851e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 209,
+        "id": "20209",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 210,
+        "id": "20210",
+        "anomaly": false,
+        "score": 2.4863541057129623e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 211,
+        "id": "20211",
+        "anomaly": false,
+        "score": 3.3083183552662376e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 212,
+        "id": "20212",
+        "anomaly": false,
+        "score": 2.6682957923185313e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 213,
+        "id": "20213",
+        "anomaly": false,
+        "score": 3.4410350053803995e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 214,
+        "id": "20214",
+        "anomaly": false,
+        "score": 1.8455541521689156e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 215,
+        "id": "20215",
+        "anomaly": false,
+        "score": 2.98173722512729e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 216,
+        "id": "20216",
+        "anomaly": false,
+        "score": 2.348919679207029e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 217,
+        "id": "20217",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 218,
+        "id": "20218",
+        "anomaly": false,
+        "score": 2.441840251776739e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 219,
+        "id": "20219",
+        "anomaly": false,
+        "score": 2.088698920488241e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 220,
+        "id": "20220",
+        "anomaly": false,
+        "score": 2.005893065870623e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 221,
+        "id": "20221",
+        "anomaly": false,
+        "score": 1.9849642285407754e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 222,
+        "id": "20222",
+        "anomaly": false,
+        "score": 2.6278864879714092e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 223,
+        "id": "20223",
+        "anomaly": false,
+        "score": 5.289279670250835e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 224,
+        "id": "20224",
+        "anomaly": false,
+        "score": 3.0915634852135554e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 225,
+        "id": "20225",
+        "anomaly": false,
+        "score": 6.892138117109425e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 226,
+        "id": "20226",
+        "anomaly": false,
+        "score": 3.0715707453055074e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 227,
+        "id": "20227",
+        "anomaly": false,
+        "score": 2.0106190277147107e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 228,
+        "id": "20228",
+        "anomaly": true,
+        "score": 2.4954044874903047e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 229,
+        "id": "20229",
+        "anomaly": false,
+        "score": 2.5992110295192106e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 230,
+        "id": "20230",
+        "anomaly": false,
+        "score": 3.6472201827564277e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 231,
+        "id": "20231",
+        "anomaly": true,
+        "score": 3.103193876086152e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 232,
+        "id": "20232",
+        "anomaly": false,
+        "score": 8.040614375204314e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 233,
+        "id": "20233",
+        "anomaly": false,
+        "score": 2.710125272642472e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 234,
+        "id": "20234",
+        "anomaly": false,
+        "score": 5.073822194390232e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 235,
+        "id": "20235",
+        "anomaly": false,
+        "score": 4.877383162238402e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 236,
+        "id": "20236",
+        "anomaly": true,
+        "score": 1.8393719756204518e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 237,
+        "id": "20237",
+        "anomaly": false,
+        "score": 1.6656650814184104e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 238,
+        "id": "20238",
+        "anomaly": false,
+        "score": 1.908972762976191e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 239,
+        "id": "20239",
+        "anomaly": false,
+        "score": 2.4270698304462712e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 240,
+        "id": "20240",
+        "anomaly": false,
+        "score": 4.655878456105711e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 241,
+        "id": "20241",
+        "anomaly": false,
+        "score": 3.8732332541258074e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 242,
+        "id": "20242",
+        "anomaly": false,
+        "score": 3.7953413993818685e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 243,
+        "id": "20243",
+        "anomaly": false,
+        "score": 3.6563099001796218e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 244,
+        "id": "20244",
+        "anomaly": false,
+        "score": 3.0717376375832828e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 245,
+        "id": "20245",
+        "anomaly": false,
+        "score": 2.3948302896315e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 246,
+        "id": "20246",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 247,
+        "id": "20247",
+        "anomaly": false,
+        "score": 3.3742498999345116e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 248,
+        "id": "20248",
+        "anomaly": false,
+        "score": 3.765493374885409e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 249,
+        "id": "20249",
+        "anomaly": false,
+        "score": 6.028416464687325e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 250,
+        "id": "20250",
+        "anomaly": false,
+        "score": 2.714703896344872e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 251,
+        "id": "20251",
+        "anomaly": false,
+        "score": 3.4525260161899496e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 252,
+        "id": "20252",
+        "anomaly": false,
+        "score": 3.198149215677404e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 253,
+        "id": "20253",
+        "anomaly": false,
+        "score": 6.743393441865919e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 254,
+        "id": "20254",
+        "anomaly": false,
+        "score": 2.4823000330798095e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 255,
+        "id": "20255",
+        "anomaly": false,
+        "score": 3.6294275105319684e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 256,
+        "id": "20256",
+        "anomaly": false,
+        "score": 2.6646787318895804e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 257,
+        "id": "20257",
+        "anomaly": false,
+        "score": 0.02425064705312252,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 258,
+        "id": "20258",
+        "anomaly": false,
+        "score": 4.9290952119918074e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 259,
+        "id": "20259",
+        "anomaly": true,
+        "score": 2.9751927286270075e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 260,
+        "id": "20260",
+        "anomaly": false,
+        "score": 3.840585122816265e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 261,
+        "id": "20261",
+        "anomaly": false,
+        "score": 1.8016761487160693e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 262,
+        "id": "20262",
+        "anomaly": false,
+        "score": 2.25416329158179e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 263,
+        "id": "20263",
+        "anomaly": false,
+        "score": 3.3490625810372876e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 264,
+        "id": "20264",
+        "anomaly": true,
+        "score": 1.4360096429300029e-05,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 265,
+        "id": "20265",
+        "anomaly": false,
+        "score": 3.288265816081548e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 266,
+        "id": "20266",
+        "anomaly": false,
+        "score": 5.051483185525285e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 267,
+        "id": "20267",
+        "anomaly": false,
+        "score": 8.872649232216645e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 268,
+        "id": "20268",
+        "anomaly": false,
+        "score": 2.8813581138820155e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 269,
+        "id": "20269",
+        "anomaly": false,
+        "score": 3.018522647835198e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 270,
+        "id": "20270",
+        "anomaly": false,
+        "score": 3.1158763249550248e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 271,
+        "id": "20271",
+        "anomaly": false,
+        "score": 2.874403207897558e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 272,
+        "id": "20272",
+        "anomaly": false,
+        "score": 2.2835411073174328e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 273,
+        "id": "20273",
+        "anomaly": false,
+        "score": 3.422497911742539e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 274,
+        "id": "20274",
+        "anomaly": false,
+        "score": 2.003887630053214e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 275,
+        "id": "20275",
+        "anomaly": true,
+        "score": 2.0876570943073602e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 276,
+        "id": "20276",
+        "anomaly": false,
+        "score": 3.0172070637490833e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 277,
+        "id": "20277",
+        "anomaly": false,
+        "score": 3.458768333075568e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 278,
+        "id": "20278",
+        "anomaly": false,
+        "score": 2.9894019917264814e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 279,
+        "id": "20279",
+        "anomaly": false,
+        "score": 4.653703399526421e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 280,
+        "id": "20280",
+        "anomaly": false,
+        "score": 3.606740847317269e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 281,
+        "id": "20281",
+        "anomaly": true,
+        "score": 4.761378022521967e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 282,
+        "id": "20282",
+        "anomaly": false,
+        "score": 3.2413674944109516e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 283,
+        "id": "20283",
+        "anomaly": false,
+        "score": 3.921300049114507e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 284,
+        "id": "20284",
+        "anomaly": false,
+        "score": 2.6610725853970507e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 285,
+        "id": "20285",
+        "anomaly": false,
+        "score": 2.8966132958885282e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 286,
+        "id": "20286",
+        "anomaly": false,
+        "score": 3.2499722237844253e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 287,
+        "id": "20287",
+        "anomaly": false,
+        "score": 2.2239362351683667e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 288,
+        "id": "20288",
+        "anomaly": false,
+        "score": 2.7001883609045763e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 289,
+        "id": "20289",
+        "anomaly": false,
+        "score": 2.0255977233318845e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 290,
+        "id": "20290",
+        "anomaly": false,
+        "score": 2.505104248484713e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 291,
+        "id": "20291",
+        "anomaly": false,
+        "score": 4.286785497242818e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 292,
+        "id": "20292",
+        "anomaly": false,
+        "score": 2.6744039587356383e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 293,
+        "id": "20293",
+        "anomaly": false,
+        "score": 3.063578560613678e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 294,
+        "id": "20294",
+        "anomaly": false,
+        "score": 2.0035149645991623e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 295,
+        "id": "20295",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 296,
+        "id": "20296",
+        "anomaly": false,
+        "score": 2.7650833089865046e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 297,
+        "id": "20297",
+        "anomaly": true,
+        "score": 0.9999992847442627,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 298,
+        "id": "20298",
+        "anomaly": false,
+        "score": 4.8896545195020735e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 299,
+        "id": "20299",
+        "anomaly": false,
+        "score": 5.581153800449101e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 300,
+        "id": "20300",
+        "anomaly": false,
+        "score": 3.846079835057026e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 301,
+        "id": "20301",
+        "anomaly": false,
+        "score": 1.926963932419312e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 302,
+        "id": "20302",
+        "anomaly": false,
+        "score": 2.3450156731996685e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 303,
+        "id": "20303",
+        "anomaly": false,
+        "score": 5.111812697577989e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 304,
+        "id": "20304",
+        "anomaly": false,
+        "score": 2.468633738317294e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 305,
+        "id": "20305",
+        "anomaly": false,
+        "score": 4.632151558325859e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 306,
+        "id": "20306",
+        "anomaly": false,
+        "score": 2.7614887585514225e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 307,
+        "id": "20307",
+        "anomaly": false,
+        "score": 2.3259663066710345e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 308,
+        "id": "20308",
+        "anomaly": false,
+        "score": 2.820689587679226e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 309,
+        "id": "20309",
+        "anomaly": false,
+        "score": 6.0999777815595735e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 310,
+        "id": "20310",
+        "anomaly": false,
+        "score": 3.118932227152982e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 311,
+        "id": "20311",
+        "anomaly": false,
+        "score": 1.0047920113720465e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 312,
+        "id": "20312",
+        "anomaly": false,
+        "score": 6.007635420246515e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 313,
+        "id": "20313",
+        "anomaly": false,
+        "score": 2.357013727305457e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 314,
+        "id": "20314",
+        "anomaly": false,
+        "score": 3.1327290344052017e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 315,
+        "id": "20315",
+        "anomaly": false,
+        "score": 3.5852626751875505e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 316,
+        "id": "20316",
+        "anomaly": false,
+        "score": 2.8855984055553563e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 317,
+        "id": "20317",
+        "anomaly": false,
+        "score": 2.4242244762717746e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 318,
+        "id": "20318",
+        "anomaly": false,
+        "score": 3.1663446407037554e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 319,
+        "id": "20319",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 320,
+        "id": "20320",
+        "anomaly": false,
+        "score": 3.3704500310705043e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 321,
+        "id": "20321",
+        "anomaly": false,
+        "score": 4.9946697799896356e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 322,
+        "id": "20322",
+        "anomaly": false,
+        "score": 2.3184340534498915e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 323,
+        "id": "20323",
+        "anomaly": false,
+        "score": 2.1284611193550518e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 324,
+        "id": "20324",
+        "anomaly": false,
+        "score": 3.3427604648750275e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 325,
+        "id": "20325",
+        "anomaly": false,
+        "score": 4.908141363557661e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 326,
+        "id": "20326",
+        "anomaly": false,
+        "score": 2.3906313799670897e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 327,
+        "id": "20327",
+        "anomaly": false,
+        "score": 2.6069812975038076e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 328,
+        "id": "20328",
+        "anomaly": false,
+        "score": 4.323221673985245e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 329,
+        "id": "20329",
+        "anomaly": false,
+        "score": 4.135560175200226e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 330,
+        "id": "20330",
+        "anomaly": false,
+        "score": 3.7318593513191445e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 331,
+        "id": "20331",
+        "anomaly": false,
+        "score": 4.1384168980584946e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 332,
+        "id": "20332",
+        "anomaly": false,
+        "score": 1.960427198355319e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 333,
+        "id": "20333",
+        "anomaly": false,
+        "score": 3.7989373140590033e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 334,
+        "id": "20334",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 335,
+        "id": "20335",
+        "anomaly": false,
+        "score": 3.3950200304389e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 336,
+        "id": "20336",
+        "anomaly": false,
+        "score": 3.642166348072351e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 337,
+        "id": "20337",
+        "anomaly": false,
+        "score": 4.68312782686553e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 338,
+        "id": "20338",
+        "anomaly": false,
+        "score": 6.8851481955789495e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 339,
+        "id": "20339",
+        "anomaly": false,
+        "score": 2.6411839826323558e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 340,
+        "id": "20340",
+        "anomaly": false,
+        "score": 2.1972093691147165e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 341,
+        "id": "20341",
+        "anomaly": false,
+        "score": 3.59097703039879e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 342,
+        "id": "20342",
+        "anomaly": false,
+        "score": 3.4629272249731002e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 343,
+        "id": "20343",
+        "anomaly": false,
+        "score": 2.5335098143841606e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 344,
+        "id": "20344",
+        "anomaly": false,
+        "score": 2.074265921692131e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 345,
+        "id": "20345",
+        "anomaly": false,
+        "score": 5.9628519011312164e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 346,
+        "id": "20346",
+        "anomaly": false,
+        "score": 4.885944235866191e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 347,
+        "id": "20347",
+        "anomaly": false,
+        "score": 3.0692253858433105e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 348,
+        "id": "20348",
+        "anomaly": false,
+        "score": 2.946030008388334e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 349,
+        "id": "20349",
+        "anomaly": false,
+        "score": 2.4622256660222774e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 350,
+        "id": "20350",
+        "anomaly": false,
+        "score": 5.149081061972538e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 351,
+        "id": "20351",
+        "anomaly": false,
+        "score": 9.752685400599148e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 352,
+        "id": "20352",
+        "anomaly": false,
+        "score": 4.7981729949242435e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 353,
+        "id": "20353",
+        "anomaly": false,
+        "score": 1.0748076419986319e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 354,
+        "id": "20354",
+        "anomaly": false,
+        "score": 3.1342526654043468e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 355,
+        "id": "20355",
+        "anomaly": false,
+        "score": 5.748224793933332e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 356,
+        "id": "20356",
+        "anomaly": false,
+        "score": 3.322391421534121e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 357,
+        "id": "20357",
+        "anomaly": false,
+        "score": 4.159395302849589e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 358,
+        "id": "20358",
+        "anomaly": false,
+        "score": 0.999942421913147,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 359,
+        "id": "20359",
+        "anomaly": false,
+        "score": 2.1757321064796997e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 360,
+        "id": "20360",
+        "anomaly": false,
+        "score": 3.816884145635413e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 361,
+        "id": "20361",
+        "anomaly": false,
+        "score": 2.545624283811776e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 362,
+        "id": "20362",
+        "anomaly": false,
+        "score": 4.887519025942311e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 363,
+        "id": "20363",
+        "anomaly": false,
+        "score": 3.404891913305619e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 364,
+        "id": "20364",
+        "anomaly": false,
+        "score": 2.1137529984116554e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 365,
+        "id": "20365",
+        "anomaly": false,
+        "score": 2.430563654343132e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 366,
+        "id": "20366",
+        "anomaly": false,
+        "score": 2.44596526499663e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 367,
+        "id": "20367",
+        "anomaly": false,
+        "score": 4.325176632846706e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 368,
+        "id": "20368",
+        "anomaly": false,
+        "score": 2.656741571627208e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 369,
+        "id": "20369",
+        "anomaly": false,
+        "score": 3.032629365407047e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 370,
+        "id": "20370",
+        "anomaly": false,
+        "score": 2.0305701582401525e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 371,
+        "id": "20371",
+        "anomaly": false,
+        "score": 2.147362920368323e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 372,
+        "id": "20372",
+        "anomaly": false,
+        "score": 3.139949058095226e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 373,
+        "id": "20373",
+        "anomaly": false,
+        "score": 3.6005994843435474e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 374,
+        "id": "20374",
+        "anomaly": false,
+        "score": 2.6452435122337192e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 375,
+        "id": "20375",
+        "anomaly": false,
+        "score": 2.7267979021416977e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 376,
+        "id": "20376",
+        "anomaly": false,
+        "score": 3.831443336821394e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 377,
+        "id": "20377",
+        "anomaly": false,
+        "score": 3.5118025607516756e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 378,
+        "id": "20378",
+        "anomaly": true,
+        "score": 0.9999997615814209,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 379,
+        "id": "20379",
+        "anomaly": false,
+        "score": 2.465431634846027e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 380,
+        "id": "20380",
+        "anomaly": false,
+        "score": 2.2630763396591647e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 381,
+        "id": "20381",
+        "anomaly": false,
+        "score": 4.220622940920293e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 382,
+        "id": "20382",
+        "anomaly": false,
+        "score": 3.2918492252065334e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 383,
+        "id": "20383",
+        "anomaly": false,
+        "score": 2.815134848788148e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 384,
+        "id": "20384",
+        "anomaly": false,
+        "score": 8.772976798354648e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 385,
+        "id": "20385",
+        "anomaly": false,
+        "score": 3.1017170840641484e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 386,
+        "id": "20386",
+        "anomaly": false,
+        "score": 2.9948216706543462e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 387,
+        "id": "20387",
+        "anomaly": false,
+        "score": 3.495310011203401e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 388,
+        "id": "20388",
+        "anomaly": false,
+        "score": 5.811345090478426e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 389,
+        "id": "20389",
+        "anomaly": false,
+        "score": 1.003063971438678e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 390,
+        "id": "20390",
+        "anomaly": false,
+        "score": 3.4489364679757273e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 391,
+        "id": "20391",
+        "anomaly": false,
+        "score": 2.872271352316602e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 392,
+        "id": "20392",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 393,
+        "id": "20393",
+        "anomaly": false,
+        "score": 3.387157448742073e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 394,
+        "id": "20394",
+        "anomaly": false,
+        "score": 2.774746235445491e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 395,
+        "id": "20395",
+        "anomaly": false,
+        "score": 2.4951427803898696e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 396,
+        "id": "20396",
+        "anomaly": false,
+        "score": 3.5267171369923744e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 397,
+        "id": "20397",
+        "anomaly": false,
+        "score": 3.1834699711907888e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 398,
+        "id": "20398",
+        "anomaly": false,
+        "score": 2.4992220915009966e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 399,
+        "id": "20399",
+        "anomaly": false,
+        "score": 5.728062660637079e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 400,
+        "id": "20400",
+        "anomaly": false,
+        "score": 2.991626615767018e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 401,
+        "id": "20401",
+        "anomaly": false,
+        "score": 4.900489784631645e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 402,
+        "id": "20402",
+        "anomaly": false,
+        "score": 2.7582250368141104e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 403,
+        "id": "20403",
+        "anomaly": true,
+        "score": 3.3991525469900807e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 404,
+        "id": "20404",
+        "anomaly": false,
+        "score": 5.5473519751103595e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 405,
+        "id": "20405",
+        "anomaly": false,
+        "score": 3.4209185741929105e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 406,
+        "id": "20406",
+        "anomaly": false,
+        "score": 2.6094999157066923e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 407,
+        "id": "20407",
+        "anomaly": false,
+        "score": 4.08713094657287e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 408,
+        "id": "20408",
+        "anomaly": false,
+        "score": 2.136321199941449e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 409,
+        "id": "20409",
+        "anomaly": false,
+        "score": 4.2123233470192645e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 410,
+        "id": "20410",
+        "anomaly": false,
+        "score": 3.181366764692939e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 411,
+        "id": "20411",
+        "anomaly": false,
+        "score": 2.1784699129057117e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 412,
+        "id": "20412",
+        "anomaly": false,
+        "score": 2.286859171363176e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 413,
+        "id": "20413",
+        "anomaly": false,
+        "score": 3.4110348678950686e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 414,
+        "id": "20414",
+        "anomaly": false,
+        "score": 2.396758645772934e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 415,
+        "id": "20415",
+        "anomaly": false,
+        "score": 3.4825932289095363e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 416,
+        "id": "20416",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 417,
+        "id": "20417",
+        "anomaly": false,
+        "score": 5.1823435569531284e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 418,
+        "id": "20418",
+        "anomaly": false,
+        "score": 2.7978530852124095e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 419,
+        "id": "20419",
+        "anomaly": false,
+        "score": 2.4991743430291535e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 420,
+        "id": "20420",
+        "anomaly": false,
+        "score": 3.289379492343869e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 421,
+        "id": "20421",
+        "anomaly": false,
+        "score": 2.1139828731975285e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 422,
+        "id": "20422",
+        "anomaly": false,
+        "score": 2.358731762797106e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 423,
+        "id": "20423",
+        "anomaly": false,
+        "score": 3.604377525334712e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 424,
+        "id": "20424",
+        "anomaly": false,
+        "score": 4.3076897782157175e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 425,
+        "id": "20425",
+        "anomaly": false,
+        "score": 3.988567186752334e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 426,
+        "id": "20426",
+        "anomaly": true,
+        "score": 4.712133431894472e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 427,
+        "id": "20427",
+        "anomaly": false,
+        "score": 2.55824079431477e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 428,
+        "id": "20428",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 429,
+        "id": "20429",
+        "anomaly": false,
+        "score": 3.0817668630334083e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 430,
+        "id": "20430",
+        "anomaly": false,
+        "score": 2.6859108857024694e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 431,
+        "id": "20431",
+        "anomaly": false,
+        "score": 1.8479262280379771e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 432,
+        "id": "20432",
+        "anomaly": false,
+        "score": 3.062042196688708e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 433,
+        "id": "20433",
+        "anomaly": false,
+        "score": 6.974430107220542e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 434,
+        "id": "20434",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 435,
+        "id": "20435",
+        "anomaly": false,
+        "score": 3.6354936128191184e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 436,
+        "id": "20436",
+        "anomaly": false,
+        "score": 1.8442151485942304e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 437,
+        "id": "20437",
+        "anomaly": false,
+        "score": 2.1206383280514274e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 438,
+        "id": "20438",
+        "anomaly": false,
+        "score": 2.4705930172785884e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 439,
+        "id": "20439",
+        "anomaly": true,
+        "score": 2.415565859337221e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 440,
+        "id": "20440",
+        "anomaly": false,
+        "score": 2.9321383863134542e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 441,
+        "id": "20441",
+        "anomaly": false,
+        "score": 3.289272854090086e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 442,
+        "id": "20442",
+        "anomaly": false,
+        "score": 2.550250883359695e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 443,
+        "id": "20443",
+        "anomaly": false,
+        "score": 3.3062046895793173e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 444,
+        "id": "20444",
+        "anomaly": false,
+        "score": 3.6233200262358878e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 445,
+        "id": "20445",
+        "anomaly": false,
+        "score": 4.492215794016374e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 446,
+        "id": "20446",
+        "anomaly": false,
+        "score": 2.0074585336260498e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 447,
+        "id": "20447",
+        "anomaly": false,
+        "score": 5.231438535702182e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 448,
+        "id": "20448",
+        "anomaly": false,
+        "score": 3.03492652165005e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 449,
+        "id": "20449",
+        "anomaly": false,
+        "score": 4.149244887230452e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 450,
+        "id": "20450",
+        "anomaly": false,
+        "score": 5.723743015551008e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 451,
+        "id": "20451",
+        "anomaly": false,
+        "score": 1.9112706013402203e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 452,
+        "id": "20452",
+        "anomaly": true,
+        "score": 0.3333348035812378,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 453,
+        "id": "20453",
+        "anomaly": false,
+        "score": 3.7372594761109212e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 454,
+        "id": "20454",
+        "anomaly": false,
+        "score": 1.8094626739184605e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 455,
+        "id": "20455",
+        "anomaly": false,
+        "score": 2.914154947575298e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 456,
+        "id": "20456",
+        "anomaly": false,
+        "score": 3.7569204778264975e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 457,
+        "id": "20457",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 458,
+        "id": "20458",
+        "anomaly": false,
+        "score": 3.4090055578417378e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 459,
+        "id": "20459",
+        "anomaly": false,
+        "score": 5.188400791666936e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 460,
+        "id": "20460",
+        "anomaly": false,
+        "score": 2.0176648831693456e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 461,
+        "id": "20461",
+        "anomaly": false,
+        "score": 2.398665401415201e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 462,
+        "id": "20462",
+        "anomaly": false,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 463,
+        "id": "20463",
+        "anomaly": false,
+        "score": 2.487817482688115e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 464,
+        "id": "20464",
+        "anomaly": false,
+        "score": 4.143542810197687e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 465,
+        "id": "20465",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 466,
+        "id": "20466",
+        "anomaly": false,
+        "score": 1.6858103890626808e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 467,
+        "id": "20467",
+        "anomaly": false,
+        "score": 2.664612793523702e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 468,
+        "id": "20468",
+        "anomaly": false,
+        "score": 6.145168299553916e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 469,
+        "id": "20469",
+        "anomaly": false,
+        "score": 3.7662691738660214e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 470,
+        "id": "20470",
+        "anomaly": false,
+        "score": 3.1948022751748795e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 471,
+        "id": "20471",
+        "anomaly": false,
+        "score": 2.701648099900922e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 472,
+        "id": "20472",
+        "anomaly": false,
+        "score": 2.9770774290227564e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 473,
+        "id": "20473",
+        "anomaly": false,
+        "score": 2.792083250824362e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 474,
+        "id": "20474",
+        "anomaly": false,
+        "score": 3.0872620300215203e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 475,
+        "id": "20475",
+        "anomaly": false,
+        "score": 2.755190962488996e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 476,
+        "id": "20476",
+        "anomaly": false,
+        "score": 0.9988716244697571,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 477,
+        "id": "20477",
+        "anomaly": false,
+        "score": 2.612775233501452e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 478,
+        "id": "20478",
+        "anomaly": false,
+        "score": 2.430006588838296e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 479,
+        "id": "20479",
+        "anomaly": false,
+        "score": 4.084878582943929e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 480,
+        "id": "20480",
+        "anomaly": false,
+        "score": 2.8480008040787652e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 481,
+        "id": "20481",
+        "anomaly": false,
+        "score": 2.1530454432650004e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 482,
+        "id": "20482",
+        "anomaly": false,
+        "score": 2.4898276933527086e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 483,
+        "id": "20483",
+        "anomaly": false,
+        "score": 4.195262135908706e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 484,
+        "id": "20484",
+        "anomaly": false,
+        "score": 4.5833076001144946e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 485,
+        "id": "20485",
+        "anomaly": false,
+        "score": 3.4509271245042328e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 486,
+        "id": "20486",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 487,
+        "id": "20487",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 488,
+        "id": "20488",
+        "anomaly": false,
+        "score": 1.978058207896538e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 489,
+        "id": "20489",
+        "anomaly": false,
+        "score": 3.742625722225057e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 490,
+        "id": "20490",
+        "anomaly": false,
+        "score": 3.6091321362619055e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 491,
+        "id": "20491",
+        "anomaly": false,
+        "score": 9.21140963328071e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 492,
+        "id": "20492",
+        "anomaly": false,
+        "score": 3.288782409072155e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 493,
+        "id": "20493",
+        "anomaly": false,
+        "score": 3.4323920772294514e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 494,
+        "id": "20494",
+        "anomaly": false,
+        "score": 2.386108008067822e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 495,
+        "id": "20495",
+        "anomaly": false,
+        "score": 2.31569902098272e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 496,
+        "id": "20496",
+        "anomaly": false,
+        "score": 3.0357891773746815e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 497,
+        "id": "20497",
+        "anomaly": false,
+        "score": 3.402888296477613e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 498,
+        "id": "20498",
+        "anomaly": false,
+        "score": 3.262807695136871e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 499,
+        "id": "20499",
+        "anomaly": false,
+        "score": 2.8213673886057222e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 500,
+        "id": "20500",
+        "anomaly": false,
+        "score": 3.0093451641732827e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 501,
+        "id": "20501",
+        "anomaly": false,
+        "score": 4.954751602781471e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 502,
+        "id": "20502",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 503,
+        "id": "20503",
+        "anomaly": false,
+        "score": 3.498511659927317e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 504,
+        "id": "20504",
+        "anomaly": false,
+        "score": 4.96043003295199e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 505,
+        "id": "20505",
+        "anomaly": false,
+        "score": 3.3114306461357046e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 506,
+        "id": "20506",
+        "anomaly": false,
+        "score": 2.625599563543801e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 507,
+        "id": "20507",
+        "anomaly": false,
+        "score": 2.403229018455022e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 508,
+        "id": "20508",
+        "anomaly": false,
+        "score": 2.2424947019317187e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 509,
+        "id": "20509",
+        "anomaly": false,
+        "score": 2.554846787461429e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 510,
+        "id": "20510",
+        "anomaly": false,
+        "score": 3.340115654282272e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 511,
+        "id": "20511",
+        "anomaly": false,
+        "score": 3.326373644085834e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 512,
+        "id": "20512",
+        "anomaly": false,
+        "score": 3.600386435209657e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 513,
+        "id": "20513",
+        "anomaly": false,
+        "score": 1.711463846731931e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 514,
+        "id": "20514",
+        "anomaly": false,
+        "score": 2.378367980782059e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 515,
+        "id": "20515",
+        "anomaly": false,
+        "score": 2.8024514904245734e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 516,
+        "id": "20516",
+        "anomaly": false,
+        "score": 3.0027829325263156e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 517,
+        "id": "20517",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 518,
+        "id": "20518",
+        "anomaly": false,
+        "score": 3.6189273942e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 519,
+        "id": "20519",
+        "anomaly": false,
+        "score": 5.924182914895937e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 520,
+        "id": "20520",
+        "anomaly": false,
+        "score": 2.9885811727581313e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 521,
+        "id": "20521",
+        "anomaly": false,
+        "score": 3.2863285923667718e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 522,
+        "id": "20522",
+        "anomaly": false,
+        "score": 4.504132903093705e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 523,
+        "id": "20523",
+        "anomaly": true,
+        "score": 2.550900489950436e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 524,
+        "id": "20524",
+        "anomaly": false,
+        "score": 3.1949973617884098e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 525,
+        "id": "20525",
+        "anomaly": false,
+        "score": 3.8872517507115845e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 526,
+        "id": "20526",
+        "anomaly": false,
+        "score": 4.347135472926311e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 527,
+        "id": "20527",
+        "anomaly": false,
+        "score": 4.419236120156711e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 528,
+        "id": "20528",
+        "anomaly": false,
+        "score": 2.551087618485326e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 529,
+        "id": "20529",
+        "anomaly": false,
+        "score": 3.4957899970322615e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 530,
+        "id": "20530",
+        "anomaly": false,
+        "score": 3.0059259188419674e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 531,
+        "id": "20531",
+        "anomaly": false,
+        "score": 2.9951424949103966e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 532,
+        "id": "20532",
+        "anomaly": false,
+        "score": 2.741786602200591e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 533,
+        "id": "20533",
+        "anomaly": false,
+        "score": 4.994617484044284e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 534,
+        "id": "20534",
+        "anomaly": false,
+        "score": 2.6930215426546056e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 535,
+        "id": "20535",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 536,
+        "id": "20536",
+        "anomaly": false,
+        "score": 4.824068582820473e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 537,
+        "id": "20537",
+        "anomaly": false,
+        "score": 1.5436091416631825e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 538,
+        "id": "20538",
+        "anomaly": false,
+        "score": 4.7448420446016826e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 539,
+        "id": "20539",
+        "anomaly": false,
+        "score": 2.120759745594114e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 540,
+        "id": "20540",
+        "anomaly": false,
+        "score": 1.9908145532099297e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 541,
+        "id": "20541",
+        "anomaly": false,
+        "score": 4.2833935367525555e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 542,
+        "id": "20542",
+        "anomaly": false,
+        "score": 5.302011686580954e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 543,
+        "id": "20543",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 544,
+        "id": "20544",
+        "anomaly": true,
+        "score": 5.338104529073462e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 545,
+        "id": "20545",
+        "anomaly": false,
+        "score": 4.802384864888154e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 546,
+        "id": "20546",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 547,
+        "id": "20547",
+        "anomaly": false,
+        "score": 3.194174723830656e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 548,
+        "id": "20548",
+        "anomaly": false,
+        "score": 6.16554643784184e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 549,
+        "id": "20549",
+        "anomaly": false,
+        "score": 3.076058646911406e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 550,
+        "id": "20550",
+        "anomaly": false,
+        "score": 4.345717570686247e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 551,
+        "id": "20551",
+        "anomaly": false,
+        "score": 1.989300244531478e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 552,
+        "id": "20552",
+        "anomaly": false,
+        "score": 2.98880627269682e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 553,
+        "id": "20553",
+        "anomaly": false,
+        "score": 2.778778934953152e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 554,
+        "id": "20554",
+        "anomaly": false,
+        "score": 2.3788779799360782e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 555,
+        "id": "20555",
+        "anomaly": false,
+        "score": 2.3866609808465e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 556,
+        "id": "20556",
+        "anomaly": false,
+        "score": 3.058668198718806e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 557,
+        "id": "20557",
+        "anomaly": false,
+        "score": 4.7821840780670755e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 558,
+        "id": "20558",
+        "anomaly": false,
+        "score": 2.8721829039568547e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 559,
+        "id": "20559",
+        "anomaly": false,
+        "score": 1.8963437469210476e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 560,
+        "id": "20560",
+        "anomaly": false,
+        "score": 5.308856543706497e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 561,
+        "id": "20561",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 562,
+        "id": "20562",
+        "anomaly": false,
+        "score": 3.101385573245352e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 563,
+        "id": "20563",
+        "anomaly": false,
+        "score": 5.085220891487552e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 564,
+        "id": "20564",
+        "anomaly": true,
+        "score": 4.564593837130815e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 565,
+        "id": "20565",
+        "anomaly": false,
+        "score": 4.470692601898918e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 566,
+        "id": "20566",
+        "anomaly": false,
+        "score": 2.842638878064463e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 567,
+        "id": "20567",
+        "anomaly": false,
+        "score": 4.121036909054965e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 568,
+        "id": "20568",
+        "anomaly": false,
+        "score": 2.7242247142567066e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 569,
+        "id": "20569",
+        "anomaly": false,
+        "score": 2.5661815925559495e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 570,
+        "id": "20570",
+        "anomaly": false,
+        "score": 6.099163329054136e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 571,
+        "id": "20571",
+        "anomaly": false,
+        "score": 2.227502136520343e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 572,
+        "id": "20572",
+        "anomaly": false,
+        "score": 4.43346607426065e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 573,
+        "id": "20573",
+        "anomaly": false,
+        "score": 2.4839102934492985e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 574,
+        "id": "20574",
+        "anomaly": false,
+        "score": 5.645531928166747e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 575,
+        "id": "20575",
+        "anomaly": false,
+        "score": 4.93439574711374e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 576,
+        "id": "20576",
+        "anomaly": false,
+        "score": 2.0339830371085554e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 577,
+        "id": "20577",
+        "anomaly": false,
+        "score": 2.7343498913978692e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 578,
+        "id": "20578",
+        "anomaly": false,
+        "score": 2.6991194772563176e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 579,
+        "id": "20579",
+        "anomaly": false,
+        "score": 3.123287115158746e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 580,
+        "id": "20580",
+        "anomaly": false,
+        "score": 4.689080924435984e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 581,
+        "id": "20581",
+        "anomaly": false,
+        "score": 2.3568586584588047e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 582,
+        "id": "20582",
+        "anomaly": false,
+        "score": 3.3120529678853927e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 583,
+        "id": "20583",
+        "anomaly": false,
+        "score": 7.371580068138428e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 584,
+        "id": "20584",
+        "anomaly": false,
+        "score": 4.12542067351751e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 585,
+        "id": "20585",
+        "anomaly": false,
+        "score": 4.393752988107735e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 586,
+        "id": "20586",
+        "anomaly": false,
+        "score": 2.775460870907409e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 587,
+        "id": "20587",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 588,
+        "id": "20588",
+        "anomaly": false,
+        "score": 5.178095307201147e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 589,
+        "id": "20589",
+        "anomaly": false,
+        "score": 2.7078026505478192e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 590,
+        "id": "20590",
+        "anomaly": false,
+        "score": 3.2397201721323654e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 591,
+        "id": "20591",
+        "anomaly": false,
+        "score": 3.311535010652733e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 592,
+        "id": "20592",
+        "anomaly": false,
+        "score": 3.3033152249117848e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 593,
+        "id": "20593",
+        "anomaly": false,
+        "score": 5.40192468179157e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 594,
+        "id": "20594",
+        "anomaly": false,
+        "score": 4.951671598973917e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 595,
+        "id": "20595",
+        "anomaly": false,
+        "score": 2.02475916921685e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 596,
+        "id": "20596",
+        "anomaly": false,
+        "score": 5.4579327297688e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 597,
+        "id": "20597",
+        "anomaly": false,
+        "score": 2.5033536985574756e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 598,
+        "id": "20598",
+        "anomaly": false,
+        "score": 1.672098051130888e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 599,
+        "id": "20599",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 600,
+        "id": "20600",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 601,
+        "id": "20601",
+        "anomaly": false,
+        "score": 4.697584699897561e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 602,
+        "id": "20602",
+        "anomaly": false,
+        "score": 4.36909613199532e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 603,
+        "id": "20603",
+        "anomaly": false,
+        "score": 3.776966423174599e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 604,
+        "id": "20604",
+        "anomaly": false,
+        "score": 2.7636833692668006e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 605,
+        "id": "20605",
+        "anomaly": false,
+        "score": 2.834674660334713e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 606,
+        "id": "20606",
+        "anomaly": false,
+        "score": 4.24157678935444e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 607,
+        "id": "20607",
+        "anomaly": false,
+        "score": 4.090172296855599e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 608,
+        "id": "20608",
+        "anomaly": false,
+        "score": 3.102894197581918e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 609,
+        "id": "20609",
+        "anomaly": false,
+        "score": 8.635656740807462e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 610,
+        "id": "20610",
+        "anomaly": false,
+        "score": 8.202155186154414e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 611,
+        "id": "20611",
+        "anomaly": false,
+        "score": 1.9467465790512506e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 612,
+        "id": "20612",
+        "anomaly": false,
+        "score": 3.2142784220923204e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 613,
+        "id": "20613",
+        "anomaly": false,
+        "score": 4.387581157061504e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 614,
+        "id": "20614",
+        "anomaly": false,
+        "score": 2.4897967705328483e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 615,
+        "id": "20615",
+        "anomaly": false,
+        "score": 4.584994712786283e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 616,
+        "id": "20616",
+        "anomaly": false,
+        "score": 1.6510989553353284e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 617,
+        "id": "20617",
+        "anomaly": false,
+        "score": 5.952612355031306e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 618,
+        "id": "20618",
+        "anomaly": false,
+        "score": 3.140407216051244e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 619,
+        "id": "20619",
+        "anomaly": false,
+        "score": 3.2753280265751528e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 620,
+        "id": "20620",
+        "anomaly": false,
+        "score": 3.193899146936019e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 621,
+        "id": "20621",
+        "anomaly": false,
+        "score": 3.1763977403898025e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 622,
+        "id": "20622",
+        "anomaly": false,
+        "score": 6.736624982295325e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 623,
+        "id": "20623",
+        "anomaly": false,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 624,
+        "id": "20624",
+        "anomaly": true,
+        "score": 2.5136739623121684e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 625,
+        "id": "20625",
+        "anomaly": true,
+        "score": 2.5525600904074963e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 626,
+        "id": "20626",
+        "anomaly": false,
+        "score": 4.844607701670611e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 627,
+        "id": "20627",
+        "anomaly": false,
+        "score": 3.822421149379807e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 628,
+        "id": "20628",
+        "anomaly": false,
+        "score": 1.8851947061193641e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 629,
+        "id": "20629",
+        "anomaly": false,
+        "score": 2.2963047285884386e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 630,
+        "id": "20630",
+        "anomaly": false,
+        "score": 3.4601737297634827e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 631,
+        "id": "20631",
+        "anomaly": false,
+        "score": 3.5938146538683213e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 632,
+        "id": "20632",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 633,
+        "id": "20633",
+        "anomaly": false,
+        "score": 1.9819131011900026e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 634,
+        "id": "20634",
+        "anomaly": false,
+        "score": 3.4632837468961952e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 635,
+        "id": "20635",
+        "anomaly": false,
+        "score": 2.3846291696827393e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 636,
+        "id": "20636",
+        "anomaly": false,
+        "score": 5.912730557611212e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 637,
+        "id": "20637",
+        "anomaly": false,
+        "score": 3.6346302749734605e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 638,
+        "id": "20638",
+        "anomaly": false,
+        "score": 2.7606752155406866e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 639,
+        "id": "20639",
+        "anomaly": false,
+        "score": 3.964195002481574e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 640,
+        "id": "20640",
+        "anomaly": true,
+        "score": 2.8145309443061706e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 641,
+        "id": "20641",
+        "anomaly": false,
+        "score": 2.2063852611609036e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 642,
+        "id": "20642",
+        "anomaly": false,
+        "score": 4.18644049204886e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 643,
+        "id": "20643",
+        "anomaly": false,
+        "score": 3.774755441554589e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 644,
+        "id": "20644",
+        "anomaly": false,
+        "score": 3.0805033475189703e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 645,
+        "id": "20645",
+        "anomaly": false,
+        "score": 3.4539427815616364e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 646,
+        "id": "20646",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 647,
+        "id": "20647",
+        "anomaly": false,
+        "score": 7.252797786350129e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 648,
+        "id": "20648",
+        "anomaly": false,
+        "score": 3.3576393434486818e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 649,
+        "id": "20649",
+        "anomaly": false,
+        "score": 3.994653070549248e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 650,
+        "id": "20650",
+        "anomaly": false,
+        "score": 2.9743644063273678e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 651,
+        "id": "20651",
+        "anomaly": false,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 652,
+        "id": "20652",
+        "anomaly": false,
+        "score": 2.5870583613141207e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 653,
+        "id": "20653",
+        "anomaly": false,
+        "score": 4.0120935409504455e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 654,
+        "id": "20654",
+        "anomaly": false,
+        "score": 7.392122370220022e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 655,
+        "id": "20655",
+        "anomaly": false,
+        "score": 3.5716561797016766e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 656,
+        "id": "20656",
+        "anomaly": false,
+        "score": 3.652552777566598e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 657,
+        "id": "20657",
+        "anomaly": false,
+        "score": 3.411483021409367e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 658,
+        "id": "20658",
+        "anomaly": false,
+        "score": 2.139209982487955e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 659,
+        "id": "20659",
+        "anomaly": false,
+        "score": 3.4791607959050452e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 660,
+        "id": "20660",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 661,
+        "id": "20661",
+        "anomaly": false,
+        "score": 2.46482022703276e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 662,
+        "id": "20662",
+        "anomaly": false,
+        "score": 3.76351886188786e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 663,
+        "id": "20663",
+        "anomaly": false,
+        "score": 2.666881300683599e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 664,
+        "id": "20664",
+        "anomaly": false,
+        "score": 3.1281608698918717e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 665,
+        "id": "20665",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 666,
+        "id": "20666",
+        "anomaly": false,
+        "score": 2.101103518725722e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 667,
+        "id": "20667",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 668,
+        "id": "20668",
+        "anomaly": false,
+        "score": 2.36522828345187e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 669,
+        "id": "20669",
+        "anomaly": true,
+        "score": 7.659807124582585e-06,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 670,
+        "id": "20670",
+        "anomaly": false,
+        "score": 3.5705152185983025e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 671,
+        "id": "20671",
+        "anomaly": true,
+        "score": 3.015360562130809e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 672,
+        "id": "20672",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 673,
+        "id": "20673",
+        "anomaly": false,
+        "score": 2.982277464980143e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 674,
+        "id": "20674",
+        "anomaly": false,
+        "score": 7.5114239734830335e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 675,
+        "id": "20675",
+        "anomaly": false,
+        "score": 5.009668257116573e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 676,
+        "id": "20676",
+        "anomaly": false,
+        "score": 2.8336096420389367e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 677,
+        "id": "20677",
+        "anomaly": false,
+        "score": 2.6672325930121588e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 678,
+        "id": "20678",
+        "anomaly": false,
+        "score": 2.679172666830709e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 679,
+        "id": "20679",
+        "anomaly": false,
+        "score": 3.2144348551810253e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 680,
+        "id": "20680",
+        "anomaly": false,
+        "score": 3.5626173939817818e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 681,
+        "id": "20681",
+        "anomaly": false,
+        "score": 2.540147534091375e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 682,
+        "id": "20682",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 683,
+        "id": "20683",
+        "anomaly": false,
+        "score": 4.0109916881192476e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 684,
+        "id": "20684",
+        "anomaly": false,
+        "score": 3.473418701105402e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 685,
+        "id": "20685",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 686,
+        "id": "20686",
+        "anomaly": false,
+        "score": 3.2359507713408675e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 687,
+        "id": "20687",
+        "anomaly": false,
+        "score": 2.7058338218921563e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 688,
+        "id": "20688",
+        "anomaly": false,
+        "score": 3.135873384962906e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 689,
+        "id": "20689",
+        "anomaly": false,
+        "score": 4.29869851359399e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 690,
+        "id": "20690",
+        "anomaly": false,
+        "score": 2.625494744279422e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 691,
+        "id": "20691",
+        "anomaly": false,
+        "score": 3.828123226412572e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 692,
+        "id": "20692",
+        "anomaly": false,
+        "score": 2.9505065413104603e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 693,
+        "id": "20693",
+        "anomaly": false,
+        "score": 3.130524419248104e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 694,
+        "id": "20694",
+        "anomaly": false,
+        "score": 2.850951887012343e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 695,
+        "id": "20695",
+        "anomaly": false,
+        "score": 2.7708590550901135e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 696,
+        "id": "20696",
+        "anomaly": false,
+        "score": 2.2178298877406633e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 697,
+        "id": "20697",
+        "anomaly": false,
+        "score": 2.1341847968869843e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 698,
+        "id": "20698",
+        "anomaly": false,
+        "score": 3.981582267442718e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 699,
+        "id": "20699",
+        "anomaly": false,
+        "score": 2.622271267682663e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 700,
+        "id": "20700",
+        "anomaly": false,
+        "score": 3.6119761261943495e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 701,
+        "id": "20701",
+        "anomaly": false,
+        "score": 3.113992761427653e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 702,
+        "id": "20702",
+        "anomaly": false,
+        "score": 3.937759174732491e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 703,
+        "id": "20703",
+        "anomaly": false,
+        "score": 3.415016863073106e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 704,
+        "id": "20704",
+        "anomaly": false,
+        "score": 6.064132321625948e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 705,
+        "id": "20705",
+        "anomaly": false,
+        "score": 2.6172019715886563e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 706,
+        "id": "20706",
+        "anomaly": false,
+        "score": 3.356477463967167e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 707,
+        "id": "20707",
+        "anomaly": false,
+        "score": 2.7166800009581493e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 708,
+        "id": "20708",
+        "anomaly": false,
+        "score": 2.141808636224596e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 709,
+        "id": "20709",
+        "anomaly": false,
+        "score": 2.566064949860447e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 710,
+        "id": "20710",
+        "anomaly": false,
+        "score": 1.983049514819868e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 711,
+        "id": "20711",
+        "anomaly": false,
+        "score": 8.464648090011906e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 712,
+        "id": "20712",
+        "anomaly": false,
+        "score": 2.466165142323007e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 713,
+        "id": "20713",
+        "anomaly": false,
+        "score": 3.5229591048846487e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 714,
+        "id": "20714",
+        "anomaly": false,
+        "score": 3.3887017707456835e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 715,
+        "id": "20715",
+        "anomaly": false,
+        "score": 3.102444225078216e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 716,
+        "id": "20716",
+        "anomaly": false,
+        "score": 4.64139111500117e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 717,
+        "id": "20717",
+        "anomaly": false,
+        "score": 3.0398971375689143e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 718,
+        "id": "20718",
+        "anomaly": false,
+        "score": 2.9962864118715515e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 719,
+        "id": "20719",
+        "anomaly": false,
+        "score": 0.5004425644874573,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 720,
+        "id": "20720",
+        "anomaly": false,
+        "score": 2.5443621325393906e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 721,
+        "id": "20721",
+        "anomaly": false,
+        "score": 4.0417489799438044e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 722,
+        "id": "20722",
+        "anomaly": false,
+        "score": 3.4747138215607265e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 723,
+        "id": "20723",
+        "anomaly": false,
+        "score": 5.118251920066541e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 724,
+        "id": "20724",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 725,
+        "id": "20725",
+        "anomaly": false,
+        "score": 6.352694072120357e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 726,
+        "id": "20726",
+        "anomaly": false,
+        "score": 2.312448259544908e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 727,
+        "id": "20727",
+        "anomaly": false,
+        "score": 2.70405575975019e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 728,
+        "id": "20728",
+        "anomaly": false,
+        "score": 3.188732762282598e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 729,
+        "id": "20729",
+        "anomaly": false,
+        "score": 2.4975429369078483e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 730,
+        "id": "20730",
+        "anomaly": false,
+        "score": 3.377180746610975e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 731,
+        "id": "20731",
+        "anomaly": false,
+        "score": 3.7322447496990208e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 732,
+        "id": "20732",
+        "anomaly": false,
+        "score": 3.479197175693116e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 733,
+        "id": "20733",
+        "anomaly": false,
+        "score": 2.254832679682295e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 734,
+        "id": "20734",
+        "anomaly": false,
+        "score": 2.485697223164607e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 735,
+        "id": "20735",
+        "anomaly": false,
+        "score": 3.051928615604993e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 736,
+        "id": "20736",
+        "anomaly": false,
+        "score": 2.697253876249306e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 737,
+        "id": "20737",
+        "anomaly": false,
+        "score": 2.3608877199876588e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 738,
+        "id": "20738",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 739,
+        "id": "20739",
+        "anomaly": false,
+        "score": 2.4457788185827667e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 740,
+        "id": "20740",
+        "anomaly": false,
+        "score": 4.02989144276944e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 741,
+        "id": "20741",
+        "anomaly": false,
+        "score": 4.019217158202082e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 742,
+        "id": "20742",
+        "anomaly": false,
+        "score": 5.790323484688997e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 743,
+        "id": "20743",
+        "anomaly": false,
+        "score": 2.341333583899541e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 744,
+        "id": "20744",
+        "anomaly": true,
+        "score": 2.631232064231881e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 745,
+        "id": "20745",
+        "anomaly": false,
+        "score": 2.199362143073813e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 746,
+        "id": "20746",
+        "anomaly": false,
+        "score": 2.1773842036054702e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 747,
+        "id": "20747",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 748,
+        "id": "20748",
+        "anomaly": false,
+        "score": 2.843663878593361e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 749,
+        "id": "20749",
+        "anomaly": false,
+        "score": 2.892651764341281e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 750,
+        "id": "20750",
+        "anomaly": false,
+        "score": 6.8598228608607315e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 751,
+        "id": "20751",
+        "anomaly": false,
+        "score": 1.933056182679138e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 752,
+        "id": "20752",
+        "anomaly": false,
+        "score": 3.265453642598004e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 753,
+        "id": "20753",
+        "anomaly": false,
+        "score": 6.575221959792543e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 754,
+        "id": "20754",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 755,
+        "id": "20755",
+        "anomaly": false,
+        "score": 2.663123723323224e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 756,
+        "id": "20756",
+        "anomaly": false,
+        "score": 3.999967702839058e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 757,
+        "id": "20757",
+        "anomaly": false,
+        "score": 3.4392830912111094e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 758,
+        "id": "20758",
+        "anomaly": false,
+        "score": 5.021795914217364e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 759,
+        "id": "20759",
+        "anomaly": false,
+        "score": 5.630321538774297e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 760,
+        "id": "20760",
+        "anomaly": false,
+        "score": 4.722554422187386e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 761,
+        "id": "20761",
+        "anomaly": false,
+        "score": 5.490351213666145e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 762,
+        "id": "20762",
+        "anomaly": false,
+        "score": 3.2377186016674386e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 763,
+        "id": "20763",
+        "anomaly": false,
+        "score": 1.8190530681749806e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 764,
+        "id": "20764",
+        "anomaly": false,
+        "score": 2.8023391678289045e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 765,
+        "id": "20765",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 766,
+        "id": "20766",
+        "anomaly": false,
+        "score": 3.0583325951738516e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 767,
+        "id": "20767",
+        "anomaly": false,
+        "score": 2.554427737777587e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 768,
+        "id": "20768",
+        "anomaly": false,
+        "score": 3.448943061812315e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 769,
+        "id": "20769",
+        "anomaly": false,
+        "score": 3.1900588055577828e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 770,
+        "id": "20770",
+        "anomaly": false,
+        "score": 3.0349474400281906e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 771,
+        "id": "20771",
+        "anomaly": false,
+        "score": 2.9234797693789005e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 772,
+        "id": "20772",
+        "anomaly": true,
+        "score": 2.5966389785025967e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 773,
+        "id": "20773",
+        "anomaly": false,
+        "score": 5.4472625379276e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 774,
+        "id": "20774",
+        "anomaly": false,
+        "score": 2.3330460408033105e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 775,
+        "id": "20775",
+        "anomaly": false,
+        "score": 3.387041033420246e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 776,
+        "id": "20776",
+        "anomaly": false,
+        "score": 3.342620175317279e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 777,
+        "id": "20777",
+        "anomaly": false,
+        "score": 3.877900326187955e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 778,
+        "id": "20778",
+        "anomaly": false,
+        "score": 2.0573190795403207e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 779,
+        "id": "20779",
+        "anomaly": false,
+        "score": 3.264344968556543e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 780,
+        "id": "20780",
+        "anomaly": false,
+        "score": 4.442718818609137e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 781,
+        "id": "20781",
+        "anomaly": false,
+        "score": 8.64951107359957e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 782,
+        "id": "20782",
+        "anomaly": false,
+        "score": 4.135130438953638e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 783,
+        "id": "20783",
+        "anomaly": false,
+        "score": 3.5703858429769753e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 784,
+        "id": "20784",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 785,
+        "id": "20785",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 786,
+        "id": "20786",
+        "anomaly": false,
+        "score": 2.6546949811745435e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 787,
+        "id": "20787",
+        "anomaly": false,
+        "score": 3.4797046737367054e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 788,
+        "id": "20788",
+        "anomaly": false,
+        "score": 2.516053427825682e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 789,
+        "id": "20789",
+        "anomaly": false,
+        "score": 2.7806377147499006e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 790,
+        "id": "20790",
+        "anomaly": false,
+        "score": 4.162069672020152e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 791,
+        "id": "20791",
+        "anomaly": false,
+        "score": 3.030293328265543e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 792,
+        "id": "20792",
+        "anomaly": false,
+        "score": 5.07717641085037e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 793,
+        "id": "20793",
+        "anomaly": false,
+        "score": 2.885884441639064e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 794,
+        "id": "20794",
+        "anomaly": false,
+        "score": 2.6863617677008733e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 795,
+        "id": "20795",
+        "anomaly": false,
+        "score": 3.7290142245183233e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 796,
+        "id": "20796",
+        "anomaly": false,
+        "score": 4.130877641728148e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 797,
+        "id": "20797",
+        "anomaly": false,
+        "score": 4.862752575718332e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 798,
+        "id": "20798",
+        "anomaly": false,
+        "score": 2.559958829806419e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 799,
+        "id": "20799",
+        "anomaly": false,
+        "score": 3.1835702429816592e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 800,
+        "id": "20800",
+        "anomaly": false,
+        "score": 8.446729043498635e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 801,
+        "id": "20801",
+        "anomaly": true,
+        "score": 2.5953713702620007e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 802,
+        "id": "20802",
+        "anomaly": false,
+        "score": 2.214522055510315e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 803,
+        "id": "20803",
+        "anomaly": false,
+        "score": 4.562529738905141e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 804,
+        "id": "20804",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 805,
+        "id": "20805",
+        "anomaly": false,
+        "score": 2.8950751129741548e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 806,
+        "id": "20806",
+        "anomaly": false,
+        "score": 2.838488853740273e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 807,
+        "id": "20807",
+        "anomaly": false,
+        "score": 3.4277111353731016e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 808,
+        "id": "20808",
+        "anomaly": false,
+        "score": 2.342409970879089e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 809,
+        "id": "20809",
+        "anomaly": false,
+        "score": 1.9825117760774447e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 810,
+        "id": "20810",
+        "anomaly": false,
+        "score": 2.822484475473175e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 811,
+        "id": "20811",
+        "anomaly": false,
+        "score": 7.873668437241577e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 812,
+        "id": "20812",
+        "anomaly": false,
+        "score": 2.4421337911917362e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 813,
+        "id": "20813",
+        "anomaly": false,
+        "score": 6.054562618373893e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 814,
+        "id": "20814",
+        "anomaly": false,
+        "score": 2.8251072308194125e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 815,
+        "id": "20815",
+        "anomaly": false,
+        "score": 1.84169482508878e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 816,
+        "id": "20816",
+        "anomaly": true,
+        "score": 0.5000008344650269,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 817,
+        "id": "20817",
+        "anomaly": false,
+        "score": 2.283024059579475e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 818,
+        "id": "20818",
+        "anomaly": false,
+        "score": 2.3822833554731915e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 819,
+        "id": "20819",
+        "anomaly": false,
+        "score": 1.8207739458375727e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 820,
+        "id": "20820",
+        "anomaly": false,
+        "score": 1.7388658761774423e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 821,
+        "id": "20821",
+        "anomaly": true,
+        "score": 4.325580903241644e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 822,
+        "id": "20822",
+        "anomaly": false,
+        "score": 2.9995028398843715e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 823,
+        "id": "20823",
+        "anomaly": false,
+        "score": 2.163574890801101e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 824,
+        "id": "20824",
+        "anomaly": false,
+        "score": 3.868824933306314e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 825,
+        "id": "20825",
+        "anomaly": false,
+        "score": 4.417757281771628e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 826,
+        "id": "20826",
+        "anomaly": false,
+        "score": 2.711513616304728e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 827,
+        "id": "20827",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 828,
+        "id": "20828",
+        "anomaly": false,
+        "score": 2.9549407827289542e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 829,
+        "id": "20829",
+        "anomaly": true,
+        "score": 7.800594175932929e-06,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 830,
+        "id": "20830",
+        "anomaly": false,
+        "score": 4.603541128744837e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 831,
+        "id": "20831",
+        "anomaly": false,
+        "score": 1.9957160475314595e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 832,
+        "id": "20832",
+        "anomaly": false,
+        "score": 1.978874252017704e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 833,
+        "id": "20833",
+        "anomaly": false,
+        "score": 2.6579452878650045e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 834,
+        "id": "20834",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 835,
+        "id": "20835",
+        "anomaly": false,
+        "score": 3.417390416871058e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 836,
+        "id": "20836",
+        "anomaly": false,
+        "score": 5.930202860326972e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 837,
+        "id": "20837",
+        "anomaly": false,
+        "score": 1.7541910892759915e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 838,
+        "id": "20838",
+        "anomaly": false,
+        "score": 3.365821157785831e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 839,
+        "id": "20839",
+        "anomaly": false,
+        "score": 3.321339818285196e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 840,
+        "id": "20840",
+        "anomaly": false,
+        "score": 4.736862138088327e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 841,
+        "id": "20841",
+        "anomaly": false,
+        "score": 3.4231181871291483e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 842,
+        "id": "20842",
+        "anomaly": false,
+        "score": 2.320153271284653e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 843,
+        "id": "20843",
+        "anomaly": false,
+        "score": 4.160649041295983e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 844,
+        "id": "20844",
+        "anomaly": false,
+        "score": 3.1435006349056493e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 845,
+        "id": "20845",
+        "anomaly": false,
+        "score": 5.377556135499617e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 846,
+        "id": "20846",
+        "anomaly": false,
+        "score": 8.625454938737676e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 847,
+        "id": "20847",
+        "anomaly": false,
+        "score": 3.2524371817999054e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 848,
+        "id": "20848",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 849,
+        "id": "20849",
+        "anomaly": false,
+        "score": 3.897825990861747e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 850,
+        "id": "20850",
+        "anomaly": false,
+        "score": 3.1892498100205557e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 851,
+        "id": "20851",
+        "anomaly": false,
+        "score": 2.319595751032466e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 852,
+        "id": "20852",
+        "anomaly": false,
+        "score": 4.618264938471839e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 853,
+        "id": "20853",
+        "anomaly": false,
+        "score": 3.3683741094137076e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 854,
+        "id": "20854",
+        "anomaly": false,
+        "score": 3.3346889267704682e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 855,
+        "id": "20855",
+        "anomaly": false,
+        "score": 4.292205630918033e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 856,
+        "id": "20856",
+        "anomaly": false,
+        "score": 3.797321824094979e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 857,
+        "id": "20857",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 858,
+        "id": "20858",
+        "anomaly": false,
+        "score": 1.7588547507330077e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 859,
+        "id": "20859",
+        "anomaly": false,
+        "score": 2.5560848371242173e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 860,
+        "id": "20860",
+        "anomaly": false,
+        "score": 4.0723534766584635e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 861,
+        "id": "20861",
+        "anomaly": false,
+        "score": 1.8632796354722814e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 862,
+        "id": "20862",
+        "anomaly": false,
+        "score": 3.925808869098546e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 863,
+        "id": "20863",
+        "anomaly": false,
+        "score": 3.3903340863616904e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 864,
+        "id": "20864",
+        "anomaly": false,
+        "score": 4.787276793649653e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 865,
+        "id": "20865",
+        "anomaly": false,
+        "score": 5.219593276706291e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 866,
+        "id": "20866",
+        "anomaly": false,
+        "score": 5.6454023251717445e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 867,
+        "id": "20867",
+        "anomaly": false,
+        "score": 3.799031674134312e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 868,
+        "id": "20868",
+        "anomaly": false,
+        "score": 3.431210870985524e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 869,
+        "id": "20869",
+        "anomaly": false,
+        "score": 3.2719437967898557e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 870,
+        "id": "20870",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 871,
+        "id": "20871",
+        "anomaly": false,
+        "score": 2.6818029255082365e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 872,
+        "id": "20872",
+        "anomaly": false,
+        "score": 3.0021872134966543e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 873,
+        "id": "20873",
+        "anomaly": false,
+        "score": 2.257919959447463e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 874,
+        "id": "20874",
+        "anomaly": false,
+        "score": 3.199842694812105e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 875,
+        "id": "20875",
+        "anomaly": false,
+        "score": 3.614419256336987e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 876,
+        "id": "20876",
+        "anomaly": false,
+        "score": 3.66111066796293e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 877,
+        "id": "20877",
+        "anomaly": false,
+        "score": 4.0746845115791075e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 878,
+        "id": "20878",
+        "anomaly": false,
+        "score": 3.7342813357099658e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 879,
+        "id": "20879",
+        "anomaly": false,
+        "score": 4.3336244743841235e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 880,
+        "id": "20880",
+        "anomaly": false,
+        "score": 4.975880528945709e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 881,
+        "id": "20881",
+        "anomaly": true,
+        "score": 5.4799743338662665e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 882,
+        "id": "20882",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 883,
+        "id": "20883",
+        "anomaly": false,
+        "score": 3.2309235393768176e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 884,
+        "id": "20884",
+        "anomaly": true,
+        "score": 0.5540302991867065,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 885,
+        "id": "20885",
+        "anomaly": false,
+        "score": 7.444800758094061e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 886,
+        "id": "20886",
+        "anomaly": false,
+        "score": 1.9648330180643825e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 887,
+        "id": "20887",
+        "anomaly": false,
+        "score": 2.7434239200374577e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 888,
+        "id": "20888",
+        "anomaly": false,
+        "score": 2.826937361533055e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 889,
+        "id": "20889",
+        "anomaly": false,
+        "score": 2.5112012735917233e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 890,
+        "id": "20890",
+        "anomaly": false,
+        "score": 3.4575152767502004e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 891,
+        "id": "20891",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 892,
+        "id": "20892",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 893,
+        "id": "20893",
+        "anomaly": false,
+        "score": 3.4694853638939094e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 894,
+        "id": "20894",
+        "anomaly": false,
+        "score": 4.457406703295419e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 895,
+        "id": "20895",
+        "anomaly": true,
+        "score": 2.509458454369451e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 896,
+        "id": "20896",
+        "anomaly": false,
+        "score": 7.989081495907158e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 897,
+        "id": "20897",
+        "anomaly": false,
+        "score": 3.471034460744704e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 898,
+        "id": "20898",
+        "anomaly": false,
+        "score": 2.817699851220823e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 899,
+        "id": "20899",
+        "anomaly": false,
+        "score": 4.131073183089029e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 900,
+        "id": "20900",
+        "anomaly": false,
+        "score": 2.2319079562294064e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 901,
+        "id": "20901",
+        "anomaly": false,
+        "score": 2.283918320244993e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 902,
+        "id": "20902",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 903,
+        "id": "20903",
+        "anomaly": false,
+        "score": 3.5948764889326412e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 904,
+        "id": "20904",
+        "anomaly": false,
+        "score": 2.508563738956582e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 905,
+        "id": "20905",
+        "anomaly": false,
+        "score": 1.836328237914131e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 906,
+        "id": "20906",
+        "anomaly": false,
+        "score": 6.21446524746716e-05,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 907,
+        "id": "20907",
+        "anomaly": false,
+        "score": 3.980717792728683e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 908,
+        "id": "20908",
+        "anomaly": false,
+        "score": 4.065256689500529e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 909,
+        "id": "20909",
+        "anomaly": false,
+        "score": 2.9127822926966473e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 910,
+        "id": "20910",
+        "anomaly": false,
+        "score": 3.2446178011014126e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 911,
+        "id": "20911",
+        "anomaly": false,
+        "score": 2.619164433781407e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 912,
+        "id": "20912",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 913,
+        "id": "20913",
+        "anomaly": false,
+        "score": 2.714142055992852e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 914,
+        "id": "20914",
+        "anomaly": false,
+        "score": 2.8473464226408396e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 915,
+        "id": "20915",
+        "anomaly": false,
+        "score": 5.096392214909429e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 916,
+        "id": "20916",
+        "anomaly": false,
+        "score": 3.4237350519106258e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 917,
+        "id": "20917",
+        "anomaly": false,
+        "score": 2.222576995336567e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 918,
+        "id": "20918",
+        "anomaly": false,
+        "score": 2.5910237582138507e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 919,
+        "id": "20919",
+        "anomaly": false,
+        "score": 5.120707555761328e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 920,
+        "id": "20920",
+        "anomaly": false,
+        "score": 3.1545300771540496e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 921,
+        "id": "20921",
+        "anomaly": false,
+        "score": 2.9115158213244285e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 922,
+        "id": "20922",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 923,
+        "id": "20923",
+        "anomaly": false,
+        "score": 2.196920377173228e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 924,
+        "id": "20924",
+        "anomaly": false,
+        "score": 8.10281744634267e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 925,
+        "id": "20925",
+        "anomaly": false,
+        "score": 3.1012730232760077e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 926,
+        "id": "20926",
+        "anomaly": false,
+        "score": 7.356438800343312e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 927,
+        "id": "20927",
+        "anomaly": false,
+        "score": 3.082619286942645e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 928,
+        "id": "20928",
+        "anomaly": false,
+        "score": 2.1972764443489723e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 929,
+        "id": "20929",
+        "anomaly": false,
+        "score": 2.7553278414416127e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 930,
+        "id": "20930",
+        "anomaly": false,
+        "score": 2.1011073840782046e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 931,
+        "id": "20931",
+        "anomaly": false,
+        "score": 2.8127035420766333e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 932,
+        "id": "20932",
+        "anomaly": false,
+        "score": 4.547188837022986e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 933,
+        "id": "20933",
+        "anomaly": false,
+        "score": 2.1666178326995578e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 934,
+        "id": "20934",
+        "anomaly": false,
+        "score": 2.456798938510474e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 935,
+        "id": "20935",
+        "anomaly": false,
+        "score": 2.0633692656701896e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 936,
+        "id": "20936",
+        "anomaly": false,
+        "score": 1.4663937690784223e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 937,
+        "id": "20937",
+        "anomaly": false,
+        "score": 3.309302883280907e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 938,
+        "id": "20938",
+        "anomaly": false,
+        "score": 3.2194170671573374e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 939,
+        "id": "20939",
+        "anomaly": false,
+        "score": 2.5073939013964264e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 940,
+        "id": "20940",
+        "anomaly": false,
+        "score": 3.953254235966597e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 941,
+        "id": "20941",
+        "anomaly": true,
+        "score": 0.9999999403953552,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 942,
+        "id": "20942",
+        "anomaly": true,
+        "score": 3.363033101777546e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 943,
+        "id": "20943",
+        "anomaly": false,
+        "score": 1.696121557870356e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 944,
+        "id": "20944",
+        "anomaly": false,
+        "score": 3.459548452156014e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 945,
+        "id": "20945",
+        "anomaly": false,
+        "score": 3.583591023925692e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 946,
+        "id": "20946",
+        "anomaly": false,
+        "score": 2.4693285922694486e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 947,
+        "id": "20947",
+        "anomaly": false,
+        "score": 5.769443305325694e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 948,
+        "id": "20948",
+        "anomaly": false,
+        "score": 2.5929864477802766e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 949,
+        "id": "20949",
+        "anomaly": false,
+        "score": 4.1282155507360585e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 950,
+        "id": "20950",
+        "anomaly": false,
+        "score": 3.6120284221397014e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 951,
+        "id": "20951",
+        "anomaly": false,
+        "score": 3.718481366377091e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 952,
+        "id": "20952",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 953,
+        "id": "20953",
+        "anomaly": false,
+        "score": 2.4067765025392873e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 954,
+        "id": "20954",
+        "anomaly": false,
+        "score": 2.398075594101101e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 955,
+        "id": "20955",
+        "anomaly": false,
+        "score": 2.38021266341093e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 956,
+        "id": "20956",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 957,
+        "id": "20957",
+        "anomaly": false,
+        "score": 2.503220002836315e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 958,
+        "id": "20958",
+        "anomaly": false,
+        "score": 5.755551228503464e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 959,
+        "id": "20959",
+        "anomaly": true,
+        "score": 1.0,
+        "predicted_anomaly": true,
+        "outcome": "TP"
+      },
+      {
+        "index": 960,
+        "id": "20960",
+        "anomaly": false,
+        "score": 2.4302617021021433e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 961,
+        "id": "20961",
+        "anomaly": false,
+        "score": 2.4578534976171795e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 962,
+        "id": "20962",
+        "anomaly": false,
+        "score": 3.5387174648349173e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 963,
+        "id": "20963",
+        "anomaly": false,
+        "score": 2.778905127343023e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 964,
+        "id": "20964",
+        "anomaly": false,
+        "score": 4.44023226009449e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 965,
+        "id": "20965",
+        "anomaly": false,
+        "score": 4.764753157360246e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 966,
+        "id": "20966",
+        "anomaly": false,
+        "score": 6.547121756739216e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 967,
+        "id": "20967",
+        "anomaly": false,
+        "score": 4.778327365784207e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 968,
+        "id": "20968",
+        "anomaly": false,
+        "score": 2.2259880552155664e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 969,
+        "id": "20969",
+        "anomaly": true,
+        "score": 4.27968188887462e-06,
+        "predicted_anomaly": false,
+        "outcome": "FN"
+      },
+      {
+        "index": 970,
+        "id": "20970",
+        "anomaly": false,
+        "score": 2.1363230189308524e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 971,
+        "id": "20971",
+        "anomaly": false,
+        "score": 2.649527914400096e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 972,
+        "id": "20972",
+        "anomaly": false,
+        "score": 2.8574224870681064e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 973,
+        "id": "20973",
+        "anomaly": false,
+        "score": 3.4434081044310005e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 974,
+        "id": "20974",
+        "anomaly": false,
+        "score": 7.4442050390644e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 975,
+        "id": "20975",
+        "anomaly": false,
+        "score": 2.8022484457324026e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 976,
+        "id": "20976",
+        "anomaly": false,
+        "score": 5.439258075057296e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 977,
+        "id": "20977",
+        "anomaly": false,
+        "score": 5.661582690663636e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 978,
+        "id": "20978",
+        "anomaly": false,
+        "score": 4.640961833501933e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 979,
+        "id": "20979",
+        "anomaly": false,
+        "score": 7.852624548831955e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 980,
+        "id": "20980",
+        "anomaly": false,
+        "score": 3.852966983686201e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 981,
+        "id": "20981",
+        "anomaly": false,
+        "score": 2.7375278932595393e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 982,
+        "id": "20982",
+        "anomaly": false,
+        "score": 2.555826540628914e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 983,
+        "id": "20983",
+        "anomaly": false,
+        "score": 7.466144779755268e-06,
+        "predicted_anomaly": true,
+        "outcome": "FP"
+      },
+      {
+        "index": 984,
+        "id": "20984",
+        "anomaly": false,
+        "score": 3.480829946056474e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 985,
+        "id": "20985",
+        "anomaly": false,
+        "score": 3.5858063256455353e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 986,
+        "id": "20986",
+        "anomaly": false,
+        "score": 3.919184109690832e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 987,
+        "id": "20987",
+        "anomaly": false,
+        "score": 2.470682602506713e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 988,
+        "id": "20988",
+        "anomaly": false,
+        "score": 3.1630970624973997e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 989,
+        "id": "20989",
+        "anomaly": false,
+        "score": 4.155793249083217e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 990,
+        "id": "20990",
+        "anomaly": false,
+        "score": 3.4504005270719063e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 991,
+        "id": "20991",
+        "anomaly": false,
+        "score": 1.9182141386409057e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 992,
+        "id": "20992",
+        "anomaly": false,
+        "score": 6.4449354795215186e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 993,
+        "id": "20993",
+        "anomaly": false,
+        "score": 2.631063807712053e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 994,
+        "id": "20994",
+        "anomaly": false,
+        "score": 5.410493486124324e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 995,
+        "id": "20995",
+        "anomaly": false,
+        "score": 3.0712044463143684e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 996,
+        "id": "20996",
+        "anomaly": false,
+        "score": 2.7476498871692456e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 997,
+        "id": "20997",
+        "anomaly": false,
+        "score": 2.4994078557938337e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 998,
+        "id": "20998",
+        "anomaly": false,
+        "score": 5.309332664182875e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 999,
+        "id": "20999",
+        "anomaly": false,
+        "score": 3.30691909766756e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 1000,
+        "id": "21000",
+        "anomaly": false,
+        "score": 2.533956831030082e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 1001,
+        "id": "21001",
+        "anomaly": false,
+        "score": 2.040678282355657e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 1002,
+        "id": "21002",
+        "anomaly": false,
+        "score": 4.102528237126535e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      },
+      {
+        "index": 1003,
+        "id": "21003",
+        "anomaly": false,
+        "score": 3.092088491030154e-06,
+        "predicted_anomaly": false,
+        "outcome": "TN"
+      }
+    ],
+    "first_by_outcome": {
+      "TP": "20042",
+      "FN": "20068",
+      "FP": "20004",
+      "TN": "20000"
+    },
+    "selected_examples": [
+      {
+        "index": 0,
+        "id": "20000",
+        "reasons": [
+          "first TN in frozen original ascending E order"
+        ]
+      },
+      {
+        "index": 4,
+        "id": "20004",
+        "reasons": [
+          "first FP in frozen original ascending E order"
+        ]
+      },
+      {
+        "index": 42,
+        "id": "20042",
+        "reasons": [
+          "first TP in frozen original ascending E order"
+        ]
+      },
+      {
+        "index": 68,
+        "id": "20068",
+        "reasons": [
+          "first FN in frozen original ascending E order"
+        ]
+      }
+    ]
+  },
+  "selected_examples": [
+    {
+      "index": 0,
+      "id": "20000",
+      "reasons": [
+        "first TN in frozen original ascending E order"
+      ]
+    },
+    {
+      "index": 4,
+      "id": "20004",
+      "reasons": [
+        "first FP in frozen original ascending E order"
+      ]
+    },
+    {
+      "index": 42,
+      "id": "20042",
+      "reasons": [
+        "first TP in frozen original ascending E order"
+      ]
+    },
+    {
+      "index": 68,
+      "id": "20068",
+      "reasons": [
+        "first FN in frozen original ascending E order"
+      ]
+    }
+  ],
+  "score_cache_verification": {
+    "E_scores_verified": true,
+    "images": 1004,
+    "native_pixels": 146411528,
+    "window_forwards_recorded": 4270,
+    "original_threshold": 7.264203168233501e-06,
+    "additional_forwards": 0,
+    "GT_decodes_or_metrics": 0,
+    "meaning": "E historically seen; exploratory only, not new unseen validation or screen benefit"
+  },
+  "elapsed_seconds": 139.59400000000096,
+  "resources_at_entry": {
+    "available_RAM_GiB": 5.272190093994141,
+    "free_disk_GiB": 128.0062484741211
+  },
+  "scope": "E historically seen, single seed/fixed R5/split/class, unknown acquisition groups; exploratory only, no screen claim",
+  "new_forward_training_or_recalibration": 0
+}

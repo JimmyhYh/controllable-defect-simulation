@@ -1,0 +1,62 @@
+{
+  "schema": "pretrained-paired-inputs-v1",
+  "stage1_complete_sha256": "a6153cd01a361df59818b42a861260b82751cbd8815a9d22a0a3b92257a8e898",
+  "stage1_implementation": {
+    "__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "common.py": "fee344ae17798b0e2296d9a5606d57937e6b80795bc6afac9845a47c8f60db9d",
+    "resources.py": "4be7dfa7af2c3faae9618c125a6842f55ba79f357f4f4a71dd09f78a0c31e16f",
+    "README_resources.md": "bf67f655fb3f546c270915f7be2fc84652e58df4c81126fd14930b27d834c41e"
+  },
+  "implementation": {
+    "inputs.py": "5eeef0c3e253339374a7427a93280b6e640378eb078fbf9448045b6acfbe4641",
+    "README_inputs.md": "86f97a3e210594e937f3c7eb4633531c82225de3e8d08e19f04d8e7403d918e6"
+  },
+  "plan_contract": {
+    "path": "D:\\华兴源创\\计划\\预训练单头分割可控合成配对实验执行方案.md",
+    "scientific_sections_1_and_4_sha256": "34b46480ff3a408470abd7c304688bc38f835ef8c85488a77003b3ff5aa94ba7",
+    "large_output_root": "E:\\华兴源创公开实验\\pretrained_synthetic_pairing\\ksdd2_r5_v1",
+    "stage1_output": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\pretrained_synthetic_pairing\\ksdd2_r5_v1\\resource_preparation_v1",
+    "progress_sections_mutable": true
+  },
+  "output": "E:\\华兴源创公开实验\\pretrained_synthetic_pairing\\ksdd2_r5_v1\\results\\inputs_v1",
+  "data_seed": 2026102300,
+  "initialization_seeds": [
+    2026102301,
+    2026102302,
+    2026102303
+  ],
+  "single_shared_sequence_all_pairs": true,
+  "updates_per_group": 10000,
+  "shared_slots": 7500,
+  "synthetic_count": 2500,
+  "material_seed": 2026101903,
+  "normalization": {
+    "real": "uint8/255 then mean/std",
+    "synthetic": "original float32[0,1] minus mean/std; no /255 or uint8 or second flip",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "CPU_environment": {
+    "numpy": "1.26.4",
+    "Pillow": "12.3.0",
+    "opencv-python": "4.11.0.86"
+  },
+  "geometry": "original accepted ellipse/line spec via frozen geometry.rasterize only; render not imported/called",
+  "source_caches_copied_or_rewritten": false,
+  "actual_residual_label": "max abs RGB difference > float32(1/255)",
+  "coverage_min": 0.9,
+  "outside_valid_and_ROI_residual": "exact zero",
+  "empty_or_invalid": "preserve and stop; no pool/sample/seed/amplitude replacement",
+  "scope": "R5/N1885 native cached inputs and old03 NPZ only; no raw RGB/GT, Q/E/U, probability, model or training",
+  "E_historically_seen": true,
+  "interpretation": "composition strategy includes reduced R5 and changed background/pixel exposure",
+  "training": "manual user startup only; stage3 not authorized"
+}

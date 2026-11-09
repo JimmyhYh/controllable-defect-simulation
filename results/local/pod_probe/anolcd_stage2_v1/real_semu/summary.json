@@ -1,0 +1,1395 @@
+{
+ "by_kind": {
+  "line": {
+   "Cx_percent": {
+    "max": 84.84188583732174,
+    "median": -1.995832753752224,
+    "min": -29.81289713674754,
+    "n": 146,
+    "p10": -3.7968664274673194,
+    "p25": -2.856448204566437,
+    "p75": -1.279710202423598,
+    "p90": 1.4074100673282839
+   },
+   "SEMU": {
+    "max": 90.34706301145201,
+    "median": 1.8541835904665414,
+    "min": 0.3823580062993044,
+    "n": 146,
+    "p10": 1.0095378450649295,
+    "p25": 1.317095217768749,
+    "p75": 2.5318909992730765,
+    "p90": 4.595168414930818
+   },
+   "S_mm2": {
+    "max": 1064.9600000000003,
+    "median": 74.24000000000001,
+    "min": 13.440000000000003,
+    "n": 146,
+    "p10": 34.32000000000001,
+    "p25": 55.20000000000001,
+    "p75": 104.80000000000003,
+    "p90": 159.68000000000004
+   },
+   "background_fallback": 0,
+   "below_SEMU_1": 15
+  },
+  "mura": {
+   "Cx_percent": {
+    "max": 93.91968761989266,
+    "median": 10.363426639601931,
+    "min": -9.869404440861075,
+    "n": 47,
+    "p10": -8.076047111006952,
+    "p25": -3.040084155863994,
+    "p75": 29.165735632136858,
+    "p90": 47.25731988776423
+   },
+   "SEMU": {
+    "max": 65.93293844162177,
+    "median": 8.206299512144442,
+    "min": 0.0,
+    "n": 47,
+    "p10": 3.0521499524165794,
+    "p25": 5.645712797732056,
+    "p75": 18.868022419054,
+    "p90": 27.657426359135552
+   },
+   "S_mm2": {
+    "max": 487.6800000000001,
+    "median": 27.680000000000007,
+    "min": 4.160000000000001,
+    "n": 47,
+    "p10": 6.080000000000001,
+    "p25": 8.560000000000002,
+    "p75": 74.40000000000002,
+    "p90": 136.09600000000003
+   },
+   "background_fallback": 0,
+   "below_SEMU_1": 2
+  },
+  "scrathes": {
+   "Cx_percent": {
+    "max": 98.92250314232707,
+    "median": 13.263619140379063,
+    "min": -19.673316967831443,
+    "n": 98,
+    "p10": 0.06772472166661253,
+    "p25": 5.564724704014874,
+    "p75": 24.537947820170707,
+    "p90": 41.13813381474289
+   },
+   "SEMU": {
+    "max": 96.86838638024341,
+    "median": 10.708338525340167,
+    "min": 0.09959449346013691,
+    "n": 98,
+    "p10": 0.4662025801652196,
+    "p25": 4.69067112330674,
+    "p75": 18.18635974566896,
+    "p90": 29.301730005869413
+   },
+   "S_mm2": {
+    "max": 304.80000000000007,
+    "median": 55.12000000000001,
+    "min": 5.120000000000001,
+    "n": 98,
+    "p10": 15.376000000000003,
+    "p25": 29.360000000000007,
+    "p75": 113.40000000000002,
+    "p90": 151.13600000000002
+   },
+   "background_fallback": 0,
+   "below_SEMU_1": 13
+  },
+  "spot": {
+   "Cx_percent": {
+    "max": 97.29770102038681,
+    "median": 29.718774730259224,
+    "min": -26.455061161576314,
+    "n": 219,
+    "p10": -15.049470564922201,
+    "p25": -4.849979063273858,
+    "p75": 49.006166841723456,
+    "p90": 63.67658772315339
+   },
+   "SEMU": {
+    "max": 39.39328309835135,
+    "median": 11.64430491528035,
+    "min": 0.7662061726993336,
+    "n": 219,
+    "p10": 3.0164679208043674,
+    "p25": 5.802084813816288,
+    "p75": 18.066666562793785,
+    "p90": 24.878116621061576
+   },
+   "S_mm2": {
+    "max": 18.080000000000002,
+    "median": 0.9600000000000002,
+    "min": 0.32000000000000006,
+    "n": 219,
+    "p10": 0.6400000000000001,
+    "p25": 0.8000000000000002,
+    "p75": 1.2800000000000002,
+    "p90": 2.0800000000000005
+   },
+   "background_fallback": 0,
+   "below_SEMU_1": 1
+  }
+ },
+ "field_of_view_mm": 102.4,
+ "guard_mm": 3.2,
+ "guard_px": 8,
+ "input_size": 256,
+ "k_mm_per_px": 0.4,
+ "n_images": 510,
+ "not_applicable": [
+  {
+   "image": "028.png",
+   "kind": "mura",
+   "reason": "|Cx| 388.6% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "030.png",
+   "kind": "mura",
+   "reason": "|Cx| 129.2% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "040.png",
+   "kind": "mura",
+   "reason": "|Cx| 115.3% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "000.png",
+   "kind": "line",
+   "reason": "|Cx| 152.4% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "001.png",
+   "kind": "line",
+   "reason": "|Cx| 6598.1% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "002.png",
+   "kind": "line",
+   "reason": "|Cx| 3773.2% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "003.png",
+   "kind": "line",
+   "reason": "|Cx| 138.6% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "000.png",
+   "kind": "spot",
+   "reason": "|Cx| 124.6% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "001.png",
+   "kind": "spot",
+   "reason": "|Cx| 174.9% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "002.png",
+   "kind": "spot",
+   "reason": "|Cx| 142.5% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "003.png",
+   "kind": "spot",
+   "reason": "|Cx| 103.0% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "017.png",
+   "kind": "spot",
+   "reason": "|Cx| 109.3% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "022.png",
+   "kind": "spot",
+   "reason": "|Cx| 310.6% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "047.png",
+   "kind": "spot",
+   "reason": "|Cx| 202.8% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "051.png",
+   "kind": "spot",
+   "reason": "|Cx| 118.0% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "068.png",
+   "kind": "spot",
+   "reason": "|Cx| 312.8% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "069.png",
+   "kind": "spot",
+   "reason": "|Cx| 157.1% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "073.png",
+   "kind": "spot",
+   "reason": "|Cx| 122.6% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "105.png",
+   "kind": "spot",
+   "reason": "|Cx| 115.0% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "108.png",
+   "kind": "spot",
+   "reason": "|Cx| 179.0% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "132.png",
+   "kind": "spot",
+   "reason": "|Cx| 106.1% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "144.png",
+   "kind": "spot",
+   "reason": "|Cx| 152.9% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "149.png",
+   "kind": "spot",
+   "reason": "|Cx| 132.2% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "164.png",
+   "kind": "spot",
+   "reason": "|Cx| 132.0% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "165.png",
+   "kind": "spot",
+   "reason": "|Cx| 359.3% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "166.png",
+   "kind": "spot",
+   "reason": "|Cx| 210.6% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "184.png",
+   "kind": "spot",
+   "reason": "|Cx| 121.4% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "185.png",
+   "kind": "spot",
+   "reason": "|Cx| 106.0% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "188.png",
+   "kind": "spot",
+   "reason": "|Cx| 114.7% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "189.png",
+   "kind": "spot",
+   "reason": "|Cx| 144.0% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "190.png",
+   "kind": "spot",
+   "reason": "|Cx| 462.8% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "191.png",
+   "kind": "spot",
+   "reason": "|Cx| 130.5% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "210.png",
+   "kind": "spot",
+   "reason": "|Cx| 170.5% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "239.png",
+   "kind": "spot",
+   "reason": "|Cx| 112.1% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "241.png",
+   "kind": "spot",
+   "reason": "|Cx| 125.9% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "243.png",
+   "kind": "spot",
+   "reason": "|Cx| 188.8% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "246.png",
+   "kind": "spot",
+   "reason": "|Cx| 201.8% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "247.png",
+   "kind": "spot",
+   "reason": "|Cx| 116.5% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "047.png",
+   "kind": "scrathes",
+   "reason": "|Cx| 405.5% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "063.png",
+   "kind": "scrathes",
+   "reason": "|Cx| 131.2% exceeds 100.0; ring/Lo sampling mismatch, not a Mura-type contrast"
+  },
+  {
+   "image": "000.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.566 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "001.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.652 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "002.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.578 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "003.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.551 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "004.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.520 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "005.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.547 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "006.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.590 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "007.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.695 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "008.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.621 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "009.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.633 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "010.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.629 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "011.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.637 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "012.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.578 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "013.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.598 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "014.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.691 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "015.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.562 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "016.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.477 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "017.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.605 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "018.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.641 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "019.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.602 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "020.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.676 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "021.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.719 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "022.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.609 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "023.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.578 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "024.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.371 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "025.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.574 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "026.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.684 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "027.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.730 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "028.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.656 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "029.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.641 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "030.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.617 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "031.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.680 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "032.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.707 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "033.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.621 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "034.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.602 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "035.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.629 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "036.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.676 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "037.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.527 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "038.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.605 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "039.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.621 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "040.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.633 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "041.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.578 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "042.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.625 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "043.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.723 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "044.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.621 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "045.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.543 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "046.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.652 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "047.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.723 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "048.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.238 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "049.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.727 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "050.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.664 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "051.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.562 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "052.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.613 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "053.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.652 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "054.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.488 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "055.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.594 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "056.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.594 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "057.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.641 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "058.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.656 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "059.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.539 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "060.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.652 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "061.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.559 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "062.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.594 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "063.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.668 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "064.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.590 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "065.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.578 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "066.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.500 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "067.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.668 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "068.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.645 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "069.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.547 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "070.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.527 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "071.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.512 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "072.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.574 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "073.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.605 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "074.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.656 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "075.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.594 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "076.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.621 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "077.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.629 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "078.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.555 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "079.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.574 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "080.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.617 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "081.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.680 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "082.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.578 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "083.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.660 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "084.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.586 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "085.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.609 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "086.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.652 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "087.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.711 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "088.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.598 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "089.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.391 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "090.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.562 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "091.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.664 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "092.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.723 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "093.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.629 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "094.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.629 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "095.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.625 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "096.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.680 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "097.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.738 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "098.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.590 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "099.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.574 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "100.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.605 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "101.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.668 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "102.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.574 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "103.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.621 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "104.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.633 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "105.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.559 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "106.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.621 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "107.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.734 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "108.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.602 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "109.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.520 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "110.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.645 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "111.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.656 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "112.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.711 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "113.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.586 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "114.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.723 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "115.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.633 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "116.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.648 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "117.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.547 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "118.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.605 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "119.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.656 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "120.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.664 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "121.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.488 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "122.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.605 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "123.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.594 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "124.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.625 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "125.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.641 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "126.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.535 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "127.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.637 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "128.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.543 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "129.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.566 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "130.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.645 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "131.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.574 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "132.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.562 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "133.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.484 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "134.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.664 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "135.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.543 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "136.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.523 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "137.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.523 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "138.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.562 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "139.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.629 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "140.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.742 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "141.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.477 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "142.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.598 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "143.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.656 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "144.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.629 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "145.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.570 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "146.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.598 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "147.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.633 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "148.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.688 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "149.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.535 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "150.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.504 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "151.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.617 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "152.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.668 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "153.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.598 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "154.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.633 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "155.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.645 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "156.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.695 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "157.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.570 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "158.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.383 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "159.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.555 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "160.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.633 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "161.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.707 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "162.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.621 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "163.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.508 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "164.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.621 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "165.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.613 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "166.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.617 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "167.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.605 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "168.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.574 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "169.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.613 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "170.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.680 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "171.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.516 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "172.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.637 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "173.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.641 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "174.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.570 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "175.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.617 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "176.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.613 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "177.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.520 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "178.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.652 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "179.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.660 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "180.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.328 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "181.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.738 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "182.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.660 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "183.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.676 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "184.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.539 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "185.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.609 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "186.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.648 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "187.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.684 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "188.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.594 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "189.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.594 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "190.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.633 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "191.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.629 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "192.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.531 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "193.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.648 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "194.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.578 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "195.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.594 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "196.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.633 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "197.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.562 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "198.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.559 exceeds 0.2; no uniform background available for SEMU"
+  },
+  {
+   "image": "199.png",
+   "kind": "cylinder",
+   "reason": "gt_fraction 0.648 exceeds 0.2; no uniform background available for SEMU"
+  }
+ ],
+ "not_applicable_by_kind": {
+  "cylinder": 200,
+  "line": 4,
+  "mura": 3,
+  "scrathes": 2,
+  "spot": 31
+ },
+ "note": "AnoLCD display test 的 750 张异常图与作者 GT；仅统计任务难度，不评价模型、不宣称独立验证；Cx 用编码 RGB 加权代理，未做 sRGB 线性化",
+ "pixel_area_mm2": 0.16000000000000003,
+ "problems": [],
+ "source": "D:\\华兴源创\\实验\\弱缺陷Demo\\data\\weak_localization\\AnoLCD\\display",
+ "stage": "real_semu",
+ "total": {
+  "Cx_percent": {
+   "max": 98.92250314232707,
+   "median": 8.196292711371933,
+   "min": -29.81289713674754,
+   "n": 510,
+   "p10": -8.00430412457452,
+   "p25": -2.474771613623662,
+   "p75": 33.698373875662824,
+   "p90": 54.31065767409914
+  },
+  "SEMU": {
+   "max": 96.86838638024341,
+   "median": 7.149610730807421,
+   "min": 0.0,
+   "n": 510,
+   "p10": 1.265335132135857,
+   "p25": 2.3197881542983803,
+   "p75": 15.249469198679957,
+   "p90": 24.77811488799576
+  },
+  "S_mm2": {
+   "max": 1064.9600000000003,
+   "median": 19.680000000000003,
+   "min": 0.32000000000000006,
+   "n": 510,
+   "p10": 0.8000000000000002,
+   "p25": 1.12,
+   "p75": 72.32000000000001,
+   "p90": 127.77600000000004
+  },
+  "background_fallback": 0,
+  "below_SEMU_1": 31
+ },
+ "version": "pod_probe_stage1_v1"
+}

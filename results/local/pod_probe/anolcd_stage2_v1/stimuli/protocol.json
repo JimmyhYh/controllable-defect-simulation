@@ -1,0 +1,145 @@
+{
+ "backgrounds": [
+  "test\\good\\007.png",
+  "test\\good\\011.png",
+  "test\\good\\018.png",
+  "test\\good\\020.png",
+  "test\\good\\029.png",
+  "test\\good\\034.png",
+  "test\\good\\042.png",
+  "test\\good\\052.png",
+  "test\\good\\053.png",
+  "test\\good\\054.png",
+  "test\\good\\056.png",
+  "test\\good\\066.png",
+  "test\\good\\067.png",
+  "test\\good\\070.png",
+  "test\\good\\079.png",
+  "test\\good\\094.png",
+  "test\\good\\114.png",
+  "test\\good\\119.png",
+  "test\\good\\125.png",
+  "test\\good\\130.png",
+  "test\\good\\138.png",
+  "test\\good\\142.png",
+  "test\\good\\143.png",
+  "test\\good\\153.png",
+  "test\\good\\167.png",
+  "test\\good\\170.png",
+  "test\\good\\173.png",
+  "test\\good\\175.png",
+  "test\\good\\190.png",
+  "test\\good\\198.png",
+  "test\\good\\210.png",
+  "test\\good\\212.png",
+  "test\\good\\215.png",
+  "test\\good\\216.png",
+  "test\\good\\220.png",
+  "test\\good\\224.png",
+  "test\\good\\230.png",
+  "test\\good\\233.png",
+  "test\\good\\238.png",
+  "test\\good\\240.png",
+  "test\\good\\242.png",
+  "test\\good\\251.png",
+  "test\\good\\256.png",
+  "test\\good\\259.png",
+  "test\\good\\262.png",
+  "test\\good\\273.png",
+  "test\\good\\276.png",
+  "test\\good\\283.png",
+  "test\\good\\284.png",
+  "test\\good\\288.png",
+  "test\\good\\294.png",
+  "test\\good\\295.png",
+  "test\\good\\306.png",
+  "test\\good\\312.png",
+  "test\\good\\316.png",
+  "test\\good\\318.png",
+  "test\\good\\325.png",
+  "test\\good\\338.png",
+  "test\\good\\343.png",
+  "test\\good\\348.png"
+ ],
+ "bg_seed": 20261027,
+ "detector": "existing AnoLCD PatchCore (80 imgs, input 256, coreset 0.01)",
+ "field_of_view_mm": 102.4,
+ "input_size": 256,
+ "k_mm_per_px": 0.4,
+ "levels": [
+  1.0,
+  1.6,
+  2.5,
+  4.0,
+  6.3,
+  10.0,
+  16.0,
+  25.0
+ ],
+ "n_backgrounds": 60,
+ "note": "test/good 未参与建库与校准；但属历史 Tfinal，仅作背景，不评价性能",
+ "pixel_area_mm2": 0.16000000000000003,
+ "shapes": {
+  "line_med": {
+   "angle_deg": 0.0,
+   "center": [
+    128.0,
+    128.0
+   ],
+   "kind": "line_like",
+   "length": 112.0,
+   "nominal_pixels": 460,
+   "shape": "line",
+   "units": "px256",
+   "width": 4.0
+  },
+  "mura_med": {
+   "angle_deg": 0.0,
+   "axes": [
+    7.0,
+    7.0
+   ],
+   "center": [
+    128.0,
+    128.0
+   ],
+   "kind": "mura_like",
+   "nominal_pixels": 154,
+   "shape": "ellipse",
+   "units": "px256"
+  },
+  "mura_p25": {
+   "angle_deg": 0.0,
+   "axes": [
+    4.0,
+    4.0
+   ],
+   "center": [
+    128.0,
+    128.0
+   ],
+   "kind": "mura_like",
+   "nominal_pixels": 50,
+   "shape": "ellipse",
+   "units": "px256"
+  },
+  "mura_p75": {
+   "angle_deg": 0.0,
+   "axes": [
+    12.0,
+    12.0
+   ],
+   "center": [
+    128.0,
+    128.0
+   ],
+   "kind": "mura_like",
+   "nominal_pixels": 452,
+   "shape": "ellipse",
+   "units": "px256"
+  }
+ },
+ "stage": "2b",
+ "tau_frozen": 1.8928574562072753,
+ "version": "pod_probe_stage1_v1"
+}

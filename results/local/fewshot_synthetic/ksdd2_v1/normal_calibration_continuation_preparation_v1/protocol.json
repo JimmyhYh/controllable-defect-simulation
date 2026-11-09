@@ -1,0 +1,437 @@
+{
+  "schema": "normal-calibration-continuation-v1",
+  "source_manifest_digest": "7dfa360ab9c988faee1891eac626b41178f9c87b08a1d6ff469665f76ef9699b",
+  "original_identity_digest": "2e50bd607ed2ebfd42b837e80d085cd3ceaa2ec3f6ddd98134542cadc5af5e3b",
+  "implementation": {
+    "normal_calibration_continuation.py": "8339a100df56ea4b6898f847fe98b761d4f3f241cc12058bac188dcc3499cc7e",
+    "normal_calibration_assembly.py": "ecca6a2797058d120064ed212ab444b6fc4d282d3db0c846dcdd6dbe94578d6f"
+  },
+  "inherited_protocol": {
+    "schema": "fewshot-normal-calibration-v1",
+    "identity": {
+      "source": {
+        "completion": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+        "split": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+        "protocol": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+        "old_sources": {
+          "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+          "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+          "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+          "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee"
+        }
+      },
+      "environment": {
+        "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+        "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+        "packages": {
+          "numpy": "1.26.4",
+          "Pillow": "12.3.0",
+          "scipy": "1.16.2",
+          "opencv-python": "4.11.0.86",
+          "torch": "2.8.0+cu128",
+          "scikit-learn": "1.7.2"
+        }
+      },
+      "frozen_core": {
+        "common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+        "sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+        "model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+        "training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+        "metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+        "inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f"
+      },
+      "additional_implementation": {
+        "data.py": "13c00594134cb2b43d365e4e0f5abe6abd2f04afd2008297cee3d9b2131082be",
+        "verification.py": "3cd176e4109fcc989b5b63d2f129c2084f3286f66b3d1a6fbabf9ae7269a690f",
+        "formal_admission.py": "ea94a5386d224e81f8745c116a8cf353984d89673bdd3860ea7a57860e26a620",
+        "probe_retry.py": "471426a55e819b49eaa6317c012a612e64a4d3fd0ba227becc38c14111394cb6",
+        "probe_retry_metrics.py": "44704316ae83d6573fc821a6a4c7bb3cac4e39560637cd2c861acfc5ea330515"
+      },
+      "implementation_sha256": "d0dccf5a6e869c5fc490a55f91cda5d663de70c853f55852ceb56877788e3a12",
+      "static_gate_files": {
+        "metric_complete_sha256": "eb082002d5a286de1815455326d068d9ad5e52bfe0a381c9c792d350b505c37b",
+        "metric_preparation_sha256": "ee6d30236f91ad3e0fde85407a0119a5816bcc09c19d02f18d0c08be9ebcbbc7",
+        "metric_json_sha256": "49afaeb4557684a2e5e1c2872ca7ce7f3a42924b82d9cc3182441b06a1a934df",
+        "probe_complete_sha256": "543cbcf3cd5f5e4317792d2204c0ef468079fbc89834d7a8936f111080feacde",
+        "retry_protocol_sha256": "7d409d352588263333261ec497f99057c1a568baea7f30899481d3476c5b67d8",
+        "retry_binding_sha256": "d1ea381b4fa412e45690299b1e0d39a40fdbaaf847320e2b1143bfe88a00ea3f",
+        "retry_source_sha256": "471426a55e819b49eaa6317c012a612e64a4d3fd0ba227becc38c14111394cb6",
+        "metric_source_sha256": "44704316ae83d6573fc821a6a4c7bb3cac4e39560637cd2c861acfc5ea330515"
+      },
+      "formal_preparation_sha256": "b31a0e13648e656bb86977b0ccff12973f76d328abe1c9d526d38e45a5553908",
+      "formal_binding_sha256": "8563d60cc5e3313d6d116219f9322223fcf85ac376860e4f2f2a8ac71b8e8cfe",
+      "all_six_evidence_sha256": "484cb7865f70931c4f037e31be06c246e03ccead973fd783ba42346a09aea2e4",
+      "all_six_files": {
+        "verification.json": "e66f227985e731c5a8fe2e72fb93a846a65aa21e28482bbaae6f03d3108cbb67",
+        "第5天最后一组B与全部六组训练核验.md": "dfd2316bc736e1151d1317f7566fae4624cbfe884c9a2373831d72a6c3323e61"
+      },
+      "models": [
+        {
+          "label": "A_2026101903",
+          "condition": "A",
+          "seed": 2026101903,
+          "checkpoint": "models/fewshot_synthetic/ksdd2_v1/formal_gate_v1/A_2026101903/checkpoint_10000.pt",
+          "checkpoint_sha256": "0a9722888bf726f8f07b7162b45f7c72f9049703859ef7c18c4c509eb71fb739",
+          "run_identity": {
+            "input_identity": {
+              "completion": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+              "split": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+              "protocol": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+              "old_sources": {
+                "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+                "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+                "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+                "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee"
+              }
+            },
+            "preparation": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+            "config": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+            "implementation": {
+              "common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+              "sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+              "model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+              "training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+              "metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+              "inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f"
+            },
+            "environment": {
+              "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+              "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+              "packages": {
+                "numpy": "1.26.4",
+                "Pillow": "12.3.0",
+                "scipy": "1.16.2",
+                "opencv-python": "4.11.0.86",
+                "torch": "2.8.0+cu128",
+                "scikit-learn": "1.7.2"
+              }
+            },
+            "condition": "A",
+            "seed": 2026101903,
+            "initial_hash": "3636f080bae3221a37d355ce014e1c720593e6f131f20d3f3af4abdd47930f5b"
+          },
+          "final_parameter_hash_recorded": "7b0976bc11350361fd440fd675ebac54472d767e14e72053aa3229dd8917cda6",
+          "source_complete_sha256": "59f24b1407e06344090de1b45edb2d811eca0bd9f70cead347431eefa0691a4b"
+        },
+        {
+          "label": "B_2026101903",
+          "condition": "B",
+          "seed": 2026101903,
+          "checkpoint": "models/fewshot_synthetic/ksdd2_v1/formal_gate_v1/B_2026101903/checkpoint_10000.pt",
+          "checkpoint_sha256": "2cfd5d51c4cb508ae11e5f3dac9cf208dc4b0458d9db12128a4a5611b67fe8ec",
+          "run_identity": {
+            "input_identity": {
+              "completion": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+              "split": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+              "protocol": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+              "old_sources": {
+                "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+                "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+                "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+                "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee"
+              }
+            },
+            "preparation": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+            "config": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+            "implementation": {
+              "common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+              "sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+              "model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+              "training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+              "metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+              "inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f"
+            },
+            "environment": {
+              "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+              "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+              "packages": {
+                "numpy": "1.26.4",
+                "Pillow": "12.3.0",
+                "scipy": "1.16.2",
+                "opencv-python": "4.11.0.86",
+                "torch": "2.8.0+cu128",
+                "scikit-learn": "1.7.2"
+              }
+            },
+            "condition": "B",
+            "seed": 2026101903,
+            "initial_hash": "3636f080bae3221a37d355ce014e1c720593e6f131f20d3f3af4abdd47930f5b"
+          },
+          "final_parameter_hash_recorded": "a21bc6a1b38de07140714a512fdcec0936abb9774bf419389cda40bc4e5edd99",
+          "source_complete_sha256": "6006d23b413b8a77f17a961a274b1f18d47eacb0c0cc77c16aec6314cfead3e4"
+        },
+        {
+          "label": "A_2026101904",
+          "condition": "A",
+          "seed": 2026101904,
+          "checkpoint": "models/fewshot_synthetic/ksdd2_v1/formal_gate_v1/A_2026101904/checkpoint_10000.pt",
+          "checkpoint_sha256": "8e0b8aba786d38895d8fac609b3aafab2d52b44d7618c561962c0f6cf1a07ca0",
+          "run_identity": {
+            "input_identity": {
+              "completion": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+              "split": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+              "protocol": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+              "old_sources": {
+                "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+                "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+                "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+                "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee"
+              }
+            },
+            "preparation": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+            "config": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+            "implementation": {
+              "common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+              "sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+              "model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+              "training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+              "metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+              "inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f"
+            },
+            "environment": {
+              "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+              "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+              "packages": {
+                "numpy": "1.26.4",
+                "Pillow": "12.3.0",
+                "scipy": "1.16.2",
+                "opencv-python": "4.11.0.86",
+                "torch": "2.8.0+cu128",
+                "scikit-learn": "1.7.2"
+              }
+            },
+            "condition": "A",
+            "seed": 2026101904,
+            "initial_hash": "90f0b67c050976f1c8da275bd0ee178a8e57ace17dd414a28a102ed6ec800860"
+          },
+          "final_parameter_hash_recorded": "462dd55dc2ead0633bcddd997ef80821a5c68f43096e98349b1a44353a1888d6",
+          "source_complete_sha256": "9b184874647c8ef1fc4080375de4180c58dccfdfdaed9ca31bc2c293afc339de"
+        },
+        {
+          "label": "B_2026101904",
+          "condition": "B",
+          "seed": 2026101904,
+          "checkpoint": "models/fewshot_synthetic/ksdd2_v1/formal_gate_v1/B_2026101904/checkpoint_10000.pt",
+          "checkpoint_sha256": "f6a2b268732cab32ece235ec44f20dc09390e09b29e55f95bc301400884cc841",
+          "run_identity": {
+            "input_identity": {
+              "completion": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+              "split": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+              "protocol": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+              "old_sources": {
+                "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+                "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+                "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+                "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee"
+              }
+            },
+            "preparation": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+            "config": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+            "implementation": {
+              "common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+              "sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+              "model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+              "training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+              "metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+              "inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f"
+            },
+            "environment": {
+              "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+              "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+              "packages": {
+                "numpy": "1.26.4",
+                "Pillow": "12.3.0",
+                "scipy": "1.16.2",
+                "opencv-python": "4.11.0.86",
+                "torch": "2.8.0+cu128",
+                "scikit-learn": "1.7.2"
+              }
+            },
+            "condition": "B",
+            "seed": 2026101904,
+            "initial_hash": "90f0b67c050976f1c8da275bd0ee178a8e57ace17dd414a28a102ed6ec800860"
+          },
+          "final_parameter_hash_recorded": "3b3009761d00b451d1b4133308ebf4a1ac47fd88e580662e8c1c7981c5b0baa0",
+          "source_complete_sha256": "35ed301acc7cdf37253390285d48e4297b4942c9c681f5e158c6b57b18689057"
+        },
+        {
+          "label": "A_2026101905",
+          "condition": "A",
+          "seed": 2026101905,
+          "checkpoint": "models/fewshot_synthetic/ksdd2_v1/formal_gate_v1/A_2026101905/checkpoint_10000.pt",
+          "checkpoint_sha256": "6b1be9eae99b1caef5665aab7d13d1d8df4ba6abcc396f20cf051b8bf7cbe90f",
+          "run_identity": {
+            "input_identity": {
+              "completion": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+              "split": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+              "protocol": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+              "old_sources": {
+                "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+                "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+                "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+                "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee"
+              }
+            },
+            "preparation": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+            "config": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+            "implementation": {
+              "common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+              "sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+              "model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+              "training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+              "metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+              "inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f"
+            },
+            "environment": {
+              "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+              "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+              "packages": {
+                "numpy": "1.26.4",
+                "Pillow": "12.3.0",
+                "scipy": "1.16.2",
+                "opencv-python": "4.11.0.86",
+                "torch": "2.8.0+cu128",
+                "scikit-learn": "1.7.2"
+              }
+            },
+            "condition": "A",
+            "seed": 2026101905,
+            "initial_hash": "1e33cf0ce28ffe20be1f55c0f60fcf1703a478b3838aefc015a15e31be6e93d8"
+          },
+          "final_parameter_hash_recorded": "d02cea09244f56549ce9c5dadd4a01dc11de4c50e4dfb1b27a2a842c8b2a93c3",
+          "source_complete_sha256": "9fbff09cf228c9ca32033ff5d033cce5d06ae20fade3f9fe56428b9eac8172f0"
+        },
+        {
+          "label": "B_2026101905",
+          "condition": "B",
+          "seed": 2026101905,
+          "checkpoint": "models/fewshot_synthetic/ksdd2_v1/formal_gate_v1/B_2026101905/checkpoint_10000.pt",
+          "checkpoint_sha256": "60966f433d3f5679527c5258cddaae87ab729f7155296b376ac99737d2d3cfc8",
+          "run_identity": {
+            "input_identity": {
+              "completion": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+              "split": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+              "protocol": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+              "old_sources": {
+                "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+                "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+                "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+                "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee"
+              }
+            },
+            "preparation": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+            "config": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+            "implementation": {
+              "common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+              "sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+              "model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+              "training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+              "metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+              "inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f"
+            },
+            "environment": {
+              "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+              "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+              "packages": {
+                "numpy": "1.26.4",
+                "Pillow": "12.3.0",
+                "scipy": "1.16.2",
+                "opencv-python": "4.11.0.86",
+                "torch": "2.8.0+cu128",
+                "scikit-learn": "1.7.2"
+              }
+            },
+            "condition": "B",
+            "seed": 2026101905,
+            "initial_hash": "1e33cf0ce28ffe20be1f55c0f60fcf1703a478b3838aefc015a15e31be6e93d8"
+          },
+          "final_parameter_hash_recorded": "2bfe324d30cd1a78cb9f8616a6755c51d81408949d3aae38836c42207e040145",
+          "source_complete_sha256": "27786c804a17890d9eeb57ea1807803a31a89ff1443d42dfb7a4600193d82262"
+        }
+      ],
+      "Q_requests_digest": "5e3b4f9193604f34d64f905707467ae17f6fc3a353444776125c31ca1341c98d"
+    },
+    "model_order": [
+      "A_2026101903",
+      "B_2026101903",
+      "A_2026101904",
+      "B_2026101904",
+      "A_2026101905",
+      "B_2026101905"
+    ],
+    "Q_request_order": "original frozen split order; no sorting/resampling",
+    "images_per_model": 200,
+    "unique_normal_images": 200,
+    "full_image_evaluations": 1200,
+    "windows_per_model": 844,
+    "window_forwards_all_models": 5064,
+    "native_pixels_per_model": 29202876,
+    "probability_payload_bytes_all_models": 700869024,
+    "preprocessing": {
+      "RGB": "L replicated to RGB, float32 / float32(255)",
+      "contrast": "unchanged",
+      "resize": false,
+      "augmentation": false,
+      "window": 256,
+      "stride": 128,
+      "last_window": "append H-256, sorted unique",
+      "x_start": 0,
+      "right_padding": "numpy reflect to width256",
+      "padding_excluded": true,
+      "overlap": "equal mean probabilities",
+      "map": "raw float32 anomaly softmax, native HxW",
+      "smoothing": false,
+      "score": "max native stitched map"
+    },
+    "architecture": "frozen author 3/2 base16; GN8; no BN/buffers",
+    "execution": {
+      "FP32": true,
+      "batch": 1,
+      "workers": 0,
+      "device": "cuda",
+      "mode": "eval + inference_mode",
+      "AMP": false,
+      "training": false,
+      "checkpoint": "own final10000 only; optimizer never instantiated"
+    },
+    "threshold": {
+      "q": 0.95,
+      "method": "linear",
+      "comparison": "strict >",
+      "input": "float64 array of cached float32 map maxima",
+      "separate_per_model": true,
+      "normal_denominator": 200,
+      "meaning": "same-pool FP/200, not independent validation"
+    },
+    "resource": {
+      "start_RAM_GiB": 4.5,
+      "runtime_RAM_GiB": 3.0,
+      "free_VRAM_GiB": 6.0,
+      "disk_GiB": 80.0
+    },
+    "cache": {
+      "output": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\fewshot_synthetic\\ksdd2_v1\\normal_calibration_v1",
+      "scope": "whole six-model calibration transaction",
+      "complete": "strict files, hashes, sources, order, maps and scalar checks",
+      "partial": "preserve and stop; no auto resume/retry or intersection",
+      "forward_unit": "each original Q image once per model, all frozen windows once",
+      "inference_reads_labels": false,
+      "E_U_reads": false
+    }
+  },
+  "pending": [
+    "A_2026101905",
+    "B_2026101905"
+  ],
+  "original_prefix_reference_only": true,
+  "real_Q_images_per_model": 200,
+  "new_image_evaluations": 400,
+  "new_window_forwards": 1688,
+  "unique_normal_images": 200,
+  "runtime_root": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\fewshot_synthetic\\ksdd2_v1\\normal_calibration_continuation_v1",
+  "assembly_root": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\fewshot_synthetic\\ksdd2_v1\\normal_calibration_assembled_v1",
+  "one_model_per_process": true,
+  "partial_transaction": "preserve; never auto resume/repeat",
+  "old_whole_failure_modified": false,
+  "automatic_training": false
+}

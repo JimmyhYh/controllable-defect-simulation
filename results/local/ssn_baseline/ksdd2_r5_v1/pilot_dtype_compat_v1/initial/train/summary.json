@@ -1,0 +1,43 @@
+{
+  "binding": {
+    "protocol_sha256": "edf27348fe1ad487fb456e0b73f58a7e524f54a29d440dcec9265e90a62f7ddc",
+    "preparation_complete": "4ea0cebe7b191042e6d3ce4f11c1157ea1b14c888b59babf079dc64e7d0c819e"
+  },
+  "completed_steps": 1600,
+  "completed_epochs": 50,
+  "exposure": {
+    "R5": 800,
+    "N16": 800,
+    "internal_feature_views": 3200,
+    "returned_positive_view_labels": 2299
+  },
+  "checkpoint_epochs_saved_in_this_run": [
+    10,
+    20,
+    30,
+    40,
+    50
+  ],
+  "initial_state_sha256": "a0cceac104bcad74e36ac4fe9f03d060b9e01bd7c7665d91a89f4f7d0f5d444a",
+  "final_state_sha256": "1513a3df1435c7d02543c716b85ef4db0c2228b52e04e1d5dc93e852184c3337",
+  "elapsed_seconds_this_run": 950.7240727000008,
+  "minimum_sampled_free_RAM_GiB_this_run": 5.509056091308594,
+  "CUDA_peak_allocated_MiB_this_run": 3109.2421875,
+  "CUDA_peak_reserved_MiB_this_run": 3952.0,
+  "model_files": {
+    "checkpoint_e0010.json": "4cf7ea913ea67e5eba822671943fe0ab69d0b0343bbb8365f0ed19cba6fea7ea",
+    "checkpoint_e0010.pt": "a6add48dc68d31b19da04ebbb1f6f403df9506318ac7c19e2e4acaa52af2ab44",
+    "checkpoint_e0020.json": "a912edb4d5a9707460ee57019f13f83a7e9cd762c4476cdf08ac7e0ee81ee283",
+    "checkpoint_e0020.pt": "3622021665bce91cec9db4dc34f76ba9ceb7c9d92fb5cecfb210bba8e417aabc",
+    "checkpoint_e0030.json": "053f0f146ff226a6a9ea8b4bc49f5932c69fd2a8474544fa5b7afa42bd2c7ab4",
+    "checkpoint_e0030.pt": "0c27e6a5ebf9d2dc7dedd12a998a98187c847603c4a30f3cf6ea853d079ce1fc",
+    "checkpoint_e0040.json": "191209b611cf1e214012e353820245e0fd1cc20f6d1273f74f5eb7fc74aff975",
+    "checkpoint_e0040.pt": "8b2a6f420c7982e912cfac57e92266d9cd055e003c1315f369fda9e2c14f1dac",
+    "checkpoint_e0050.json": "7f8a98f9c15a568081bf82638356e7e91e87f75fefeab12f4951885df9fa8360",
+    "checkpoint_e0050.pt": "3358d1be7baf55287f55bf0a9d5c719d870d53b06c167a99164fe7796a0da477",
+    "final_weights.pt": "b8db0216a40206a18c23e5b572badc0b27f23ec24e1be7f09de6150b5a3f06e3"
+  },
+  "training_pool_scored": false,
+  "gate": "await separate final-weight training-pool score and CPU metrics; no Q/E/U",
+  "full_recovery_empirically_verified": false
+}

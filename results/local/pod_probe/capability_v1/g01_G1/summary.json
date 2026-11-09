@@ -1,0 +1,219 @@
+{
+ "condition": "G1",
+ "model_dir": "G1_20261030",
+ "tau": 0.7155899673700332,
+ "tau_source": "controlled_generation/calibration/calibration_verification.json",
+ "tau_domain": "softmax probability, max over pixels",
+ "domain_note": "跨域测量：训练域为自建渲染器背景，刺激背景为 AnoLCD 真实正常图。结果只能读作“对真实背景刺激有无响应”，不与同域三行比 a50。",
+ "n_images": 1167,
+ "n_skipped_missing": 0,
+ "n_baseline": 60,
+ "baseline_false_positive": 2,
+ "baseline_false_positive_rate": 0.03333333333333333,
+ "n_stimulus": 1107,
+ "stimulus_detection_rate_overall": 0.7633242999096658,
+ "by_shape": {
+  "line_med": {
+   "n": 251,
+   "detection_rate_overall": 0.8167330677290837,
+   "lowest_cell_rate": 0.16666666666666666,
+   "highest_cell_rate": 1.0,
+   "no_response": false,
+   "response_minus_baseline": 0.9666666666666667,
+   "a50_identifiable": true,
+   "a90_identifiable": true
+  },
+  "mura_med": {
+   "n": 286,
+   "detection_rate_overall": 0.7447552447552448,
+   "lowest_cell_rate": 0.07142857142857142,
+   "highest_cell_rate": 1.0,
+   "no_response": false,
+   "response_minus_baseline": 0.9666666666666667,
+   "a50_identifiable": true,
+   "a90_identifiable": true
+  },
+  "mura_p25": {
+   "n": 296,
+   "detection_rate_overall": 0.7567567567567568,
+   "lowest_cell_rate": 0.11764705882352941,
+   "highest_cell_rate": 1.0,
+   "no_response": false,
+   "response_minus_baseline": 0.9666666666666667,
+   "a50_identifiable": true,
+   "a90_identifiable": true
+  },
+  "mura_p75": {
+   "n": 274,
+   "detection_rate_overall": 0.7408759124087592,
+   "lowest_cell_rate": 0.1111111111111111,
+   "highest_cell_rate": 1.0,
+   "no_response": false,
+   "response_minus_baseline": 0.9666666666666667,
+   "a50_identifiable": true,
+   "a90_identifiable": true
+  }
+ },
+ "cells": {
+  "line_med@1": {
+   "n": 6,
+   "hits": 1,
+   "detection_rate": 0.16666666666666666
+  },
+  "line_med@1.6": {
+   "n": 15,
+   "hits": 4,
+   "detection_rate": 0.26666666666666666
+  },
+  "line_med@2.5": {
+   "n": 18,
+   "hits": 8,
+   "detection_rate": 0.4444444444444444
+  },
+  "line_med@4": {
+   "n": 26,
+   "hits": 20,
+   "detection_rate": 0.7692307692307693
+  },
+  "line_med@6.3": {
+   "n": 45,
+   "hits": 36,
+   "detection_rate": 0.8
+  },
+  "line_med@10": {
+   "n": 47,
+   "hits": 42,
+   "detection_rate": 0.8936170212765957
+  },
+  "line_med@16": {
+   "n": 47,
+   "hits": 47,
+   "detection_rate": 1.0
+  },
+  "line_med@25": {
+   "n": 47,
+   "hits": 47,
+   "detection_rate": 1.0
+  },
+  "mura_med@1": {
+   "n": 14,
+   "hits": 1,
+   "detection_rate": 0.07142857142857142
+  },
+  "mura_med@1.6": {
+   "n": 17,
+   "hits": 5,
+   "detection_rate": 0.29411764705882354
+  },
+  "mura_med@2.5": {
+   "n": 20,
+   "hits": 12,
+   "detection_rate": 0.6
+  },
+  "mura_med@4": {
+   "n": 47,
+   "hits": 23,
+   "detection_rate": 0.48936170212765956
+  },
+  "mura_med@6.3": {
+   "n": 47,
+   "hits": 31,
+   "detection_rate": 0.6595744680851063
+  },
+  "mura_med@10": {
+   "n": 47,
+   "hits": 47,
+   "detection_rate": 1.0
+  },
+  "mura_med@16": {
+   "n": 47,
+   "hits": 47,
+   "detection_rate": 1.0
+  },
+  "mura_med@25": {
+   "n": 47,
+   "hits": 47,
+   "detection_rate": 1.0
+  },
+  "mura_p25@1": {
+   "n": 17,
+   "hits": 2,
+   "detection_rate": 0.11764705882352941
+  },
+  "mura_p25@1.6": {
+   "n": 17,
+   "hits": 6,
+   "detection_rate": 0.35294117647058826
+  },
+  "mura_p25@2.5": {
+   "n": 27,
+   "hits": 15,
+   "detection_rate": 0.5555555555555556
+  },
+  "mura_p25@4": {
+   "n": 47,
+   "hits": 22,
+   "detection_rate": 0.46808510638297873
+  },
+  "mura_p25@6.3": {
+   "n": 47,
+   "hits": 38,
+   "detection_rate": 0.8085106382978723
+  },
+  "mura_p25@10": {
+   "n": 47,
+   "hits": 47,
+   "detection_rate": 1.0
+  },
+  "mura_p25@16": {
+   "n": 47,
+   "hits": 47,
+   "detection_rate": 1.0
+  },
+  "mura_p25@25": {
+   "n": 47,
+   "hits": 47,
+   "detection_rate": 1.0
+  },
+  "mura_p75@1": {
+   "n": 9,
+   "hits": 1,
+   "detection_rate": 0.1111111111111111
+  },
+  "mura_p75@1.6": {
+   "n": 17,
+   "hits": 8,
+   "detection_rate": 0.47058823529411764
+  },
+  "mura_p75@2.5": {
+   "n": 18,
+   "hits": 9,
+   "detection_rate": 0.5
+  },
+  "mura_p75@4": {
+   "n": 42,
+   "hits": 23,
+   "detection_rate": 0.5476190476190477
+  },
+  "mura_p75@6.3": {
+   "n": 47,
+   "hits": 27,
+   "detection_rate": 0.574468085106383
+  },
+  "mura_p75@10": {
+   "n": 47,
+   "hits": 41,
+   "detection_rate": 0.8723404255319149
+  },
+  "mura_p75@16": {
+   "n": 47,
+   "hits": 47,
+   "detection_rate": 1.0
+  },
+  "mura_p75@25": {
+   "n": 47,
+   "hits": 47,
+   "detection_rate": 1.0
+  }
+ }
+}

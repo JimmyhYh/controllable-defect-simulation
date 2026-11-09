@@ -1,0 +1,1082 @@
+{
+  "schema": "pretrained-r5-pilot-preparation-v1",
+  "implementation": {
+    "common.py": "5ad6354054764d0ac6508a1db7483f9e0f628df83eca255f41d4851ada2d48f5",
+    "data.py": "9a005ce88c3dcee6b8b3195b45caf699f2804803b35aa831bd6272f68024bed7",
+    "preparation.py": "398828aa27ea5bb66418dd703b34bc04b5e04f9dde5fb403daf9165d9db3b52d",
+    "model.py": "818e1b9f85f3b7926f82a58efb26616b4a17611de49c5a73a633a37cfbdb2da5",
+    "training.py": "78f8fcec4ae7e6d6d13d4c77f82d8d0d0ed0f836fd21fbf47540760530bc8ccc",
+    "scoring.py": "145b0c4ad04c6ad3d447a63b953866f11fdf19934a109a1a3acca656c8678465",
+    "metrics.py": "8ee695cb4c2aee73d4119f0e73982e8a61e3528113c2d645c744f17ff806d07e",
+    "cli.py": "cc19f2bd3bf9504fe7ae4ecf94d78abfeb6234251a363ac94f36088efc0bc535",
+    "README_pilot.md": "4e6f539f6308a023de2069ef3a7e51c957c493b3eb663b450f1802264c1904ca"
+  },
+  "input_complete_sha256": "d33ddbde7b0b4cf585ea8aa407903c28dc885d4730607b94188c8de346b9d396",
+  "visual_review": {
+    "approved": true,
+    "input_complete_sha256": "d33ddbde7b0b4cf585ea8aa407903c28dc885d4730607b94188c8de346b9d396",
+    "observations": {
+      "11670": "完整RGB中下部右侧亮色不规则缺陷与GT对齐；固定y=128首个阳性合法窗含其下右局部，缺陷在完整图中延伸至窗外。保留预定裁剪，不移位补救；原宽227。",
+      "11884": "偏左上方小块亮色不规则斑点与GT对齐；y=0首窗含阳性，原宽231，原对比度保留。",
+      "12070": "中右部低对比度近水平细亮线与细长GT对齐；y=128首个阳性窗含标签，原宽230，不膨胀。",
+      "12245": "原图下部偏左近水平弱亮斑与细长GT对齐；首个阳性合法窗为y=381原生尾窗，缺陷靠近窗底，原宽230，未改窗。",
+      "12303": "偏左斜向深色楔形／条状缺陷与多边形GT对齐；y=0首窗含阳性，原宽232，原始对比度保留。",
+      "10056": "原始暗灰粗糙纹理，上部可见小亮点；绿色框为固定首窗，沿用零GT，不以自然亮点重标。",
+      "10149": "暗色颗粒纹理与缓慢纵向光照变化；固定首窗坐标可见，零GT保持。",
+      "10326": "灰色颗粒表面伴细微纵向变化；固定首窗，原对比度和零GT保持。",
+      "10425": "较暗颗粒表面可见细小亮点；固定首窗，不因亮点替换样本或改变零GT。",
+      "10468": "暗色颗粒背景伴弱条带／光照变化；固定首窗，零GT保持。",
+      "10481": "灰色颗粒背景；固定首窗框和原图边界对应，原对比度及零GT保持。",
+      "10538": "较暗颗粒表面有弱纵向纹理；固定首窗，零GT保持。",
+      "10548": "灰色颗粒背景伴淡纵向细纹；固定首窗，不改正常标签。",
+      "10842": "灰色颗粒背景；固定首窗，原对比度及零GT保持。",
+      "10880": "较粗颗粒和纵向纹理，左上区域更暗；固定首窗，不作新的异常判断或换样。",
+      "11145": "暗颗粒背景有数个小亮点；固定首窗，程序已核零GT，不以视觉重新标注。",
+      "11311": "灰色颗粒背景；固定首窗，原对比度及零GT保持。",
+      "12024": "粗糙暗色纹理；固定首窗坐标明确，零GT保持。",
+      "12025": "较粗颗粒背景有淡斜纹；固定首窗，不改变正常标签。",
+      "12126": "颗粒表面伴纵向光照变化；固定首窗，零GT保持。",
+      "12206": "灰色颗粒背景；固定首窗框对应原图，原对比度与零GT保持。"
+    },
+    "scope": "实际审阅五张R完整RGB／GT／选窗CPU总览和全部N16原RGB总览，共固定21张；GT合法性和有效域另经CPU核对。未审阅其他原图。",
+    "limitations": "11670首个阳性窗覆盖部分缺陷；12245尾窗缺陷近底；不移动、缩区、换样或改标签。正常纹理与亮点不作为新缺陷真值。仅固定训练窗口输入适用性，不是未见验证。"
+  },
+  "resource_snapshot": {
+    "utc": "2026-10-22T03:17:34.216053+00:00",
+    "total_RAM_GiB": 15.62198257446289,
+    "free_RAM_GiB": 5.272754669189453,
+    "free_disk_GiB": 139.6675262451172,
+    "GPUs": [
+      {
+        "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "total_MiB": 8151.0,
+        "free_MiB": 7899.0,
+        "driver": "595.97"
+      }
+    ],
+    "interpretation": "snapshot only; not runtime admission or measured training peak"
+  },
+  "compatibility": {
+    "original_descriptors": {
+      "bn1.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "bn1.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "bn1.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "bn1.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "conv1.weight": {
+        "shape": [
+          64,
+          3,
+          7,
+          7
+        ],
+        "dtype": "F32"
+      },
+      "fc.bias": {
+        "shape": [
+          1000
+        ],
+        "dtype": "F32"
+      },
+      "fc.weight": {
+        "shape": [
+          1000,
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.conv1.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.conv2.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.conv1.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.conv2.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.conv1.weight": {
+        "shape": [
+          128,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.conv2.weight": {
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.0.weight": {
+        "shape": [
+          128,
+          64,
+          1,
+          1
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.conv1.weight": {
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.conv2.weight": {
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.conv1.weight": {
+        "shape": [
+          256,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.conv2.weight": {
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.0.weight": {
+        "shape": [
+          256,
+          128,
+          1,
+          1
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.conv1.weight": {
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.conv2.weight": {
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.conv1.weight": {
+        "shape": [
+          512,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.conv2.weight": {
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.0.weight": {
+        "shape": [
+          512,
+          256,
+          1,
+          1
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.conv1.weight": {
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.conv2.weight": {
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      }
+    },
+    "remove_exact_keys": [
+      "fc.bias",
+      "fc.weight"
+    ],
+    "add_exact_zero_int64_scalar_keys": [
+      "bn1.num_batches_tracked",
+      "layer1.0.bn1.num_batches_tracked",
+      "layer1.0.bn2.num_batches_tracked",
+      "layer1.1.bn1.num_batches_tracked",
+      "layer1.1.bn2.num_batches_tracked",
+      "layer2.0.bn1.num_batches_tracked",
+      "layer2.0.bn2.num_batches_tracked",
+      "layer2.0.downsample.1.num_batches_tracked",
+      "layer2.1.bn1.num_batches_tracked",
+      "layer2.1.bn2.num_batches_tracked",
+      "layer3.0.bn1.num_batches_tracked",
+      "layer3.0.bn2.num_batches_tracked",
+      "layer3.0.downsample.1.num_batches_tracked",
+      "layer3.1.bn1.num_batches_tracked",
+      "layer3.1.bn2.num_batches_tracked",
+      "layer4.0.bn1.num_batches_tracked",
+      "layer4.0.bn2.num_batches_tracked",
+      "layer4.0.downsample.1.num_batches_tracked",
+      "layer4.1.bn1.num_batches_tracked",
+      "layer4.1.bn2.num_batches_tracked"
+    ],
+    "BN_prefixes": [
+      "bn1.",
+      "layer1.0.bn1.",
+      "layer1.0.bn2.",
+      "layer1.1.bn1.",
+      "layer1.1.bn2.",
+      "layer2.0.bn1.",
+      "layer2.0.bn2.",
+      "layer2.0.downsample.1.",
+      "layer2.1.bn1.",
+      "layer2.1.bn2.",
+      "layer3.0.bn1.",
+      "layer3.0.bn2.",
+      "layer3.0.downsample.1.",
+      "layer3.1.bn1.",
+      "layer3.1.bn2.",
+      "layer4.0.bn1.",
+      "layer4.0.bn2.",
+      "layer4.0.downsample.1.",
+      "layer4.1.bn1.",
+      "layer4.1.bn2."
+    ],
+    "encoder_expected_keys": [
+      "bn1.bias",
+      "bn1.num_batches_tracked",
+      "bn1.running_mean",
+      "bn1.running_var",
+      "bn1.weight",
+      "conv1.weight",
+      "layer1.0.bn1.bias",
+      "layer1.0.bn1.num_batches_tracked",
+      "layer1.0.bn1.running_mean",
+      "layer1.0.bn1.running_var",
+      "layer1.0.bn1.weight",
+      "layer1.0.bn2.bias",
+      "layer1.0.bn2.num_batches_tracked",
+      "layer1.0.bn2.running_mean",
+      "layer1.0.bn2.running_var",
+      "layer1.0.bn2.weight",
+      "layer1.0.conv1.weight",
+      "layer1.0.conv2.weight",
+      "layer1.1.bn1.bias",
+      "layer1.1.bn1.num_batches_tracked",
+      "layer1.1.bn1.running_mean",
+      "layer1.1.bn1.running_var",
+      "layer1.1.bn1.weight",
+      "layer1.1.bn2.bias",
+      "layer1.1.bn2.num_batches_tracked",
+      "layer1.1.bn2.running_mean",
+      "layer1.1.bn2.running_var",
+      "layer1.1.bn2.weight",
+      "layer1.1.conv1.weight",
+      "layer1.1.conv2.weight",
+      "layer2.0.bn1.bias",
+      "layer2.0.bn1.num_batches_tracked",
+      "layer2.0.bn1.running_mean",
+      "layer2.0.bn1.running_var",
+      "layer2.0.bn1.weight",
+      "layer2.0.bn2.bias",
+      "layer2.0.bn2.num_batches_tracked",
+      "layer2.0.bn2.running_mean",
+      "layer2.0.bn2.running_var",
+      "layer2.0.bn2.weight",
+      "layer2.0.conv1.weight",
+      "layer2.0.conv2.weight",
+      "layer2.0.downsample.0.weight",
+      "layer2.0.downsample.1.bias",
+      "layer2.0.downsample.1.num_batches_tracked",
+      "layer2.0.downsample.1.running_mean",
+      "layer2.0.downsample.1.running_var",
+      "layer2.0.downsample.1.weight",
+      "layer2.1.bn1.bias",
+      "layer2.1.bn1.num_batches_tracked",
+      "layer2.1.bn1.running_mean",
+      "layer2.1.bn1.running_var",
+      "layer2.1.bn1.weight",
+      "layer2.1.bn2.bias",
+      "layer2.1.bn2.num_batches_tracked",
+      "layer2.1.bn2.running_mean",
+      "layer2.1.bn2.running_var",
+      "layer2.1.bn2.weight",
+      "layer2.1.conv1.weight",
+      "layer2.1.conv2.weight",
+      "layer3.0.bn1.bias",
+      "layer3.0.bn1.num_batches_tracked",
+      "layer3.0.bn1.running_mean",
+      "layer3.0.bn1.running_var",
+      "layer3.0.bn1.weight",
+      "layer3.0.bn2.bias",
+      "layer3.0.bn2.num_batches_tracked",
+      "layer3.0.bn2.running_mean",
+      "layer3.0.bn2.running_var",
+      "layer3.0.bn2.weight",
+      "layer3.0.conv1.weight",
+      "layer3.0.conv2.weight",
+      "layer3.0.downsample.0.weight",
+      "layer3.0.downsample.1.bias",
+      "layer3.0.downsample.1.num_batches_tracked",
+      "layer3.0.downsample.1.running_mean",
+      "layer3.0.downsample.1.running_var",
+      "layer3.0.downsample.1.weight",
+      "layer3.1.bn1.bias",
+      "layer3.1.bn1.num_batches_tracked",
+      "layer3.1.bn1.running_mean",
+      "layer3.1.bn1.running_var",
+      "layer3.1.bn1.weight",
+      "layer3.1.bn2.bias",
+      "layer3.1.bn2.num_batches_tracked",
+      "layer3.1.bn2.running_mean",
+      "layer3.1.bn2.running_var",
+      "layer3.1.bn2.weight",
+      "layer3.1.conv1.weight",
+      "layer3.1.conv2.weight",
+      "layer4.0.bn1.bias",
+      "layer4.0.bn1.num_batches_tracked",
+      "layer4.0.bn1.running_mean",
+      "layer4.0.bn1.running_var",
+      "layer4.0.bn1.weight",
+      "layer4.0.bn2.bias",
+      "layer4.0.bn2.num_batches_tracked",
+      "layer4.0.bn2.running_mean",
+      "layer4.0.bn2.running_var",
+      "layer4.0.bn2.weight",
+      "layer4.0.conv1.weight",
+      "layer4.0.conv2.weight",
+      "layer4.0.downsample.0.weight",
+      "layer4.0.downsample.1.bias",
+      "layer4.0.downsample.1.num_batches_tracked",
+      "layer4.0.downsample.1.running_mean",
+      "layer4.0.downsample.1.running_var",
+      "layer4.0.downsample.1.weight",
+      "layer4.1.bn1.bias",
+      "layer4.1.bn1.num_batches_tracked",
+      "layer4.1.bn1.running_mean",
+      "layer4.1.bn1.running_var",
+      "layer4.1.bn1.weight",
+      "layer4.1.bn2.bias",
+      "layer4.1.bn2.num_batches_tracked",
+      "layer4.1.bn2.running_mean",
+      "layer4.1.bn2.running_var",
+      "layer4.1.bn2.weight",
+      "layer4.1.conv1.weight",
+      "layer4.1.conv2.weight"
+    ],
+    "torch_BN_source_path": ".venv-pretrained-seg/Lib/site-packages/torch/nn/modules/batchnorm.py",
+    "torch_BN_source_sha256": "890bea2b4a462de409aefe9e4199bdc8ff945d1457795a2cf13a4e49973bd8bb",
+    "policy": "runtime explicit fc removal plus20 zero-int64 counters; strict remaining keys/shapes/dtypes; no generic strict=False",
+    "tensor_created_or_loaded": false,
+    "runtime_compatibility_verified": false
+  },
+  "schedules": {
+    "2000": {
+      "updates": {
+        "1": [
+          1e-05,
+          0.0001
+        ],
+        "1600": [
+          1e-05,
+          0.0001
+        ],
+        "1601": [
+          2e-06,
+          2e-05
+        ],
+        "1800": [
+          2e-06,
+          2e-05
+        ],
+        "1801": [
+          4e-07,
+          4e-06
+        ],
+        "2000": [
+          4e-07,
+          4e-06
+        ]
+      },
+      "resume_next_update_by_completed": {
+        "0": [
+          1e-05,
+          0.0001
+        ],
+        "1599": [
+          1e-05,
+          0.0001
+        ],
+        "1600": [
+          2e-06,
+          2e-05
+        ],
+        "1799": [
+          2e-06,
+          2e-05
+        ],
+        "1800": [
+          4e-07,
+          4e-06
+        ],
+        "1999": [
+          4e-07,
+          4e-06
+        ],
+        "2000": null
+      }
+    },
+    "10000": {
+      "updates": {
+        "1": [
+          1e-05,
+          0.0001
+        ],
+        "8000": [
+          1e-05,
+          0.0001
+        ],
+        "8001": [
+          2e-06,
+          2e-05
+        ],
+        "9000": [
+          2e-06,
+          2e-05
+        ],
+        "9001": [
+          4e-07,
+          4e-06
+        ],
+        "10000": [
+          4e-07,
+          4e-06
+        ]
+      },
+      "resume_next_update_by_completed": {
+        "0": [
+          1e-05,
+          0.0001
+        ],
+        "7999": [
+          1e-05,
+          0.0001
+        ],
+        "8000": [
+          2e-06,
+          2e-05
+        ],
+        "8999": [
+          2e-06,
+          2e-05
+        ],
+        "9000": [
+          4e-07,
+          4e-06
+        ],
+        "9999": [
+          4e-07,
+          4e-06
+        ],
+        "10000": null
+      }
+    }
+  },
+  "seed": 2026102201,
+  "steps": 2000,
+  "window": 256,
+  "batch": 1,
+  "workers": 0,
+  "precision": "FP32",
+  "augmentation": "none in fixed-window probe",
+  "synthesis": false,
+  "valid_pixels": 1225984,
+  "positive_pixels": 24482,
+  "unique_images_and_windows": 21,
+  "exposure_by_id": {
+    "11884": 200,
+    "10326": 63,
+    "12245": 200,
+    "10538": 62,
+    "12070": 200,
+    "10842": 62,
+    "11670": 200,
+    "11311": 63,
+    "12303": 200,
+    "10149": 63,
+    "12025": 63,
+    "10548": 62,
+    "10468": 62,
+    "10425": 62,
+    "10481": 62,
+    "10056": 63,
+    "12126": 63,
+    "12024": 63,
+    "12206": 62,
+    "11145": 62,
+    "10880": 63
+  },
+  "gate": {
+    "global_AP_min": 0.95,
+    "each_R_window_AP_min": 0.85,
+    "classification_0_5_gate": false
+  },
+  "checkpoints": [
+    400,
+    800,
+    1200,
+    1600,
+    2000
+  ],
+  "Adam": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0
+  },
+  "loss": "valid-only unweighted CE mean plus DiceLoss=1-(2sum(p*y)+1)/(sum(p)+sum(y)+1); empty GT included",
+  "formal_scope": "only scalar10000 schedule checked; formal requests/training not implemented or authorized",
+  "manual_model_interpreter": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv-pretrained-seg\\Scripts\\python.exe",
+  "GPU_resume_verified": false,
+  "stop": "no automatic retry, extra steps, altered gate/sample/seed, best checkpoint or Q/E/U access"
+}

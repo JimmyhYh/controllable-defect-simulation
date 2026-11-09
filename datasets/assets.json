@@ -1,0 +1,28 @@
+[
+  {
+    "asset": "KolektorSDD2-with-license.zip",
+    "bytes": 853148290,
+    "sha256": "6f1e20499e418c062784c2a27fd4b25f3a5ef0aee913ec0cd062001faf0e6557",
+    "upstream_archive": "KolektorSDD2.zip",
+    "upstream_bytes": 853126555,
+    "upstream_sha256": "edcdb486809b24f1d17b785e30c52fafc5999554dd5fe18ddf77b61ceb6f36a8",
+    "license": "CC-BY-NC-SA-4.0",
+    "modified": false
+  },
+  {
+    "asset": "MVTec-leather-with-license.zip",
+    "bytes": 524912064,
+    "sha256": "1a9a609a299cf329fbdf031b416f6e9b47049ca094f9cfe0e77998bebf63f849",
+    "upstream_archive": "leather.tar.xz",
+    "upstream_bytes": 524889948,
+    "upstream_sha256": "704ffa48b1dc2fc44824aa50442d9febc399dd92a5d6fd8156f8aa0373d15f24",
+    "license": "CC-BY-NC-SA-4.0",
+    "modified": false
+  },
+  {
+    "asset": "result-metadata-20261109.zip",
+    "bytes": 45122980,
+    "sha256": "e3e3703f2c3b2ac7bd55b9571a6febaa6aa476d59afa43aaaf9a774ca83b4263",
+    "scope": "metadata only; no arrays, checkpoints, raw images"
+  }
+]

@@ -1,0 +1,221 @@
+{
+ "condition": "B20261020",
+ "tau": 0.9995600938796997,
+ "tau_domain": "softmax probability, max over pixels",
+ "n_images": 1167,
+ "n_baseline": 60,
+ "baseline_false_positive": 4,
+ "baseline_false_positive_rate": 0.06666666666666667,
+ "n_stimulus": 1107,
+ "n_skipped_missing": 0,
+ "stimulus_detection_rate_overall": 0.10840108401084012,
+ "by_shape": {
+  "line_med": {
+   "n": 251,
+   "detection_rate_overall": 0.11155378486055777,
+   "lowest_cell_rate": 0.0,
+   "highest_cell_rate": 0.26666666666666666,
+   "no_response": true,
+   "saturated": false,
+   "a50_identifiable": false,
+   "a90_identifiable": false,
+   "response_minus_baseline": 0.2
+  },
+  "mura_med": {
+   "n": 286,
+   "detection_rate_overall": 0.11188811188811189,
+   "lowest_cell_rate": 0.0851063829787234,
+   "highest_cell_rate": 0.2857142857142857,
+   "no_response": true,
+   "saturated": false,
+   "a50_identifiable": false,
+   "a90_identifiable": false,
+   "response_minus_baseline": 0.21904761904761905
+  },
+  "mura_p25": {
+   "n": 296,
+   "detection_rate_overall": 0.10810810810810811,
+   "lowest_cell_rate": 0.0851063829787234,
+   "highest_cell_rate": 0.23529411764705882,
+   "no_response": true,
+   "saturated": false,
+   "a50_identifiable": false,
+   "a90_identifiable": false,
+   "response_minus_baseline": 0.16862745098039217
+  },
+  "mura_p75": {
+   "n": 274,
+   "detection_rate_overall": 0.10218978102189781,
+   "lowest_cell_rate": 0.0,
+   "highest_cell_rate": 0.23529411764705882,
+   "no_response": true,
+   "saturated": false,
+   "a50_identifiable": false,
+   "a90_identifiable": false,
+   "response_minus_baseline": 0.16862745098039217
+  }
+ },
+ "cells": {
+  "line_med@1": {
+   "n": 6,
+   "hits": 0,
+   "detection_rate": 0.0
+  },
+  "line_med@1.6": {
+   "n": 15,
+   "hits": 4,
+   "detection_rate": 0.26666666666666666
+  },
+  "line_med@2.5": {
+   "n": 18,
+   "hits": 4,
+   "detection_rate": 0.2222222222222222
+  },
+  "line_med@4": {
+   "n": 26,
+   "hits": 4,
+   "detection_rate": 0.15384615384615385
+  },
+  "line_med@6.3": {
+   "n": 45,
+   "hits": 4,
+   "detection_rate": 0.08888888888888889
+  },
+  "line_med@10": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "line_med@16": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "line_med@25": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_med@1": {
+   "n": 14,
+   "hits": 4,
+   "detection_rate": 0.2857142857142857
+  },
+  "mura_med@1.6": {
+   "n": 17,
+   "hits": 4,
+   "detection_rate": 0.23529411764705882
+  },
+  "mura_med@2.5": {
+   "n": 20,
+   "hits": 4,
+   "detection_rate": 0.2
+  },
+  "mura_med@4": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_med@6.3": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_med@10": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_med@16": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_med@25": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_p25@1": {
+   "n": 17,
+   "hits": 4,
+   "detection_rate": 0.23529411764705882
+  },
+  "mura_p25@1.6": {
+   "n": 17,
+   "hits": 4,
+   "detection_rate": 0.23529411764705882
+  },
+  "mura_p25@2.5": {
+   "n": 27,
+   "hits": 4,
+   "detection_rate": 0.14814814814814814
+  },
+  "mura_p25@4": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_p25@6.3": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_p25@10": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_p25@16": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_p25@25": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_p75@1": {
+   "n": 9,
+   "hits": 0,
+   "detection_rate": 0.0
+  },
+  "mura_p75@1.6": {
+   "n": 17,
+   "hits": 4,
+   "detection_rate": 0.23529411764705882
+  },
+  "mura_p75@2.5": {
+   "n": 18,
+   "hits": 4,
+   "detection_rate": 0.2222222222222222
+  },
+  "mura_p75@4": {
+   "n": 42,
+   "hits": 4,
+   "detection_rate": 0.09523809523809523
+  },
+  "mura_p75@6.3": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_p75@10": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_p75@16": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  },
+  "mura_p75@25": {
+   "n": 47,
+   "hits": 4,
+   "detection_rate": 0.0851063829787234
+  }
+ },
+ "note": "跨检测器只比检出率与 a50/a90；score/tau 与 PatchCore 不可比。no_response 表示全档检出率 ≤5%，按协议 5.x 判据不适用。"
+}

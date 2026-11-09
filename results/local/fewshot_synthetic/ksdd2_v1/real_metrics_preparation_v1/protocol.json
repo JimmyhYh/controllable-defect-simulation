@@ -1,0 +1,72 @@
+{
+  "schema": "real-E1004-exact-CPU-metrics-v1",
+  "implementation_sha256": "ac39b4f56eea00d3d9009cd6f2f34022ca778ad1072ab8f74dedede0fdef0878",
+  "source_manifest_digest": "2777d10b9bbef90483f7c2ac6c2f5f52c718b91e169590bc03a845599588e7b5",
+  "GT_requests_digest": "28d30169cdb60b905562d9ab69205897f2e93eb0810c1aa53ba2c8f2697ff3f1",
+  "model_order": [
+    "A_2026101903",
+    "B_2026101903",
+    "A_2026101904",
+    "B_2026101904",
+    "A_2026101905",
+    "B_2026101905"
+  ],
+  "images_per_model": 1004,
+  "unique_E_images": 1004,
+  "native_pixels_per_model": 146411528,
+  "GT": {
+    "mode": [
+      "1",
+      "L"
+    ],
+    "native_shape": "exact HxW; no resize/dilation/soft labels",
+    "raw_binary_encoding": "each image values subset of {0,1} OR {0,255}; nonzero maps exactly to1",
+    "source": "fixed original GT path/hash; hash before decode",
+    "actual_class_counts_and_positive_pixels": "unknown until explicit run decodes all1004",
+    "official_counts_to_check_at_run": {
+      "anomaly": 110,
+      "normal": 894
+    },
+    "normalized_cache": "uint8 0/1, one decode per original GT; shared across all six models"
+  },
+  "AP": {
+    "algorithm": "frozen metrics.exact_ap",
+    "frozen_source_sha256": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+    "scope": "global original pixels, each pixel once; no subsampling or mean per-image AP",
+    "histogram_bins": 1065353217,
+    "chunk": 1048576,
+    "bytes_per_model_two_tables": 8522825736,
+    "bytes_six_models": 51136954416,
+    "ties": "all identical float32 values grouped; negative zero normalized to positive zero",
+    "verification": "original probe sklearn/ties evidence + frozen formula/native N/actual P checks",
+    "no_positive_pixels": "NA and stop; never positive evidence"
+  },
+  "image_metrics": {
+    "AUROC": "sklearn roc_auc_score on all1004 saved native maxima",
+    "threshold": "original per-model Q summary path/hash; strict >, no recalibration",
+    "counts": "TP/FN on actual anomaly denominator, FP/TN on actual normal denominator"
+  },
+  "pairs": {
+    "seeds": [
+      2026101903,
+      2026101904,
+      2026101905
+    ],
+    "delta": "(AP_B - AP_A)*100 percentage points",
+    "all_three": true,
+    "mean": "arithmetic mean of three paired deltas",
+    "SD": "sample ddof=1",
+    "judgement": "all positive and mean>0: consistent preliminary; mixed mean>0: unstable; mean<=0: no average gain",
+    "limits": "single category/fixed5/split; no significance/generalization/screen claim; disclose FP/FN tradeoffs"
+  },
+  "examples": "first normal, first anomaly, smallest ID in union FP and union FN; deduplicate with all reasons",
+  "resource": {
+    "minimum_available_RAM_GiB": 3,
+    "minimum_free_disk_GiB": 80,
+    "checks": "entry/GT image/AP input chunk/model boundary; frozen scan only has original entry gate, not continuous monitoring"
+  },
+  "output": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\fewshot_synthetic\\ksdd2_v1\\real_metrics_v1",
+  "cache": "complete same identity only verifies; any partial/unknown/failure preserved, no resume/reaccumulate",
+  "prepare": "metadata/hash/NPY headers/invented scalars only; no GT bytes/arrays or actual metrics",
+  "models_or_training_or_calibration": false
+}

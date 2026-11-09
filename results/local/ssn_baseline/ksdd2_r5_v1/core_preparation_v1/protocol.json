@@ -1,0 +1,226 @@
+{
+  "schema": "ssn-stage2-static-core-v1",
+  "bindings": {
+    "stage1_complete_sha256": "6a81bb7895eb16f1e5f52971b6327e322ac9941a0c24af95b0b053ba6a2dc368",
+    "environment_complete_sha256": "b8c51d6140dd0bdccfa28c1a65e4c1e8e03cec59b86c27adaa59342486fbc961",
+    "original_environment_failure": {
+      "results/ssn_baseline/ksdd2_r5_v1/environment_v1/installation": {
+        "failure.json": "6382af3c4a16b5ae7b9bd1c1d701b0b4a39ad89a2dfe8ad545d3730313b1d129",
+        "transaction.json": "df6fca2d5a45ed6da7704b961609d93405e73dd3678269a24eeb3965c309ff19"
+      },
+      "results/ssn_baseline/ksdd2_r5_v1/environment_bootstrap_continuation_v1/installation": {
+        "failure.json": "77891d121a7a7b9372a2258f86f0a060512bfda08ab21f3656c3b7eb62b3688f",
+        "offline_install.txt": "ce582a9b33c8bd5d30030b6a523ebebc93269a8c81dd6c8001e9df098e66d273",
+        "transaction.json": "515004b7c81f4956ef08be4db7a6944abf7458ae92214e4058a7701815cbd885"
+      }
+    },
+    "continuation_preparation_sha256": "cf11743096d9635b5a6fc3c69a25364db01e3df57992867256ab57585b320a73",
+    "inventory_complete_sha256": "aefeefed227d454ea0a18c472255387f7905640775cf6c0aaa6602bfa7b579d1",
+    "vendor_complete_sha256": "138b1708f2e253383aa84de6429aa1f17987b534f778c9d3fe100b63c9c0690e",
+    "sources": {
+      "ssn_baseline/core_v1/__init__.py": "d45e142d3bbcfc04aec7ad495aa38612c1ef528344b15f46175f10ae5ca892e2",
+      "ssn_baseline/core_v1/supersimplenet.py": "1b7910eb5236aef9b2f2e28367f7bb700cd5de7d1bc08200a44f6d85072eb565",
+      "ssn_baseline/core_v1/feature_extractor.py": "ce2f69b87fe29c774228afe88288309c6e5d2abe0b3761ae5bfee71986ce9111",
+      "ssn_baseline/core_v1/perlin_noise.py": "529e1fde5a6d5d46e81eab59d3648d50473f7ebbe03bdbaf9e35470c72d3e7d2",
+      "ssn_baseline/core_v1/loss.py": "97b649b1fd3d5f68b32ba7f23ab514b4b5a7963df31ea7ab43a36eaf0ad6c586",
+      "ssn_baseline/environment.py": "edeccdbdae3a6716dfd762d40d8188f6fbdef65e701077d294b409e67f8d3692",
+      "ssn_baseline/environment_continuation.py": "b1e9a80c268aaf26c5927301bb99ec4309edd8b3cb66354d4179afdb5de2bcc1",
+      "ssn_baseline/environment_module_bootstrap.py": "c3c925e1603a6646b844a452426cfa432436a623821804315b065dbe859d4350",
+      "ssn_baseline/static_preparation.py": "bce06c119e9d5863ed6ce90da0e088a29a1a0d6e24794f4d01b9e471cb4c034b",
+      "ssn_baseline/contracts.py": "9d61d053ff2dac4f5b54c94e640b3decc98fe8337b0eeb37820ba9c1ee35884d",
+      "ssn_baseline/model.py": "5e74d75a930a66bf24e9e89494a275707655b26f924cf92b9b32149501361d32",
+      "ssn_baseline/objective.py": "0475b20b05270ad941e8719ffde70050cb1647309aea79d871c916cd49616175",
+      "ssn_baseline/README_stage2.md": "4af648aa255ae8607a39d02147e1c79f00773b15894d07c5c801ad381a531b9f"
+    }
+  },
+  "model_config": {
+    "backbone": "wide_resnet50_2",
+    "layers": [
+      "layer2",
+      "layer3"
+    ],
+    "patch_size": 3,
+    "adapt_cls_feat": true,
+    "dt": null,
+    "dilate": null,
+    "noise": true,
+    "perlin": true,
+    "no_anomaly": "empty",
+    "bad": true,
+    "overlap": false,
+    "noise_std": 0.015,
+    "perlin_thr": 0.6,
+    "stop_grad": false,
+    "adapt_lr": 0.0001,
+    "seg_lr": 0.0002,
+    "dec_lr": 0.0002,
+    "gamma": 0.4
+  },
+  "input_output": {
+    "input_hw": [
+      640,
+      232
+    ],
+    "RGB": "native uint8 RGB; no contrast stretch",
+    "RGB_resize": "OpenCV INTER_LINEAR on uint8, H=640 W=232, then /255 and channel normalization",
+    "RGB_normalization": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "GT": "native binary mask must be checked before use; preserve native GT unchanged",
+    "GT_to_input": "OpenCV INTER_NEAREST to 640x232, binary float32 in {0,1}; no dilation or distance mask",
+    "GT_to_feature": "torch bilinear to (160,58), align_corners=True; values <0.5 become 0, >=0.5 become 1",
+    "feature_shape_static": [
+      1536,
+      160,
+      58
+    ],
+    "feature_copy": "author generator duplicates B to 2B; not two independent real images",
+    "empty_feature_GT": "stop if any R5 becomes empty; do not replace sample, dilate or borrow U",
+    "native_score_order": [
+      "model.eval: feature logit -> bilinear to 640x232 (align_corners=False)",
+      "author GaussianBlur kernel25 sigma4 reflect on logits",
+      "bilinear smoothed input logits to native H,W, align_corners=False",
+      "one-channel sigmoid to native float32 probability, each native pixel once"
+    ],
+    "classification": "sigmoid of independent raw classification-head logit; no spatial pooling substitution",
+    "localization_max": "max of native sigmoid map; supplemental, not the classification score",
+    "calibration": "not performed or numerically frozen at this stage; future Q only, no old threshold reuse",
+    "evaluation": "no test-pool minmax, smoothing after sigmoid, resized evaluation GT, softmax or best-checkpoint selection",
+    "BN": "author BatchNorm retained; not old GN or stateless BN",
+    "budget": "pilot steps/epochs, sample sequence, gate and formal budget remain unfrozen",
+    "data_codec_status": "core environment has no OpenCV wheel; decode/resize implementation and runtime dependency are a stage-3 prerequisite, not claimed ready"
+  },
+  "optimizer": {
+    "algorithm": "author get_optimizers: AdamW, three groups, no backbone params",
+    "groups": [
+      {
+        "parameters": "feature_adaptor",
+        "lr": 0.0001,
+        "weight_decay": "inherited AdamW default 0.01"
+      },
+      {
+        "parameters": "discriminator.seg",
+        "lr": 0.0002,
+        "weight_decay": 1e-05
+      },
+      {
+        "parameters": "dec_head + fc_score",
+        "lr": 0.0002,
+        "weight_decay": 1e-05
+      }
+    ],
+    "scheduler": "author epoch-unit MultiStepLR at 0.8*epochs,0.9*epochs, gamma0.4; not old 8000/9000 step schedule",
+    "epochs": null,
+    "optimizer_constructed": false,
+    "loss": "seg normal truncated-L1 mean + seg anomaly truncated-L1 mean + all-pixel focal mean + cls focal mean",
+    "truncated_L1_margin": 0.5,
+    "focal_gamma": 4,
+    "focal_alpha": -1,
+    "empty_normal_or_anomaly_subset": "zero contribution, as author train.py; no zero-division",
+    "segmentation_available": "all strict-R5/normal samples fully segmented; no weak labels or loss-mask weighting",
+    "gradient_clipping_future": "author supervised entry: clip global gradient norm to1 if enabled; not executed"
+  },
+  "scalar_checks": {
+    "feature_grid": [
+      1536,
+      160,
+      58
+    ],
+    "Perlin_grid": [
+      256,
+      64
+    ],
+    "Perlin_scales": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32
+    ],
+    "binary_threshold_scalar_examples": [
+      [
+        0,
+        0
+      ],
+      [
+        0.499999,
+        0
+      ],
+      [
+        0.5,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "B1_feature_views": 2,
+    "independent_input_images": 1,
+    "pilot_and_formal_epochs": null,
+    "scheduler_not_instantiated": true,
+    "native_inverse_mapping": "(y+0.5)*640/Hnative-0.5, (x+0.5)*232/Wnative-0.5 for align_corners=False; boundary clamp, then sigmoid",
+    "source_feature_dim_forward_executed": false,
+    "interpretation": "shape/coordinate arithmetic only, no actual labels or tensors verified"
+  },
+  "resources": {
+    "utc": "2026-10-21T03:26:06.881035+00:00",
+    "total_RAM_GiB": 15.62198257446289,
+    "free_RAM_GiB": 5.287662506103516,
+    "free_disk_GiB": 148.06184005737305,
+    "GPUs": [
+      {
+        "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "total_MiB": 8151.0,
+        "free_MiB": 7899.0,
+        "driver": "595.97"
+      }
+    ],
+    "interpretation": "single metadata snapshot; not model peak, compatibility or runtime admission"
+  },
+  "roles": {
+    "R_real5": 5,
+    "Q_normal200": 200,
+    "N_train1885": 1885,
+    "U_anomaly241": 241,
+    "E_official1004": 1004
+  },
+  "R5": [
+    "11670",
+    "11884",
+    "12070",
+    "12245",
+    "12303"
+  ],
+  "train_roles": [
+    "R_real5",
+    "N_train1885"
+  ],
+  "Q": "calibration only, no training or configuration selection",
+  "U": "not used, no weak supervision",
+  "E": "not used for selection or periodic evaluation; old benchmark already observed",
+  "core_diff": {
+    "supersimplenet.py": "only local Perlin import and explicit checkpoint constructor argument",
+    "feature_extractor.py": "local-only weights=None + verified generic V1 weights_only load; freezes backbone; author feature forward/get_feature_dim preserved",
+    "perlin_noise.py": "exact author bytes",
+    "loss.py": "exact author bytes",
+    "objective.py": "fully segmented R5/normal subset of author loss, no distance/loss-mask branch"
+  },
+  "remaining": [
+    "OpenCV decode/resize dependency and CPU R5/N16 content/coordinates",
+    "feature-grid R5 positive survival",
+    "pilot sampling/budget/gate/manual entry",
+    "actual model imports/parameter match/forward/learning/resource peaks",
+    "complete checkpoint recovery"
+  ]
+}

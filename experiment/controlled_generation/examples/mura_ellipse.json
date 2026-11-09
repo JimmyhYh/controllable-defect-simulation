@@ -1,0 +1,9 @@
+{
+  "kind": "mura_like",
+  "shape": "ellipse",
+  "units": "px256",
+  "center": [128, 128],
+  "axes": [36, 22],
+  "angle_deg": 25,
+  "amplitude": -0.04
+}

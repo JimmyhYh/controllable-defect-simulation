@@ -1,0 +1,329 @@
+{
+  "constant_reference": "constant_reference.json",
+  "models": [
+    {
+      "coefficient_order": [
+        "intercept",
+        "u"
+      ],
+      "coefficients": [
+        -0.38865148759482787,
+        2.6241587020578163
+      ],
+      "design_columns": 2,
+      "design_condition": 1.0000000000000004,
+      "design_condition_status": "finite",
+      "design_rank": 2,
+      "function_evaluations": 10,
+      "gradient": [
+        1.3605427652552127e-09,
+        -3.4185329289559974e-09
+      ],
+      "gradient_inf_norm": 3.4185329289559974e-09,
+      "iterations": 9,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "objective": 0.315106761024858,
+      "optimizer_success": true,
+      "spec": {
+        "id": "C-only",
+        "k": null,
+        "kind": "C-only"
+      },
+      "status": 0,
+      "transforms": [
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": 1.3851613030774148,
+          "name": "u",
+          "scale": 1.1088075472091086
+        }
+      ]
+    },
+    {
+      "coefficient_order": [
+        "intercept",
+        "u",
+        "v",
+        "u_times_v"
+      ],
+      "coefficients": [
+        -0.35310533295712493,
+        1.5334038384949682,
+        0.16881539006461052,
+        1.6118652102090856
+      ],
+      "design_columns": 4,
+      "design_condition": 12.021338152742059,
+      "design_condition_status": "finite",
+      "design_rank": 4,
+      "function_evaluations": 15,
+      "gradient": [
+        -5.09053445663793e-10,
+        -8.515503354539211e-10,
+        1.168730242792626e-09,
+        1.0120483340259057e-09
+      ],
+      "gradient_inf_norm": 1.168730242792626e-09,
+      "iterations": 13,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "objective": 0.2814536268378474,
+      "optimizer_success": true,
+      "spec": {
+        "id": "C+area",
+        "k": null,
+        "kind": "C+area"
+      },
+      "status": 0,
+      "transforms": [
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": 1.3851613030774161,
+          "name": "u",
+          "scale": 1.1088075472091086
+        },
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": 5.107525909142831,
+          "name": "v",
+          "scale": 0.8944756216954568
+        },
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": 7.1122814588615055,
+          "name": "u_times_v",
+          "scale": 5.954320743542783
+        }
+      ]
+    },
+    {
+      "coefficient_order": [
+        "intercept",
+        "log1p_SEMU"
+      ],
+      "coefficients": [
+        -0.3092273824474549,
+        2.7381037406201636
+      ],
+      "design_columns": 2,
+      "design_condition": 1.0000000000000009,
+      "design_condition_status": "finite",
+      "design_rank": 2,
+      "function_evaluations": 10,
+      "gradient": [
+        2.0956099702762465e-10,
+        -6.0406857328720864e-09
+      ],
+      "gradient_inf_norm": 6.0406857328720864e-09,
+      "iterations": 9,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "objective": 0.3059481199348557,
+      "optimizer_success": true,
+      "spec": {
+        "id": "SEMU-only_k0.4",
+        "k": 0.4,
+        "kind": "SEMU-only"
+      },
+      "status": 0,
+      "transforms": [
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": 1.191561837830616,
+          "name": "log1p_SEMU",
+          "scale": 1.0217776249199135
+        }
+      ]
+    },
+    {
+      "coefficient_order": [
+        "intercept",
+        "u",
+        "v",
+        "u_times_v",
+        "log_Lb",
+        "relative_background_std",
+        "is_bright",
+        "is_ellipse_h",
+        "is_ellipse_d"
+      ],
+      "coefficients": [
+        -0.22250090357945562,
+        2.049837230967393,
+        0.20968232916622956,
+        2.117708864319418,
+        0.9090528030729813,
+        -0.6355019645821498,
+        -0.3737088743556448,
+        -0.09388092591201336,
+        0.2492644826677283
+      ],
+      "design_columns": 9,
+      "design_condition": 14.19847272167372,
+      "design_condition_status": "finite",
+      "design_rank": 9,
+      "function_evaluations": 21,
+      "gradient": [
+        2.4650686677009717e-08,
+        -1.973611130773323e-08,
+        4.195367036847336e-09,
+        -2.023894742422816e-08,
+        -3.068232178569941e-08,
+        -3.490589654559645e-08,
+        8.272589174015271e-09,
+        8.348833740881925e-09,
+        -2.22806015217486e-09
+      ],
+      "gradient_inf_norm": 3.490589654559645e-08,
+      "iterations": 19,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "objective": 0.21229722549608085,
+      "optimizer_success": true,
+      "spec": {
+        "id": "C+area+context",
+        "k": null,
+        "kind": "C+area+context"
+      },
+      "status": 0,
+      "transforms": [
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": 1.3851613030774161,
+          "name": "u",
+          "scale": 1.1088075472091086
+        },
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": 5.107525909142831,
+          "name": "v",
+          "scale": 0.8944756216954568
+        },
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": 7.1122814588615055,
+          "name": "u_times_v",
+          "scale": 5.954320743542783
+        },
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": -1.476876003698108,
+          "name": "log_Lb",
+          "scale": 0.9562374419291206
+        },
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": 0.011326375199978225,
+          "name": "relative_background_std",
+          "scale": 0.006311055494974924
+        },
+        {
+          "constant": false,
+          "kind": "indicator",
+          "mean": null,
+          "name": "is_bright",
+          "scale": null
+        },
+        {
+          "constant": false,
+          "kind": "indicator",
+          "mean": null,
+          "name": "is_ellipse_h",
+          "scale": null
+        },
+        {
+          "constant": false,
+          "kind": "indicator",
+          "mean": null,
+          "name": "is_ellipse_d",
+          "scale": null
+        }
+      ]
+    },
+    {
+      "coefficient_order": [
+        "intercept",
+        "log1p_SEMU"
+      ],
+      "coefficients": [
+        -0.2505018419456194,
+        2.7804097999175084
+      ],
+      "design_columns": 2,
+      "design_condition": 1.0000000000000004,
+      "design_condition_status": "finite",
+      "design_rank": 2,
+      "function_evaluations": 10,
+      "gradient": [
+        -1.408206836295972e-09,
+        -4.233106112166984e-09
+      ],
+      "gradient_inf_norm": 4.233106112166984e-09,
+      "iterations": 9,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "objective": 0.3059993270872376,
+      "optimizer_success": true,
+      "spec": {
+        "id": "SEMU-only_k0.2",
+        "k": 0.2,
+        "kind": "SEMU-only"
+      },
+      "status": 0,
+      "transforms": [
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": 1.0610171054201418,
+          "name": "log1p_SEMU",
+          "scale": 0.9544512026992256
+        }
+      ]
+    },
+    {
+      "coefficient_order": [
+        "intercept",
+        "log1p_SEMU"
+      ],
+      "coefficients": [
+        -0.3541915744735903,
+        2.704344454861968
+      ],
+      "design_columns": 2,
+      "design_condition": 1.0000000000000009,
+      "design_condition_status": "finite",
+      "design_rank": 2,
+      "function_evaluations": 10,
+      "gradient": [
+        1.3431172246440581e-09,
+        -5.648723554879664e-09
+      ],
+      "gradient_inf_norm": 5.648723554879664e-09,
+      "iterations": 9,
+      "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "objective": 0.30694917108784237,
+      "optimizer_success": true,
+      "spec": {
+        "id": "SEMU-only_k0.8",
+        "k": 0.8,
+        "kind": "SEMU-only"
+      },
+      "status": 0,
+      "transforms": [
+        {
+          "constant": false,
+          "kind": "continuous",
+          "mean": 1.301672282753179,
+          "name": "log1p_SEMU",
+          "scale": 1.0742114200655732
+        }
+      ]
+    }
+  ]
+}

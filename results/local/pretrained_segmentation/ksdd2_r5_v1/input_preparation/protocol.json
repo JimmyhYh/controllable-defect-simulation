@@ -1,0 +1,891 @@
+{
+  "schema": "pretrained-r5-fixed21-native-inputs-v1",
+  "implementation": {
+    "common.py": "5ad6354054764d0ac6508a1db7483f9e0f628df83eca255f41d4851ada2d48f5",
+    "data.py": "9a005ce88c3dcee6b8b3195b45caf699f2804803b35aa831bd6272f68024bed7"
+  },
+  "upstream": {
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/dependency_candidate.json": "f711f6e81b0ebbacf36d2976f34f0765fad65f92c31c56b8f4491ffd1d946522",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/protocol.json": "15a682b1d50339c8efbd4fe847328d8176ab0c1c512d8e73a61fb9a904e31c08",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/requirements-candidate.txt": "be515c1694a881f019f7f192ce7999749e57c65b2685b7a5bb65746315388bba",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/transaction.json": "5b3b1bf04ea3daea403b8210bd7e4659bd1842b8ce1fcd7be7bbcbdfde9c400e",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/verification.json": "90c2f4ba6bf636c5d675521ff20251b8ca19782c201224301c6f4faf622ff809",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/第1阶段静态来源与资源准备.md": "9c6c1edc4ed9bd640cb735506aeffe95bc6987159f4cf27f97001a37ac38f8ee",
+    "results/pretrained_segmentation/ksdd2_r5_v1/resource_preparation/complete.json": "7019c67a2155a6fc000c946b7b4ef88c9377c2626f187a6f4354cce0709e00ae",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_preparation_v1/binding.json": "119e081bb202ee20e9ea53ea331dafded08059898fe23fb0931095c20b68ff32",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_preparation_v1/requirements.lock": "ca8b664e0e797ed952350cabea3c96342fe59f3c6132133e4fc54c92d80a1184",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_preparation_v1/complete.json": "954adba522de25fac9b9ef006f8dc3cd8d0342423636b109ad0ae40ab45088c4",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/environment.json": "6eebf9595586fc5ecdf26f0714de78b1a7bf59c5975267c742541830cc43144f",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/offline_install.txt": "6fcbdd893de89cf260239feac059dd09b2cf2509d39419fa93438ef4cf29f3a5",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/transaction.json": "04b4ffe2d325d7cacefa1148803514af5e51ebf19492979bbf238b660c4a736c",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/verification.json": "a40186659d8b7098cf952fea926b17ddf098ad961c4c545eb70b91fef41f1a15",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/第2阶段独立环境与资源静态核验.md": "7400ffd98094fe01630b919748cc68138a00d98b004a527f3b62760523a09290",
+    "results/pretrained_segmentation/ksdd2_r5_v1/environment_v1/complete.json": "a34e351d6ee17f5006a714ba8568239998dc3c475ba2e9b7e47bf466900ade30",
+    "pretrained_segmentation/__init__.py": "7a521d581f519a0ca409d8ab1afa10a1c4c581ba5f34d00222027c0b7687cd78",
+    "pretrained_segmentation/resources.py": "8ea03cfc5c94fe76ec3bc3befc4b875e995468f7cd1710a26814f3d30521fe98",
+    "pretrained_segmentation/README.md": "a1a2f0274d4eed399b7ca96f8a9014aff5c8a59adaac13ce8c4586cafa962c71",
+    "data/fewshot_synthetic/ksdd2_v1/split.json": "b8c2fb376bfd04072baaaf173eb0fccb1ecc5f1339074a6829fe147d0b6210bf",
+    "results/fewshot_synthetic/ksdd2_v1/input/completion.json": "8c51dc5e9020e95f03fb84f486ce1d057bac6b60f7724c76fae6882ddf086f52",
+    "results/fewshot_synthetic/ksdd2_v1/input/input_protocol.json": "a1eb292009d5b14049d8952a4ac0a791e8858f001fecc4e06a5bffc593d19b56",
+    "results/fewshot_synthetic/ksdd2_v1/preparation/common_config.json": "006bea587745d295ab93f4c522eae2f465a4770c18a3a3ff50a34f6b4b57c430",
+    "results/fewshot_synthetic/ksdd2_v1/preparation/complete.json": "68f0ae791191dd9341b7ce572cadd80a15e297981410dda202c20569710812a4",
+    "results/fewshot_synthetic/ksdd2_v1/real_metrics_v1/complete.json": "b20bd02d02965919c22ab059e324fc7bdd47e4bb1438cd45ce3b409bbaddb538",
+    "results/fewshot_synthetic/ksdd2_v1/figures_day7_v1/complete.json": "fe44132413d476fcf1c11ac133670efc785afea385a54be42ea4d504bd7c1ea3",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_dtype_acceptance_verification_v1/complete.json": "7a2ea31332b2df196f8285039d57ebc0d74fe8c3a2d4120b60c39d0dccef60c4",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_dtype_acceptance_verification_v1/verification.json": "054e7dff8a585d7a7b6bc41d7204e80338241912bc34cffc0a0a0e05747860dd",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_dtype_acceptance_verification_v1/第4阶段训练侧评分与CPU验收结果.md": "58a65d5ded703ee046f4c2fc96525291fc447d71a356f468aa5a032d65fd7717",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_cls_bn_sensitivity_summary_v1/complete.json": "f69c4ddd81ab0bd2157a59d0da20dbf5e34af2a69f1192d411fcedbc2b45f6e0",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_cls_bn_sensitivity_summary_v1/summary.json": "6e979e206b55a70e57d204be91ad6c2d8950083335ed8aa30d6caadc4e295659",
+    "results/ssn_baseline/ksdd2_r5_v1/pilot_cls_bn_sensitivity_report_v1/分类BN统计来源敏感性诊断结果.md": "4ed62a9fad02861db493db00500548683f6fedf13f846739e8f7da899d6496ad",
+    "fewshot_synthetic/cli.py": "29b1fa05d1726e0d6204a59dcf3f63dd07fa32d8ff53f092fb2427add76e3bf6",
+    "fewshot_synthetic/common.py": "aca9bb9f6e0b82ecf2ca63dee964a0e8e812e0159235c38628226167e6336c0d",
+    "fewshot_synthetic/data.py": "13c00594134cb2b43d365e4e0f5abe6abd2f04afd2008297cee3d9b2131082be",
+    "fewshot_synthetic/formal_admission.py": "ea94a5386d224e81f8745c116a8cf353984d89673bdd3860ea7a57860e26a620",
+    "fewshot_synthetic/inference.py": "077d5a8cee5711401259e394671075d158a5ad27fe31062660281e12257bc54f",
+    "fewshot_synthetic/metrics.py": "a65281962dcce26e68c99234cd11c28d47c1713184486e05244c486825168948",
+    "fewshot_synthetic/model.py": "dc78d040c497ca2a85b54c528d6e80e64e73ccaae12e795f2463634891d03ffb",
+    "fewshot_synthetic/normal_calibration.py": "d0dccf5a6e869c5fc490a55f91cda5d663de70c853f55852ceb56877788e3a12",
+    "fewshot_synthetic/normal_calibration_assembly.py": "ecca6a2797058d120064ed212ab444b6fc4d282d3db0c846dcdd6dbe94578d6f",
+    "fewshot_synthetic/normal_calibration_continuation.py": "8339a100df56ea4b6898f847fe98b761d4f3f241cc12058bac188dcc3499cc7e",
+    "fewshot_synthetic/probe_retry.py": "471426a55e819b49eaa6317c012a612e64a4d3fd0ba227becc38c14111394cb6",
+    "fewshot_synthetic/probe_retry_metrics.py": "44704316ae83d6573fc821a6a4c7bb3cac4e39560637cd2c861acfc5ea330515",
+    "fewshot_synthetic/real_evaluation.py": "23f7298488f862789b4d62f6a8c0a25f8b907983587b00a4bdfb374d12a34eb2",
+    "fewshot_synthetic/real_evaluation_cache.py": "bb34322dea656c82a760b26b71a0faf12217977715975cb986cb83eed8e2e61d",
+    "fewshot_synthetic/real_figures.py": "88cebd075fc4456ebbacb36a4440c29d0d922c38e47f36ec3a5d94b9b6a597bb",
+    "fewshot_synthetic/real_metrics.py": "ac39b4f56eea00d3d9009cd6f2f34022ca778ad1072ab8f74dedede0fdef0878",
+    "fewshot_synthetic/sampling.py": "9c8befc2dc9fef9444aa007c7bcc9856d923f394d6bccf494edd35a64be5bc04",
+    "fewshot_synthetic/training.py": "6dffc9de345c4e4b209035c93802d128bebd1901a568c78e3bb72eb6629c4349",
+    "fewshot_synthetic/verification.py": "3cd176e4109fcc989b5b63d2f129c2084f3286f66b3d1a6fbabf9ae7269a690f",
+    "fewshot_synthetic/__init__.py": "854c1509045354f3ab4c1a923374c25610a6d6fada3bd258b345afd9884408eb",
+    "ssn_baseline/cls_bn_sensitivity.py": "83759fee386e6d860d5cadaea2dfa37d5311594e466fa62544682c634e95e6fa",
+    "ssn_baseline/cls_bn_sensitivity_cli.py": "780bd3eca8cf84e9f70addf73bf377388123267f33c8387cedead92866b1ed5e",
+    "ssn_baseline/contracts.py": "9d61d053ff2dac4f5b54c94e640b3decc98fe8337b0eeb37820ba9c1ee35884d",
+    "ssn_baseline/data.py": "90e9cbded0e499418de70e82db4c8927b3d864838bdbda482f6324414f8aeb9e",
+    "ssn_baseline/environment.py": "edeccdbdae3a6716dfd762d40d8188f6fbdef65e701077d294b409e67f8d3692",
+    "ssn_baseline/environment_continuation.py": "b1e9a80c268aaf26c5927301bb99ec4309edd8b3cb66354d4179afdb5de2bcc1",
+    "ssn_baseline/environment_module_bootstrap.py": "c3c925e1603a6646b844a452426cfa432436a623821804315b065dbe859d4350",
+    "ssn_baseline/model.py": "5e74d75a930a66bf24e9e89494a275707655b26f924cf92b9b32149501361d32",
+    "ssn_baseline/model_dtype_compat.py": "008220662eab5b16e4d894e221333dd93ba08a8e83f5107e17b87d4931e32c46",
+    "ssn_baseline/objective.py": "0475b20b05270ad941e8719ffde70050cb1647309aea79d871c916cd49616175",
+    "ssn_baseline/pilot.py": "082f2d75435af0152f314b539c1e241069711c49bc98969141167f02a2364edd",
+    "ssn_baseline/pilot_config.py": "52af666c6f5fbecf36118dbdc1bbbf478785f0c178a2063c894148c97fbf6295",
+    "ssn_baseline/pilot_dtype_compat.py": "60b20462df6d8ea3fa488729b29d99d93757c50eefa6a77807b1de76440e06ad",
+    "ssn_baseline/pilot_dtype_metrics.py": "f363cc5e21d818d50c53348b4146e599b4840d7e8dd3b39df602b8340f29c911",
+    "ssn_baseline/pilot_dtype_preparation.py": "46f8276f09bb52b01bef750e5cd021fd973841690f064da2abc5b45c55bc9c27",
+    "ssn_baseline/pilot_metrics.py": "c956e987316d467dba9a6f8ebf347d608191aa2f202d7f246c4e04ae3e6d1609",
+    "ssn_baseline/pilot_preparation.py": "401911ac7db04d3e7d54b25cb0a1f2b46b2953d3aa86971c7257eceb552fc17e",
+    "ssn_baseline/resources.py": "ea12cede1f61953f6066b5996f2acf6a4a06ada28968dbba6bb5ab5dfe19216d",
+    "ssn_baseline/static_preparation.py": "bce06c119e9d5863ed6ce90da0e088a29a1a0d6e24794f4d01b9e471cb4c034b",
+    "ssn_baseline/__init__.py": "6d444c5cccd575fe86617c749af64de203fbe349b36c307ca0b0e8f235eae140",
+    "ssn_baseline/core_v1/feature_extractor.py": "ce2f69b87fe29c774228afe88288309c6e5d2abe0b3761ae5bfee71986ce9111",
+    "ssn_baseline/core_v1/loss.py": "97b649b1fd3d5f68b32ba7f23ab514b4b5a7963df31ea7ab43a36eaf0ad6c586",
+    "ssn_baseline/core_v1/perlin_noise.py": "529e1fde5a6d5d46e81eab59d3648d50473f7ebbe03bdbaf9e35470c72d3e7d2",
+    "ssn_baseline/core_v1/supersimplenet.py": "1b7910eb5236aef9b2f2e28367f7bb700cd5de7d1bc08200a44f6d85072eb565",
+    "ssn_baseline/core_v1/__init__.py": "d45e142d3bbcfc04aec7ad495aa38612c1ef528344b15f46175f10ae5ca892e2",
+    "ssn_baseline/core_v1_dtype_compat/feature_extractor.py": "4affa4b13df7b22e04298e764dd2ca5347f85c222b2a7926bfbb3ff8bb43fb7b",
+    "ssn_baseline/core_v1_dtype_compat/loss.py": "97b649b1fd3d5f68b32ba7f23ab514b4b5a7963df31ea7ab43a36eaf0ad6c586",
+    "ssn_baseline/core_v1_dtype_compat/perlin_noise.py": "529e1fde5a6d5d46e81eab59d3648d50473f7ebbe03bdbaf9e35470c72d3e7d2",
+    "ssn_baseline/core_v1_dtype_compat/supersimplenet.py": "1b7910eb5236aef9b2f2e28367f7bb700cd5de7d1bc08200a44f6d85072eb565",
+    "ssn_baseline/core_v1_dtype_compat/__init__.py": "d45e142d3bbcfc04aec7ad495aa38612c1ef528344b15f46175f10ae5ca892e2",
+    "controlled_generation/render.py": "c948a8001f562a31c41404deed164f8ae64617989bc76a13239481b7fac37fb1",
+    "controlled_generation/geometry.py": "22d206fa7d28ffef92deef6b507da997d4c6023644e26b5bbc378f59d715217b",
+    "vendor/DRAEM/model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+    "localization_training.py": "0b7533a548d5481ed4da65bf5c086830fcd2d93ab0081c0d758b96f3c0e53cee",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/__init__.py": "622b944ad2fab4f89e53fb84458eaa68327b41caa6140f906b19258a86f4da92",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/__version__.py": "2c12b8ea17aeb6f9f72a6b02aca218bbc4508a46df9e365a8f6c45ad769e0b34",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/__init__.py": "d389af39cc1e82258889c2eff1dec1237d9dfeeacbf68b98cb9075cf14775165",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/heads.py": "f64fb739a97278118caf4f680171493977414108b4de8b3e99ca5331a8d54cf7",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/hub_mixin.py": "dad10cb5e999e42334d1c3efb7e02c11044836b201c950a1121fee8711e188f2",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/initialization.py": "02276b436676b13b57b69c0cea63b9f005bd904c32877855825f0082cc74e8e6",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/model.py": "0bb580275f87bd3691a6eb68eb29db7fd7bbf6e74c2e350b9164b1d387493c41",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/modules.py": "2bb4ab52ba162bf96b6c07e50e0d86c9e3c7b0eea585cc444c77dd243cecea11",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/base/utils.py": "308d76faa16daecdecd80af2abdbfa1b4f954aa8303f0e74b58fde9e1b9c4028",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/decoders/unet/__init__.py": "878db8dd3203b05e6b16317a6c44faed071a129d0b0d1ee0828baff71321cd9f",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/decoders/unet/decoder.py": "02d75d28d371e8cf471b37826808e36fe09c4c78f4174c6a987946b4a49663c7",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/decoders/unet/model.py": "a9a8e5f24725f86da8f4a09902aee0cf67f3349aa32e1e32c49ecc8f3856ba33",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/encoders/__init__.py": "a45880f7e0f47a3b052e39aeb48d0a4f4e57f3146e89117ee9e57ab76c86ca52",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/encoders/_base.py": "be035ccbeb2559b580de37aaa0ac4be99973142ecd59acf00c25cc9a557dbed0",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/encoders/_preprocessing.py": "6417d9fb742d8edb1f88021268d49676a827548363208e51bb974020c4af8feb",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/encoders/_utils.py": "e1b6d30321dfbe5ad2eb03667186fa30f0e6393b1b33cbe823caab9aaf94ee9b",
+    ".venv-pretrained-seg/Lib/site-packages/segmentation_models_pytorch/encoders/resnet.py": "a70cfc5a8840656aef485b557adc2eb23905cbc16ebafe8e16d967fb6fcbadc0",
+    "models/pretrained_segmentation/resources_v1/complete.json": "6f7bd6a3be615cb23cdef9cae2302dd610900cff3f6b72e792cc9cdf22913218",
+    "models/pretrained_segmentation/resources_v1/safetensors_header.json": "ee1ac104d9b86f2e7cb5b00e43f603adde42a20aa7dcbdf97303566ab4ffe10a",
+    "models/pretrained_segmentation/resources_v1/encoder/config.json": "01bf2cf24eb29b405c28c159f46ceda92c098ab85868be88fb100967db47166e",
+    "results/fewshot_synthetic/ksdd2_v1/input/export_inventory.json": "da1dc019307841e24a07f565627808ecdb4ea4d0512e4ae9e5ad9ad4f1221ac8",
+    ".venv-pretrained-seg/pyvenv.cfg": "6c39ce7902a0338bb6a5d5de2720087f80f637883ad5a66cd59364c4f12f957c",
+    ".venv-pretrained-seg/Scripts/python.exe": "137c474a645a9471ab3a369084e7cd573cd8b7ff8f81cb85363fffdf5904106c",
+    ".venv-pretrained-seg/Lib/site-packages/torch/nn/modules/batchnorm.py": "890bea2b4a462de409aefe9e4199bdc8ff945d1457795a2cf13a4e49973bd8bb"
+  },
+  "R5": [
+    "11670",
+    "11884",
+    "12070",
+    "12245",
+    "12303"
+  ],
+  "N16": [
+    "10056",
+    "10149",
+    "10326",
+    "10425",
+    "10468",
+    "10481",
+    "10538",
+    "10548",
+    "10842",
+    "10880",
+    "11145",
+    "11311",
+    "12024",
+    "12025",
+    "12126",
+    "12206"
+  ],
+  "items": [
+    {
+      "id": "11670",
+      "kind": "real",
+      "image": "train/11670.png",
+      "mask": "train/11670_GT.png",
+      "source_sha256": {
+        "image": "5a2a303de5cb170f69e2b9ea429664e59ce7133eed58dac31cb040b4866950f0",
+        "mask": "33520a3ad36668dbe1d5887b887f46d0f6f67705f2b11b6a49307b97189cb288"
+      },
+      "width": 227,
+      "height": 636,
+      "y": 128,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 5416
+        },
+        {
+          "y": 256,
+          "positive_pixels": 6006
+        },
+        {
+          "y": 380,
+          "positive_pixels": 864
+        }
+      ],
+      "cache": "windows/00_11670.npz",
+      "valid_pixels": 58112,
+      "positive_pixels": 5416
+    },
+    {
+      "id": "11884",
+      "kind": "real",
+      "image": "train/11884.png",
+      "mask": "train/11884_GT.png",
+      "source_sha256": {
+        "image": "fdb14724493eb2b9b613c661d9367e89fd92e38737b575af245c5e3a5a179212",
+        "mask": "3ccb1bd88ebc7301cc641f4145fbd4d2e7862ed812281e15147a33a8f467d994"
+      },
+      "width": 231,
+      "height": 633,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 1480
+        },
+        {
+          "y": 128,
+          "positive_pixels": 1480
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 377,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/01_11884.npz",
+      "valid_pixels": 59136,
+      "positive_pixels": 1480
+    },
+    {
+      "id": "12070",
+      "kind": "real",
+      "image": "train/12070.png",
+      "mask": "train/12070_GT.png",
+      "source_sha256": {
+        "image": "531257067d6d8625410535bc574e19b27494a0e6bd2820f65d9f7e94485f4eaa",
+        "mask": "218804fa5d7f466159ef6db3857bcd29936b59f0b77d7462de3fbeb91671490b"
+      },
+      "width": 230,
+      "height": 640,
+      "y": 128,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 964
+        },
+        {
+          "y": 256,
+          "positive_pixels": 964
+        },
+        {
+          "y": 384,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/02_12070.npz",
+      "valid_pixels": 58880,
+      "positive_pixels": 964
+    },
+    {
+      "id": "12245",
+      "kind": "real",
+      "image": "train/12245.png",
+      "mask": "train/12245_GT.png",
+      "source_sha256": {
+        "image": "6a12b2073d12eb4102c84366673e4e032e31e44d5b0f00364f5a2cc6b53e59e6",
+        "mask": "f6131894b1cc317848ebab98b9837c7d302a2ba8de3fae66bcab660dd109d8ed"
+      },
+      "width": 230,
+      "height": 637,
+      "y": 381,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 381,
+          "positive_pixels": 3570
+        }
+      ],
+      "cache": "windows/03_12245.npz",
+      "valid_pixels": 58880,
+      "positive_pixels": 3570
+    },
+    {
+      "id": "12303",
+      "kind": "real",
+      "image": "train/12303.png",
+      "mask": "train/12303_GT.png",
+      "source_sha256": {
+        "image": "c6ac7b4c442d9a41a744d4167cff48c0cd01938590472e3841c26f7cd21da8ca",
+        "mask": "8c4cfdd9ade69ab908c18ff270962dc0572141a439a890a531d1821e018c75b4"
+      },
+      "width": 232,
+      "height": 640,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 13052
+        },
+        {
+          "y": 128,
+          "positive_pixels": 7621
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 384,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/04_12303.npz",
+      "valid_pixels": 59392,
+      "positive_pixels": 13052
+    },
+    {
+      "id": "10056",
+      "kind": "normal",
+      "image": "train/10056.png",
+      "mask": "train/10056_GT.png",
+      "source_sha256": {
+        "image": "8a503eb5516abf21a1e9196ab90d10a01cf18a38d344c581a8748deda72d53a8",
+        "mask": "10bef5ac45e40cf34ef4eb4ad5a53ce177d3c60d858ca16bac52054f67aa0410"
+      },
+      "width": 230,
+      "height": 609,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 353,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/05_10056.npz",
+      "valid_pixels": 58880,
+      "positive_pixels": 0
+    },
+    {
+      "id": "10149",
+      "kind": "normal",
+      "image": "train/10149.png",
+      "mask": "train/10149_GT.png",
+      "source_sha256": {
+        "image": "07373fafc1713962bd7a23aeee163e2d6def40de403b38939f4817c84f8401e7",
+        "mask": "daafb43a4af358605497bfa34f5d942037d7c4460fd8afae53dc571b9fdff6f9"
+      },
+      "width": 228,
+      "height": 649,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 384,
+          "positive_pixels": 0
+        },
+        {
+          "y": 393,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/06_10149.npz",
+      "valid_pixels": 58368,
+      "positive_pixels": 0
+    },
+    {
+      "id": "10326",
+      "kind": "normal",
+      "image": "train/10326.png",
+      "mask": "train/10326_GT.png",
+      "source_sha256": {
+        "image": "c16e60e7e80d337e133594d218418c6d3afd9394444d250a2efc7c0606e53870",
+        "mask": "240841668e83e16dd06574811dc4157e7c8a463feda48b51768d8b4b754584b4"
+      },
+      "width": 230,
+      "height": 633,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 377,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/07_10326.npz",
+      "valid_pixels": 58880,
+      "positive_pixels": 0
+    },
+    {
+      "id": "10425",
+      "kind": "normal",
+      "image": "train/10425.png",
+      "mask": "train/10425_GT.png",
+      "source_sha256": {
+        "image": "68521c6db9cc1c18d260a7825588b120e751ff6141ac284d9d5763928573eed4",
+        "mask": "14b26bc616a4938b63b62c92abfe585c0de945909c66f7dbdc9f2667ce08c2b7"
+      },
+      "width": 227,
+      "height": 638,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 382,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/08_10425.npz",
+      "valid_pixels": 58112,
+      "positive_pixels": 0
+    },
+    {
+      "id": "10468",
+      "kind": "normal",
+      "image": "train/10468.png",
+      "mask": "train/10468_GT.png",
+      "source_sha256": {
+        "image": "fa790052cef441f7b52ca48bf57e8bb935f22fd634f78501a1c5de476a4093ee",
+        "mask": "db2444cf35b6f0845d5648e5a3b0f9940f71ed3da901de534e6cce90c0b7ad86"
+      },
+      "width": 233,
+      "height": 638,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 382,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/09_10468.npz",
+      "valid_pixels": 59648,
+      "positive_pixels": 0
+    },
+    {
+      "id": "10481",
+      "kind": "normal",
+      "image": "train/10481.png",
+      "mask": "train/10481_GT.png",
+      "source_sha256": {
+        "image": "3511c58c6f916a0a411d19bbf40cf3c1205a28e5f89ffe1a18bb7285f923f667",
+        "mask": "db29d4d7d4f1d6d8d453491faacc45d99535b35b211dcd1970031cb16a31a679"
+      },
+      "width": 232,
+      "height": 639,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 383,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/10_10481.npz",
+      "valid_pixels": 59392,
+      "positive_pixels": 0
+    },
+    {
+      "id": "10538",
+      "kind": "normal",
+      "image": "train/10538.png",
+      "mask": "train/10538_GT.png",
+      "source_sha256": {
+        "image": "f575d9a9b4b893916cbd28b8378051e24a7ab2bf18aedb51060452b259ce393e",
+        "mask": "94efa634a18f4a9db9a18024d8019bafb3e946c59d9c3ea3cf105ad3b07d2c1a"
+      },
+      "width": 234,
+      "height": 639,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 383,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/11_10538.npz",
+      "valid_pixels": 59904,
+      "positive_pixels": 0
+    },
+    {
+      "id": "10548",
+      "kind": "normal",
+      "image": "train/10548.png",
+      "mask": "train/10548_GT.png",
+      "source_sha256": {
+        "image": "3794b313086551312e3850ec542d3a0efb8b73c75009904c579812e197fe9256",
+        "mask": "674aa5a002f6d044dfcaf3f17c8a279d5e6eabcae8dac79ea4b0b55e5b144e21"
+      },
+      "width": 230,
+      "height": 636,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 380,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/12_10548.npz",
+      "valid_pixels": 58880,
+      "positive_pixels": 0
+    },
+    {
+      "id": "10842",
+      "kind": "normal",
+      "image": "train/10842.png",
+      "mask": "train/10842_GT.png",
+      "source_sha256": {
+        "image": "427fbec03df05e65a2eb7cc47e77505817603be6860c47a2f06cc704a7439964",
+        "mask": "febdace210b206eea777e7ae842c76f448a538651e5c45cd6275cfe0fe55c78c"
+      },
+      "width": 223,
+      "height": 631,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 375,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/13_10842.npz",
+      "valid_pixels": 57088,
+      "positive_pixels": 0
+    },
+    {
+      "id": "10880",
+      "kind": "normal",
+      "image": "train/10880.png",
+      "mask": "train/10880_GT.png",
+      "source_sha256": {
+        "image": "74217c82d0432502c5c35d9870c74aefe91cb09849ae34c5e913abb0563d6dfd",
+        "mask": "0e94140aa42c9ac2778edc90fc7434b09f0ca773abacc2ec365e06cba28b69de"
+      },
+      "width": 225,
+      "height": 634,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 378,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/14_10880.npz",
+      "valid_pixels": 57600,
+      "positive_pixels": 0
+    },
+    {
+      "id": "11145",
+      "kind": "normal",
+      "image": "train/11145.png",
+      "mask": "train/11145_GT.png",
+      "source_sha256": {
+        "image": "afe4c9770334ec842c20768a6f1e47a528237a738bcb1c038f96bfa1d38c392a",
+        "mask": "0a7ce8e68da333378255bfdef71aaf3c24f070684ffd59f1944360765a02b4ee"
+      },
+      "width": 227,
+      "height": 634,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 378,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/15_11145.npz",
+      "valid_pixels": 58112,
+      "positive_pixels": 0
+    },
+    {
+      "id": "11311",
+      "kind": "normal",
+      "image": "train/11311.png",
+      "mask": "train/11311_GT.png",
+      "source_sha256": {
+        "image": "a7d619b3ad541a16dfbfde02145ce4f6240d94aa411b249e8e499e47f7dacbb7",
+        "mask": "ad656ede9db6892cba608429359a7770465c0c7aace369949e72704862a72c27"
+      },
+      "width": 233,
+      "height": 641,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 384,
+          "positive_pixels": 0
+        },
+        {
+          "y": 385,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/16_11311.npz",
+      "valid_pixels": 59648,
+      "positive_pixels": 0
+    },
+    {
+      "id": "12024",
+      "kind": "normal",
+      "image": "train/12024.png",
+      "mask": "train/12024_GT.png",
+      "source_sha256": {
+        "image": "5ec6c312f7cf81992e29a1144d97078c485a01e1aebb4d04220d31009cf1af82",
+        "mask": "e8b2305a30e4751becc28dbd7141813f9e968d316b2b6535df7c00a52209816c"
+      },
+      "width": 225,
+      "height": 638,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 382,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/17_12024.npz",
+      "valid_pixels": 57600,
+      "positive_pixels": 0
+    },
+    {
+      "id": "12025",
+      "kind": "normal",
+      "image": "train/12025.png",
+      "mask": "train/12025_GT.png",
+      "source_sha256": {
+        "image": "c953c083e3a86ce9d17cf9e6eb0fee643bef317a39c55412182c8a0acb34ad33",
+        "mask": "14ff617340fcaff497d5e3c5a2aa83cb4e688eb53e0dd583c9c7a692b1e7ad61"
+      },
+      "width": 205,
+      "height": 641,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 384,
+          "positive_pixels": 0
+        },
+        {
+          "y": 385,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/18_12025.npz",
+      "valid_pixels": 52480,
+      "positive_pixels": 0
+    },
+    {
+      "id": "12126",
+      "kind": "normal",
+      "image": "train/12126.png",
+      "mask": "train/12126_GT.png",
+      "source_sha256": {
+        "image": "dc2e03ad72d642dd1051b642e8c5c136b931ca5ab59101f0866fd26454e1ab33",
+        "mask": "ed64be724a7145d7b08a5b63a4c21c0354233d2796c374ba8b9a7409eab812ef"
+      },
+      "width": 230,
+      "height": 640,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 384,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/19_12126.npz",
+      "valid_pixels": 58880,
+      "positive_pixels": 0
+    },
+    {
+      "id": "12206",
+      "kind": "normal",
+      "image": "train/12206.png",
+      "mask": "train/12206_GT.png",
+      "source_sha256": {
+        "image": "9704fd576db883db8f9baf598011495cb7b387847a87364620e66037e89e69b9",
+        "mask": "17a59904152668fae618496a63b13895ee44ee585e4c21430af0b308d273ccea"
+      },
+      "width": 227,
+      "height": 638,
+      "y": 0,
+      "all_legal_windows": [
+        {
+          "y": 0,
+          "positive_pixels": 0
+        },
+        {
+          "y": 128,
+          "positive_pixels": 0
+        },
+        {
+          "y": 256,
+          "positive_pixels": 0
+        },
+        {
+          "y": 382,
+          "positive_pixels": 0
+        }
+      ],
+      "cache": "windows/20_12206.npz",
+      "valid_pixels": 58112,
+      "positive_pixels": 0
+    }
+  ],
+  "valid_pixels": 1225984,
+  "positive_pixels": 24482,
+  "normalization": {
+    "mean": [
+      0.48500001430511475,
+      0.4560000002384186,
+      0.4059999883174896
+    ],
+    "std": [
+      0.2290000021457672,
+      0.2240000069141388,
+      0.22499999403953552
+    ]
+  },
+  "source_RGB_decodes": 21,
+  "source_GT_decodes": 21,
+  "other_raw_inputs_decoded": 0,
+  "selection": "R first nonempty legal window; N first window; no augmentation/synthesis/resize/contrast stretch",
+  "visual_review": "required separately in pilot preparation; numerical input completion is not pilot readiness"
+}

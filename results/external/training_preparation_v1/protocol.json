@@ -1,0 +1,1058 @@
+{
+  "schema": "pretrained-synthetic-paired-training-v1",
+  "implementation": {
+    "training.py": "d1e65cfa60d294615998b26383c121e70fb7d79141be08a45cf8700955c7f48b",
+    "training_data.py": "ee50fedb99fa0c021caceeb60f0e57594d1b52cc735ffec35a54c1c3a644d000",
+    "training_runtime.py": "22b8fd94c8832c3e096c021e62f1f6d4dded39c51fc0de4841d6ed046cc1311b",
+    "README_training.md": "1f4d429441d4658524937a0acd191ff19b01c5ac352c87fd4a9f654ddfe4a497"
+  },
+  "plan_contract": {
+    "path": "D:\\华兴源创\\计划\\预训练单头分割可控合成配对实验执行方案.md",
+    "scientific_sections_1_and_4_sha256": "34b46480ff3a408470abd7c304688bc38f835ef8c85488a77003b3ff5aa94ba7",
+    "large_output_root": "E:\\华兴源创公开实验\\pretrained_synthetic_pairing\\ksdd2_r5_v1",
+    "stage1_output": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\pretrained_synthetic_pairing\\ksdd2_r5_v1\\resource_preparation_v1",
+    "progress_sections_mutable": true
+  },
+  "inputs_complete_sha256": "f0da7192dac3f5c6a2db0ffd1d037cc844377a5e0945debe3684634623deb417",
+  "inputs_implementation": {
+    "inputs.py": "5eeef0c3e253339374a7427a93280b6e640378eb078fbf9448045b6acfbe4641",
+    "README_inputs.md": "86f97a3e210594e937f3c7eb4633531c82225de3e8d08e19f04d8e7403d918e6"
+  },
+  "data_seed": 2026102300,
+  "seeds": [
+    2026102301,
+    2026102302,
+    2026102303
+  ],
+  "order": [
+    [
+      "A",
+      2026102301
+    ],
+    [
+      "B",
+      2026102301
+    ],
+    [
+      "A",
+      2026102302
+    ],
+    [
+      "B",
+      2026102302
+    ],
+    [
+      "A",
+      2026102303
+    ],
+    [
+      "B",
+      2026102303
+    ]
+  ],
+  "steps": 10000,
+  "checkpoint_steps": [
+    1000,
+    2000,
+    3000,
+    4000,
+    5000,
+    6000,
+    7000,
+    8000,
+    9000,
+    10000
+  ],
+  "resource_stop_interval": 100,
+  "model_function": "pretrained_segmentation.model.build_model; no old globals changed",
+  "model_compatibility": {
+    "original_descriptors": {
+      "bn1.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "bn1.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "bn1.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "bn1.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "conv1.weight": {
+        "shape": [
+          64,
+          3,
+          7,
+          7
+        ],
+        "dtype": "F32"
+      },
+      "fc.bias": {
+        "shape": [
+          1000
+        ],
+        "dtype": "F32"
+      },
+      "fc.weight": {
+        "shape": [
+          1000,
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn1.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.bn2.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.conv1.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer1.0.conv2.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn1.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.bias": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.running_mean": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.running_var": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.bn2.weight": {
+        "shape": [
+          64
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.conv1.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer1.1.conv2.weight": {
+        "shape": [
+          64,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn1.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.bn2.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.conv1.weight": {
+        "shape": [
+          128,
+          64,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.conv2.weight": {
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.0.weight": {
+        "shape": [
+          128,
+          64,
+          1,
+          1
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.0.downsample.1.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn1.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.bias": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.running_mean": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.running_var": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.bn2.weight": {
+        "shape": [
+          128
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.conv1.weight": {
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer2.1.conv2.weight": {
+        "shape": [
+          128,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn1.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.bn2.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.conv1.weight": {
+        "shape": [
+          256,
+          128,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.conv2.weight": {
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.0.weight": {
+        "shape": [
+          256,
+          128,
+          1,
+          1
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.0.downsample.1.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn1.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.bias": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.running_mean": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.running_var": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.bn2.weight": {
+        "shape": [
+          256
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.conv1.weight": {
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer3.1.conv2.weight": {
+        "shape": [
+          256,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn1.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.bn2.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.conv1.weight": {
+        "shape": [
+          512,
+          256,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.conv2.weight": {
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.0.weight": {
+        "shape": [
+          512,
+          256,
+          1,
+          1
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.0.downsample.1.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn1.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.bias": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.running_mean": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.running_var": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.bn2.weight": {
+        "shape": [
+          512
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.conv1.weight": {
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      },
+      "layer4.1.conv2.weight": {
+        "shape": [
+          512,
+          512,
+          3,
+          3
+        ],
+        "dtype": "F32"
+      }
+    },
+    "remove_exact_keys": [
+      "fc.bias",
+      "fc.weight"
+    ],
+    "add_exact_zero_int64_scalar_keys": [
+      "bn1.num_batches_tracked",
+      "layer1.0.bn1.num_batches_tracked",
+      "layer1.0.bn2.num_batches_tracked",
+      "layer1.1.bn1.num_batches_tracked",
+      "layer1.1.bn2.num_batches_tracked",
+      "layer2.0.bn1.num_batches_tracked",
+      "layer2.0.bn2.num_batches_tracked",
+      "layer2.0.downsample.1.num_batches_tracked",
+      "layer2.1.bn1.num_batches_tracked",
+      "layer2.1.bn2.num_batches_tracked",
+      "layer3.0.bn1.num_batches_tracked",
+      "layer3.0.bn2.num_batches_tracked",
+      "layer3.0.downsample.1.num_batches_tracked",
+      "layer3.1.bn1.num_batches_tracked",
+      "layer3.1.bn2.num_batches_tracked",
+      "layer4.0.bn1.num_batches_tracked",
+      "layer4.0.bn2.num_batches_tracked",
+      "layer4.0.downsample.1.num_batches_tracked",
+      "layer4.1.bn1.num_batches_tracked",
+      "layer4.1.bn2.num_batches_tracked"
+    ],
+    "BN_prefixes": [
+      "bn1.",
+      "layer1.0.bn1.",
+      "layer1.0.bn2.",
+      "layer1.1.bn1.",
+      "layer1.1.bn2.",
+      "layer2.0.bn1.",
+      "layer2.0.bn2.",
+      "layer2.0.downsample.1.",
+      "layer2.1.bn1.",
+      "layer2.1.bn2.",
+      "layer3.0.bn1.",
+      "layer3.0.bn2.",
+      "layer3.0.downsample.1.",
+      "layer3.1.bn1.",
+      "layer3.1.bn2.",
+      "layer4.0.bn1.",
+      "layer4.0.bn2.",
+      "layer4.0.downsample.1.",
+      "layer4.1.bn1.",
+      "layer4.1.bn2."
+    ],
+    "encoder_expected_keys": [
+      "bn1.bias",
+      "bn1.num_batches_tracked",
+      "bn1.running_mean",
+      "bn1.running_var",
+      "bn1.weight",
+      "conv1.weight",
+      "layer1.0.bn1.bias",
+      "layer1.0.bn1.num_batches_tracked",
+      "layer1.0.bn1.running_mean",
+      "layer1.0.bn1.running_var",
+      "layer1.0.bn1.weight",
+      "layer1.0.bn2.bias",
+      "layer1.0.bn2.num_batches_tracked",
+      "layer1.0.bn2.running_mean",
+      "layer1.0.bn2.running_var",
+      "layer1.0.bn2.weight",
+      "layer1.0.conv1.weight",
+      "layer1.0.conv2.weight",
+      "layer1.1.bn1.bias",
+      "layer1.1.bn1.num_batches_tracked",
+      "layer1.1.bn1.running_mean",
+      "layer1.1.bn1.running_var",
+      "layer1.1.bn1.weight",
+      "layer1.1.bn2.bias",
+      "layer1.1.bn2.num_batches_tracked",
+      "layer1.1.bn2.running_mean",
+      "layer1.1.bn2.running_var",
+      "layer1.1.bn2.weight",
+      "layer1.1.conv1.weight",
+      "layer1.1.conv2.weight",
+      "layer2.0.bn1.bias",
+      "layer2.0.bn1.num_batches_tracked",
+      "layer2.0.bn1.running_mean",
+      "layer2.0.bn1.running_var",
+      "layer2.0.bn1.weight",
+      "layer2.0.bn2.bias",
+      "layer2.0.bn2.num_batches_tracked",
+      "layer2.0.bn2.running_mean",
+      "layer2.0.bn2.running_var",
+      "layer2.0.bn2.weight",
+      "layer2.0.conv1.weight",
+      "layer2.0.conv2.weight",
+      "layer2.0.downsample.0.weight",
+      "layer2.0.downsample.1.bias",
+      "layer2.0.downsample.1.num_batches_tracked",
+      "layer2.0.downsample.1.running_mean",
+      "layer2.0.downsample.1.running_var",
+      "layer2.0.downsample.1.weight",
+      "layer2.1.bn1.bias",
+      "layer2.1.bn1.num_batches_tracked",
+      "layer2.1.bn1.running_mean",
+      "layer2.1.bn1.running_var",
+      "layer2.1.bn1.weight",
+      "layer2.1.bn2.bias",
+      "layer2.1.bn2.num_batches_tracked",
+      "layer2.1.bn2.running_mean",
+      "layer2.1.bn2.running_var",
+      "layer2.1.bn2.weight",
+      "layer2.1.conv1.weight",
+      "layer2.1.conv2.weight",
+      "layer3.0.bn1.bias",
+      "layer3.0.bn1.num_batches_tracked",
+      "layer3.0.bn1.running_mean",
+      "layer3.0.bn1.running_var",
+      "layer3.0.bn1.weight",
+      "layer3.0.bn2.bias",
+      "layer3.0.bn2.num_batches_tracked",
+      "layer3.0.bn2.running_mean",
+      "layer3.0.bn2.running_var",
+      "layer3.0.bn2.weight",
+      "layer3.0.conv1.weight",
+      "layer3.0.conv2.weight",
+      "layer3.0.downsample.0.weight",
+      "layer3.0.downsample.1.bias",
+      "layer3.0.downsample.1.num_batches_tracked",
+      "layer3.0.downsample.1.running_mean",
+      "layer3.0.downsample.1.running_var",
+      "layer3.0.downsample.1.weight",
+      "layer3.1.bn1.bias",
+      "layer3.1.bn1.num_batches_tracked",
+      "layer3.1.bn1.running_mean",
+      "layer3.1.bn1.running_var",
+      "layer3.1.bn1.weight",
+      "layer3.1.bn2.bias",
+      "layer3.1.bn2.num_batches_tracked",
+      "layer3.1.bn2.running_mean",
+      "layer3.1.bn2.running_var",
+      "layer3.1.bn2.weight",
+      "layer3.1.conv1.weight",
+      "layer3.1.conv2.weight",
+      "layer4.0.bn1.bias",
+      "layer4.0.bn1.num_batches_tracked",
+      "layer4.0.bn1.running_mean",
+      "layer4.0.bn1.running_var",
+      "layer4.0.bn1.weight",
+      "layer4.0.bn2.bias",
+      "layer4.0.bn2.num_batches_tracked",
+      "layer4.0.bn2.running_mean",
+      "layer4.0.bn2.running_var",
+      "layer4.0.bn2.weight",
+      "layer4.0.conv1.weight",
+      "layer4.0.conv2.weight",
+      "layer4.0.downsample.0.weight",
+      "layer4.0.downsample.1.bias",
+      "layer4.0.downsample.1.num_batches_tracked",
+      "layer4.0.downsample.1.running_mean",
+      "layer4.0.downsample.1.running_var",
+      "layer4.0.downsample.1.weight",
+      "layer4.1.bn1.bias",
+      "layer4.1.bn1.num_batches_tracked",
+      "layer4.1.bn1.running_mean",
+      "layer4.1.bn1.running_var",
+      "layer4.1.bn1.weight",
+      "layer4.1.bn2.bias",
+      "layer4.1.bn2.num_batches_tracked",
+      "layer4.1.bn2.running_mean",
+      "layer4.1.bn2.running_var",
+      "layer4.1.bn2.weight",
+      "layer4.1.conv1.weight",
+      "layer4.1.conv2.weight"
+    ],
+    "torch_BN_source_path": ".venv-pretrained-seg/Lib/site-packages/torch/nn/modules/batchnorm.py",
+    "torch_BN_source_sha256": "890bea2b4a462de409aefe9e4199bdc8ff945d1457795a2cf13a4e49973bd8bb",
+    "policy": "runtime explicit fc removal plus20 zero-int64 counters; strict remaining keys/shapes/dtypes; no generic strict=False",
+    "tensor_created_or_loaded": false,
+    "runtime_compatibility_verified": false
+  },
+  "model_and_loss": {
+    "Adam": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0
+    },
+    "loss": "valid-only unweighted CE mean plus DiceLoss=1-(2sum(p*y)+1)/(sum(p)+sum(y)+1); empty GT included",
+    "window": 256,
+    "batch": 1,
+    "workers": 0,
+    "precision": "FP32"
+  },
+  "initialization": "same generic ImageNet encoder plus fresh decoder/head per seed; no probe/formal weights",
+  "FP32": true,
+  "batch": 1,
+  "workers": 0,
+  "encoder_BN": "fixed buffers; affine trainable",
+  "decoder_GN": 8,
+  "optimizer": {
+    "encoder_lr": 1e-05,
+    "decoder_head_lr": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0
+  },
+  "loss": "valid-only unweighted CE + Dice; smooth1; empty normal target retained",
+  "schedule": {
+    "update_boundaries": {
+      "1": [
+        1e-05,
+        0.0001
+      ],
+      "8000": [
+        1e-05,
+        0.0001
+      ],
+      "8001": [
+        2e-06,
+        2e-05
+      ],
+      "9000": [
+        2e-06,
+        2e-05
+      ],
+      "9001": [
+        4e-07,
+        4e-06
+      ],
+      "10000": [
+        4e-07,
+        4e-06
+      ]
+    },
+    "resume_completed_boundaries": {
+      "0": [
+        1e-05,
+        0.0001
+      ],
+      "999": [
+        1e-05,
+        0.0001
+      ],
+      "1000": [
+        1e-05,
+        0.0001
+      ],
+      "7999": [
+        1e-05,
+        0.0001
+      ],
+      "8000": [
+        2e-06,
+        2e-05
+      ],
+      "8999": [
+        2e-06,
+        2e-05
+      ],
+      "9000": [
+        4e-07,
+        4e-06
+      ],
+      "9999": [
+        4e-07,
+        4e-06
+      ],
+      "10000": null
+    },
+    "all_10000_scalar_rates_sha256": "ce202cf372c82b75ad4e46920138880cd8e41f083ecd8cd1625a83f3aee630d2",
+    "optimizer_instantiated": false,
+    "GPU_resume_measured": false
+  },
+  "data_adapter": "independent training_data in model interpreter; hash every float32 image/target/valid against CPU freeze before use",
+  "CPU_guard_isolation": "frozen inputs identity/metadata helpers only in clean CPU child; independent verifier bypasses initial-space admission, not identities; no model-process inputs import or path monkeypatch",
+  "resource_policy": {
+    "initial_preparation_and_first_fresh_train": "full-round forecast",
+    "read_only_identity_verification": "RAM2/D2/E2GiB",
+    "other_train_or_explicit_restore": "RAM4.5/VRAM6/E20GiB",
+    "no_frozen_resource_entry_or_monkeypatch": true
+  },
+  "resource_scalar_verification": {
+    "hypothetical_only": true,
+    "conditions": {
+      "available_RAM_GiB": 7,
+      "D_free_GiB": 100,
+      "E_free_GiB": 120,
+      "GPU": {
+        "free_MiB": 7000
+      }
+    },
+    "initial_full_round_required_GiB": 135.6620738171041,
+    "admission": {
+      "fake_E120_readonly": true,
+      "fake_E120_later_train_or_restore": true,
+      "fake_E120_initial_full_round": false
+    },
+    "no_resource_training_probe": true
+  },
+  "forward_gate": {
+    "seed": 2026102301,
+    "inputs": 25,
+    "each_once": true,
+    "eval_inference_mode": true,
+    "optimizer": false,
+    "AP": false,
+    "unchanged_parameters_and_BN": true
+  },
+  "restore": "explicit latest own complete checkpoint only; own bound optimizer weights_only=True; no implicit restart; Ctrl+C no extra save",
+  "interpretation": "training composition changes R5, area and background exposure; E historically seen; exploratory only",
+  "manual_training_only": true,
+  "GPU_restore_measured": false,
+  "runtime_adapter_numerically_measured": false
+}

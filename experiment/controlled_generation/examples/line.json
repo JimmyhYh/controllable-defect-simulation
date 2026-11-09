@@ -1,0 +1,10 @@
+{
+  "kind": "line_like",
+  "shape": "line",
+  "units": "px256",
+  "center": [128, 128],
+  "length": 100,
+  "width": 4,
+  "angle_deg": 30,
+  "amplitude": 0.04
+}

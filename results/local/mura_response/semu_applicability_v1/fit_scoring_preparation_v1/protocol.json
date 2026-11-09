@@ -1,0 +1,2218 @@
+{
+  "CPU_postprocessing_only_later": {
+    "baseline": "one heatmap per background reused for all nine M_geo; not540 independent normal images",
+    "main_response": "H_joint = (native score > own tau) and first row-major heatmap argmax in fixed M_geo",
+    "measurement_domain": "all7560 requests retained; undefined/zero/weak states separate; no M_eff selection",
+    "not_a_causal_detection_or_segmentation_accuracy": true,
+    "paired": "score difference, fixed-M_geo max-response difference and baseline alarm/peak separately",
+    "tie_rule": "first flattened C-order index; never choose an in-region tied peak",
+    "zero_change": "retain315 zero-change requests, reuse baseline output; no defect FN interpretation"
+  },
+  "G1_BN": "49 stateless BN(22+27), empty buffers; frozen final10000-step double weights",
+  "GPU_peak_scope": "reset after CUDA admission before construction, all unique inputs; PyTorch counters not whole-device usage",
+  "actual_model_compatibility_speed_and_gpu_peaks_measured_this_stage": false,
+  "completed_cache_reuse": "strict complete inventory and all source/output identities; read-only verify only, no model/forward/calibration",
+  "denominators": {
+    "G1_author_placeholder_forwards_separate": 0,
+    "PatchCore_author_placeholder_forwards_separate": 1,
+    "all_references": 7620,
+    "backgrounds": 60,
+    "baseline_references": 60,
+    "new_input_forwards_per_model": 7305,
+    "new_input_forwards_two_models": 14610,
+    "nonzero_actual_change_requests": 7245,
+    "preparation_actual_model_input_forwards": 0,
+    "request_references": 7560,
+    "request_variants_are_not_independent_backgrounds": true,
+    "undefined_measurement_requests": 0,
+    "unique_float_RGB": 7305,
+    "unique_overlap_with_Q_F": 0,
+    "zero_actual_change_requests": 315
+  },
+  "fit_output": "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\mura_response\\semu_applicability_v1\\fit_scores_v1",
+  "frozen_dependency_implementation": {
+    "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\inference.py": "32eb1d45800fd56030a19d45a3108ec29316bcb1bbd805ab55d9cb8e1a09895b",
+    "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\inference_runtime.py": "59343c5b8c0d5a819b962cc89fcc4afd2939f99a24bca17470c932eaadf2c240"
+  },
+  "implementation": {
+    "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\fit_inference.py": "af72a578201e7359e309ccfaf1e5c107ae94ab05f294ca5e1af26748fa90dd99"
+  },
+  "input": "existing canonical HWC256x256x3 float32 C-contiguous [0,1]; no PNG, resizing, conversion or /255",
+  "input_order": "frozen unique_inputs rows: baselines first then first occurrence of requests",
+  "model_order": [
+    "PatchCore",
+    "G1"
+  ],
+  "no_detector_training_bank_fit_render_calibration_or_statistical_fit": true,
+  "normal_reuse": "same canonical RGB digest, fixed implementation/model/precision/state and saved tau identities; referenced normal record/heatmap must fully verify before use; no normal forward",
+  "prediction_reads": "RGB only; no M_geo, GT, residual or threshold parameter",
+  "preprocessing": {
+    "G1": {
+      "BN": "49 stateless BatchNorm2d,22 reconstruction+27 segmentation; empty buffers",
+      "heatmap": "raw anomaly-channel float32 softmax; no pooling, smoothing, stretching or resize",
+      "normalization": "none beyond float32/255",
+      "score": "max raw anomaly softmax over256x256",
+      "steps": 10000
+    },
+    "PatchCore": {
+      "construction": "local ImageNetV1 weights, retain author single-ones dimension probe/BN initialization; snapshot after load; never bank fit",
+      "embedding": 1024,
+      "heatmap": "author bilinear resize256 align_corners=False then scipy Gaussian sigma4; no extra postprocessing",
+      "layers": [
+        "layer2",
+        "layer3"
+      ],
+      "nn": 1,
+      "normalization": {
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      },
+      "patchsize": 3,
+      "score": "author maximum squared-L2 nearest-neighbour patch score",
+      "score_is_not_heatmap_max": true
+    }
+  },
+  "resources": {
+    "CPU_RAM_GiB": 2,
+    "GPU_start_RAM_GiB": 4.5,
+    "GPU_start_free_GiB": 4,
+    "free_D_GiB": 40
+  },
+  "runtime": "eval/FP32/batch1/workers0; threads4; TF32 and cudnn benchmark off; construction seed42",
+  "schema": "mura-fit-scoring-preparation-v1",
+  "source_binding": {
+    "denominators": {
+      "G1_author_placeholder_forwards_separate": 0,
+      "PatchCore_author_placeholder_forwards_separate": 1,
+      "all_references": 7620,
+      "backgrounds": 60,
+      "baseline_references": 60,
+      "new_input_forwards_per_model": 7305,
+      "new_input_forwards_two_models": 14610,
+      "nonzero_actual_change_requests": 7245,
+      "preparation_actual_model_input_forwards": 0,
+      "request_references": 7560,
+      "request_variants_are_not_independent_backgrounds": true,
+      "undefined_measurement_requests": 0,
+      "unique_float_RGB": 7305,
+      "unique_overlap_with_Q_F": 0,
+      "zero_actual_change_requests": 315
+    },
+    "design_sha256": "6be345e403ead05c809a736badd3e57135e96e740273c957864badf2a7c332fc",
+    "fit_metadata": {
+      "complete_sha256": "3db6a4c13ae5eee423149acc96b37ce27e7917cb9e346508c0a10a36ac76a593",
+      "fit_working_hashes": [
+        "c8320151fcd29f49b0b4740018274d4a97ed50305df52f84f921e923035ebf6b",
+        "9d4c8ed4b0bfa1203d84ed1dbc3d700345963adeb1eadbdcabc76f3dcdc228ac",
+        "d2c5703daa693403719f518fcb9060920507dbadb20941fc54a40d2740a9d53e",
+        "5e9bb24d70c38f1e250ebf9ac94024bc5accaf9c9ce57793c00bd1b34a545b3f",
+        "e6d47233c3f02e401344c2d8f65486c7035e4752ae066a9c870e456fc6928db1",
+        "4b2e86fe3d5c23a9970e2a22dd8500a814c0ccd6428ea4b23b6d2a236d733cba",
+        "2e853d2d97a9888b79c20336b523388b01f6335c7066c4213dfa6bbdf4e4152f",
+        "f69dbfdfc59273d1590310655f1635d2950a7278ac3344728203e5d5c348ed0b",
+        "d8e9eb70cb6b727a8a463ecad0fb977874ce138b81c415736727d080e93b2ebb",
+        "ccf3b77af88ae69e232463b87b436fe421eec3d4994b2edf18ed33d0779eaa2c",
+        "0261614a08282758e403d64f1d906772c3fe98a70e0b908a32639179ca6a00ad",
+        "1fc69f4ac8e908ca7b8d07a29f32dc252f79dbc15946959fc5aa7ce6169ab3aa",
+        "24ff4f9f6ba4177faf689e3bfab79f4a9559ef0dddeb6b867c512a1f949b2fdf",
+        "569a3f68923f4ea78b3b804c8a995dc0da337a63847a16bb64515a8ee303fdca",
+        "42897b38da5b522fecf9b879e6d943b58b02561bd5588ab15a5eb1b465ee78e2",
+        "85b72cf7ec4665bf82304a70670b0ee015241a67cc159ec17fe8e38f90da4ae7",
+        "186b0e5b4ab6e9ae9d531d5b01229dff5fc1a0879a5f2bae04a8038d13508e7d",
+        "36d3f1a2967a2dc3bcdd451d03a1073bf022cb80f413d6d915690ea8eceb77d2",
+        "1f64af5157c87209f6f0f131e001c1ee65ed0480e05e9cfd36a9a8ac1eab1084",
+        "74bcc24163f41cad5db9d050ba295e9e0457038e5c2b2004e81fb37f58c67154",
+        "78dce36797869cb3950e5173cab719cdc5ea4b3e60b9bbe8e429e84345642bc7",
+        "ac743410d5e15020a9bb0694eb2725838da15940cf451e1948ee8367e1eb1b0e",
+        "bcc344b07e6617fc14e97b602766500fae4a3f56eaf0c5b30e9af1a7bb8bbcc1",
+        "8b5d7400d9e202e423286575a404226058cf88bf9fa363282d5949939fc20ca7",
+        "7c54cea9c27fd9a6a00336eae296505338ff16b8051821a16c97730be303c6ef",
+        "e59645ee92c8f6c860c450999d0daa76fc0304d8e683994f59abd60642a31fff",
+        "e3c7a1e833c3d2535b33050e7a10d78c968ad6ec7c4e4e1e083f2a3ea0f3cc19",
+        "05c6c011517dca19208f7f5bd2c37b611999a9bbc4722c9f0111e37fd1586514",
+        "a48b670fed00a3b250069ba062aa5997ca0d521e7a53d6d58b2c2ce170c8acd8",
+        "903df94dfb335fc30575839c504198529e075eed7f986d83c197b1212a7c1481",
+        "0627474ca12c95f62c269ffee8712eae8fc374029eb1f4274bb5a8d19579a636",
+        "c77cfadd0d294106614e2737e6084db2a9f34604f35c0165d313c0309d6e6ef2",
+        "d75478de3f32a1b6bbe1d29de632ba725f332238a25e30931086d405f4004262",
+        "a497f56246dcc0dcb8386fcd366018057c5bc141f5ed9b17961346b274a40c41",
+        "96d85351a179ace09e2f469640c0d134373661bad7313ed3e3e06a10a8b52dc5",
+        "b0803dcd779b9ff955cb28cf562e707d02219bf52a8ddb76f9a7eb4a97dc366d",
+        "926279241a9a6407f3d90122068bdfcba3b068c62eef0b671f0b681bbb465054",
+        "6715b14e0db1bb145bed2eb286a9aac2ef25933e733a99517087b8e42ff7e510",
+        "05e27528929f692a7802f2b3c9b6729c47c3987e33bd49c06e0457c564d776c7",
+        "6fdabcbb2257f8f964c84050a6c0fefc9946ea52298f1a6f87f116610f4d39c4",
+        "9d93080170f0af5a8cd3fb6a2f9489e523ac576bd34f59cb23fbf30f18397ad1",
+        "2d7dc32468f09fcbb474cdfb0d29ceccb4ff651636061cd6bf0d14cee17e3cfc",
+        "8f1f0f230b1affcf40a40a94ff877f369da480eb4d5cede31ac4cdfe8e9a02ae",
+        "0de1558c20b9bc8ad4879930a97f9f2f400818e8c280aa8a2aa933fd83317183",
+        "5d8b206a9320ad4b339356188921428bf7ef1cd724644d45ce4306ae153be850",
+        "2ad39da0665aa0766e23b2759b37d168ffc34e1317244784faab894ed2749693",
+        "ec29365590dd42b934080d8755a11fdcbe19a0d6e95ef94dceaa80c0f0b54a32",
+        "9f04b4a5158b2cb3b89de02653c31ca3c7ea88a25511ee55b74b8f42e72035a8",
+        "86b78394b96731bf5ea8888fb451e93dca869d3f85e41b038c210bda4e6bb7c7",
+        "b0d6f63fdb8d093264d77f7fc6cbe709781a0936d23ef8aa43626d7c240762ea",
+        "96ba9336ce08ed3b796c25a83395448aa2356502079666b8e321193bdb7ecfb6",
+        "64831a84812a97754648c39b605da133fb0bae6330512128db48ce7637b006ff",
+        "9a6d32ef13ce81202959881b57ea15fa4b584eb76fde4d6f287161895229370a",
+        "8df21474f082876c1b1dbdfb789daf0c1d27bb7bed4385ef5804f87f8393d3ac",
+        "a33fb6f5d5e4c8505befa414a70c3b6d09499ae530ae2175467813dc52a4e16d",
+        "d8248026f02f5b4710faebb63c960bf817c18ce903d08b97d2b731217bc38005",
+        "7c05565018402a4ea9d5621ae94d11bae22288c6240348d7b764c07008053d55",
+        "1752f1c8b67b2e3216d962260466692c687783d3b7e36bb34b5faa636cfbbd97",
+        "a67897e340c08666e0d4fd50eaa9cebc2a262f0e971b2c19e8832ff8e9ce513d",
+        "9d938feabfe4e15a310018be7bc02051277f1bdb18533b6a7f1bf74466940be1"
+      ],
+      "independent_proof": {
+        "complete_sha256": "3db6a4c13ae5eee423149acc96b37ce27e7917cb9e346508c0a10a36ac76a593",
+        "cumulative_generation_evidence": {
+          "cumulative_original_decode_events": 221,
+          "cumulative_render_calls": 7560,
+          "cumulative_unique_source_paths": 220,
+          "historical_original_decodes": 1,
+          "historical_render_calls": 0,
+          "new_original_decodes": 220,
+          "new_render_calls": 7560,
+          "source_paths_are_not_proof_of_physical_independence": true
+        },
+        "current_invocation_boundary": {
+          "GT_or_probability_reads": 0,
+          "Q200_F100_D_hold60_decodes": 0,
+          "blocked_import_attempts": [],
+          "blocked_payload_attempts": [],
+          "calibration": 0,
+          "fit_decodes": 0,
+          "forbidden_modules_loaded": [],
+          "model_forwards": 0,
+          "old_training_decodes": 0,
+          "old_training_usage": "source and canonical working hash only",
+          "original_decodes": 0,
+          "original_file_opens": 0,
+          "original_paths_opened": 0,
+          "parameter_updates": 0,
+          "render_calls": 0,
+          "statistical_fits": 0
+        },
+        "frozen_files_verified": 14882,
+        "independent_verification_elapsed_seconds": 258.50172980000025,
+        "status": "FIT_INPUTS_IDENTITY_V2_CACHE_VERIFIED"
+      },
+      "inventory_stat_sha256": "4b86b0ade52f2fa4fd4adb97993ce778c7469b238573874602578c97422715ea",
+      "json_sha256": {
+        "coverage.json": "61dbe9c8a37112286677b944bb174e66de2aa9183d09acac67052a82c63201be",
+        "manifest.json": "a7810200aff65b0bb0aa08201197b4e4aec68a48d081517830d7fee4cb32d3b5",
+        "protocol.json": "c65a0356fb6b4046a5ed972f8fceb655d662fc4140bccfe47ee917dd72c81355",
+        "source_audit.json": "e4509311cce192d0021ce684bc394e4ca1af916427d9a262a0bd7de1c9791223",
+        "sources.json": "d2b2370370432f81254fcc05f206cdb6e00201fa419fbeedbdeaa7f1c72c3c81",
+        "started.json": "afc9b0aa42e1e9877f87b4c644e37d7d874120984d1bdb5db7f4e26e74b00ed3",
+        "unique_inputs.json": "edcf15fcdbc8ba801f0ad5cda3725c11fa6c68c6574846d4b54e417e179c87a5",
+        "verification.json": "9f65f325308cdc54429bdc74a0e8e1e61e50b5fa75d6fee583e56e15677f8bd3"
+      },
+      "old_training_working_hashes": [
+        "4809e3fb10e753f670519abdf32da5f84abc890fbb54d0aebb5fb9166556e22c",
+        "175d102c066bc3c6873d4eb9605a6d39da595874f4bb671732c0e0a77b5b0f63",
+        "3aad10d0349f36cc07f90158542b9f8cf16389759daab4dd9e5557bf73c107bd",
+        "e2306579333760e00494ec4b447c8dc8deecb4c83afeae7b4cc24a09f028e2a5",
+        "ab1f2ea5728d46b0d1fe1977754668d887338ddb64ce5ec257816a809306ced2",
+        "7d2dcf059b0eeee221f3ec6241144e4c4474b7734304fe69415159447eab2d64",
+        "9b14b908180fcf00fb0ff5645e63ea9c0b1c648c6e5f6bb4a53af44e0e68a6de",
+        "3cf28aa1ad981ea76a588adba9f3d3d863bbb6106fcda8c22ad44ecf10976708",
+        "cdf81a87b839df40f76d7dc282b42152109d7946d04eb991ae76c2ab772cd150",
+        "f87e94171e9cb77b1c869d9818f99dec374b54d43a4849f055dcbf0f5d5c467e",
+        "5d1032d3aaf38835442b9560c9f1ab05bd0af35d0c71da6fffb3078cff0231e3",
+        "461be7570fa597ba425e45a61e6d52149b59efa5da7f2269413642248cb64750",
+        "c88851d3ba92c7127bcebdc1265723fd3777ab7a3ffe28d937937fbeba98f7f3",
+        "a301edb99fc5f3678c3b6a2a64ccd2354331ce9fd95c31a5534e5175de26fc44",
+        "f3b7ab90eed1df242a64fcc4d5f234284a473d018561ab6e629fedcc30faa60d",
+        "2ee0b53c4ddd4f7d2e566933277f9c951c5d4549f4c2693145efd22863e0fec4",
+        "b1f3a0b3ce1742a48b0d55ad65196aba230bd776c2ab87b000bf6ac3d02b8ba1",
+        "d6c559922b3cad98b6e363194a07589012badf4bd29400083ae6d0ad98be608d",
+        "0df9d7f9dabf66f176e0de078f832d4410e92e5f7cd79a77cb7c30e8b8687a23",
+        "ee8ed7da2b8e9f2852d168e076ec7d9e609f446f2632aae4a59b25fdccfa2a22",
+        "308c3e1caffbec9da89da797e622b83152ccfbeeedcb97f03d90e54daac96eff",
+        "15ab3a1f762d01f7c045c13a7f6a23f73d2e491abfe9054b560bd5caec5ccf25",
+        "a245c7ec9aa0ceddd3816a7fe2fa3d3388e874219f42bd07b302841797a7278f",
+        "8b965a4ccba63541e8761b46966e160c9bae08bee88adeb4446f6cb60ac4ddfe",
+        "437dabb6b01e555dae4772335b0359605d2c490c795ae8e25a33807170ffd68c",
+        "a48d7f86d278903f8a9073ef36871e0a2b236e39500608d6d81ae04b13655c33",
+        "3344c3acf160e281a7b1256578fdfdeb4b6c85c819fcff6750ca0dd863a26465",
+        "9d341e139d2bade7e1725052da94aee009778c0130663163db8979680b64123b",
+        "a08a7391a1e2cbe768e5f1d92f0362d4db5323b696332fca7afff09b693c3da0",
+        "bee434bf8a07631147d8a640ec2d592ebefc7a20be7cc350c24551034e51726e",
+        "4dc460f73bc2145ebdbc4febb77015874bf122614f9a481abd3a35023d604032",
+        "c9883078fffa1a6999baeff5b2a67ebf804409209cf3d778f47e9a0446ec508f",
+        "247a088dc1187d32489cca8e5e5bdcd9e6beccdc98084ad23fdca1107bddd2cc",
+        "4149e9f688cf970e12209f7adf172c554b49af214444d7d44a74e8a195a24143",
+        "34812e0d473322734c2f8c0283c429ffbf94ae4d30f4cb1640ae68ce2a2db80e",
+        "004227407ad9e6c9438d9cda5b034f413742e8375a6bf75ac0771c93775d512c",
+        "e41acbecb92b3b8bd7e47179b23d9d8c6b8e9b95d2129a11a40018a93f447810",
+        "901c16fcbefb4ca197cfa989cc68d72654c50c8eaf2d7dabe48757d97d92ce94",
+        "08b3abb053a2a17c4a573734adbc105bae0e75a496feb4f4a5dc2ded9e269289",
+        "3d06729c306ad2841468325b16f3f1edc217a6d85ef62eefe916476d98ce4324",
+        "e27a3fcad2d03d3344d0286a4ff3807d159e91857594ccd5e654a8384e3b957d",
+        "1020fb211af03cc7333c39244d086d7ed1f78a6b2169eb2a2a045a5b519cb237",
+        "7f87011f6c81f097449d1845dcb434a7f72af81620b20d7d78f487422de63bc4",
+        "5ed83547f97f1b0bb946e4fe870b702fb6f18d5dcda5836afb64460ad52ee9b6",
+        "5c87b55707996e7f54b283f632d55685199c7a371e3c24753f5d8cbec76ba46b",
+        "bd92d9d668532bcb450d6e143c090c6623f6e3cd518af75721a37410ba617efb",
+        "8d0c61f49068c89c537b2f7ffe0f605de6926de460d5470a9d971abf6cdf5bc8",
+        "232fa947600520e113853f5ca0f5154b0d374c29f5347cb73692e4db87b2a89e",
+        "58c7ca874214084c34cb63913158d495f806aa800a260249a3bba913365d843d",
+        "396c1d6a1c7a4a9bfc783f38c84fd3c4574295d6bd70146f9bbff4fd08cd36c0",
+        "396cd2f8146b7d0fcc089ff5615563d477475139c1eb4e4fc00f76d23a169bb4",
+        "4f2f5c63ddc67e960b377f6dd4c068cb7f68eca62728f60f6dcea4de98070487",
+        "f012945760ca63636134cbf47dbf4f4269633c989d992f900715a47644447bfc",
+        "1e469bec00e9708160976d300de16a02398fa3a7aa724c91ade406a1c8534e24",
+        "93b9f71298cd5971d3a11de2609ee4c60d1aaaf725c2fa849f83704f7e0cce3a",
+        "d7e4f91ab0ae86d11f7fc65bc6c6f62e44dbc541fc6a9e6258f7286b7a9a21e5",
+        "58552684fbb361b1333905b663c6d20f031762fcb9ad4a64cea969e2e2ebacb5",
+        "a52b7b342ac2abb15d0cf762ee472a19d9651e4bbe1fa78a4e200bafb30b3abb",
+        "39588a3061eaba6a9a5544f1eacf2f756f6b28bf6ca8448f558bb39db5d63501",
+        "3df7d3405b63c136056759259e9f5c9c797a20aa327567b208fe4dfafebb1b2f",
+        "693264545a9ab0f611476f61a442e9a0a537fd64fd9645cfafe829f856bd7faa",
+        "3c97dff7953db6c0fd90350fe04c36bd6b481954929f51ca52d57511c95aaf91",
+        "7b0d1df8a20ef9ac8f0d46f13e712b322fc540025130bcbe8fc8d06876935046",
+        "e00c40e3906c9a14a9e94d02a5163beb526b16af452ce3212c0b2657850cf8f3",
+        "d648bfe935ebcc6b5270c55cdf35b8abfca729420201545be935b04a2d1b3cdb",
+        "e15c209a042bd04d134cc36dec1afae61f2e4a154de4a078a5b7f7650a1039bf",
+        "43cb16d9bc6d49ebe9e3ac86530d1e9dfeac5110a00f1b3bdf11a89633e7019d",
+        "d3cfd393490a9a75f469ff97e6e9b560dcae8415331a206958bedee5ed5df998",
+        "4d8bf361d39f7984d7b41884e9628c45055b468c24bda1f7586538e3673fdacb",
+        "a15432493f13b81afc403cc27352e81a01da0451c01b2a141b6736f1f3da2595",
+        "0ac6d1cb626bfc0ebb2277ea7ed84999111b08beb3920e1d7ec73fc955a519e6",
+        "cf669d8a76391a3dce6c2dfcfb2417f8efe1564f27a60d62362ad10bc7e573fe",
+        "7a32681dcd957262b822d4c7349c4b5e6e5e3262d64e75d2f64edb2c12bb8864",
+        "d323d5f4875bb32bbff6ba3cc3e0216a2e550e61e635db82a2e6461aecd2025b",
+        "87ee8d2166dacff3d3405785374d6a14296c2f926726229c05384eda9bf0229a",
+        "1394d79fa926c14853b349911f5558b612c13a064896728f2b4deb67fac03c45",
+        "cdc501a2e188aff4638a4f4ec8a8b9f79732bcae12f8482b8d7f61971906f469",
+        "fd853a41f077657106479d9a2ed5dbc73651761afcb48098d8be22fd066b273f",
+        "6c633f28ca48337af53252974417d5941dbfd3a31eaeace6db38944f1be63af9",
+        "acf76927fa83133cdaa843a10403988a007f92979688703626ea654376d54706",
+        "5e1368f752507fabbaa0c431cf049eebedac3f1f963d5a4e2513bbb11fb9b7fe",
+        "2e5a69384493afbbcffb8045eaf503276df9d41b37fc617bcaa27c87ffc09265",
+        "54378b7a9795d8a976319fccf158cf889dbab85b0fef66b9b21b743e294b982c",
+        "6c9c6d5989679e2a1b3fab347ba4183e91b760cbda6ddd899d0a4c860a350164",
+        "13229aae7d3562fd5009c4c841ade26eb50d130e6c680eb359f9dfa5e92811a5",
+        "8c7bed56bf880c7d79bb755b2abfc110bbce5dac4599738efe598236443aad3c",
+        "557da65b9b456df9c9947011b67508f3b46fe4c2e060aa3131b49562162f90f5",
+        "2add6d6c8488a70e743ed6fc342c3e7a4213f4b95e823070fbb024774e2fae04",
+        "67856c06282290a5f9affd5f595bb89d8dbd1339b0f500b23fdeb63c37c9f1ea",
+        "673acc41d9e1927122e86f833323eeb3596e67223b5a30a5441019078a001f55",
+        "21ce15cce49e0cf74e94db757df3e344b8075e56b97a030118019572a327837f",
+        "55a1770f314878a3a918b627db1f6465c8234648b892b9d483b4dcc17bc2f2f4",
+        "de030597fca6fcdd7d9ecee7eaa4575bb278783b7b6a90ec735bff752cb142de",
+        "f351c61b6cc4d06e3b183b5d1f40275fbaad1576f9dbfe3bfc4ab88c732f090f",
+        "31e4a83408cf3df9810f251f94988f12a3953c7641f0a639da7abf160291eb06",
+        "8c7781baaec7ce0d562a790218e8186ff941ea3dc6ada6c9f257cfe15c04162d",
+        "b74108197c53f50f0b2d39324067b56986ebe80f573072bfe34a478731153a94",
+        "0679778677cacb149bb2c457e4f7d25fc31e1b1f7981d8743d26a9859e3b31e5",
+        "7e6822893d3c0f0704835528a9acdde674562139e44fd9e1782cc286172634f7",
+        "29aedc3a03dd899539d2514fa3c032082d229b4da5dd855c813923ba9e89b772",
+        "01cc9e96f37f7f1785de1c6cc74ce9d19cd42efff3b95f01c5976eaff09c119f",
+        "93b41933d3e3a5d3ef948dc9d5c41f5668fe3c338fbf2cfacbacafd68f605430",
+        "fc67727abd9ba0763fd2fc67c556ce25eae4c2a44c1504a4f157dc8dec54c047",
+        "d66a11db84e41b05290a1bf88ebfd839968302d781b8382bff72874082485352",
+        "b5c4b3ddcf4fd6bf5592129e3217a45c2b71faf734be1c960e86cc81663ec367",
+        "fb5aaa0ada1b6fda43707f9bf3f5de18138f842bbd2b3ef6cd3a6ff6c827703f",
+        "6ba16634bdbdc7c8dc0a0ba69652e09061d9d5f6a0a757f7991613736c53e136",
+        "be671e62941849834b1f67175eed758d211da8b6bcdef3bea07a1e8c4a97144a",
+        "d399fc7516758ce303c1d52d7cdfbaf0e2ecf89480b86dfbe02c8fc5842a0bbb",
+        "cc44bcccd394b25ce57a46dafde38c217007e2a99e11eecb27ebbbf00695f0d7",
+        "6dbb70ccd4728f1d24ea4b7d13ea4b3437f04ed37bb0d5e9b118cfeea41d2d04",
+        "0ffeb0e038fcf1a817881a67fc1275b1fe23ff9bfa9db1d49f95f42b6ab54d6d",
+        "595ff871c0e3576c88830e6864029c743519436b7fc832ac327a55a4749bf9ab",
+        "34830006f463e3904f123c2c51f8560beb45e0a06cc03e0726386092f2eafa0c",
+        "cf64972070fda00bbe3bfa2fa43f63c3360662b4f020e03b031cf318017e16e8",
+        "dead32f7ddfdeba46d3256d4a01939dceea5c7005387e30687f8ed78968fd8ae",
+        "8feb384ae9db43b039d83d804eb5588c546c5cacab5bc4d602a17b895b129b21",
+        "4ff17149884ffe370931b5f788c6589ea9e877ffc5d816ebae4ba2389885e094",
+        "fb62c2a1521a1b1f5ada3d39df36154e14585f962482abc024b6f367668dc4b5",
+        "6e0066f205c78342ea0971c57f766c7fcad7ee1d35cf393dd2d508746d50d95c",
+        "57b73a5d4e973761b3f4ba0c5ab460d2a38117b039deb92f495a46e9b402b7d2",
+        "32bd22906780293d3844049fdd1d2c710dfadbf638fea10bd30f33b15509909c",
+        "ada33bac6b9a9ffc53d22bfbf4832c656ae4c0db537cb5d6baee6f1a1ede1fc5",
+        "8cb568413d08913996d8d459417d4d2e3635bd1ec93d2c42cbbebd3bbad86546",
+        "0c49e68fed9169d111528bf66f9cdaef3a09dfb3f38391e04e11cfc61be86288",
+        "5d3a073a00ee016a2b8e15725a0a0b3aacf2a2adcae85f2199c3e2377f7f16e5",
+        "7d234af1148e1a5b5b4e0f8739d4ae193edf22f1336646125c24f3cd661fc0d0",
+        "a977a605855f5191fdc53bb59f48dd04627aa8584cc10e57b2d61423be322f91",
+        "1d9b13865cad8ef69be6929604752e2099bde1b9c2f6887f644c08fec776484c",
+        "f78940c404889a8d0ed338227250f5d9519767e560d53e240c5549a4960f2c8e",
+        "de9716ceee6169503ddc3223ca3eb3405f204eba974d6586f269d6ee148d1fee",
+        "6e967777eaefbaaf5fae798447363c5e44722debc1a82416b2af53dd842b404f",
+        "f66e288366f43003f492602ad54ffadab4a1f63b7e6b4bae088835dce9b46d65",
+        "c4a34a933715e358140e171d53a0f3dd4fa1b34c260c02e0416c86070137e843",
+        "0b90c9375a7c8742b694ac278219cf7e347060c82b29ae2783940eb6693d3a10",
+        "7274dd920aa7f64c6d7f108660c556beb960d3d68bc6578b80cdc9391603917a",
+        "474b18a835a4440d0ec628385d0aafdc1933c0202f58ead69c37b57f8ce8b462",
+        "cda69d684f4df850025b91c5922c046faefbef32c87dbf01c3c42296c9d2d9df",
+        "d03724c96cd6f1bf800ea6a56c32954aca678d4f4b4d257bc9a85c5f4b9320c4",
+        "5be433f1daf8a4c47bdb0ef0ffd4a5e99ace7b4caff240f6648be5ac51045f31",
+        "ce2b40e53c6260faeba9413b18bfadbb5d06db8f8d30bf8cd2f9be797c722c6f",
+        "e61d57cde6666f59015f28145a0740e66a122033cc0eafc43eee6c4ec7ccd0b0",
+        "d36c02fc41beb8270b40f66083f237a175c8945f492f45dab09de6fe3a776428",
+        "a5a572b0b440b7ee31a6df814a25122628871aa8b5099fe2f40ccf4b64c14efd",
+        "28ecaeef935e336f3bdebc6c40612ee0cb5cb31b7df3591041c3c011a4f387f2",
+        "bbe19a10e224ce7c30c46d22d33bc928cf74c8f402273deb7c182bb2bc88fb0f",
+        "3c4280e7242e4ad6fa9fdaad00b30bc7d8bd1457df030ac24278ea08c26c25c6",
+        "d36368232442c5ba0aadc0c3a5b80f12a0acfdd90c42e73a4c6b8999157fd67d",
+        "dca507713b43a2d6107ff3ce28bdda4458b20eb8e1ecddf58fb79ac6245ae383",
+        "941cebc001c7027f0fb5d0985435bb4ea0bc77fcaee328027accc3a28a290926",
+        "5157732fe1e132dd4b9d770db67554b3d655cf868f0976fc2124f8202d51efa9",
+        "d41dabb71a53145de9c2b8050f2aebb926030d0c706a0aacaa3f1d050f1fe090",
+        "6a7aa813e27892ce8b840b80591c8899b83d0b1ea5be9fc5fffe18c6f43df673",
+        "a3e668f47f0be64b8b10f2692187593e20276b3ff04e9c1633c8889255d3dee8",
+        "d5ef7872fd7edb01e510c0dbc02f13482bb6e93750c055b3dec4904b9f54793b",
+        "d845c7a4b650f21f1599a0e6f8a81b91560999f9dd8adb97606341e22dcfde91",
+        "a725d78f02c68977a0dcdd386c8313b6a78027e82c19b187f067903d57db85b1",
+        "af5b5cb24595d7cbf4f4416d675bdf1fec8d21c9cfeaf858e7b97f0f7be2b4e1",
+        "78d1c0f2d00fc9a469e5a7ae601938ae51b5a125d87dc4c4b641772d7eadc101",
+        "f33fbaaa187b07141e4dccbd48272865e09279dea94a7199de381cc445e31b45"
+      ],
+      "payloads_not_rehashed_or_parsed_this_stage": true,
+      "prior_full_array_verification_reused": true,
+      "report_sha256": "64d4183dcaf79965356024028345805e60e623909fd146a93b48192bdeac1e41"
+    },
+    "frozen_implementation": {
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\inference.py": "32eb1d45800fd56030a19d45a3108ec29316bcb1bbd805ab55d9cb8e1a09895b",
+      "D:\\华兴源创\\实验\\弱缺陷Demo\\mura_response\\inference_runtime.py": "59343c5b8c0d5a819b962cc89fcc4afd2939f99a24bca17470c932eaadf2c240"
+    },
+    "frozen_sources": {
+      "assets": {
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\checkpoints\\wide_resnet50_2-95faca4d.pth": "95faca4d11227dddf8633dbb5ff6c8a9003c1aa5b8945c73834b8007b10950b8",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\controlled_generation\\formal_draem\\G1_20261030\\reconstruction.pth": "eb5fd05c44317f36f367ab89d734a380361d9a53df4b69a8c14579613f4edb0a",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\controlled_generation\\formal_draem\\G1_20261030\\segmentation.pth": "6e1b991203df330f1687b88dfd565077650372f0f1e8bc3fa50c9725d7b64fba",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\weak_localization\\patchcore\\nnscorer_search_index.faiss": "4e452bc6ac0fdab8bbb2a869ab7009ac98b4c8ac63168295af98e96c5a71b7b1",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\models\\weak_localization\\patchcore\\patchcore_params.pkl": "f6ccc3e6dc10816392b80c3de4f00f0cb56f66c2d96f0a256eaa917aa2c86667"
+      },
+      "author_and_evidence": {
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\detector.py": "04a85a47e58b7920504a88c9a29ab1b8ac4cd3f9b0b50c6835f3730dfd8a8763",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\localization_calibration.py": "e63e2ba11e5a70f11f758b535a5c078eb273da1a9a224efc90462dbe8a4f76d2",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\controlled_generation\\formal_preparation\\common_config.json": "51ad58ea35d76e10d10e545e51b10b91ee56b942e6e3630101ddd77680800353",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\controlled_generation\\formal_training\\G1_20261030\\day8_verification.json": "366a06c750b4c39fc4c616888146c69a76012f8dfe8c87aac8eab9739cc7739c",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\controlled_generation\\formal_training\\G1_20261030\\training_result.json": "4c3f988edc3d283c2d783cd0a3ee038886ab28e7cbc95db4ce49415bdfd76531",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\results\\weak_localization\\patchcore_bank.json": "582172a55e87de5e4a924f5d90c489dc910acb477ede199257c06e27112b2c42",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\DRAEM\\model_unet.py": "fc8995f7f26599ea323dca5dfdae83ede3e19bf802cd0b748ecd46bea2beec1c",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\patchcore-inspection\\LICENSE": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\patchcore-inspection\\src\\patchcore\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\patchcore-inspection\\src\\patchcore\\backbones.py": "d02b4317f8a9e4cca17d6c0c4f4760d00bf9020cbd25d33f88f27198384d4472",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\patchcore-inspection\\src\\patchcore\\common.py": "e18e05d976f029ecad1fe786c270fdb8d6f2f1bf69d466f22f90704154e7fe7d",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\patchcore-inspection\\src\\patchcore\\metrics.py": "5c0c1942643b2eda63fbbaacffaeeedb4fded35a628094fa9fa4a672805db7f5",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\patchcore-inspection\\src\\patchcore\\patchcore.py": "70cb638cd78692159e4a210424b37763558e8af8969109ef3d83765c351f3027",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\patchcore-inspection\\src\\patchcore\\sampler.py": "39612cd2b486865ece304348f740f4bc700a1c2e8684fbab3c2ed016c7801f2d",
+        "D:\\华兴源创\\实验\\弱缺陷Demo\\vendor\\patchcore-inspection\\src\\patchcore\\utils.py": "c0d0f2c78f228e5c73bc33a9985ab46bfc7e853bc5cc1e2302d209625d665af7"
+      },
+      "runtime": {
+        "executable": "D:\\华兴源创\\实验\\弱缺陷Demo\\.venv\\Scripts\\python.exe",
+        "executable_sha256": "137c474a645a9471ab3a369084e7cd573cd8b7ff8f81cb85363fffdf5904106c",
+        "packages_metadata_only": {
+          "Pillow": "12.3.0",
+          "faiss-cpu": "1.12.0",
+          "numpy": "1.26.4",
+          "scipy": "1.16.2",
+          "timm": "1.0.20",
+          "torch": "2.8.0+cu128",
+          "torchvision": "0.23.0+cu128",
+          "tqdm": "4.67.1"
+        },
+        "python": "3.12.7"
+      }
+    },
+    "normal_inputs": {
+      "complete_sha256": "bcccbbf1c2fa1001d3459bf9944bdd5a6ad934f57104ac05babe330b591de9da",
+      "json_sha256": {
+        "records.json": "3144cd81bf3e83aec760565895c698761352a9922c6cea0a42419b4db43a8385",
+        "sources.json": "09b8bf3d6a693defb63b4cf600c766e3b89172a20fb626ef5a8e8fb643ce4620",
+        "started.json": "e5588b3f1b6be2ffec2c1761a5572f6aabe7dd2302f0c8559872979b0fd7d0f7",
+        "verification.json": "f356f0ad25560ec1a98a692dd72e1c67d82848e535ee1bdbcb2dbe9745a514a5"
+      },
+      "payload_bytes_not_opened_in_preparation": true,
+      "payload_stat_sha256": "c7ac30353edb052982d3098b650a4587605de78ecf288e34d86c33315ca90082"
+    },
+    "normal_models": {
+      "G1": {
+        "Q_timing": {
+          "Q200_input_references": 200,
+          "Q200_scoring_and_cache_seconds": 192.13796619999994,
+          "Q200_seconds_per_input_reference": 0.9606898309999997,
+          "scope": "after model load through last Q cache write; includes per-image state checks and IO; excludes quantile"
+        },
+        "complete_sha256": "75dd6b85f50bd6ebc98591aa90496e6c74dd61e039905fccfecec299b0c7bcec",
+        "independent_proof": {
+          "F100": {
+            "FP": 7,
+            "FPR": 0.07,
+            "TN": 93,
+            "normal_denominator": 100
+          },
+          "F100_Wilson95": [
+            0.03431926106727268,
+            0.137495147390735
+          ],
+          "Q": {
+            "FP": 10,
+            "FPR": 0.05,
+            "TN": 190,
+            "normal_denominator": 200
+          },
+          "boundary": {
+            "D_hold_S_bg_Q_cal_old_test_GT_reads": 0,
+            "Q_F_acquisition_only_if_explicit": true,
+            "array_opens": 1500,
+            "author_placeholder_forwards": 0,
+            "blocked_attempts": [],
+            "forward_counter_semantics": "attempts before call; only committed rows are completed outputs",
+            "model_input_forwards": 0,
+            "model_loads": 0,
+            "model_packages_loaded": [],
+            "original_file_opens": 0,
+            "original_unique_paths": 0,
+            "parameter_updates": 0,
+            "real_calibrations": 0,
+            "render_calls": 0,
+            "source_decodes": 0,
+            "statistical_fits": 0,
+            "tensor_loads": 0,
+            "unrestricted_pickle_deserializations": 0
+          },
+          "model": "G1",
+          "model_complete_sha256": "75dd6b85f50bd6ebc98591aa90496e6c74dd61e039905fccfecec299b0c7bcec",
+          "status": "NORMAL_MODEL_CACHE_VERIFIED",
+          "tau_recomputed": false,
+          "threshold": 0.6587551027536391
+        },
+        "independent_report_sha256": "ac65a82edf38d780bda22a24c3ce31c693ca9fe7bd9de56d59f888e8d2ba8ccc",
+        "json_sha256": {
+          "q_result.json": "06e7fe15b4f8438dcde0cbb79256a474c58fa64c9b27e832723b8a5d18bec1d4",
+          "records/f_b000.json": "88a8d5f0b55471b4fa1884a01c09eca300e662aceacc6ef0edb81f439b8c76d8",
+          "records/f_b001.json": "1024074d52cda6ebdeb630e4dd187ab9243f5b2c956108b3c24f27a429a79897",
+          "records/f_b002.json": "7046020ba48cff1adb4e85efe1ddae097184d2874939029a744e888d051b9c14",
+          "records/f_b003.json": "91c99e9a63ff1015982fec4abb7f0cb527f366fc92804a5cd4a09ce7b47bfb71",
+          "records/f_b004.json": "0ccb3e30d0a43b5f86c5f7a5b74caa3d0f823986706d7d341201f62170581b60",
+          "records/f_b005.json": "785ed31cfa3117f73126f7a98ed83121398a6a122009875f22ac73698fa6c91d",
+          "records/f_b006.json": "c6e9f702b7f1e62b87246e87ed6b51f7625c0feb5d81c3ab64e3f34e56936235",
+          "records/f_b007.json": "fe35d7229119a6bdaf83eb205093053833d0f7da3f50d92f067760324a837f1c",
+          "records/f_b008.json": "1d87b46abf705cd012b67ba83650d9c39cacf848a969051296c7894b68b1359c",
+          "records/f_b009.json": "1f878e72165b311ffcd80f17ae15f165a655f526718ddfe477b951b3add00e14",
+          "records/f_b010.json": "5a3474d7d3f46808bffb8c1168494eec1fbd98168a3ac84ef5ba38ed56afcd79",
+          "records/f_b011.json": "cc1670d5e8904731a4a312b67310b1ab1b823ee5ebcd5bf0511203916f661109",
+          "records/f_b012.json": "2455be6268f307287450b859b1fb89a0aea327ed51699abfcf785f6163b4b30c",
+          "records/f_b013.json": "510fe73fa451f5f06ebe3568d7a8c5928b4a9665d300edeec1f0f2f708406144",
+          "records/f_b014.json": "55b0ae4befe9fa694cebf9e9824421acfab59d9190307e465a5ccb7ac29ca12f",
+          "records/f_b015.json": "ca0514522bc7a2984d557f82dcf0f77d7a6d2a03d5335657fbf17e5363825c71",
+          "records/f_b016.json": "25cbe304514e45911a2d1487007a5ab35a99530cc118972d32e7a4414d58c4bf",
+          "records/f_b017.json": "5d882448c424c2730a0c3817b932a912af6140880f221e420f5591e27e25bc42",
+          "records/f_b018.json": "c25a42e4b836d632e0fe79e666c69a69bbfb5d191989f755724ae895cd0c8ec2",
+          "records/f_b019.json": "134c0c7a34ef5f8108dc5bcc631d3258d1b6d813b8d0ea81ffb9d4998cc88ff2",
+          "records/f_b020.json": "bffdbda97d460de6ae06d778446002b1fdab1e61abe3ca00557d99603aed9723",
+          "records/f_b021.json": "cc84f6ac3b7a26325a194a6acb7dad0a22c5c5cc46648685e65cf7356f994f68",
+          "records/f_b022.json": "12fd6449e6e893262452a5a87ab10efb07926f4a5d45770a7244fc27870dbc3f",
+          "records/f_b023.json": "c96968ec5031c696519b8b607675d23751d81975104ac4ee35d115f6ec7470b2",
+          "records/f_b024.json": "a9456ecb09967cb2439205ed82fcf08b1451bb5fb5b05d4fd478f56876a56c6b",
+          "records/f_b025.json": "1373b4c33a1c21b883d179c6dcc2d76b19c1f849e4b40da6f4de00d4a6e9f54b",
+          "records/f_b026.json": "190c7413d166655a009743849a06c03af76e8ba514f982b56c36731e1fa9ea0b",
+          "records/f_b027.json": "c5227d56a93d4e1f5666bef69eb8bb5bb0a17cd459bc7a8daa6046eb94646c74",
+          "records/f_b028.json": "7a6a7e9feffe28731a49497b031d804859ba642c696120856fe04d4aa8e97c5c",
+          "records/f_b029.json": "5cbdebf6a837eea67a86e7d176dfbaed78a21a13e2a83b04438d5fc26bac5b19",
+          "records/f_b030.json": "482dfdc0e1ca32b48c6542286d285724bf08f865b5203b56c1b13f2c3ca59572",
+          "records/f_b031.json": "6e329323c8d5efeb8c82f531d41fe8bb7270dbefeb4cf0d26d7d9c02ba455ad9",
+          "records/f_b032.json": "da603059d06d3cdaf4911fdb07ca79d5a0f60be953023b4a16668d679c53e28b",
+          "records/f_b033.json": "f491f9c4e1717a7f7932a74d645d0e228f80fe05b57c2b9282f3fe275e959942",
+          "records/f_b034.json": "c2b8f7780e930243860694a1297edcb4ac44f87b3e5dec3e5057c3ae82ff0bc0",
+          "records/f_b035.json": "c3fb30283d577898feb5c308aecfe2f46f2569f8a00cc772fe1d234387089ff7",
+          "records/f_b036.json": "15d080fdb3bf216c49862a29c780f5b3d45f955d14fbd77009ff28c3c098b573",
+          "records/f_b037.json": "647b32aba662350f291894100f546c41bc2ba7b5bb3882bc78e8f4dabde8b8c2",
+          "records/f_b038.json": "1873f64182f55c61fbde11ba4f4ff520972585f6ef730a23ed3d0b67113babe8",
+          "records/f_b039.json": "8c936f1858c8ece04387872ce0e9e4c5903a5eee5eac1bceb48f1539f03ae223",
+          "records/f_b040.json": "d5f14c24c07ecaac71b4dfd30ad24e8d21b291d58b0360258a521c62c66bb4a3",
+          "records/f_b041.json": "efbb3bf448a08c5ced944d18ead008fc5f12bd7524b6d0730cd089c42b78b603",
+          "records/f_b042.json": "3e0b7f7cbcd70d28d0879a3fc61ff1e6f85b1ac09c59af16a91b1d3e1c8e4cd8",
+          "records/f_b043.json": "64686a55264486cd5c81daadfb494f7b60d682e0701afd60da797903a713d7c9",
+          "records/f_b044.json": "077b3ba442b8d078e0dff30e05ba622b427e292524cb57597b0911c9dab80d6b",
+          "records/f_b045.json": "ee2cfe86bc1787de317c4322c2fa62a25e942ebece154c6b1a984024a8884922",
+          "records/f_b046.json": "bb52c5836120c6c90ff847a29e96f9f9c953fe86e27931b4920e9e2ccc4143c6",
+          "records/f_b047.json": "fc0fcce39017255183e648b8429ee419785016e089a55abaa4816d4bbb0f1854",
+          "records/f_b048.json": "c9a07ecd66ddeca7b9c101effa121ba9d06bfe6224cacc3f016a9f8362e8a4e1",
+          "records/f_b049.json": "86df75e62a3662e8947d63470273440244953dbdacd8248d411ef09e8d1d33e9",
+          "records/f_b050.json": "df1762f70bd1fcd762c5a480f9d36bc662aa7a9f64f8319e0c83eb1031ebe2ab",
+          "records/f_b051.json": "8fb56a158bb196a36ed59f2d9d277338bdbc3d3724ea649e973e6462bc2ab45b",
+          "records/f_b052.json": "ee3d2b314481e82bdaac7d7357f9f3e643ec36c9ac1a0f14000fa9491c24a7cb",
+          "records/f_b053.json": "d96244481dbfedfb683d8c9a5b298291087afaeddc56faea1da552159637efec",
+          "records/f_b054.json": "1e5c77520267d18741f1766cfc3e533e82f69851e6d50dfb76a9b936717b0e09",
+          "records/f_b055.json": "b151979ef28dc62c87d6f880682630f30f9b25c21fa531d02eada6edab02bbdf",
+          "records/f_b056.json": "2ebaf9d9e230df921b89e518265cd390a0ce064e4381492eead5831965b53e2c",
+          "records/f_b057.json": "ec91ee4ffbc62878dd2d12ecf7a8c1be5431466d19135503b18859a16a542841",
+          "records/f_b058.json": "d76fed7aa28bf502d0ca2a3bed1d1824faa5ac3f91c65722da6dd7a21f2bce62",
+          "records/f_b059.json": "a9e803f250fd82db9720caecefaed89593f66ab2929b87db20f70ac2fcfa7f18",
+          "records/f_b060.json": "4749a1fd9ce28dfde6d6c1fa29905f4053dd1ef644cd5e9dfbe2923d1f0cc43e",
+          "records/f_b061.json": "d0762fcdd59828e4e7d19d1aac7f510f8e1ce3bb340daa995441f35ffc5a19b7",
+          "records/f_b062.json": "118771ec62e3b70e9f985c2564c05b99365539aac1c01f76537dba1daa59fbe4",
+          "records/f_b063.json": "2c0bf5a3d7a5e6a393352e5644172a4aad640c3dcb8bf6a32fc3f5abc9d40925",
+          "records/f_b064.json": "22290699163a13d543e852765e743ff8a3a2910ee9206b1eb538c9378a58819e",
+          "records/f_b065.json": "8aa83997c631877f553c85f2faee21c75ce3142ae00a8743aaefe7bf8d683957",
+          "records/f_b066.json": "6e28faeff456d015560ef03e416f1bfcbcd226c902fb30d2f2475efb2b6c40de",
+          "records/f_b067.json": "97d234b1387933f7c6e25d9a874b6b83767a6f941a3822769ec0046e377c41c9",
+          "records/f_b068.json": "b6b68799e3da5798dfd1bc0dd19d1a13e467214c279faa5c10bc6e17f8d7b7b0",
+          "records/f_b069.json": "32efbbedb5cb3ebc689c3e7d0a71bb6443af0940acdd49e3222b0fd7664a966d",
+          "records/f_b070.json": "6c073cf212668e7baced4a9bc08623cf4024dadc70837a0c60cdb0ad6e4e3e5c",
+          "records/f_b071.json": "aebb6cf568142525b7cea345545fab6315f561abda7e505ad8d9a47d9783de6b",
+          "records/f_b072.json": "1931f460d25d240c00d9b44535d2469d96bb4ed4a239dcedbeb1bc5baf40aaad",
+          "records/f_b073.json": "3e86b06bbc141401149d8c61bb1c2f6f6fc18c33decdf044b70d698cb50329b0",
+          "records/f_b074.json": "e63efd0b92bf9b329b35b3eb120b30293c660bda8cb53904cacd2d935eb6a793",
+          "records/f_b075.json": "300e5a698beb467190597a3745bfb00b87f44eda56432c3e90a26d4a84ad7bd2",
+          "records/f_b076.json": "0057ed0a6643a3f80b4eaa4f7052fed7602f2828a6b004de365c177e2a139352",
+          "records/f_b077.json": "228778b12e082b6a9c9098827afbe18f6e3a180ee13af13e2d499b019ef609b0",
+          "records/f_b078.json": "ae0015cd59a23d0ea8ba8642bc12909e8861a99edeaa2ad12dc2e50a15882705",
+          "records/f_b079.json": "843222d684f9f4b81e323b0fec55c31d026a41f4d828c7691cb08c384998494c",
+          "records/f_b080.json": "1ad9e77718f34627ce0eec4b4e911fa4e5e71427dc4b04dd4eabf0b11aa78ff7",
+          "records/f_b081.json": "bfc51780ca039da9e547c9131b9cb7a1d0d74d922e9514f41d7abfae20a60604",
+          "records/f_b082.json": "668fde181f668bdd6ef4e214c4c5a022485440e527787d0d519045c29bddc654",
+          "records/f_b083.json": "2a8e8aec971e82095b35b59c5dc6f64493b6a7203a039d77386c4890ecf03d33",
+          "records/f_b084.json": "6799baa960fb1896243e31bcf6e7d60a72e2b80b61d205789ba11c36308d4f65",
+          "records/f_b085.json": "07da23a57c681d9e903752a18648fb78704e254451c6c27f0e6c7340cbb1fcb4",
+          "records/f_b086.json": "d672801708a5b0b84f7cbe4a76309196a4d3b1b1989cf0320947f3aa3e902ae0",
+          "records/f_b087.json": "54f6a71a8951a899b4a0e01c9b7d847bb1e442cc22c6db90a05d66810963e443",
+          "records/f_b088.json": "cd1c37825c25e5ca93644b5c8aa1a34e113f3a4145195408dbb4e4b5b0c6fc2d",
+          "records/f_b089.json": "de8b78d16f96012656c391318fd413db406b3f68b1b7a6cac86bfd3f3839ca02",
+          "records/f_b090.json": "63469427c287dd991ceb66caaee1d6b1ab470327d930cc6edf89c4c7aeb5da42",
+          "records/f_b091.json": "aeeb2f36f8e1942fee96cd8597ef03a8204167a030d31c54767ef40afce4c041",
+          "records/f_b092.json": "8a13c55f7ba67c7fb117c3dfcd3a7e7fba6c9e2427c8b8e8a96e23f9a245a322",
+          "records/f_b093.json": "b0ee59e3899f6ccbc45a7ef0654d635175bb72cf0edd2cce907ef4ed3a3a1aab",
+          "records/f_b094.json": "b87150d833df1afd4a041e505ed367b8782712f3f46572f78f1129359e963f77",
+          "records/f_b095.json": "3f63dac2fdb92a4f2cb021d2475179d65a3981ca4e9fa1c9b42a31e0bd04fd6e",
+          "records/f_b096.json": "134de8417e07298c3387191f2a9f4ddc0bf710b1a6798d10d4e25d0fd29359b5",
+          "records/f_b097.json": "e60456fbdfaa70d64a203a08e19c4a5cb56d067e641058d1fa0930c7958ef8e6",
+          "records/f_b098.json": "97d6b3210f028863045d69afb8ec0288fdc53df9c59b8a79cf46508bb9a1963e",
+          "records/f_b099.json": "fc63295d2edc8875c3e2ab5151988314211c288e8c244dc52ed12124bdcfcd15",
+          "records/q_b000.json": "0f599b4cdfd0555e21ab04b3f33aba5166e625d613222ce536a9414346c25c7c",
+          "records/q_b001.json": "ba5d9483e26ea2006fddd8cd076b24f43466c9fc76d44bd40388a567f6c8835d",
+          "records/q_b002.json": "3ab9770959a3358828381e02436db8b1533941b4cf3f82be1506eed15b54c123",
+          "records/q_b003.json": "fc8d4d9947ccf2dcbedf6b20bbc695fbb1f292e0b1a6cab2ede16a3c74050917",
+          "records/q_b004.json": "18d54c2156b6c817061bd359d4363f816078c1e7cfb38215361f1feeb1c4fec2",
+          "records/q_b005.json": "3fceb18e806981f6633548e9fc9f25127a65508028b8da2d1ea3a58a3c4af612",
+          "records/q_b006.json": "0f68cf45cf30a064e51ea6a556687c8ac387e9608d151b566180829c4075ddce",
+          "records/q_b007.json": "b28dbc68e0f1f0c32555a8a6d6eaefd0a324403831ba2075f992f161c71baae3",
+          "records/q_b008.json": "f33f0b7f24b1bdefffee63436b5955a2c897c873fde6b18abc7a5a63a53e2ee3",
+          "records/q_b009.json": "fd9d4cf24fae154374a114144b951c833c05b30b4603b3c81a572bf5074f7c36",
+          "records/q_b010.json": "7431c4f6c7ca00309ca1953432a65ed3349fc267cf0aa06add9f98672f46b320",
+          "records/q_b011.json": "1d8f2a968ced9695cebebf2f7e47784a88e69d270f472926e971acb46f6b996d",
+          "records/q_b012.json": "6ea92c24aca5977f680c7064fd0f9a1721076c985b44d9ebf215c6b2ad62b0a8",
+          "records/q_b013.json": "8fc1f2374fe3d1a45b5d0c3cc76e617bf6adc30559143fb28732c1afc2cd497e",
+          "records/q_b014.json": "fe1c81fa543d1a55d0a41baf24e61fa33e5e5765591cdea3bd2e809ad95aa5f1",
+          "records/q_b015.json": "de1649020fae3e3ea71b8f733b8fbc5bcf42fea0deb22c5e66402f881d96030b",
+          "records/q_b016.json": "2924892613e434d1eb8d7ce81510a86e04ef64c11a619730fe872234260672e3",
+          "records/q_b017.json": "a8c2372770aa23227e104604831acfcf2db567a07e95d2ee0c839f677283caff",
+          "records/q_b018.json": "24732b6a44e11031784bba84ca8efa1ab84d995a8f4e36eab763856b6fadb57b",
+          "records/q_b019.json": "973ff2633b0f8e3b7c24f2f59a1aad0163da51f16c176c3ec886e50f569d0f47",
+          "records/q_b020.json": "64dd0f65556d0cec5f12958e169ccf75ef4245f449a25ded4ecfae5d6d9d1005",
+          "records/q_b021.json": "0534736e94b4cbd7e194173d301ed4f2e39f6425a00276e756c49b64a388ea5e",
+          "records/q_b022.json": "bfac2551e578c4a57aa8020ecc7f2a8c84b32a7bc8b84b43fc495ba67c63b52f",
+          "records/q_b023.json": "a4b721ba35c3d29cb38bbe93023660426505cee1fa26730fdec1404397c11bfd",
+          "records/q_b024.json": "ccd309eab51f84b147132471a53c6e427511cee5303cf92b0f1728df857a7679",
+          "records/q_b025.json": "ac236ccd33e5e80eb750a0de0c96f91e939e8d30175365db32ca13ad3ad5a421",
+          "records/q_b026.json": "21aa4faf22413d6ae0521d29fc9d3ab713e272b05f00e92cc6c6168d53941de7",
+          "records/q_b027.json": "14c4bdc0458d68f040698e511c44d3a36f9c78e5c4bfad9c52ae54c5bcb95518",
+          "records/q_b028.json": "e8cfac56093377f0145a1dd1207708da5b2bd7e106456bef766acf97b974f220",
+          "records/q_b029.json": "a08fc80043f7c8b6672140cd886bdf779c1167652612b1d72da90b51d0af2a37",
+          "records/q_b030.json": "124455e9eebb6597245915255fd2c32f863387bb30d7fd975538558bb5f2b18e",
+          "records/q_b031.json": "2797caa64807f165cec8971b1190477e1e39e438da3ed3d5e79a148c702069db",
+          "records/q_b032.json": "7f1ba1d3734ee57da4943ea5d9d4404ba96fc9ddf07289a1bd524ecf56f1c605",
+          "records/q_b033.json": "97a6f3c7c9c2a7a0d8db1d9da0cef263ab9a277c9ca81fb2f4a689e9308b8084",
+          "records/q_b034.json": "9cfa4fb9986feb7ecdf89515bea2a123c01443a9c0bf3cd44ab1bce598ada5e6",
+          "records/q_b035.json": "a1309449daf0f10be66aae1d17382e035f20a9b9b8b2774feba48f6d5616bbd8",
+          "records/q_b036.json": "a5ad02763bf4c8372291bbe427f1a6ee097450f0644f2bfffb826545edab4089",
+          "records/q_b037.json": "249a356a320e2423911ddfb15574b4da283e2f86ec4b75f6bf019945371dc3d6",
+          "records/q_b038.json": "fd3d24cdb9a4138fe4dd0e398e418e77882275c94ca5faf921faf816136f1792",
+          "records/q_b039.json": "a0003fea2dd5de73c46a36390bb38b72f92476f15bea2ec3983b34e7b234cebb",
+          "records/q_b040.json": "c32a8af88a6d133c4154bfce83f1ddd1126719e19c0eb6667aa7fe9942191eea",
+          "records/q_b041.json": "f95df2bdceedc8034e1d95603df5e5c6c25b0ba65a3944dfd3037cea25a6bf54",
+          "records/q_b042.json": "9ada82955a74db85d64432d5f12f876a9bbd05250a5db3e89e10cbb386c170b8",
+          "records/q_b043.json": "40895a72dcc691e147812e9aa5023bf23ef71c63f440039a51aff4e70b6503db",
+          "records/q_b044.json": "762bc77f4cdd67736a905047598d10e66f2b2e3a4845b94beaca7d53fa66c520",
+          "records/q_b045.json": "8e4dee05102e4c385438e67dc6dd77eb10c57ab20718951a853387543ca6c4a8",
+          "records/q_b046.json": "bf4eb51859c2fd3c2de2d49879717ebd0393930609320dd4e90aa91edca33ef9",
+          "records/q_b047.json": "b6f85dba3f1558cd9dbdd158dd6cc874cee0a85ddf146b3a0a7c55c6602427ec",
+          "records/q_b048.json": "ef6308d86da89510784bc50970333c9cca47a94e0d3103f9c3da0a6db7e2b357",
+          "records/q_b049.json": "9df72b379cebe1cd5a34826c3f529c59295e387863fdcb76881b5433cf23b56d",
+          "records/q_b050.json": "b0a922ea24f9962ee49351ab8175eae3ba61516699221b5fbd8effa6d591bdc6",
+          "records/q_b051.json": "df9cd0fb7de30600c0cde4b6d4dd9212a97c28e57b23ffc536a9513f05576afd",
+          "records/q_b052.json": "99d6ef2759184899dcc31481930cf5d51924a067992894585faaa1d0d3533aba",
+          "records/q_b053.json": "a924f179a85918c4727579e8bffc8f42f0efa1c296fa5b0420c9ca6bcfc4ef11",
+          "records/q_b054.json": "17ade6e408ba820964170af2a96e08b5a4b4911f3037e55c0efd31cb44e9caff",
+          "records/q_b055.json": "d5285878e1ad3b1cb6327abb2f8e500ae14a4d2e2212c5fdace400026ffba47f",
+          "records/q_b056.json": "6941ca34f731c21fc85bd4545d175f54718d4547e32f6e492b27098985bf1b26",
+          "records/q_b057.json": "1d0562f0f83954e9bd39db26f3231d2f8d491f32a02a58db6fa772a7e5fb8ed1",
+          "records/q_b058.json": "8903f45195128b9412f89cc9720355e4b511293194f952b50e5f98a011a29c1a",
+          "records/q_b059.json": "4456e033f7ab0e00df49f62f6f5a5f70e2fcbde5f3931265354936ec3efe2ffa",
+          "records/q_b060.json": "d2d59bbf8083436f8079aabc3041e1afd91d48995cc6131b7103ca84d21eb4bf",
+          "records/q_b061.json": "df8cadeb859fd47a488c5745b6fed23dd6dee8d567c0d8fa42697b164bbb8d5d",
+          "records/q_b062.json": "b4968cba3c503a668259571d655aa15c608ef69db963c07e837cf37e6cffdbb5",
+          "records/q_b063.json": "6951ad1a24ed25880e34f3492a5751a13bfdeb0d918fcd048451c231d02e5695",
+          "records/q_b064.json": "f855fbe838c325e448ab54e6cc2b8d0d459d916a3e4f03eb8dc8066b80a7738d",
+          "records/q_b065.json": "b94420bd5cfa22eec618939091b18db71e0a484c370836cbe7326c835bf5a15b",
+          "records/q_b066.json": "18aaf48add38d0afa34c8bd341a8ff97afab1d62a210aac1b2785892308461e4",
+          "records/q_b067.json": "c712e8f4f01433af9f98dcf5fbfdaeb50a17209fe0a6f1ce304bed16374389bb",
+          "records/q_b068.json": "b1f7d33876558d106abba3dab821ef314b3bd48633e7add44460f02fb0e2b920",
+          "records/q_b069.json": "25aa995bbb723c2196d890eaa6669f6cfb3196fae7c71913f6b780407b5e8b7b",
+          "records/q_b070.json": "420d848204ee8495eb474dd1c434b8b7196d9eb8b762f462d8ef7a2ef20c1f60",
+          "records/q_b071.json": "5bef8a8bd2a3c747eb6aae88a9cfe076b511014d8291e29613ff259a828d066c",
+          "records/q_b072.json": "326f708889903d5d34437bf7f83288e2d80a99c6c1b77647f5e4d90f2f19c6e7",
+          "records/q_b073.json": "81c0ace850e8d7ef3cb08dc9803d8a0272ea1d14b42fcd480e6c297327d67f19",
+          "records/q_b074.json": "aaf57b42959d11b2d702bfbedce594453ea32eb3d672ed0944fad4ab921dd500",
+          "records/q_b075.json": "2eb650a69e5f48afabdae87a648a85221ca170bf80c3a5b211464e8ec6565f3f",
+          "records/q_b076.json": "74cb1233147c635aa4d0045331f6219267194a559f3a9e7ea4085125b3890027",
+          "records/q_b077.json": "ddcffd2c1f6340772408e5d4d33ae49686c73b8749460feda88a9776069028c0",
+          "records/q_b078.json": "1252383bdbe8cc193f66bea6f1b238724a4696860aa3c5844106f5f43733bda2",
+          "records/q_b079.json": "e5b376450e433d3d353dbe84fbc74b7a17a65655e92b680f453fb3f00221844a",
+          "records/q_b080.json": "73231623269af1cf94505b7fd8be9ff12a666decf0e91d6101feb97dab175a05",
+          "records/q_b081.json": "a7f75fd5720c5814112ca85ed7d747a0a84e1ce7315b9b328e9ae23e8e0041ef",
+          "records/q_b082.json": "56ed832d18abc98feb8b4f5c2629765702d041be1cab767f95733d489c957ec5",
+          "records/q_b083.json": "fa7e5741be07f060d99bf1df995a7d444becd288545b5bb5f7681ab6aea48d57",
+          "records/q_b084.json": "b412964abe6eea3577b675b7dd0237384c29dc13cb6c567171068f7279778424",
+          "records/q_b085.json": "efad8a6089f188e62decd91c8b75b709023ed29ef5dc21c03b4651ec47589e95",
+          "records/q_b086.json": "823d7f6cab840089a1dda8a132d4dee372ed8c1aafcdcda86b55ba7df809ed65",
+          "records/q_b087.json": "4f8b559ddf7ae992385e3ccccd529e649fcdb5558e18991db7a7fd140ac57c66",
+          "records/q_b088.json": "1f7a42491eef829e86570e7540559bd7132cd4c23c491dc71426bc685f0964d0",
+          "records/q_b089.json": "dbb596e23af12cd1e314435d64131037f33b6e5cb14bd2e70919228886da8eba",
+          "records/q_b090.json": "7ec6301de3cbf388298706485b3e9a133e62062ff6749fd668ec1cecd77e3897",
+          "records/q_b091.json": "9cf9f7be66c6dce84c09e2cb1da8a9a1e4692325d92f35f72210b3447306d6d5",
+          "records/q_b092.json": "e0aa5cb44a9f08f77430e83713105c0b0a2f8fdc11e6ed182b4cc4857c4bc081",
+          "records/q_b093.json": "837a314fc2f9528d3e2d9e0b031c34ff6be14f91e012a06dee5b7d845e72357a",
+          "records/q_b094.json": "fa56d6093dfd6dad2913e8fa8788597f1892255579a5d4415cb06eef318227c0",
+          "records/q_b095.json": "c2e20c85bcbce7461e69709f14f63d6d6fb9ad5b586f1524e72521597eac2254",
+          "records/q_b096.json": "1b9840f37de12d3a58f2d65e1d6df0772ca9e20e50740aa3226a43bb417b606a",
+          "records/q_b097.json": "c50e45c122b6e2138aa70bbfb55ff84b16f46a64a1ec291988ac9ba0a4e86eed",
+          "records/q_b098.json": "0d31ff867548cbb082df373f9bd525b84bb920512a8887d18e42cb854d9f06b2",
+          "records/q_b099.json": "20f244b674a9ceffd7dcf02e196a06b4b10323b7e155293dbbab2e0a0e611561",
+          "records/q_b100.json": "9e60b98d99e7081fad1ddbfdd6d577a98a51207da1e28fab2e678776510db4ff",
+          "records/q_b101.json": "264472c714f45486c9eab9cbfdcf02901732fc92f2db3d646a4071f84b4c6c08",
+          "records/q_b102.json": "698515855236d0c5c5fa054241077276e5f32e4430607426f5369eeda0c7777e",
+          "records/q_b103.json": "790db44e6ff4d5926725640a6a64b869eef45821e8d639ab11782424b90ad0f8",
+          "records/q_b104.json": "b6c4f293b69af367f953768fb1bbb4594150e7ddeb72254c585f5c2bcea26ddb",
+          "records/q_b105.json": "7e9f5061100e6d95cc74b8bac8d12a7fd28683d54f1709cc3cc7b9003d5180cd",
+          "records/q_b106.json": "164fd42beccaf10e9b9a60ff440f159218a6bc7ca8db955ec280c7b115a09a48",
+          "records/q_b107.json": "5c162c599f5069a59ce8ae9bb0ac5a43825a868b506191042abe0ca048b26f6b",
+          "records/q_b108.json": "251cbf2fd5215fb45dd3a69f39ac5dc397704f41d265a872b6c4455460b6e2b9",
+          "records/q_b109.json": "66fcd869257f44c07352296f3dde7e036f2b2a66ed7170addb8ddd11a3ca5988",
+          "records/q_b110.json": "4eb9468e4ff1b377f01d446681f6902d003673f6d63f89b3531ad7e8ee1d464d",
+          "records/q_b111.json": "48695182b6a886ff08ba2cb566ffe6e025fdd784d9f8cf772adc78d61c05eca7",
+          "records/q_b112.json": "1736d31dd91b198b389e65b99835a1a817746684094b0d0820d02f9c84995066",
+          "records/q_b113.json": "3b2408397506ccea7b54c0fe4885757cfb0f435932b3a4f339aeb92dff855551",
+          "records/q_b114.json": "0d1d19ffd75ab17d5fc89439e25a3d3ac7244789438e622306a3ce67a992caf9",
+          "records/q_b115.json": "861b7c0f6bc50c287342c3c5b66fd64fca220b26e5277dcf7745e6dd76639b2c",
+          "records/q_b116.json": "f87cd6d0ad35ff2308f7e3831b2795b87dd2d4d1785f19c5edc34b2c4575c250",
+          "records/q_b117.json": "2b3cd34eecc8bc1f9e19a9801f4afa5199bbc1e302ddf2974258ac9792cfb1b7",
+          "records/q_b118.json": "ebfb5547fadf72b4327d6c6ed42ea994aea0c899c0dd520a7d7ebe50427bafb0",
+          "records/q_b119.json": "7b37660d85bbecc62b827cfdaa8fbd7ec561edc6f19fccdd2f929538b27bfa31",
+          "records/q_b120.json": "65413b7f2bf39464e1440d46d50478d6fe1f812a219a668ed9f3edac7026e7c6",
+          "records/q_b121.json": "ac06e9a1d5270f5b5310801a3f333c45bd2e890e8d2051d775ec8f82aa405647",
+          "records/q_b122.json": "96114b0494f0eae176bb29cf79f05d48717a2ce50fd1dbf6cad0f9030616ed37",
+          "records/q_b123.json": "659087f3f5cffa334ef46aa43319959081aa875cdc7a5a53e548414f8031e4bf",
+          "records/q_b124.json": "f7d2157eee669b9f4c4c8bd53a0034e42bc993c8c299c352a1911432ec44140c",
+          "records/q_b125.json": "3c8caec9837e6b39b922bc0088b7b89e86924c823525ccba66c83b1b6888980a",
+          "records/q_b126.json": "7f0d98293ea67cc221d0b9264242086e1c071305a085cc1f6b9d57e3b2673e75",
+          "records/q_b127.json": "6c57ba77517ef5af998034c73b5bd634e92cae05d6ff09d257a967b55a5b4666",
+          "records/q_b128.json": "b7d21fd3aeacbd2dc5f9d404415c79e65ad1e97c388ee6b2cf63d242d95acaa4",
+          "records/q_b129.json": "2f9a79b416bb70b2f17a60142be5dc8045dd4d3458e29877ca1dd05ef526d319",
+          "records/q_b130.json": "1e0bed11aca4a66c2f313786d22187a77d4ed44dc8420c3199a45b23b956f424",
+          "records/q_b131.json": "c5f70936a2b64ca4aa551faba6c8021377d6a53432fd761331ca91c96544c7d5",
+          "records/q_b132.json": "90ef6cfbc60ab6f0877f0041eb44e7f3063485b6381d6b5b47ccf26ea3a60cb0",
+          "records/q_b133.json": "3b65b83630c48cd70c5866f55712ca20e6cf2f8d0e9575a43bf52bec8f27191c",
+          "records/q_b134.json": "9917ca45c92edc653008b3a7b31079826df1dd05693de074a977e82b44afd6c3",
+          "records/q_b135.json": "a6ac6da9c018705ea9cca5eda717ecfec61341ec89697e1038dd01385e28fffb",
+          "records/q_b136.json": "c02cf3147a5fe71ef62bc27740737af6e7f63dfc290a1ae20efcc47d896056d4",
+          "records/q_b137.json": "2ff74eabc0b581c36f5cafb9a63bb4688cab481dd8fa89f23ce17644e60f1e5a",
+          "records/q_b138.json": "fce84e70801784bfdd316ae2c85dbccdc4027938a213e8ef2ebec5cb358761cb",
+          "records/q_b139.json": "f402620e475a3430202fb95387c1e321c87f31bc9b58f8ca4a305e1d3d080585",
+          "records/q_b140.json": "fb35bea0f6f4f58f8a85113d6025b228d074fb324ae6fd465eee92bd392c2c6c",
+          "records/q_b141.json": "43a70bf015834d20651e4185d311106f7ff5f1a529c724c6e902a018a9b7c1b2",
+          "records/q_b142.json": "60e3b6b487cee1d9dd6e02fe0ec80fd38bc0ede4e6c7c13e663a6c8447849834",
+          "records/q_b143.json": "de40b6ae4ad5e2dbaa31ad412a3a11d9ec7a3343c7b17e5b610bb8849e538387",
+          "records/q_b144.json": "00a32f736758ad41348a87e916e5481a4ec63d9d3bc562c99af2f0766e47a4af",
+          "records/q_b145.json": "973593bbae58432e0ab9188ca84c4051a258b5f0db40371b7644ee2a5dc7b514",
+          "records/q_b146.json": "9b64ee43d08a231f3293f3adddfeb332bdb9cbee8efd94e1ce597e64954a173c",
+          "records/q_b147.json": "851b3d9f5302149dd7a111c9e56a8747d53096a8ad6b94931c59566296ec95e8",
+          "records/q_b148.json": "460dec6c1637715a4ccc5ac7b50fdd1d552af1cc24704f90fdd980aff9c6ae2a",
+          "records/q_b149.json": "6a7a0a6889b454bf4216860e3b4ad91eb46a903bb4db0554b836ed6b1a97b2b1",
+          "records/q_b150.json": "e3eb0ecb30eedc667bc9f24cd83cf1b9db1c5a99f34608c7589d38bc0269bdd4",
+          "records/q_b151.json": "6a67668a63b9b61ea3c4aec6d38188dc0a680bb1203093cf0aace8b860c227e3",
+          "records/q_b152.json": "abf1c92ceac497515ed13a7b22eb909eb0b25214dc7ceabede560f4133746a27",
+          "records/q_b153.json": "255dc38b1af026fe6a750c2e7848e7c588ce7a29cfbbb22a0dd69d46b7d1fcc7",
+          "records/q_b154.json": "9aa8eeb9ec8d966b15c302409511e13b9fb825e71c1a57ff6d91382f2118bc18",
+          "records/q_b155.json": "082dc34ef769097aa613750c686a01bddfa0a7bd03447b36b7e05cf7b73f9936",
+          "records/q_b156.json": "f744e13ea76c5663bf900aa7d38342e84314af329666028a46c8337736d85151",
+          "records/q_b157.json": "5bcd535926ec9532ca3b4b95ebb19b91032a2be8c68202bcb054bd578e40b412",
+          "records/q_b158.json": "a23598cae2f49f04ea24b76490307dcea62170968bb5c96c3da0987d13b0c392",
+          "records/q_b159.json": "d2bcda1a5f22ae59f030f19835bf18b25ab04cf20a63f052d2ba34d9e33272ce",
+          "records/q_b160.json": "fe839ffafde470eaee4acac9e7fc7d4602a35986c5f5645370228c13b214109f",
+          "records/q_b161.json": "b7adc4209e30c131bedb48777b232c7a77baab7903b97b7071c28ea768a11084",
+          "records/q_b162.json": "dea30aedcdf931df17ac294eacc8842f3d435f028753286d31870817ddaac622",
+          "records/q_b163.json": "488bfbe9fd902cf13a4e2bfa7aa6bf83d8f1c0695cc16367e0c92f424faf9284",
+          "records/q_b164.json": "66ef5d1a0a55077852830d7b02eb4a56ddf56dd2b5a3536a25cc302a5cff2684",
+          "records/q_b165.json": "d777147a2bcce1eabd6be90292cb9f3b4557878be4b62d92b236e811131723f0",
+          "records/q_b166.json": "b3c105b7fe1d96e101b430fe22d2fe97d43274944bd2af357790afb610f22171",
+          "records/q_b167.json": "251a438ad0c1713232c864b51cbee77a0b4ef46b66a4b33a60556181edb40b79",
+          "records/q_b168.json": "bc09715ae51cd8bd7569188dbdcda9afcd9bd80b640554b91aec518996ac24d3",
+          "records/q_b169.json": "6401c2df92f44fcbdd965419f5c2e3895730b0653712d466007b0e22b236ce35",
+          "records/q_b170.json": "0bd091c082c7675e203e38fb5aab6dd5d6124aa26662117aa312b99ec75151e0",
+          "records/q_b171.json": "6b7dfbc057ac02b44284d65984400bfa0d05936dc6d53f7a2a0432a7b3091edc",
+          "records/q_b172.json": "d37a7238fca8bab51f8dbbf23ed79bf9995c10698207f745ea377c1d0ac93d24",
+          "records/q_b173.json": "28e0304643a69dfaa56aa9654b29ddfe6c98863f4aea78e63f1bd8bea2c3b9db",
+          "records/q_b174.json": "a8d622df9f1052a37fe1bb0e809ca0bb7b14c6a86634f7c5dd14c593ef292c2f",
+          "records/q_b175.json": "430e77d4827f05ae5806a27da54517267578ea0e02d3dc28c56d2cd6a8a8ce8a",
+          "records/q_b176.json": "93115cefbeab7f907195cc9710a540bf607b8519345a8a64de9ff1f95efb03f0",
+          "records/q_b177.json": "738eb8f6d5764504a338bebbb32a3cb1b1665c0e038e18bf9f7fc568828d863c",
+          "records/q_b178.json": "f65173777f49e80363484e97f375ccbf0b5608fa3452cb3428844ce0e7a66e45",
+          "records/q_b179.json": "4e7ba0d3783583c6cff56e2d5d985131107151f5f96dc4fa31f28e8d9e2fb539",
+          "records/q_b180.json": "c39efec5494095418beec2211b1e8e0494c92d4f70862cb5f23bdb4bb7300803",
+          "records/q_b181.json": "1bae94e65ab9e1f537e38963b46422fc5389dd3acf5d307b1fb86dbb658393d9",
+          "records/q_b182.json": "f329abb189cc9e001b14d6eb9d44966bcd729989f51481869b76830a8fce66c1",
+          "records/q_b183.json": "1ac461d15fe1b8cfad792a990d7cf28e7854a97ccbd519adbf2695324880057a",
+          "records/q_b184.json": "08716806e88f387dd754b63c3868a7594fcd5fbb4dc7247ea6ab7733821f1beb",
+          "records/q_b185.json": "b59caa9a3366109981bc4da158083cb3d63d4a45e044f092dbcf4f015e7cc7a4",
+          "records/q_b186.json": "9eaf069924d41df1052b2fce86da32a2aebc5aa3fa18e10afdd1e074446424d3",
+          "records/q_b187.json": "4a642f063b707bba428b7426c705154ec22912e0fa14de2e853313c2f0901530",
+          "records/q_b188.json": "b679c493a6bd63eadf8bfefaa92b889d61bac8b276d4860b009eeea39e9d0b23",
+          "records/q_b189.json": "a8e812f6023039d1aef80672c35f8c31374fab96d604d8554599032197436023",
+          "records/q_b190.json": "061abd87b8abc001f1e4957462046391c4bceb2e416ec45fef7a1049f6c9d0c0",
+          "records/q_b191.json": "0e8558b5d6792976d4728ef44b94d9471d57b4fce3bfea4c5dbec70efd146017",
+          "records/q_b192.json": "6b174332d21f7edea2dab71196d44fbc4ac17420ee48585e98c72a9d1332fd40",
+          "records/q_b193.json": "05f286ada644c5dbf3d73764929b8df684eedb5a837c81e50d8f7df58504f049",
+          "records/q_b194.json": "9387eb550e44b89fcf4b06922c9a362a0764df36b6b0f48c8423b54c987164b3",
+          "records/q_b195.json": "cd2bd2b94e8057543731a26577a2f30ac92eeab84125158630c2ce620cac1d6c",
+          "records/q_b196.json": "7da807bf4f8fd0cb38c62e7af860cf3d9008f8fa62e5b2b6ff2fb95e8a44ba43",
+          "records/q_b197.json": "7ae3b84cba07ade50e6b289e262bb2133d9318b74f8c440120e8016dc99d11b8",
+          "records/q_b198.json": "0c0975edeb687ef0714f7c13e73667e5b27f36947776a41e402cab27bcdd9903",
+          "records/q_b199.json": "126d082b4e8c8729434545a43d67b804811331ea2dfee1c82a1ea65d2694d3e5",
+          "result.json": "5ac4bfc0e28904fab8fe1b345dc6341f54e188acd6c7978d984c4ca5ecb42072",
+          "sources.json": "a8a134f0e1631f06692d6d019b56e38f028bfc6e86c2c2049e72a1c53003787e",
+          "started.json": "4d5980b4221cf6676dd3f5212db34f52f5eeda271d1b6cfe3d4d54cf9998b778",
+          "verification.json": "1e3043be8415047a5d9baaf3fdbd18fc6db6625c27ff811f875fd4b278c55218"
+        },
+        "payload_bytes_not_opened_in_preparation": true,
+        "payload_stat_sha256": "05f07742c1659fd5f33ea78f24cf7088093bd11ea1283d9fa0df1c18c8743f64",
+        "prior_full_payload_verification_reused": true,
+        "q_result_sha256": "06e7fe15b4f8438dcde0cbb79256a474c58fa64c9b27e832723b8a5d18bec1d4",
+        "state": {
+          "reconstruction": {
+            "buffers": [],
+            "gradients_present": false,
+            "parameters_sha256": "fd72e5431eb1447250cee7dc198e114ded73c84230f82c83f037a0548f2273ba",
+            "state_dict_sha256": "f2e398ee01d576199f6cacc7c175824df9f1520a91d66583dca66083449e9394",
+            "training_modules": []
+          },
+          "segmentation": {
+            "buffers": [],
+            "gradients_present": false,
+            "parameters_sha256": "c2f2f0d851d913f6d1a473883dbbad9056882153bc20bd34d4bbafd8b3a519d8",
+            "state_dict_sha256": "6fd6cc4666b8c25c9bb3d4a9a41450940cf2e846b8ee1eda4584ed50596e9749",
+            "training_modules": []
+          }
+        },
+        "threshold": 0.6587551027536391
+      },
+      "PatchCore": {
+        "Q_timing": {
+          "Q200_input_references": 200,
+          "Q200_scoring_and_cache_seconds": 507.8510427000001,
+          "Q200_seconds_per_input_reference": 2.5392552135000006,
+          "scope": "after model load through last Q cache write; includes per-image state checks and IO; excludes quantile"
+        },
+        "complete_sha256": "2764ecf4c9fd942fda4db783c491848f49c7b9a67842d91a9ca27df3732a72ec",
+        "independent_proof": {
+          "F100": {
+            "FP": 6,
+            "FPR": 0.06,
+            "TN": 94,
+            "normal_denominator": 100
+          },
+          "F100_Wilson95": [
+            0.027786123963188192,
+            0.1247681544589592
+          ],
+          "Q": {
+            "FP": 10,
+            "FPR": 0.05,
+            "TN": 190,
+            "normal_denominator": 200
+          },
+          "boundary": {
+            "D_hold_S_bg_Q_cal_old_test_GT_reads": 0,
+            "Q_F_acquisition_only_if_explicit": true,
+            "array_opens": 1500,
+            "author_placeholder_forwards": 0,
+            "blocked_attempts": [],
+            "forward_counter_semantics": "attempts before call; only committed rows are completed outputs",
+            "model_input_forwards": 0,
+            "model_loads": 0,
+            "model_packages_loaded": [],
+            "original_file_opens": 0,
+            "original_unique_paths": 0,
+            "parameter_updates": 0,
+            "real_calibrations": 0,
+            "render_calls": 0,
+            "source_decodes": 0,
+            "statistical_fits": 0,
+            "tensor_loads": 0,
+            "unrestricted_pickle_deserializations": 0
+          },
+          "model": "PatchCore",
+          "model_complete_sha256": "2764ecf4c9fd942fda4db783c491848f49c7b9a67842d91a9ca27df3732a72ec",
+          "status": "NORMAL_MODEL_CACHE_VERIFIED",
+          "tau_recomputed": false,
+          "threshold": 1.852951288223265
+        },
+        "independent_report_sha256": "d7487dd96f3207d4af19929e25752222762c7e00d413ccb2931366447480612c",
+        "json_sha256": {
+          "q_result.json": "32566462729d46eac110944f5eb7c948580cd7f16000849e879253642cd95da7",
+          "records/f_b000.json": "f6bf1f8d1f6b7147df241f428fcd8acda24bdef895fc59b1ad9040172612db34",
+          "records/f_b001.json": "e73a1f1134fcbaf80e42a12bc3269e512d9b800bbe4c2f95a0fa9262c3969d11",
+          "records/f_b002.json": "68d2a64e6ed0a5ec1df25598e7be6d3ef4e9bd04568ee3e466b08284a8a8cec3",
+          "records/f_b003.json": "fbd5dc280bd22994d06a7257ea0f3803c9c69184a97257a28043731e17d93e9a",
+          "records/f_b004.json": "0a77f5bfda826c7e7b78e459f14bb834f8a652ef07149b4fc6776620b6ad95f1",
+          "records/f_b005.json": "94d3bbe31612d7f069b4997157bce13d4b9fc45dbbe6b64fc20b36a812f58da0",
+          "records/f_b006.json": "3f659fa4f965d2e403efe1296c3e618a8ebc76c422ae793201b7409375d11e83",
+          "records/f_b007.json": "6c26e3656e34cf4e64ebebd2b9f35a40a3c7541cf63db84e785806e2e75c8db2",
+          "records/f_b008.json": "b71063c2481aca3cde6555e678d53ee48933442e7090586f1f7b274306fb7d7a",
+          "records/f_b009.json": "00dbeb13ba2aee32e2cfeff1eeb4984a33208744fe260b10682999e854b7d663",
+          "records/f_b010.json": "db3b1e3cdd32335f3b078500cd90589a4ed020212bd61531a278ab7eb41eef54",
+          "records/f_b011.json": "08863ba244446bc960d20126b0e077445f1b7dabb6968e938569eca0d85a7cea",
+          "records/f_b012.json": "9e5cbc87795675aad9271de9dfb740fdda974a692813c19de84d7897ee196dd0",
+          "records/f_b013.json": "c0480e4f19a657ac776307f3e911166d0cfe6707842629bd8fb01b50211859c9",
+          "records/f_b014.json": "6424b9e44d9a632ea87701ac81e9d04fa8ee7b431052c7a3a1d2cca7caaae368",
+          "records/f_b015.json": "5a9094c368b3d5a1afac9569eba2a93ed28ad88492c8e563fb5762e497726f10",
+          "records/f_b016.json": "2dfb00732525087c6458e64c46ee8bb952ca3338267d5cdac88f7cf9966cf5e2",
+          "records/f_b017.json": "54f17b53d87d4fe8162e2987b4b300ed96496ea2b3e7a14f9cdd3dc3398bb2c8",
+          "records/f_b018.json": "233301369411b30f185475a97574ee57d399757ffbe7e77dcae2279f3c9939ea",
+          "records/f_b019.json": "7adf04ca9a154c3cf9dfc76b1d5a4dbc99c92a80b6ea2598852ebcccbe0b6b16",
+          "records/f_b020.json": "fb8ce2bd5ee95967f232fa00e93e764c4b19d05ff083120341cc3a95c95aad30",
+          "records/f_b021.json": "0dbce76a1ba642d166a7c22f75a9fa8276a7bac4280470459792aa2ac7d8e422",
+          "records/f_b022.json": "75a2488ffdd7adecd5921e35adf40b71bfeb5f21f0b7b81dd4b72516b4e668d1",
+          "records/f_b023.json": "914de1dfb98695a0d52898026ec027aad6e707b16721e17b9630a88050bb044e",
+          "records/f_b024.json": "a7755d8bcbe13dd0128b82d42d6bf8250e82a797d1b0726f54bafc118a48cbc9",
+          "records/f_b025.json": "4a6a8dd882d4bb0fbb2e4e415eec13246a7b24793c3967d2d87572f5a6221f68",
+          "records/f_b026.json": "c2e9e8c0cb1c3215a47f63fa7f2fe89c428aea60299e1347b575933bcf09c75d",
+          "records/f_b027.json": "9a7c7add724eb94b6dd91ff164d6323290f1d53189b1166eda11c09192a0c236",
+          "records/f_b028.json": "9d147b055e0df0b805de7d86088ec3df93b8ee4d61670e15a313c0d13e14479e",
+          "records/f_b029.json": "40f701a67d8a275675429034cce72476eab8e4b4cc12e0c489f56e272c1d1224",
+          "records/f_b030.json": "e6d921d3fde351ab7bf501643012c08f7a0cfdd0ab6cf6ff1c9e3925a525f8ac",
+          "records/f_b031.json": "db72c5939c7e2723296a0a4daa358de0bf2eb5686ed47e8407bb5665edfdd62e",
+          "records/f_b032.json": "0534c3113efc913d8afb26779f43ec4dd79107a83d2e71c245caa448a2c31003",
+          "records/f_b033.json": "cd76ff3b2f3bd51d5ac93fdfb2259137fe615f18697d127f97e1505b495a5cad",
+          "records/f_b034.json": "b9b64b28a43c63dd77c247b3c76906226e247c16eba2588b2d61a87538cc5412",
+          "records/f_b035.json": "fd659fd3a1bed2dcbb51342f94c9db9d3ea37d27b8ca5a9e1a4ceab6c13a0106",
+          "records/f_b036.json": "edd0a7b67dd4abd4bbc44279c7643358e99895590161ef21df676ec9f7efc317",
+          "records/f_b037.json": "bbdc1a21814905bf19186d946a2ab183d1281413307383ce22d80aec457efa38",
+          "records/f_b038.json": "f0b84553bd702e580e8ac93b86a79b1616a1913c4072bbd4b3f32f655549febf",
+          "records/f_b039.json": "3fbf709583c2dedf9563860c07db2d41041f7cf51ba2e437f6b9ca04caefea38",
+          "records/f_b040.json": "5338c15aa13468f5f6b8a17e61304667b0d130fe9e5bec14f3cbb56a65db6ccd",
+          "records/f_b041.json": "307ed1487cabd03e65b6e6bdb759bc21e8ff0896f659a201bdd7350ed3713964",
+          "records/f_b042.json": "c9d6ccba23072cbf5542b446677462e3cbc9b81a0a4b67aae8338d2968a968b2",
+          "records/f_b043.json": "daa3a1f85a13f78ebe4798f2674a4ad8ac37ef29b37125e85d13fdda88e3c55f",
+          "records/f_b044.json": "a83a0810770a663def262c2ee7b7b5daa2bd8e941bfca0fd4978d8efb9bcce69",
+          "records/f_b045.json": "4a90093e6a1b874e14e9fcd3ea76a93a65a1a762421ca41ae3369f4dbd70b72b",
+          "records/f_b046.json": "d311e5cdbe093a7774fb8398254bb39fb17667587a065fda3e19dd348a698d80",
+          "records/f_b047.json": "53f61c7be1ddf135813cd8f3f06d35e847d5bf0e1d4df49cac9236b6d49aeae8",
+          "records/f_b048.json": "f4c1f7650590a332e5de5a8ec758343c3212cdf005386c70e2a4966684c87a21",
+          "records/f_b049.json": "37900a597b739bfbfc197bd8caf11108e2df5c75a69b0082cdcc4f1e35d36105",
+          "records/f_b050.json": "58b94b8c2af826747ba66a6b7ebce34efa5b2cfa349eab75929fdedfe8d34121",
+          "records/f_b051.json": "216fe8409132dcfc9e533fe0b6fb11d5071256215bd4b9a0d262f0bbac6c0b2a",
+          "records/f_b052.json": "30aa77f7222548f7c3be549ed974b408e9d5d5f0b2d787714ad07cb6729e523f",
+          "records/f_b053.json": "84313c901127c4acd9f604f0517139298e3dc1ce3a5f032fbb1d306caa02bc0d",
+          "records/f_b054.json": "aaf8106f50a7e231de3716ffd67e6556a075e88dee8bc93e3bd575d94cbe4926",
+          "records/f_b055.json": "3aa19985e99c02d178f829a8b01915ff2412dc5ecc60e81205c8aa89fc5d0479",
+          "records/f_b056.json": "e626ad060832b46be07fe8d563cf087f489ec7061ecae440505c1d4a9d9761d0",
+          "records/f_b057.json": "e0840cab2de8dc377480c3de0c745e3f9fe7546367c79defa0223c1a29a79927",
+          "records/f_b058.json": "8608b096bd028cd62d7cc9f8eea9b92019b49230334a0f6da2d86ddb027d7b6d",
+          "records/f_b059.json": "0d16c3446b5c2b3bd2b6877816471e1893108850b5b6956b4c2e9de6ad72591d",
+          "records/f_b060.json": "d36b6bf2034d4f93aebbbc7bc05cc5f4f6d43a384676c8149ddea20a91753f5f",
+          "records/f_b061.json": "fe29c210ad35b83453bb6f75176a1506a92fc26092b01d6d85e905190b11db3e",
+          "records/f_b062.json": "58b6c1655427049fa48671fdc18b5fc5c653215e3f591d70f6736916a2004064",
+          "records/f_b063.json": "4d0dd0fb844139dfd99f18557a53c7d1ecbc1bd761d764c56f44393fc3ab701d",
+          "records/f_b064.json": "b29a4828088daaec9c4053f9f441c985191e19970633d9a428902c1ac8d7dba5",
+          "records/f_b065.json": "b99eca31aeec2177866fa1a0fe604adf64c5689baad9401b9324f95da47b137b",
+          "records/f_b066.json": "eae1f5f7e1a64c1a04c3238cd2859447b725c8e5bbef14a654ed1a7de61c8db7",
+          "records/f_b067.json": "60af20bdf85b085edf4ad84ee6d3015b42dc8d28918f3e71dfe3379c8c9c74ff",
+          "records/f_b068.json": "3f1b11bf40a00dc1b88dc78a5e7fd79e14cf61ca675bd08882e34d0fdeefabca",
+          "records/f_b069.json": "e4d487123f05d08aa65d868ecb6cc36edae0396b19ab761063123060540a1505",
+          "records/f_b070.json": "b3b16355208b95d91093a8f79e02d0432fc9dd73fd83ee47c09f0b50a50f4ae2",
+          "records/f_b071.json": "a8197cc7442a877b76646486216ca7c76cfac06a901b00952b144070c51699c8",
+          "records/f_b072.json": "d3fbb79e285ed3736c003d9a713b128b8ae5e86e8cd163931cb32ac0162ceb55",
+          "records/f_b073.json": "5edce64ab214e128bdfa5b426deb2a7218d17d8c0b9bd7cfdf5f2ed3a1491085",
+          "records/f_b074.json": "cf5644951f72cbbca0ad37a5bf2a0c8887127788def00136ef0bec02bf2e8238",
+          "records/f_b075.json": "5d9d9c401d128728ee31a2f9fbec2e347403e6c64ca1917f22ca837e0afc7164",
+          "records/f_b076.json": "a708d8c64dc5f4bc679bac30d7c47a0e642e4d6c123cf7d26e40bf098bff298b",
+          "records/f_b077.json": "9796c4a625ebc512ab17f940b2aac04d750d861417b2ddf1d5293231aaaf454b",
+          "records/f_b078.json": "1cca9d3c04663801845ac9138ab50cb3c8db452a88599f50f3345980ac2cc09d",
+          "records/f_b079.json": "48eb6b8c8752d0eaaefe4ea338f51ffb61384b37238f05f65e3dcd48c1ec0699",
+          "records/f_b080.json": "64f613d05f2712d2a860bf1f35585ec025ac9a093e8ca5f8610a43d569e4d1c5",
+          "records/f_b081.json": "10a487f45f286e1dff262422a5a208e63e24955642adf2fb07ccbb44f7f53bc0",
+          "records/f_b082.json": "6628468891d3b28040ab0ef20c3a5862aca142ef2e1469d7cc43eba0229a3adb",
+          "records/f_b083.json": "830f22b8912b8136bfe7fdcece42da5bb04ad0838bf1fff83edcf7d3e96cbec1",
+          "records/f_b084.json": "9d18851701a0a00c81383a357f1cdcc3c7195a2187e87ad92efba8589219e6b3",
+          "records/f_b085.json": "ca47fbe210ef560c752de9eafdd6fbf25698e3daa7d52f0e68c7490e4ba12ebe",
+          "records/f_b086.json": "01e82b274e92f9139fc83272a9f916f0fa64de0b0adc01aa888108be7e366640",
+          "records/f_b087.json": "17c1580a5b2a18a25d9172ad8b08ba7cc7237e70ba15bc7f5d606b5f68b29c8d",
+          "records/f_b088.json": "d9a43d6a1691f3c074b5b594fa7dfae7c3ce5d32d5f6fe99b7f8770e4a301bdd",
+          "records/f_b089.json": "55ea751dec886ea4de29acddf100e6000a182db2c7c014ab88fa19438df0772a",
+          "records/f_b090.json": "81f1f5823d2bd51de4c5602637122b9c7d1063b44efe58c288ae427d3808b71d",
+          "records/f_b091.json": "bf1768d92e52c281ce199f87a42cb71c698a24ead180b22eb43ade202b2245dd",
+          "records/f_b092.json": "c397ffe6e636db78d70e292cd23dcb9eb0dc619e5831ee991f36380165f2c65a",
+          "records/f_b093.json": "e9680891c7fd2049d1ceb567ed6eb0f84dc9869eb3e0f79b93023eac170b0300",
+          "records/f_b094.json": "4114a9cb2a8789ec3ffd25c9e4a0344b0044f33cd9febfdc76c910a80e80a180",
+          "records/f_b095.json": "6b5b88db121d579e76fd8452c19d6e874b00ab2e5ea7048b554a123032163b55",
+          "records/f_b096.json": "14ea2c5095f988339782ddc62377bd76dfb29f9478a5c6c975dd535b8b0ed5fa",
+          "records/f_b097.json": "f23e03209b3e662e483f28cc336841c78ca9a83973a5ba2695eac3068ae4b82b",
+          "records/f_b098.json": "0052e0db3a1b0eb55d4fc19cab50901656b1e1ec6f4551fa46edf45492f35115",
+          "records/f_b099.json": "6bf7d2cf63aac1b2dd46fa71bd550e42ea8840ca295830171ac6650882a05098",
+          "records/q_b000.json": "a9dbb04b0bcc09de3038c03f836dd471bc76a049454c402cf65cbbc29c36a202",
+          "records/q_b001.json": "400b6e8b08b9b57a3a0df45ddd1985d195d6b8738bf8a120723ac80ca82939ae",
+          "records/q_b002.json": "2221b2a1cc636d4bc340b663188ec2e299725830ac828501832bc32d62804c00",
+          "records/q_b003.json": "0f8ba69c3d2430f8ce046934b535b9706cdba8eb34ee8fe4ed3d4495ad911aeb",
+          "records/q_b004.json": "3af4f9fea37da38ec1bf9ac484af36bbfb2c022007d0f5d8561f578d0a567405",
+          "records/q_b005.json": "a2ef3b819779242f7273853ead45b4388598bf06ce4d04117721080ec67d5323",
+          "records/q_b006.json": "dbc43bf81227cd7a1d06405b4974035e8772c0e6657e51e779a4a52cea8f7c90",
+          "records/q_b007.json": "8fdf55b9f74509aae6f803a40247eb70dbe93b1d5c8ab023b3516adb68b2123c",
+          "records/q_b008.json": "acd4295c41817cdf890303d57448ecacb840d3827fc3dfa9de830cb2e5981760",
+          "records/q_b009.json": "e0a0016ccc6566c52f845271ad3a5b5e9bff44fee98f65ec17e8cc89025f1b1e",
+          "records/q_b010.json": "6cfc8e5a981d3fc75ab9adc3b7831b4e958deabc7beea75bdda71b1a3ed9f517",
+          "records/q_b011.json": "9fdf3ef8053d60a38a150c2a66f4bc3640e768f1e60adaa6fe435668b67c08b3",
+          "records/q_b012.json": "16efd067f241620478b2baefa30f113a250549c24e478f2786b8bfe3b0b8aad6",
+          "records/q_b013.json": "6a2eda230d238b4e8e90c7b50086dd637e74a5c0a4b70c3cee72166d7742d749",
+          "records/q_b014.json": "1dabaa116dc5a92d7a333f193d21c11fcbc84c52b68ca2e57414573cafc6fe0d",
+          "records/q_b015.json": "787f67c5e27ade2b36e9c36e907ba7c79e97fccf1683019eb3e559c6ae56701e",
+          "records/q_b016.json": "c355028a53f16456d8a67f5c319de6a6d015499f9e4503d1bd83f7dcbaf620da",
+          "records/q_b017.json": "416cabacabdf08f299fc5ad0073faffe90141bcd16fa2df46fe23ccbf6b8ecb2",
+          "records/q_b018.json": "f899ff77dffa2d0e33b5feceb72685363a0b3614ea06b11f0432d2f796ff1e0c",
+          "records/q_b019.json": "be17fd34a26e52ee2111b1052efb18922e9ab5dd715bcf74910f0140622ee8cf",
+          "records/q_b020.json": "80704ea0a5b241ba9bc9e2f3e987065780ed02d1b00af5207b6b449574e891b3",
+          "records/q_b021.json": "fdbedca1e5176d01bc12dd3dfb903b986ac419a63556668600aab024cc1a4834",
+          "records/q_b022.json": "9323ff4abba230ccd05580d4b4852d8b7244d3685bb0aa7cdff1565ded5b5ba6",
+          "records/q_b023.json": "4b461b3432337c0c5d0e6912b0f3bd3d7fdba50a0871c841bbaa0862ac72ba76",
+          "records/q_b024.json": "c70977c47e9fb49e362900ca40a9a7cb983270f49e5f0ca44c93b4e8f866f80d",
+          "records/q_b025.json": "3608bf001b9a7832a0c94d6fae16869899074ac59d57d7a30059c4b5fbc3dc7b",
+          "records/q_b026.json": "aa6a00c0aef63d22f8cf65d63f8817c1bc71bdd2139ad06e78ed920301dc698c",
+          "records/q_b027.json": "227bd48cb5b4cc8c882bee0e49f675dacbdf5fec0abef725acb22ed4e2b62673",
+          "records/q_b028.json": "872c539f69fd179936d11082a5283938e0e9e83594ce82a5c9d81c6ec8d852d8",
+          "records/q_b029.json": "cdf52c37a6cef66744ac9e3b258f56c2c1e5c6c7affad18e265bd9822f632cba",
+          "records/q_b030.json": "120f3adc2fef30f3badd454460730adc61a726e72ae84c106ff5c34347736f34",
+          "records/q_b031.json": "afc61cb57508eb957042cf6f8c16c207136aa096fdf5af06f5b115df98ac0b6b",
+          "records/q_b032.json": "522dd85b43cdfab2c7413165d0bd481cedd5c66ef8dde12a716579664e2e7bf1",
+          "records/q_b033.json": "d5a3e28f206efdd9f90277cc6260ebc334030af96d2c429b65fb95a938ed9d6f",
+          "records/q_b034.json": "cfa7c53f5b22fd223b8eedd6391ec540595a2ce4d4cc2b4b9bb08e647c975451",
+          "records/q_b035.json": "1e25809a845191b70877d18906c51f0075f260819e7884d0cd2a3bd83db09c41",
+          "records/q_b036.json": "43b91c364e2de55c3d64a5ebe3f6b8e3352eec66a97fcb24f7a589176683f08e",
+          "records/q_b037.json": "129250d3e36940982b86084d718f21631c078fb2813dc7041da9142388afb2d5",
+          "records/q_b038.json": "e08c0c578b6d73cb549238f4171a4318c17909eae1bda5b49116eee13ad71f76",
+          "records/q_b039.json": "1706447b9375b7364b6cc4b5c64715a61e3fb9d09750ea77612600a3f6518ea2",
+          "records/q_b040.json": "b4fc326dd5da78d5b0113f61fe31aad2bfd4915e80d9fd651127412d8505b6db",
+          "records/q_b041.json": "82ebf7763ee2024b48b9aceeab1894320a4a640a8e595e9bdd8b6bc655328900",
+          "records/q_b042.json": "f74a7e2fee6ae2d49feb3d94fedf1a4fb8d208d653a84d60bc5e0e9567b553ec",
+          "records/q_b043.json": "d87d96149f9fae74b538134fb7464d2d337bfa5451690a166ec99ca9ea93598a",
+          "records/q_b044.json": "68a17c3cc8e0c5a0cd5d334ece94a79a1c822a3ec78269adf453b64ca5330a1c",
+          "records/q_b045.json": "9a27a36077921504beee1c75118ab3a5317724d068e7ece40d6cc4db5f8bd54f",
+          "records/q_b046.json": "b28fc54ea8625d87051950bdc473ee96cb4a84eff13656d24325b315c7855c56",
+          "records/q_b047.json": "b0b0effe7adb10aaf797d9ee7e77fab66c7e009fa87f84c4c7abd9d1ec511554",
+          "records/q_b048.json": "41d4f443c328c83a8c706969925d924e1caf8443f0b9b52656d353a0fb9a4c79",
+          "records/q_b049.json": "df4a52146609a344700cb57d666483db72950a9f4b6c9de12deb238970aa492e",
+          "records/q_b050.json": "8daf5ec1bc7eccb0396048a8905a68c81bc7cf47c69755606f3352515d622567",
+          "records/q_b051.json": "71dd73b4c15a7657c7cb566a20048efa1dec2cfed7a226acea73bb1db9b02a48",
+          "records/q_b052.json": "3c67412178a5ea83861f180c13c3ebf42f2d46c2163d616f6552be3cc63e1425",
+          "records/q_b053.json": "51b009eb0e9b64a74f648284e0471887a1b0d91dc0ff5c5118c24432d9fb91b1",
+          "records/q_b054.json": "c178c74e385af2ca1c5a1d6ca2cba1baa49f5627b28d15333415be710b95eebe",
+          "records/q_b055.json": "7111aaae347996cdfb970a247cf28fdb59ba3e18aa791449bd033ea6cbc1f335",
+          "records/q_b056.json": "fa52335807b310407545092749e084b75cd4be75d18a1dbaa7ef70b9675fbcec",
+          "records/q_b057.json": "584609b63ce6cab97f101df3c080453fdfbab1d1a3b1218a3f6bdf6260f632da",
+          "records/q_b058.json": "06464cde91997cd7372a96fd558c6699cb4788a2988a4a3a69a9dc110a464358",
+          "records/q_b059.json": "4379b3f9c2e1009adb37ac21e78dc71c795f41b883707e1787496eaa9b526d2f",
+          "records/q_b060.json": "12f297c34bb034fe990fc4f19f106cd847edc4d85f0e4415886c2807ad325550",
+          "records/q_b061.json": "d62168cd8fc0794f5c531520c52f384c64fea56a941395467a640a607c4a7ee4",
+          "records/q_b062.json": "c9ca09fedfd218ae03201213d8c28963f3976fede0d098a3e2ea229db8848846",
+          "records/q_b063.json": "e35b43b7c789d5fdee76ad8103f74e2b8739f17f537f24ce17ff43343b0bd247",
+          "records/q_b064.json": "0dd0b392061f3a75f57b07b3146442e3457a7f947405ab19c70a0cd8c8e2a11b",
+          "records/q_b065.json": "27baf163d9bce7a4e2ec77da98890ce68e5e95f547d7d7ba8cc7527ce90a1bfd",
+          "records/q_b066.json": "0203e98b69b470e7f1d1ee2f4293ee72135ebcb943f7d1590f3da997b004a506",
+          "records/q_b067.json": "41e22de01644d864e7271b1a4b747a77dd5d8bfb028a3c88465e97cfd988418e",
+          "records/q_b068.json": "8854bad4ed3eb46d8672777c579461999a59e3b0cd83cc836c63d809d853b93b",
+          "records/q_b069.json": "f3159baf35f003e734c593c7ab5e776265299c306f3097136f8565847d45c51e",
+          "records/q_b070.json": "37146b66762bdef9730f8b6481bff01364b6585e8339e9fd02ca51c9433ad1b4",
+          "records/q_b071.json": "21f3da8f52c509d6d4efc2dfc5aaedc87a11fbbd5a60f3c31d547245324d16a6",
+          "records/q_b072.json": "0710dd7c21c508f3c25e9bdd4a9979a3d61b6895178e12931dfd421216723e61",
+          "records/q_b073.json": "66fde11150de862755a245d508d480c29ab96879a2fb1e25bd27dbed2939b4a1",
+          "records/q_b074.json": "16a847665eb1014fe16bac21a251c07e47ca383d9a34c7734c20176c5ae1daa0",
+          "records/q_b075.json": "7a2c3d48fff0b9a9babdfd7d1e59078da860eee32585d57969b58a459526526c",
+          "records/q_b076.json": "68461e339a95ce00454ee6fca31b70777e9737f5df66ca39cc9edef36c478da2",
+          "records/q_b077.json": "c4f5a6f1febdb889ce19ae286d2bee8a785f497991df48bd5b2c931492e0caf6",
+          "records/q_b078.json": "ccad3543be2e8909ec033073839a125d3b12bb187fbad259c9a607d37f006a36",
+          "records/q_b079.json": "5fe2ffd0b9db1c38907d7f2ccea0a4154072d684e621562652a3e2a7184e70a3",
+          "records/q_b080.json": "4d7c1b72ac4db17c8b8bb69b80d7d0cafef79aa4df7dee4be49be946e919f66c",
+          "records/q_b081.json": "ffc767e5c86d9990286231fd230059160afb07ba984c7c7efc21125d362a9251",
+          "records/q_b082.json": "9276841fbde34d5cef4000687cc1d1c2c6a1fafccb7da354b1b3e919d9e3274c",
+          "records/q_b083.json": "7d66ae7d40dc276be9c9167099337323c5ea79a9e0802958664cdf6d82c45fd4",
+          "records/q_b084.json": "928478d05e08b0be2ad294b046e05af6487fd3765a1489ab87b69dc7c93b711a",
+          "records/q_b085.json": "d749d9035c38982a0fdc1c056f670d00f7a7d3b7ed4d39741796609b43dab6f2",
+          "records/q_b086.json": "9dc45cf26db5cbf24b48552126bfa9463dcaab15553fdcdd02725ef701d12d99",
+          "records/q_b087.json": "67de03f94859801fc37248a6cb4f648e1f8c228cfa8e3d1f40e4f04893d0598a",
+          "records/q_b088.json": "a26b6fe8379053706030956cf4ed1f1644a25008924434d87b42fb7eea438a41",
+          "records/q_b089.json": "4e167aede00bd868ed643eda331f0a7a51869a14e12ec4c6386f62fbd8e5c9af",
+          "records/q_b090.json": "198e7efb61ece0200b298f70d55e95291263dc35ec099278d7ee44049785054b",
+          "records/q_b091.json": "bd7822e9e1409d21fee6689a331644760b0f70d8721e683b220f2fdad6d31e85",
+          "records/q_b092.json": "442800dfcf8327f1837a1660d4d5859af4e8c2829fefe5d6278a57725e11e4b5",
+          "records/q_b093.json": "29c202dd6b74a8dca07d163666f9040896b29a37129286523b0724684ad72ffa",
+          "records/q_b094.json": "e4c9d06a644e4271af84950ea5028407af9b88b18c4b03fb6863f1245869682a",
+          "records/q_b095.json": "6a22809fa32017bbae5124bb7a23b198865b28906dfdbd858757d3cdd0eb9e8f",
+          "records/q_b096.json": "eb506cdaa508856abedd8a33f73db0affc4a7331a896747808b3618dd056e684",
+          "records/q_b097.json": "00367141ce3e1c4e2028c5187e2e47541bd4fe35e69ec524a575ad3444cdce40",
+          "records/q_b098.json": "071d8fd75aa522b1fd02a7872f2d9a9739682b96e8ceaafb1730d576e304ea9e",
+          "records/q_b099.json": "e30c85bead442ae0ec19f1fbe578afcb36183691a963a070bc22b6d206130844",
+          "records/q_b100.json": "3b5e85f6129d52c0b6ba94a114f22c5468918faf2e1b1c675178d2b9b3944f8a",
+          "records/q_b101.json": "f6370822c201d8db857c230e20b0eb7790f7c4b5c37a9354846a75be68ca29c3",
+          "records/q_b102.json": "564463077acfc6fa54c12f094e5009d76ecea5019305cd5843e6c36d385b3e1a",
+          "records/q_b103.json": "31ff5567c38bbf6104ced13c41182bacfb6940c9685adc834168ac62a484c1ed",
+          "records/q_b104.json": "a75b48e120e396b423feac6a1c0141f550b1c7fefa88998b9ca043ee78e8f1af",
+          "records/q_b105.json": "cbded9fb32e1916a4f05c8d1d832813044980a8f6671f768327001cf362831bd",
+          "records/q_b106.json": "fad8a18fe4d58dcae4b869a52759d467ebc180a74bd612efcd84f845a28d410d",
+          "records/q_b107.json": "ee78d0f18473a348187226a20bd1b26e89985abf1238c4900040a429bd70fe8f",
+          "records/q_b108.json": "e6b1ea533a80df24d1f1b4f2479f1d6a9215bbbbe9d76c75e5febd07b1892c31",
+          "records/q_b109.json": "fdb028f960d9b6d25ff047e3bb98916bcb48b46a6687e5ba0b3b3672d78af2cd",
+          "records/q_b110.json": "92ca6d73164aed486fa0389feec40f60abdae6831785e34e19e713329b3bd219",
+          "records/q_b111.json": "a7e4d765e79046b28e72a776c0779328e7803c268343860473025d58fb99cc53",
+          "records/q_b112.json": "f575d45c44e273d7b5763a0e6406fe7560e41fbdbefb9314500ceddfdd60ac75",
+          "records/q_b113.json": "b18039bcd4fca1ad23bc7f047bc176730905ebb6224fdf9f36e00bd8e6a5196f",
+          "records/q_b114.json": "847f47b80b699b0bf357617bf76c7f95cdd1ed962cf8621a1eb0ca6992ae5dcc",
+          "records/q_b115.json": "fe681e45e5aad615eb9d5cc5eaedc6877d735e176bd222bb216d1a33ff11af34",
+          "records/q_b116.json": "c963ab50fa1833cef9dfddd8d7550b352b400a288cc3fe84bdf7f653f3ce7d8a",
+          "records/q_b117.json": "7222a00896d5ab7d01a575ba8ffd1ae7223540b767eefe69b91dcdf558988b1e",
+          "records/q_b118.json": "be31774aa97b23934c52fde8beb8029a41887c7650e333db864199fe4e6e0faf",
+          "records/q_b119.json": "04bad557ba12dc0bc37eb7aeaaf4e26a16202a2244297ad9aa750ade214d0999",
+          "records/q_b120.json": "77cfedb0eeda7cdb581124f74e7ecf320d9cab7f562fc0360f38d140808272f5",
+          "records/q_b121.json": "9172b98752208f1c1f75a65210d51732d8785be4f863ed5aa28d7281b22fe54b",
+          "records/q_b122.json": "713586260dd7eac98641246e384c0b1d43bc5f178e9e08f42dcd97cf05f4487a",
+          "records/q_b123.json": "a47873918e5d8fbf2b1abbf7f2b1db1ee68acd555911321209e0c517a06c0d87",
+          "records/q_b124.json": "9dcb9b89042cf9d2a45b18f0080f4b04ecfe18c01f05d13036d250c1cc5ae34a",
+          "records/q_b125.json": "93367138ccea5b0741899072f97b1aca9d9ce15c3bc47565e844986e51f2a636",
+          "records/q_b126.json": "1b1e33d7f0f6675e9eb735b7ecfa5bcc0674ef870d9f53593a8afd02ad04de8a",
+          "records/q_b127.json": "473136a4762cea7403760b8eb0bfa7a462501f0748823682702fa59069e9bee3",
+          "records/q_b128.json": "dd86b7c7ba81fecd50c1fd90c7c9426c257c5215f168bbeeadf0f96b5b12dfe0",
+          "records/q_b129.json": "d7d45f6b5df261b1a27c9f1f3b6b1901e31380312f60852b8b203ee0bde83c7e",
+          "records/q_b130.json": "6363d6e30baeeb16c388ee74b9f955043f037f87eeed8e8b1bab870ff187d64d",
+          "records/q_b131.json": "a9bf22bf830df6559218318ea689d1b436a5946f23af2820e720d113c05cdfdc",
+          "records/q_b132.json": "c21fbe481a1c847e304aeb9cf8549e8c8a88a864564e81b84de4b52548f53122",
+          "records/q_b133.json": "7b0badce819eb6ccf8759cf4fe4a1baae7c1a630208541d52b0821d0ee5caccf",
+          "records/q_b134.json": "18c659ffca0b23b8cba50ad5bcb0f77253ea0595f3115e32eed3bf868fc6e82c",
+          "records/q_b135.json": "31f31dc0920c014ce778e6cd75fd68d4c0512f8300cdc4da6f88378e9b040cab",
+          "records/q_b136.json": "ae89d587162911a3997b2e498334395d87b9809513d42337e83280d3de241c44",
+          "records/q_b137.json": "61fdf77ccb71663263f66680c14a4c0813814196dc1716c5b8d326a529767233",
+          "records/q_b138.json": "4591d58b56f21b92c8c0285bf61241ea2d8f17409d2467f6da50e961d9dc5ea1",
+          "records/q_b139.json": "c5a266b34b6606b6afc7833b039c5fbb65854a6ba4b4b56d623e718b5d30be8b",
+          "records/q_b140.json": "bee2a66c6da4a04ae8f4a90bf35207e51e19f6dedf3b4c6056a4df73d2710340",
+          "records/q_b141.json": "a96cbbeeb98c0f947656a9465a1c4938ac65d7b54faaf9102167b01e444ea678",
+          "records/q_b142.json": "928984bf0952d201ffe28fb1650d968268937d8b9fc694a2918ed3db85f0e610",
+          "records/q_b143.json": "1c44b60dfceeac60c21f19cf84478deb2563f3b7f5f7e570ead22ce7f62d24db",
+          "records/q_b144.json": "fb2081aab400a9a00cb978fb627f394ccc471af15d4b157f084d3d4ea8fe4811",
+          "records/q_b145.json": "3b9f025625d8461c40a98311355c291984670bbf83a198ab5a2f128bcae60d89",
+          "records/q_b146.json": "b2b1c1ae8554948e29f756734b93c54d43f470ee7c7b0f898d1308e1809c6078",
+          "records/q_b147.json": "5030d836ed1a86edfa916afff360e415cb7ae6aa785a68e18e48ca32e97bff24",
+          "records/q_b148.json": "5a6a2db47573d6477a069c03527928a4ee9430bdd573adb4e786ca808e6869f9",
+          "records/q_b149.json": "8eadd650455154f9ea7a21c8bffbac98a4d11bf98f438b3e32b1c8699b49f9b3",
+          "records/q_b150.json": "f347fec6f310c8f7260d34b387311417673f299852fe357abc95b22bca19c0db",
+          "records/q_b151.json": "54d5abdb3669ec35fd455c718692d6d0508333fdf42723c84f4e98ee5a975dbf",
+          "records/q_b152.json": "075d2e48d90a13ae33a9411c35850d9fe9bf052c53e5585220db2eced209e240",
+          "records/q_b153.json": "9e86fe022e12824210d40d4816ee50e62ff21f96175ce3ca60b33e933809f35f",
+          "records/q_b154.json": "17f5bfa0f3a302724335e71624d18d095bd19cfa7e2fef5b8cd01da2d432ad9c",
+          "records/q_b155.json": "caa472ec27d798456f0211ec93d1cddc4f35295e6f6ead494cce5e25c02e9be6",
+          "records/q_b156.json": "21c89ad3a9d203f7eefea0f993cb83729e7aba7854cdaac1179298212aac53a4",
+          "records/q_b157.json": "50210429d3e00e8d71c3cb758f22890c839dd5df98597c060e54afe2d671635a",
+          "records/q_b158.json": "c61d7de3462ce3b900235e30d4c3e3a3a31293cdb9f56e40bbf6be1190500622",
+          "records/q_b159.json": "54da21d78257923666162e88b6e08529815a83671a950dcd83c07a2cc806e61c",
+          "records/q_b160.json": "b63bb59cd379c81f3dcb59833a1dbe6f7f32dc32b6637ac7de5d1b89c54f862d",
+          "records/q_b161.json": "2c647cd16fc0cccfd0d27de7f9a92fa647dc1125b4e39fb9b70773d0c06fafcd",
+          "records/q_b162.json": "ca536b813474bb2950caa288e8ab2ca00f59f8ee39c1d0194aac22377e69f472",
+          "records/q_b163.json": "e52749d44872797f7adba44e4e4536a08e0927a0c827027ab0b0202042e58527",
+          "records/q_b164.json": "3f5c2bf371ee115fdd38deb6a4870a47c85c7fb6d5956093d24545b95577e0bc",
+          "records/q_b165.json": "d4a089f23d755ec752d580b4620699e3d1d1d3d2b47c13e455fe731dbfff7ffb",
+          "records/q_b166.json": "22d62ae29e0c30ae2bf0011bbe6a94a9dc7ee7b29f5411bac9d24574d788c89e",
+          "records/q_b167.json": "c0354a488aff4906c3c4eb9669650cfd3a9d8090e9aca54d97a62ab500b10bf1",
+          "records/q_b168.json": "b4b55a4a4f1fdd86a1f0115e9c3cb96cdc6f979f349edb142693d08f9c0a6bec",
+          "records/q_b169.json": "dc90316b8eb474bce4fdfc42e644b93622adca5268fb988fedc617e6ac95058c",
+          "records/q_b170.json": "fadb35d68b170a3ebe556e5ca62e6c00aec6b4b5e5554e8bde138ae88d15b2bf",
+          "records/q_b171.json": "7de83f4a580ca906c9fdb6724a4a311b550426b72cdfe95535ebe72ef667f5f5",
+          "records/q_b172.json": "c1296c467c0ce8785a3a4ec87ed9e6bc88f5da9e914e61edb720e11f64f3771c",
+          "records/q_b173.json": "71ae3117291e790d89028ba411e5112eb980a56a203168b0dbaea46055629512",
+          "records/q_b174.json": "8967ec0ad5f50d687f9dfc4b9c7dff9a3baa248977367247a82db9369b2b9d3a",
+          "records/q_b175.json": "2beddb876678101e18fbdcbdc23691e278555818e5148c0cd7e607463fd58588",
+          "records/q_b176.json": "5b24afe0674b874aa8c492487308e4dcc53ecf56d181871713a19f970fd73383",
+          "records/q_b177.json": "ebfd47e9bb8047ef39d2191b102866b1ce060c8c796ecb4630d8c42cff7323fb",
+          "records/q_b178.json": "70218bc309b8a389e4a66a5734fd4aff8bbff5e89e1a0d74dc95314657bb597a",
+          "records/q_b179.json": "5b98b219462fa9b14f45d6f3eab632b905be6f7af26ce20924b3dcebb108e7ab",
+          "records/q_b180.json": "dfc2899493c2d886dd0a3393b87d53e9e8c23b97c2777b5b03882d78362bbd3f",
+          "records/q_b181.json": "d7f7ddf4d5bbeaa2b0443f941db430797b43082198a924ec10dd8cc1c34d8158",
+          "records/q_b182.json": "fd6d396bcecdfd12a6f7a0ae294336badbdd5ac9a65ce5ac5b278abda4d817e7",
+          "records/q_b183.json": "6edc83c4caea78c480b60b6ba23e0928d514da7d6cd8f81d9a665b45beacb395",
+          "records/q_b184.json": "7db5e8c4007a50d284bd8bd4839f428b53e7c54f5fbc742598e2071c48d61383",
+          "records/q_b185.json": "9519d168a4d8946075441114bcce72b4c4c1f0a52dd8e39d9b40e5c5113ba057",
+          "records/q_b186.json": "de53d3c2ba6d355408522bd67b10c23b37bee2767d96674fa0af43149b9d1f1a",
+          "records/q_b187.json": "69e28e6528ccb632f691dc582aeffed778595f43be2012ef46c7d0c9509fb5d6",
+          "records/q_b188.json": "cfe8b6ff72b7585bcc910a4d4eb92575ff896a99201d38d811b95ffe2727bcd8",
+          "records/q_b189.json": "3e1692eb636ce00a91b595f73984626bc67c4f530dcf7087483e31205d7cb85b",
+          "records/q_b190.json": "45f286395b20d42eea477900dd1124cce3b8690e682febe4a7515ade7861d440",
+          "records/q_b191.json": "1a20a013518f2ab15a1d90170489f91bece66f7626a540110ff3054e7482f3ea",
+          "records/q_b192.json": "b33adba87470e3c6e0ee1205abaeee33eda1607f55855b35c6ce443849d4dd7c",
+          "records/q_b193.json": "96e719b440ecf3712c1be292afdc39513b061e0b2882a796e148769ecfad5db4",
+          "records/q_b194.json": "23571810d8b328e4b607c5fa9e4ddd3d052e26fa7126a981c5a3e6c4358afb2a",
+          "records/q_b195.json": "17df397c1989d679d6c25e06c2a4cdea23c59c7596bf4bc7218f14b42485478a",
+          "records/q_b196.json": "7a4fc4b504fc60482c33ae25784a0c0963115f74bf2b9aa35aebdbd0d7e0bff2",
+          "records/q_b197.json": "8d64ee71d688c3ae67bd3f320de095fc557811b957c1a3af44e634a57e44e785",
+          "records/q_b198.json": "05272663c3cdae268b34456462e934d30ee1eaa77d5749da8d0f58dc948400ff",
+          "records/q_b199.json": "430f9270b46086104272f57759ce56d66d50d879cdc58d08d86fd7cd0eeb41a6",
+          "result.json": "8e35071bca8616702faf69fc3b3f0db5014426cb316ae4201ac376948ce807d4",
+          "sources.json": "de0a6fddbe50c3a29953f460e23ce92a129c3f637452612023a25cfbda84dad5",
+          "started.json": "6a6225147bdc1b40489bf42c585ab7a17b198df62934cd7309be6877763b0680",
+          "verification.json": "7ff7ae5c239a59b3c71c8724d990070c786263412ed832acb64c4446e7abcc61"
+        },
+        "payload_bytes_not_opened_in_preparation": true,
+        "payload_stat_sha256": "2dd1faf1ca23a8a31d7f973f5c1e61c54bd88a5bf25dd4f185440950cc39887c",
+        "prior_full_payload_verification_reused": true,
+        "q_result_sha256": "32566462729d46eac110944f5eb7c948580cd7f16000849e879253642cd95da7",
+        "state": {
+          "PatchCore": {
+            "buffers": [
+              [
+                "backbone.bn1.running_mean",
+                "torch.float32",
+                [
+                  64
+                ]
+              ],
+              [
+                "backbone.bn1.running_var",
+                "torch.float32",
+                [
+                  64
+                ]
+              ],
+              [
+                "backbone.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer1.0.bn1.running_mean",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.0.bn1.running_var",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.0.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer1.0.bn2.running_mean",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.0.bn2.running_var",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.0.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer1.0.bn3.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer1.0.bn3.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer1.0.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer1.0.downsample.1.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer1.0.downsample.1.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer1.0.downsample.1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer1.1.bn1.running_mean",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.1.bn1.running_var",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.1.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer1.1.bn2.running_mean",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.1.bn2.running_var",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.1.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer1.1.bn3.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer1.1.bn3.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer1.1.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer1.2.bn1.running_mean",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.2.bn1.running_var",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.2.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer1.2.bn2.running_mean",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.2.bn2.running_var",
+                "torch.float32",
+                [
+                  128
+                ]
+              ],
+              [
+                "backbone.layer1.2.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer1.2.bn3.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer1.2.bn3.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer1.2.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.0.bn1.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.0.bn1.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.0.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.0.bn2.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.0.bn2.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.0.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.0.bn3.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer2.0.bn3.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer2.0.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.0.downsample.1.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer2.0.downsample.1.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer2.0.downsample.1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.1.bn1.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.1.bn1.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.1.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.1.bn2.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.1.bn2.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.1.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.1.bn3.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer2.1.bn3.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer2.1.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.2.bn1.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.2.bn1.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.2.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.2.bn2.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.2.bn2.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.2.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.2.bn3.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer2.2.bn3.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer2.2.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.3.bn1.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.3.bn1.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.3.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.3.bn2.running_mean",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.3.bn2.running_var",
+                "torch.float32",
+                [
+                  256
+                ]
+              ],
+              [
+                "backbone.layer2.3.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer2.3.bn3.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer2.3.bn3.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer2.3.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.0.bn1.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.0.bn1.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.0.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.0.bn2.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.0.bn2.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.0.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.0.bn3.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.0.bn3.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.0.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.0.downsample.1.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.0.downsample.1.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.0.downsample.1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.1.bn1.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.1.bn1.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.1.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.1.bn2.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.1.bn2.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.1.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.1.bn3.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.1.bn3.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.1.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.2.bn1.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.2.bn1.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.2.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.2.bn2.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.2.bn2.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.2.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.2.bn3.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.2.bn3.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.2.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.3.bn1.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.3.bn1.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.3.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.3.bn2.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.3.bn2.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.3.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.3.bn3.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.3.bn3.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.3.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.4.bn1.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.4.bn1.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.4.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.4.bn2.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.4.bn2.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.4.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.4.bn3.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.4.bn3.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.4.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.5.bn1.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.5.bn1.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.5.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.5.bn2.running_mean",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.5.bn2.running_var",
+                "torch.float32",
+                [
+                  512
+                ]
+              ],
+              [
+                "backbone.layer3.5.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer3.5.bn3.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.5.bn3.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer3.5.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer4.0.bn1.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.0.bn1.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.0.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer4.0.bn2.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.0.bn2.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.0.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer4.0.bn3.running_mean",
+                "torch.float32",
+                [
+                  2048
+                ]
+              ],
+              [
+                "backbone.layer4.0.bn3.running_var",
+                "torch.float32",
+                [
+                  2048
+                ]
+              ],
+              [
+                "backbone.layer4.0.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer4.0.downsample.1.running_mean",
+                "torch.float32",
+                [
+                  2048
+                ]
+              ],
+              [
+                "backbone.layer4.0.downsample.1.running_var",
+                "torch.float32",
+                [
+                  2048
+                ]
+              ],
+              [
+                "backbone.layer4.0.downsample.1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer4.1.bn1.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.1.bn1.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.1.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer4.1.bn2.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.1.bn2.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.1.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer4.1.bn3.running_mean",
+                "torch.float32",
+                [
+                  2048
+                ]
+              ],
+              [
+                "backbone.layer4.1.bn3.running_var",
+                "torch.float32",
+                [
+                  2048
+                ]
+              ],
+              [
+                "backbone.layer4.1.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer4.2.bn1.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.2.bn1.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.2.bn1.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer4.2.bn2.running_mean",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.2.bn2.running_var",
+                "torch.float32",
+                [
+                  1024
+                ]
+              ],
+              [
+                "backbone.layer4.2.bn2.num_batches_tracked",
+                "torch.int64",
+                []
+              ],
+              [
+                "backbone.layer4.2.bn3.running_mean",
+                "torch.float32",
+                [
+                  2048
+                ]
+              ],
+              [
+                "backbone.layer4.2.bn3.running_var",
+                "torch.float32",
+                [
+                  2048
+                ]
+              ],
+              [
+                "backbone.layer4.2.bn3.num_batches_tracked",
+                "torch.int64",
+                []
+              ]
+            ],
+            "gradients_present": false,
+            "parameters_sha256": "6372d614e547b82ad3683dab5f7ab453897c13d765c73871fb26305f1a4e4587",
+            "state_dict_sha256": "1a33eb6df3f1ea53b04d7913bf4039dbc8f13db5f5ed7c9263a39afc7f9c25f9",
+            "training_modules": []
+          }
+        },
+        "threshold": 1.852951288223265
+      }
+    },
+    "normal_preparation_complete_sha256": "b27ab761fc0af094d98d221546e64ca053efb7216e5ac6862b306c947e46dc77",
+    "normal_protocol_sha256": "ea64281c4ca714f30d557dc7215a57805329b61f6d8f9ba5e95cbe0903bfe4d7"
+  },
+  "stage": 5,
+  "state_checks": "initial full signature equals normal-workpoint saved state; unchanged after each unique input and before sealing",
+  "threshold_rule": "score strictly greater than saved own normal-workpoint tau; never recompute quantile",
+  "thresholds": {
+    "G1": 0.6587551027536391,
+    "PatchCore": 1.852951288223265
+  },
+  "timing_scope": "owned construction plus scoring/state/IO transaction, excluding prior metadata and final hash seal",
+  "transaction": "one independent model per process; exclusive new directory; inflight before construction/each input; no partial continuation, automatic retry or intersection"
+}

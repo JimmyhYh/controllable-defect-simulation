@@ -1,0 +1,96 @@
+{
+  "D_hold": "no loading/evaluation entry; separate authorization only after complete fit freeze",
+  "H_alarm": "descriptive only; never alternate fitting target",
+  "L2": 0.01,
+  "all_required": "4 main candidates + 2 SEMU-only sensitivities + shared p0; no best-model selection",
+  "analytic_gradient": true,
+  "constant_continuous": "exact raw max==min -> transformed0; saved scale0; no epsilon",
+  "eligibility": "all 7560 common-defined D_fit requests; include315 zero; all60 backgrounds",
+  "fitting_requires_user_manual_launch": true,
+  "indicators": "bright1/dark0; ellipse_h1/otherwise0; ellipse_d1/otherwise0; remain0/1",
+  "inherited_SciPy_defaults": [
+    "maxcor10",
+    "maxls20",
+    "maxfun15000"
+  ],
+  "initialization": "all coefficients0; no randomness",
+  "interaction": "raw u*v before centering/scaling; not product of standardized u and v",
+  "intercept": "first column1, unpenalized",
+  "model_specs": [
+    {
+      "id": "C-only",
+      "k": null,
+      "kind": "C-only"
+    },
+    {
+      "id": "C+area",
+      "k": null,
+      "kind": "C+area"
+    },
+    {
+      "id": "SEMU-only_k0.4",
+      "k": 0.4,
+      "kind": "SEMU-only"
+    },
+    {
+      "id": "C+area+context",
+      "k": null,
+      "kind": "C+area+context"
+    },
+    {
+      "id": "SEMU-only_k0.2",
+      "k": 0.2,
+      "kind": "SEMU-only"
+    },
+    {
+      "id": "SEMU-only_k0.8",
+      "k": 0.8,
+      "kind": "SEMU-only"
+    }
+  ],
+  "objective": "sum_i(w_i*logaddexp(0,(1-2*y_i)*z_i)) + 0.01/2*sum(beta[1:]**2)",
+  "optimizer": "SciPy L-BFGS-B",
+  "options": {
+    "ftol": 1e-12,
+    "gtol": 1e-08,
+    "maxcor": 10,
+    "maxfun": 15000,
+    "maxiter": 2000,
+    "maxls": 20
+  },
+  "rank": "record rank/condition; unpenalized design rank alone is not failure under fixed L2",
+  "raw_features": {
+    "C+area": [
+      "u",
+      "log(A_geo)",
+      "u*log(A_geo)"
+    ],
+    "C+area+context": [
+      "u",
+      "log(A_geo)",
+      "u*log(A_geo)",
+      "log(Lb)",
+      "background_std_Y/Lb",
+      "is_bright",
+      "is_ellipse_h",
+      "is_ellipse_d"
+    ],
+    "C-only": [
+      "log1p(C_pair_pct)"
+    ],
+    "SEMU-only": [
+      "log1p(SEMU_proxy[k])"
+    ]
+  },
+  "resources": {
+    "D_free_GiB": 40,
+    "RAM_GiB": 2
+  },
+  "shared_p0": "sum_b(mean_j(H_joint[b,j]))/number_of_backgrounds",
+  "standardization": "background-weighted D_fit population mean/std(ddof0); continuous only",
+  "stop": "one-class/<40 backgrounds/nonfinite/invalid scale/optimizer not successful; preserve/no retry",
+  "target": "H_joint",
+  "tau": 1.852951288223265,
+  "transaction": "own complete or preserve partial/unknown; no resume; no optimizer in verification",
+  "weights": "each background total1/B; row weight1/(B*n_b); no class reweighting"
+}

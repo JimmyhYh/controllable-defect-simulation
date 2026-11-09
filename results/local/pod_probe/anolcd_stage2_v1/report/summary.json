@@ -1,0 +1,369 @@
+{
+ "baseline_fp": 6,
+ "baseline_n": 60,
+ "cells": [
+  {
+   "SEMU_actual_median": 1.0558721705997673,
+   "detection_rate": 0.17647058823529413,
+   "hits": 3,
+   "n": 17,
+   "peak_in_mask_rate": 0.058823529411764705,
+   "shape": "mura_p25",
+   "target_SEMU": 1.0
+  },
+  {
+   "SEMU_actual_median": 1.5649959671007057,
+   "detection_rate": 0.29411764705882354,
+   "hits": 5,
+   "n": 17,
+   "peak_in_mask_rate": 0.29411764705882354,
+   "shape": "mura_p25",
+   "target_SEMU": 1.6
+  },
+  {
+   "SEMU_actual_median": 2.557022949595662,
+   "detection_rate": 0.4074074074074074,
+   "hits": 11,
+   "n": 27,
+   "peak_in_mask_rate": 0.37037037037037035,
+   "shape": "mura_p25",
+   "target_SEMU": 2.5
+  },
+  {
+   "SEMU_actual_median": 4.0662720998618225,
+   "detection_rate": 0.40425531914893614,
+   "hits": 19,
+   "n": 47,
+   "peak_in_mask_rate": 0.3404255319148936,
+   "shape": "mura_p25",
+   "target_SEMU": 4.0
+  },
+  {
+   "SEMU_actual_median": 6.314792862150972,
+   "detection_rate": 0.48936170212765956,
+   "hits": 23,
+   "n": 47,
+   "peak_in_mask_rate": 0.7021276595744681,
+   "shape": "mura_p25",
+   "target_SEMU": 6.3
+  },
+  {
+   "SEMU_actual_median": 9.934884808471484,
+   "detection_rate": 0.9574468085106383,
+   "hits": 45,
+   "n": 47,
+   "peak_in_mask_rate": 0.8723404255319149,
+   "shape": "mura_p25",
+   "target_SEMU": 10.0
+  },
+  {
+   "SEMU_actual_median": 15.962276347739932,
+   "detection_rate": 1.0,
+   "hits": 47,
+   "n": 47,
+   "peak_in_mask_rate": 0.9574468085106383,
+   "shape": "mura_p25",
+   "target_SEMU": 16.0
+  },
+  {
+   "SEMU_actual_median": 24.40867478339666,
+   "detection_rate": 1.0,
+   "hits": 47,
+   "n": 47,
+   "peak_in_mask_rate": 0.9787234042553191,
+   "shape": "mura_p25",
+   "target_SEMU": 25.0
+  },
+  {
+   "SEMU_actual_median": 1.0735168960417458,
+   "detection_rate": 0.21428571428571427,
+   "hits": 3,
+   "n": 14,
+   "peak_in_mask_rate": 0.07142857142857142,
+   "shape": "mura_med",
+   "target_SEMU": 1.0
+  },
+  {
+   "SEMU_actual_median": 1.6903372191325443,
+   "detection_rate": 0.47058823529411764,
+   "hits": 8,
+   "n": 17,
+   "peak_in_mask_rate": 0.35294117647058826,
+   "shape": "mura_med",
+   "target_SEMU": 1.6
+  },
+  {
+   "SEMU_actual_median": 2.5364667935720684,
+   "detection_rate": 0.7,
+   "hits": 14,
+   "n": 20,
+   "peak_in_mask_rate": 0.65,
+   "shape": "mura_med",
+   "target_SEMU": 2.5
+  },
+  {
+   "SEMU_actual_median": 4.718615244846059,
+   "detection_rate": 0.8936170212765957,
+   "hits": 42,
+   "n": 47,
+   "peak_in_mask_rate": 0.9148936170212766,
+   "shape": "mura_med",
+   "target_SEMU": 4.0
+  },
+  {
+   "SEMU_actual_median": 6.372535046250548,
+   "detection_rate": 0.9148936170212766,
+   "hits": 43,
+   "n": 47,
+   "peak_in_mask_rate": 0.9787234042553191,
+   "shape": "mura_med",
+   "target_SEMU": 6.3
+  },
+  {
+   "SEMU_actual_median": 9.995287997774886,
+   "detection_rate": 1.0,
+   "hits": 47,
+   "n": 47,
+   "peak_in_mask_rate": 0.9787234042553191,
+   "shape": "mura_med",
+   "target_SEMU": 10.0
+  },
+  {
+   "SEMU_actual_median": 15.906023182831058,
+   "detection_rate": 1.0,
+   "hits": 47,
+   "n": 47,
+   "peak_in_mask_rate": 1.0,
+   "shape": "mura_med",
+   "target_SEMU": 16.0
+  },
+  {
+   "SEMU_actual_median": 25.15317937304419,
+   "detection_rate": 1.0,
+   "hits": 47,
+   "n": 47,
+   "peak_in_mask_rate": 1.0,
+   "shape": "mura_med",
+   "target_SEMU": 25.0
+  },
+  {
+   "SEMU_actual_median": 1.0612774381249734,
+   "detection_rate": 0.3333333333333333,
+   "hits": 3,
+   "n": 9,
+   "peak_in_mask_rate": 0.2222222222222222,
+   "shape": "mura_p75",
+   "target_SEMU": 1.0
+  },
+  {
+   "SEMU_actual_median": 1.8101443480836243,
+   "detection_rate": 0.4117647058823529,
+   "hits": 7,
+   "n": 17,
+   "peak_in_mask_rate": 0.29411764705882354,
+   "shape": "mura_p75",
+   "target_SEMU": 1.6
+  },
+  {
+   "SEMU_actual_median": 2.5217207218717865,
+   "detection_rate": 0.5,
+   "hits": 9,
+   "n": 18,
+   "peak_in_mask_rate": 0.4444444444444444,
+   "shape": "mura_p75",
+   "target_SEMU": 2.5
+  },
+  {
+   "SEMU_actual_median": 4.729203063194198,
+   "detection_rate": 0.9761904761904762,
+   "hits": 41,
+   "n": 42,
+   "peak_in_mask_rate": 0.9047619047619048,
+   "shape": "mura_p75",
+   "target_SEMU": 4.0
+  },
+  {
+   "SEMU_actual_median": 6.386318366851512,
+   "detection_rate": 0.9787234042553191,
+   "hits": 46,
+   "n": 47,
+   "peak_in_mask_rate": 1.0,
+   "shape": "mura_p75",
+   "target_SEMU": 6.3
+  },
+  {
+   "SEMU_actual_median": 10.003402338003804,
+   "detection_rate": 1.0,
+   "hits": 47,
+   "n": 47,
+   "peak_in_mask_rate": 1.0,
+   "shape": "mura_p75",
+   "target_SEMU": 10.0
+  },
+  {
+   "SEMU_actual_median": 15.996544566869723,
+   "detection_rate": 1.0,
+   "hits": 47,
+   "n": 47,
+   "peak_in_mask_rate": 1.0,
+   "shape": "mura_p75",
+   "target_SEMU": 16.0
+  },
+  {
+   "SEMU_actual_median": 24.974785324461063,
+   "detection_rate": 1.0,
+   "hits": 47,
+   "n": 47,
+   "peak_in_mask_rate": 1.0,
+   "shape": "mura_p75",
+   "target_SEMU": 25.0
+  },
+  {
+   "SEMU_actual_median": 1.0715292931172897,
+   "detection_rate": 0.6666666666666666,
+   "hits": 4,
+   "n": 6,
+   "peak_in_mask_rate": 0.5,
+   "shape": "line_med",
+   "target_SEMU": 1.0
+  },
+  {
+   "SEMU_actual_median": 1.668301101290013,
+   "detection_rate": 0.6666666666666666,
+   "hits": 10,
+   "n": 15,
+   "peak_in_mask_rate": 0.8,
+   "shape": "line_med",
+   "target_SEMU": 1.6
+  },
+  {
+   "SEMU_actual_median": 2.4070947221714962,
+   "detection_rate": 0.7777777777777778,
+   "hits": 14,
+   "n": 18,
+   "peak_in_mask_rate": 0.6666666666666666,
+   "shape": "line_med",
+   "target_SEMU": 2.5
+  },
+  {
+   "SEMU_actual_median": 4.167907110943154,
+   "detection_rate": 1.0,
+   "hits": 26,
+   "n": 26,
+   "peak_in_mask_rate": 0.8076923076923077,
+   "shape": "line_med",
+   "target_SEMU": 4.0
+  },
+  {
+   "SEMU_actual_median": 7.126133871542081,
+   "detection_rate": 1.0,
+   "hits": 45,
+   "n": 45,
+   "peak_in_mask_rate": 0.8444444444444444,
+   "shape": "line_med",
+   "target_SEMU": 6.3
+  },
+  {
+   "SEMU_actual_median": 10.002914529517223,
+   "detection_rate": 1.0,
+   "hits": 47,
+   "n": 47,
+   "peak_in_mask_rate": 0.8936170212765957,
+   "shape": "line_med",
+   "target_SEMU": 10.0
+  },
+  {
+   "SEMU_actual_median": 16.07712656607444,
+   "detection_rate": 1.0,
+   "hits": 47,
+   "n": 47,
+   "peak_in_mask_rate": 1.0,
+   "shape": "line_med",
+   "target_SEMU": 16.0
+  },
+  {
+   "SEMU_actual_median": 25.1126920277751,
+   "detection_rate": 1.0,
+   "hits": 47,
+   "n": 47,
+   "peak_in_mask_rate": 1.0,
+   "shape": "line_med",
+   "target_SEMU": 25.0
+  }
+ ],
+ "note": "区间为背景重采样的百分位区间，非 MIL-HDBK-1823A 的严格 a90/95；背景取自 test/good，未参与建库与校准但属历史 Tfinal；Cx 未做 sRGB 线性化，SEMU 只作相对比较",
+ "per_shape": {
+  "line_med": {
+   "SEMU_50": "below_min",
+   "SEMU_50_ci95": [
+    1.1613075972911255,
+    2.1643886554490708
+   ],
+   "SEMU_90": 3.2374718368951996,
+   "SEMU_90_ci95": [
+    2.045130365127149,
+    3.5150134899445047
+   ],
+   "boot_valid": 83,
+   "monotonic": true
+  },
+  "mura_med": {
+   "SEMU_50": 1.6942157077450988,
+   "SEMU_50_ci95": [
+    1.29498873475808,
+    2.272634072406334
+   ],
+   "SEMU_90": 4.5839952481855795,
+   "SEMU_90_ci95": [
+    2.902272954545512,
+    7.236663598714063
+   ],
+   "boot_valid": 998,
+   "monotonic": true
+  },
+  "mura_p25": {
+   "SEMU_50": 6.366503636966382,
+   "SEMU_50_ci95": [
+    1.99968223752657,
+    6.970032517996113
+   ],
+   "SEMU_90": 9.448733781331098,
+   "SEMU_90_ci95": [
+    8.977997115624415,
+    9.771630299191733
+   ],
+   "boot_valid": 1000,
+   "monotonic": true
+  },
+  "mura_p75": {
+   "SEMU_50": 2.5,
+   "SEMU_50_ci95": [
+    1.3414515424006628,
+    2.8808331376731444
+   ],
+   "SEMU_90": 3.710229670285421,
+   "SEMU_90_ci95": [
+    3.5150134899445047,
+    3.822184961903343
+   ],
+   "boot_valid": 946,
+   "monotonic": true
+  }
+ },
+ "real_mura_SEMU": {
+  "median": 8.206299512144442,
+  "n": 47,
+  "p25": 5.645712797732056,
+  "p75": 18.868022419054
+ },
+ "stage": "2b",
+ "tau": 1.8928574562072753,
+ "usable_backgrounds": 47,
+ "verdict": {
+  "line_med": "无法定 SEMU_50（below_min）",
+  "mura_med": "B：真实缺陷中位 SEMU 高于 90% 检出点 → 缺陷在可靠检出区内，零增益应归因训练侧",
+  "mura_p25": "C：过渡区，报连续值，不做二元结论",
+  "mura_p75": "B：真实缺陷中位 SEMU 高于 90% 检出点 → 缺陷在可靠检出区内，零增益应归因训练侧"
+ },
+ "version": "pod_probe_stage1_v1"
+}
