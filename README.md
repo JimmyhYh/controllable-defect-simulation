@@ -7,7 +7,7 @@
 * [10页带教汇报PDF](reports/项目进展与方向演进_带教汇报_20261109.pdf)：方向演进、实际工作量、核心结果与下一步决策。
 * [完整阶段汇报](reports/项目成果汇报_20261109.md)：各分支设置、数字及来源。当前工具状态按下方及最新计划为准。
 * [探针核查修订](reports/受控探针检测器能力标定核查修订报告.md)：旧可靠界与机制推断应按修订口径引用。
-* [数据集清单、许可及获取说明](datasets/README.md)。大包在Release，资产校验值见datasets/assets.json。
+* [数据集清单、许可及获取说明](datasets/README.md)。大包在[阶段Release](https://github.com/JimmyhYh/controllable-defect-simulation/releases/tag/snapshot-20261109)，资产校验值见datasets/assets.json。
 
 ## 结果与边界
 

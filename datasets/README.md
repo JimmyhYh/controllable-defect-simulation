@@ -4,6 +4,8 @@
 
 ## 随 Release 分发的原始数据
 
+[打开数据与元信息下载页](https://github.com/JimmyhYh/controllable-defect-simulation/releases/tag/snapshot-20261109)（需登录有权限的账号）。
+
 * **KolektorSDD2**：见 `KolektorSDD2-with-license.zip`。外层包包含未改动的原始ZIP、完整CC BY-NC-SA 4.0条款与署名。官方入口：https://www.vicos.si/resources/kolektorsdd2/
 * **MVTec AD leather 子集**：见 `MVTec-leather-with-license.zip`。外层包包含未改动的原始tar.xz及原许可／署名。官方入口：https://www.mvtec.com/research-teaching/datasets/mvtec-ad
 
