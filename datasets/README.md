@@ -1,10 +1,10 @@
 # 数据集与获取方式
 
-本仓库为私人设备上的公开资源学习项目，限个人学习与非商业研究，公司内部材料不在范围内。
+本项目使用公开工业视觉数据进行个人学习与非商业研究。各数据集遵循其原始许可。
 
 ## 随 Release 分发的原始数据
 
-[打开数据与元信息下载页](https://github.com/JimmyhYh/controllable-defect-simulation/releases/tag/snapshot-20261109)（需登录有权限的账号）。
+[打开数据与元信息下载页](https://github.com/JimmyhYh/controllable-defect-simulation/releases/tag/snapshot-20261109)。
 
 * **KolektorSDD2**：见 `KolektorSDD2-with-license.zip`。外层包包含未改动的原始ZIP、完整CC BY-NC-SA 4.0条款与署名。官方入口：https://www.vicos.si/resources/kolektorsdd2/
 * **MVTec AD leather 子集**：见 `MVTec-leather-with-license.zip`。外层包包含未改动的原始tar.xz及原许可／署名。官方入口：https://www.mvtec.com/research-teaching/datasets/mvtec-ad
@@ -20,7 +20,7 @@
 
 ## 本地复现路径
 
-原KSDD2解压到 experiment/data/fewshot_synthetic/ksdd2_v1，leather解压到 experiment/data/mvtec_ad/leather。历史配置和源码保存了D/E盘绝对路径及源码身份守卫，迁移后不能直接声称可运行；应建立独立适配入口，不改旧hash或失败结论。本上传是归档交接，不是已验证的跨机器一键复现包。
+原KSDD2解压到 experiment/data/fewshot_synthetic/ksdd2_v1，leather解压到 experiment/data/mvtec_ad/leather。历史配置和源码保存了D/E盘绝对路径及源码身份守卫，迁移后不能直接声称可运行；应建立独立适配入口，不改旧hash或失败结论。迁移后的运行环境与路径适配需要独立验证。
 
 ## 冻结数据角色
 
